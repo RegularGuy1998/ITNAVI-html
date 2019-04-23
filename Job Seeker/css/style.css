@@ -1,0 +1,471 @@
+body {
+    background-color: #f2f2f2 !important;
+    font-family: Roboto !important;
+    color: #454545 !important;
+}
+
+
+.set-box-shadow {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.11);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: white;
+}
+button, input {
+    border: none;
+}
+
+input:focus, select:focus, button, button:hover, button:active, button:hover:active, button:focus {
+    outline: none;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Find your next */
+.find {
+    opacity: 0.92;
+    height: 107px;
+    border-radius: 9px;
+    padding: 20px 16px;
+    background-color: #1ebdcf;
+    margin-bottom: 40px;
+    overflow: initial;
+}
+
+
+/* Find yout next - search */
+.find .search {
+    float: left;
+    overflow: auto;
+    width: 60%;
+}
+
+.find .search-button {
+    width: 16%;
+    height: 43px;
+    border-radius: 3px;
+    background-color: #f7912a;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    transition: 0.15s;
+}
+
+.find .search-button:hover {
+    box-shadow: 0 0 7px #f7912a;
+    transition: 0.15s;
+}
+
+.search input {
+    float: left;
+    border-radius: 3px;
+    border: none;
+    line-height: 43px;
+    font-size: 16px;
+    background-color: #ffffff;
+    padding-left: 43px;
+    height: 43px;
+    width: 100%;
+    transition: 0.15s;
+}
+
+
+.search .search-icon {
+    float: left;
+    padding: 9px 0 0 13px;
+    margin-top: -43px;
+    cursor: text;
+}
+
+.search .search-icon img {
+    width: 18px;
+    height: 18px;
+}
+
+.search-location {
+    background-color: #1ebdcf;
+    overflow: auto;
+    float: left;
+    margin: 0 2%;
+    width: 20% ;
+    transition: 0.15s;
+}
+
+.search-location input {
+    float: left;
+    border-radius: 3px;
+    border: none;
+    line-height: 43px;
+    font-size: 16px;
+    background-color: #ffffff;
+    padding: 0 35px 0 43px;
+    height: 43px;
+    width: 100% ;
+    cursor: pointer;
+}
+
+.search-location .location-icon {
+    float: left;
+    padding: 9px 0 0 15px;
+    margin-top: -43px;
+    cursor: pointer;
+}
+
+.search-location .location-icon img {
+    width: 13px;
+}
+
+.search-location .location-dropdown-icon {
+    float: right;
+    padding: 9px 10px 0 0;
+    margin-top: -43px;
+    cursor: pointer;
+}
+
+.search-location .location-dropdown-icon i {
+    width: 13px;
+}
+
+.location-dropdown {
+    position: absolute;
+    margin: 50px 0 0 23px;
+    width: 200px;
+    padding: 10px 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 3px #b5b5b5;
+    background-color: #ffffff;
+    overflow: scroll;
+}
+
+.location-dropdown-item {
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.location-dropdown-item:hover {
+    background-color: rgba(30, 189, 207, 0.15);
+    box-shadow: 0 0 5px rgba(30, 189, 207, 0.15);
+    transition: 0.15s;
+}
+
+.location-dropdown-no-item {
+    padding: 5px 10px;
+    color: #b5b5b5;
+}
+
+.advancedsearch {
+    float: right;
+    margin-top: 10px;
+}
+
+.advancedsearch .advancedicon {
+    float: left;
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+    padding: 1.5px 0 0 4.5px;
+    background-image: url(../image/searching-magnifying-glass@3x.png);
+    background-size: cover;
+    font-size: 8px;
+    color: #ffffff;
+}
+
+.advancedsearch .advancedtext {
+    float: left;
+    font-size: 14px;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+
+
+.hri-tab {
+    overflow: hidden;
+}
+  
+.hri-tab button {
+    border: none;
+    width: 152px;
+    height: 43px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 43px;
+    color: #464545;
+    margin-bottom: 3px;
+    background-color: #d1d0d6;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.hri-tab button:hover {
+    outline: none;
+    color: #ffffff;
+}
+
+.hri-tab button.active {
+    color: #ffffff;
+    background-color: #f7912a;
+    transition: 0.2s;
+    outline: none;
+}
+  
+
+/* Tab Content */
+.hri-tabcontent {
+    display: none;
+    padding: 30px 30px;
+    transition: 0.2px;
+    margin-top: -3px;
+    margin-bottom: 50px;
+}
+
+.tab-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #2b354d;
+    margin-bottom: 16px;
+}
+
+
+/* Form */
+.form {
+    border-bottom: 1px dashed #d1d0d6;
+    padding-bottom: 12px;
+    margin-bottom: 40px;
+}
+
+.form:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.name-form {
+    padding: 12px 10px 11px 10px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: rgba(30, 189, 207, 0.15);
+    border-left: 4px solid #f7912a;
+    overflow: auto;
+    font-size: 16px;
+}
+
+.name-form .left {
+    font-weight: 500;
+    float: left;
+}
+
+
+.name-form .right {
+    padding-right: 5px;
+    font-weight: 500;
+    float: right;
+}
+
+.starr{
+    font-size: 13px;
+    color: #f22424;
+}
+
+
+.form-body {
+    padding: 6px 50px;
+}
+
+.item {
+    padding: 13px 0;
+    overflow: auto;
+}
+
+
+.small-item {
+    overflow: auto;
+}
+
+.small-item span {
+    font-size: 14px;
+    color: #464545;
+}
+
+.item label {
+    float: left;
+    width: 27%;
+    line-height: 41px;
+    font-size: 16px;
+    color: #464545;
+    margin-bottom: 0;
+}
+
+.item input, .item select {
+    float: left;
+    width: 442px;
+    height: 41px;
+    padding: 0 10px;
+    border-radius: 3px;
+    border: solid 1px #b5b5b5;
+    background-color: #ffffff;
+    color: #464545;
+    transition: 0.2s;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.item select {
+    padding: 0 15px;
+}
+
+.item button {
+    margin-left: 27%;
+    width: 227px;
+    height: 41px;
+    border-radius: 3px;
+    background-color: #24becf;
+    line-height: 4px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+
+.item .radio {
+    float: left;
+    overflow: auto;
+    width: 442px;
+}
+
+
+
+.item .smalltip {
+    font-size: 12px;
+    line-height: 12px;
+    font-style: italic;
+    margin: 45px 0 0 27%;
+    color: #464545;
+}
+
+
+.item input:focus, .item select:focus, .item button:hover {
+    border: solid 1px #2ec1d1;
+    box-shadow: 0 0 6px #2ec1d1;
+    transition: 0.2s;
+
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(../image/calendar-with-a-clock-time-tools@3x.png) no-repeat;
+    background-size: 14px auto;
+    margin-left: 5px;
+    border-width: thin;
+}
+
+input[type="radio"] {
+    display:none;
+}
+
+.radio-item {
+    float: left;
+    overflow: auto;
+}
+
+.radio1, .checkbox1 {
+    float: left;
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.radio1 {
+    margin: 13px 10px 0 0;
+    border: 2px solid #b5b5b5;
+    border-radius: 50%;
+}
+
+.checkbox1 {
+    border-radius: 2px;
+    border: 1px solid #b5b5b5;
+    margin: 4px 5px 0 0;
+}
+
+
+.radio1:hover, .checkbox1:hover {
+    border: 5px solid #b5b5b5;
+    transition: 0.15s;
+}
+
+.radioactive, .checkboxactive, .radioactive:hover, .checkboxactive:hover {
+    border: 5px solid #2ec1d1;
+    transition: 0.15s;
+}
+
+.radio input {
+    float: left;
+    width: 15px;
+    margin: 0 8px 0 1px;
+}
+
+.radio span {
+    line-height: 43px;
+    float: left;
+    margin-right: 45px;
+}
+
+
+
+@media screen and (max-width: 1199.98px) { 
+    .item .smalltip {
+        float: left;
+        margin: 3px 0 0 0;
+        color: #464545;
+    }
+}
+
+@media screen and (max-width: 991.98px) { 
+    .item label {
+        width: 100%;
+    }
+
+    .item input, .item select {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767.98px) { 
+    .item button , .item .radio{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .form-body {
+        padding: 6px 6px;
+    }
+
+    .find {
+        height: 156px;
+    }
+
+    .find .search {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .find .search-location {
+        margin-left: 0;
+        width: 60%;
+    }
+
+    .find .search-button {
+        width: 38%;
+    }
+}

@@ -1,0 +1,177 @@
+body {
+    background-color: #f2f2f2 !important;
+    font-family: Roboto !important;
+}
+
+.contactus-body {
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 110px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.set-box-shadow {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.11);
+    border-radius: 4px;
+    background-color: white;
+}
+
+
+
+/* Title */
+.contactus-title {
+    margin-bottom: 100px
+}
+
+.contactus-title .bigtitle {
+    text-align: center;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+    font-size: 90px;
+    line-height: 100px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.contactus-title .title {
+    text-align: center;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+    font-size: 30px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+
+/* Contact */
+.contact {
+    padding: 35px 0 50px 0;
+}
+
+.contact .title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #464545;
+}
+
+
+/* Contact Left */
+.contact-left {
+    margin-top: 15px;
+}
+
+.contact-left label {
+    font-size: 16px;
+    margin-bottom: 4px;
+    color: #464545;
+}
+
+.contact-left input, .contact-left textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    border: solid 1px #b5b5b5;
+}
+
+.contact-left input {
+    height: 50px;
+    padding: 0 8px;
+}
+
+.contact-left textarea {
+    padding: 5px 8px;
+}
+
+.contact-left button {
+    margin-top: 8px;
+    width: 227px;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background-color: #ff915c;
+    border: solid 1px #ff915c;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.contact-left input:focus, .contact-left textarea:focus, .contact-left button:hover {
+    border: solid 1px #ff915c;
+    box-shadow: 0 0 8px #ff915c;
+    transition: 0.2s;
+    outline: none;
+}
+
+
+
+
+/* Contact Right */
+.contact-right {
+    padding-top: 43px;
+    padding-left: 30px !important;
+}
+
+.contact-list {
+    overflow: auto;
+    margin-bottom: 59px;
+}
+
+.contact-icon {
+    background-color: #ff915c;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+    float: left;
+}
+
+.contact-right .title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #464545;
+    padding-left: 98px
+}
+
+.contact-right .description {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #707070;
+    padding-left: 98px;
+}
+
+
+
+/* Css for mobile */
+@media screen and (max-width: 992px){
+    .submit-button {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .contact-left button {
+        width: 100%;
+    }
+
+    .contact-icon {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .contact-right .title {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .contact-right .description {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .contact-right {
+        padding-left: 15px !important;
+    }
+}

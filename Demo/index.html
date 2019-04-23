@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/arcodian.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Job Detail</title>
+</head>
+
+<body class="hr-body">
+
+    <!-- Container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <!-- Menu -->
+                <div class="hri-menu">
+                    <a class="gray-text" href="#">All jobs</a>
+                    <img class="next" src="image/next.png" />
+                    <div class="black-text">Job details</div>
+                </div>
+                <!-- /Menu -->
+
+                <!-- Ads1 -->
+                <div class="hri-title">
+                    <img class="title-image set-box-shadow" src="image/1.png" alt="communication">
+                </div>
+                <!-- /Ads1 -->
+
+                <!-- Job name and cover image -->
+                <div class="job-name set-box-shadow">
+                    <div class="job-name-container">
+                        <div class="row">
+
+                            <!-- Cover image -->
+                            <div class="col-lg-2 col-md-3 col-5 text-center">
+                                <img class="job-avatar" src="image/2.png" alt="jobavatar">
+                            </div>
+                            <!-- /Corver image -->
+
+                            <!-- Introduction -->
+                            <div class="col-lg-7 col-md-5 col-7 pl-4 pt-1 title">
+                                <div class="job-bigtitle">Java Developer</div>
+                                <div class="job-title mt-1">WorldFusion Vietnam</div>
+                                <div class="job-views">
+                                    <span class="gray-text"><img class="view-icon mr-1" src="image/eye.png" alt=""> 230
+                                        Views</span>
+                                </div>
+                                <div class="job-links text-center">
+                                    <a class="job-link-icon" style="background-color: rgb(43, 71, 141)" href="#">
+                                        <i class="fab fa-facebook-f"></i></a>
+                                    <a class="job-link-icon" style="background-color: rgb(120, 120, 120)" href="#">
+                                        <i class="fas fa-envelope"></i></a>
+                                    <a class="job-link-icon" style="background-color: rgb(0, 166, 238)" href="#">
+                                        <i class="fab fa-skype"></i></a>
+                                    <a class="job-link-icon" style="background-color: rgb(0, 106, 173)" href="#">
+                                        <i class="fab fa-linkedin-in"></i></a>
+                                    <a class="job-link-icon" style="background-color: rgb(0, 120, 255)" href="#">
+                                        <i class="fab fa-facebook-messenger"></i></a>
+                                    <a class="job-link-icon" style="background-color: rgb(14, 151, 240)" href="#">
+                                        <i class="fab fa-twitter"></i></a>
+                                    <a class="job-link-icon" style="background-color: rgb(10, 127, 243)" href="#">
+                                        <i class="fas fa-link"></i></a>
+                                </div>
+                            </div>
+                            <!-- /Introduction -->
+
+                            <div class="col-lg-3 col-md-4 col-12 mt-4 text-center">
+
+                                <!-- Apply job -->
+                                <a href="#"><button class="apply-button">Apply Now</button></a>
+                                <div class="save-jobs mt-3">
+
+                                    <!-- Unsave icon -->
+                                    <img class="save-jobs-hearticon mr-2" src="image/favorite-heart-button.png" alt="">
+
+                                    <!-- Saved icon -->
+                                    <!-- <img class="save-jobs-hearticon mr-2" src="image/favorite-heart-button-fill.png" alt="">  -->
+                                    Save job (20)
+                                </div>
+                                <!-- /Apply job -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Job name and cover image -->
+
+            </div>
+
+            <!-- Left Content -->
+            <div class="col-lg-9 col-12">
+
+                <!-- Tab detail -->
+                <div class="hri-tab">
+                    <button class="hri-tablinks" id="JobDescriptionButton"
+                        onclick="openCity(event, 'JobDescription')">Job Description</button>
+                    <button class="hri-tablinks" id="CompanyInfoButton" onclick="openCity(event, 'CompanyInfo')">Company
+                        Info</button>
+                    <button class="hri-tablinks" id="OtherJobsButton" onclick="openCity(event, 'OtherJobs')">Other
+                        Jobs</button>
+                </div>
+                <!-- /Tab detail -->
+
+                <!-- Job Description -->
+                <div id="JobDescription" class="hri-tabcontent">
+                    <div class="row px-3 mt-3">
+                        <div class="col-12">
+                            <div class="row">
+
+                                <!-- Detail Table -->
+                                <div class="col-md-6 col-12 px-1">
+                                    <table class="table table-borderless info-table rounded-sm ">
+                                        <tr>
+                                            <th class="black-text float-none">Job level:</th>
+                                            <td class="gray-text float-none">Junior Staff</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="black-text  float-none">Job category:</th>
+                                            <td class="gray-text float-none">Software Quality Assurance</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="black-text  float-none">Job type: </th>
+                                            <td class="gray-text float-none">Full - time</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="black-text  float-none">Salary:</th>
+                                            <td class="gray-text float-none">
+                                                <a href="#">Login to view</a>
+                                                <!-- $750 -->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="col-md-6 col-12 px-1 rounded-sm">
+                                    <table class="table table-borderless info-table info-table-longth">
+                                        <tr>
+                                            <th class="black-text float-none">Location:</th>
+                                            <td class="gray-text float-none">TP Ha Noi, Thai Binh</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="black-text  float-none">Quantity: </th>
+                                            <td class="gray-text float-none">3</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="black-text  float-none">Expired date:</th>
+                                            <td class="gray-text float-none">20 April 2019</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="black-text  float-none">Preferred languages:</th>
+                                            <td class="gray-text float-none">English</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <!-- /Detail Table -->
+
+                            </div>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="col-12 job-overview">
+
+                            <div class="requirement-badge">
+                                <div>Java</div>
+                                <div>Spring</div>
+                                <div>Aglie</div>
+                                <div>English</div>
+                            </div>
+
+                            <!-- Responsibilities -->
+                            <div class="orange-title">
+                                Responsibilities:
+                            </div>
+                            <p class="gray-text">Tham gia vào các dự án lớn liên quan đến các công nghệ và ngôn ngữ lập
+                                trình Java
+                                Web-based cho thị trường Nhật Bản với các yêu cầu như sau:</p>
+                            <ul class="gray-text overview-description overview-list">
+                                <li>Phân tích yêu cầu kỹ thuật </li>
+                                <li>Thiết kế chi tiết kỹ thuật, viết code và Unit Test code coverrage hơn 90%</li>
+                                <li>Review code để đảm bảo chất lượng dự án</li>
+                                <li>Với vị trí Senior hoặc Tech Lead, bạn thực hiện với vai trò như là key member để đưa
+                                    ra các giải pháp kỹ thuật và tham gia quản lý team trong dự án.</li>
+                                <li>Làm việc trực tiếp với Quản lý dự án và các kỹ sư Nhật Bản theo mô hình Agile/Scrum
+                                </li>
+                            </ul>
+                            <!-- /Responsibilities -->
+
+                            <!-- Requirement -->
+                            <div class="orange-title pt-2">
+                                Requirement:
+                            </div>
+                            <ul class="gray-text overview-description overview-list">
+                                <li>Tốt nghiệp kỹ sư Công nghệ thông tin, Toán tin hoặc tương đương. </li>
+                                <li>Nắm vững về lập trình hướng đối tượng</li>
+                                <li>Nắm vững về ngôn ngữ lập trình Java</li>
+                                <li>Có kinh nghiệm phát triển web application sử dụng Java với các framework Struts,
+                                    Hibernate, Spring hoặc Spring Boots.</li>
+                                <li>Có tinh thần làm việc teamwork.</li>
+                                <li>Có khả năng chịu áp lực để làm việc trong môi trường chuyên nghiệp có sức ép về
+                                    deadline và môi trường cạnh tranh cao.</li>
+                                <li>Có tư duy phân tích bài toán và khả năng nắm bắt vấn đề nhanh, độc lập tìm hiểu và
+                                    giải quyết vấn đề phức tạp.</li>
+                                <li>Có trách nhiệm cao trong công việc, sẳn sàng thu xếp thời gian để hoàn thành công
+                                    việc theo yêu cầu dự án.</li>
+                                <li>Có kinh nghiệm sử dụng Git</li>
+                            </ul>
+                            <!-- /Requirement -->
+
+                            <!-- Benefits -->
+                            <div class="orange-title pt-2">
+                                Benefits:
+                            </div>
+                            <div class="row list-benefit">
+                                <div class="col-lg-4 col-md-6 col-12 benefit-item">
+                                    <img src="image/coffee-cup@3x.png" alt="coffee-cup">
+                                    <div class="gray-text benefit-name">Canteen</div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12 benefit-item">
+                                    <img src="image/money@3x.png" alt="coffee-cup">
+                                    <div class="gray-text benefit-name">Paid leave</div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12 benefit-item">
+                                    <img src="image/support@3x.png" alt="coffee-cup">
+                                    <div class="gray-text benefit-name">Team activities</div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12 benefit-item">
+                                    <img src="image/icon-1@3x.png" alt="coffee-cup">
+                                    <div class="gray-text benefit-name">Transportation</div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12 benefit-item">
+                                    <img src="image/tickets@3x.png" alt="coffee-cup">
+                                    <div class="gray-text benefit-name">Vouchers</div>
+                                </div>
+                            </div>
+
+                            <!-- /Benefits -->
+
+                        </div>
+                        <!-- /Description -->
+                    </div>
+                </div>
+                <!-- /Job Descripiton -->
+
+                <!-- Company Info -->
+                <div id="CompanyInfo" class="hri-tabcontent">
+                    <div class="row px-3 mt-3">
+                        <div class="col-12">
+                            <div class="row">
+
+                                <!-- Detail Table -->
+                                <div class="col-md-6 col-12 px-1">
+                                    <table class="table table-borderless info-table rounded-sm ">
+                                        <tr>
+                                            <th class="black-text float-none">Website:</th>
+                                            <td class="gray-text float-none">wf.com.vn</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="black-text  float-none">Headquaters:</th>
+                                            <td class="gray-text float-none"></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="black-text  float-none">Size: </th>
+                                            <td class="gray-text float-none">1-50</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="black-text  float-none">Founded:</th>
+                                            <td class="gray-text float-none">01 Jul 2005</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="col-md-6 col-12 px-1 rounded-sm">
+                                    <table class="table table-borderless info-table info-table-longth">
+                                        <tr>
+                                            <th class="black-text float-none">Facebook Fanpage:</th>
+                                            <td class="gray-text float-none">Facebook.com/demo</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="black-text  float-none">Type: </th>
+                                            <td class="gray-text float-none"></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="black-text  float-none">Industry:</th>
+                                            <td class="gray-text float-none"></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="black-text  float-none">Revenue:</th>
+                                            <td class="gray-text float-none"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <!-- /Detail Table -->
+
+                            </div>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="col-12 job-overview">
+                            <div class="orange-title">
+                                Company Overview:
+                            </div>
+                            <div class=" gray-text overview-description">
+                                Công ty TNHH World Fusion Vietnam được thành lập 12/2017, là công ty con 100% vốn từ
+                                Systemsquare Corporation Nhật Bản.
+                                <br /> <br />
+                                Là công ty chuyên gia công phần mềm cho thị trường Nhật Bản trong các lĩnh vực: Giáo
+                                dục, y tế, tích hợp hệ thống ...
+                                <br /> <br />
+                                Các nền tảng phát triển: PHP, Java, .NET
+                            </div>
+                            <div class="orange-title">
+                                Why Join Us:
+                            </div>
+
+                            <!-- Image slide -->
+                            <marquee direction="left" behavior="alternate" scrollamount="2" onmouseover="this.stop()"
+                                onmouseout="this.start()">
+                                <img class="img-slide" src="image/3.png" alt="image2" title="tiêu đề ảnh 1" />
+                                <img class="img-slide" src="image/5.png" alt="image3" title="tiêu đề hình ảnh 2" />
+                                <img class="img-slide" src="image/6.png" alt="image4" title="Tiêu đề ảnh 3" />
+                                <img class="img-slide" src="image/5.png" alt="image5" title="tiêu đề ảnh 4" />
+                                <img class="img-slide" src="image/3.png" alt="image6" title="tiêu đề ảnh 5" />
+                                <img class="img-slide" src="image/6.png" alt="image7" title="tiêu đề ảnh 6" />
+                            </marquee>
+                            <!-- /Image slide -->
+
+                            <ul class="gray-text overview-description overview-list">
+                                <li>
+                                    Có cơ hội đi onsite và làm việc trực tiếp với các khách hàng Nhật.
+                                </li>
+                                <li>Điều chỉnh lương: 1 lần/năm.</li>
+                                <li>Điều chỉnh lương theo thâm niên làm việc.</li>
+                                <li>Lương tháng 13 (1 tháng lương)</li>
+                                <li>Du lịch hàng năm</li>
+                                <li>Khám sức khỏe định kỳ hàng năm tại bệnh viên uy tín</li>
+                                <li>Được hưởng đầy đủ các chế độ và bảo hiểm theo luật lao động Việt Nam.</li>
+                                <li>Học tiếng Nhật miễn phí</li>
+                            </ul>
+                        </div>
+                        <!-- /Description -->
+
+                    </div>
+                </div>
+                <!-- /Company Info -->
+
+                <!-- Other jobs -->
+                <div id="OtherJobs" class="hri-tabcontent">
+                    <div class="other-job">
+                        <div class="other-job-item">
+                            <div class="title">
+                                <div class="name">IT Engineer (Attractive Salary)</div>
+                                <div class="description">Carry out the requirement analysis, estimation, preparation of
+                                    release plan, design, development, testing and...</div>
+                            </div>
+                            <div class="contact">
+                                <div class="contact-item">
+                                    <div class="image"><img src="image/dollar-symbol@3x.png" alt=""></div>
+                                    <div class="name">Negotiable</div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="image"><img src="image/navigation@3x.png" alt=""></div>
+                                    <div class="name">Hanoi, Ho Chi Minh</div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="image"> <img src="image/calendar-with-a-clock-time-tools@3x.png" alt="">
+                                    </div>
+                                    <div class="name">Posted 2 hours ago</div>
+                                </div>
+                            </div>
+                            <div class="save">
+                                <a href="#"><img src="image/favorite-heart-button@3x.png"
+                                        alt="favorite-heart-button"></a>
+                                <p>Save</p>
+                            </div>
+                        </div>
+                        <div class="other-job-item">
+                            <div class="title">
+                                <div class="name">IT Engineer (Attractive Salary)</div>
+                                <div class="description">Carry out the requirement analysis, estimation, preparation of
+                                    release plan, design, development, testing and...</div>
+                            </div>
+                            <div class="contact">
+                                <div class="contact-item">
+                                    <div class="image"><img src="image/dollar-symbol@3x.png" alt=""></div>
+                                    <div class="name">Negotiable</div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="image"><img src="image/navigation@3x.png" alt=""></div>
+                                    <div class="name">Hanoi, Ho Chi Minh</div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="image"> <img src="image/calendar-with-a-clock-time-tools@3x.png" alt="">
+                                    </div>
+                                    <div class="name">Posted 2 hours ago</div>
+                                </div>
+                            </div>
+                            <div class="save">
+                                <a href="#"><img src="image/favorite-heart-button@3x.png"
+                                        alt="favorite-heart-button"></a>
+                                <p>Save</p>
+                            </div>
+                        </div>
+                        <div class="other-job-item">
+                            <div class="title">
+                                <div class="name">IT Engineer (Attractive Salary)</div>
+                                <div class="description">Carry out the requirement analysis, estimation, preparation of
+                                    release plan, design, development, testing and...</div>
+                            </div>
+                            <div class="contact">
+                                <div class="contact-item">
+                                    <div class="image"><img src="image/dollar-symbol@3x.png" alt=""></div>
+                                    <div class="name">Negotiable</div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="image"><img src="image/navigation@3x.png" alt=""></div>
+                                    <div class="name">Hanoi, Ho Chi Minh</div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="image"> <img src="image/calendar-with-a-clock-time-tools@3x.png" alt="">
+                                    </div>
+                                    <div class="name">Posted 2 hours ago</div>
+                                </div>
+                            </div>
+                            <div class="save">
+                                <a href="#"><img src="image/favorite-heart-button@3x.png"
+                                        alt="favorite-heart-button"></a>
+                                <p>Save</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagging">
+                        <div class="center">
+                            <a href="#" class="previousnext">
+                                <img src="image/previous@3x.png" alt="">
+                            </a>
+                            <div class="pagger">
+                                <a href="#" class="pagger-item">1</a>
+                                <div class="dot">...</div>
+                                <a href="#" class="pagger-item">6</a>
+                                <a href="#" class="pagger-item">7</a>
+                                <div href="#" class="dot this-pagger">8</div>
+                                <a href="#" class="pagger-item">9</a>
+                                <a href="#" class="pagger-item">10</a>
+                                <div class="dot">...</div>
+                                <a href="#" class="pagger-item">50</a>
+                            </div>
+
+                            <a href="#" class="previousnext">
+                                <img src="image/next@3x.png" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- /Other jobs -->
+
+
+                <div class="similar-job">
+                    Similar Jobs You May Like
+                </div>
+                <div class="similar-job-list">
+                    <!-- Insert similar job here -->
+                </div>
+                <div class="similar-job-viewmore">
+                    View more
+                </div>
+
+            </div>
+            <!-- /Left Content -->
+
+            <!-- Right Content -->
+            <div class="col-lg-3 col-12">
+
+                <!-- Ads2 -->
+                <img class="set-box-shadow ads2" src="image/4.png" alt="ads1">
+
+                <!-- Top Employees -->
+                <div class="top-employees set-box-shadow">
+                    <div class="top-employees-title">
+                        Top employers
+                    </div>
+                    <div class="row list-top-employees">
+                        <a href="#" class="col-6" style="background-image: url(image/image-23.jpg);">
+                        </a>
+                        <a href="#" class="col-6" style="background-image: url(image/image-24.png);">
+                        </a>
+                        <a href="#" class="col-6" style="background-image: url(image/image-25.png);">
+                        </a>
+                        <a href="#" class="col-6" style="background-image: url(image/image-26.jpg);">
+                        </a>
+                        <a href="#" class="col-6" style="background-image: url(image/image-27.jpg);">
+                        </a>
+                        <a href="#" class="col-6" style="background-image: url(image/image-28.jpg);">
+                        </a>
+                        <a href="#" class="col-6" style="background-image: url(image/image-29.jpg);">
+                        </a>
+                        <a href="#" class="col-6" style="background-image: url(image/270-px-mobifone.png);">
+                        </a>
+                    </div>
+                </div>
+                <!-- /Top Employees -->
+
+            </div>
+            <!-- /Right Content -->
+
+        </div>
+    </div>
+
+    <!-- Industries and Location -->
+    <div class="near-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-10 offset-sm-0 offset-1">
+                    <div class="near-footer-title">
+                        JOBS BY INDUSTRIES
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-12 near-footer-list">
+                            Accounting Jobs
+                        </div>
+                        <div class="col-lg-6 col-12 near-footer-list">
+                            Banking Jobs
+                        </div>
+                        <div class="col-lg-6 col-12 near-footer-list">
+                            IT - Software Jobs
+                        </div>
+                        <div class="col-lg-6 col-12 near-footer-list">
+                            IT - Hardware/Networking Jobs
+                        </div>
+                        <div class="col-lg-6 col-12 near-footer-list">
+                            Civil/Construction Jobs
+                        </div>
+                        <div class="col-lg-6 col-12 near-footer-list">
+                            Advertising/Promotion/PR Jobs
+                        </div>
+                        <div class="col-lg-6 col-12 near-footer-list">
+                            Airlines/Tourism Jobs
+                        </div>
+                        <div class="col-lg-6 col-12 near-footer-list">
+                            Education/Training Jobs
+                        </div>
+                        <div class="col-lg-6 col-12 near-footer-list">
+                            Electrical/Electronics Jobs
+                        </div>
+                        <div class="col-lg-6 col-12 near-footer-list">
+                            Sales Jobs
+                        </div>
+                        <a href="#" class="col-12 near-footer-link">
+                            View all Industries »
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-10 offset-sm-0 offset-1">
+                    <div class="near-footer-title">
+                        JOB BY LOCATIONS
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-12 near-footer-list">
+                            Jobs in Ho Chi Minh
+                        </div>
+                        <div class="col-lg-6 col-12 near-footer-list">
+                            Jobs in Ha Noi
+                        </div>
+                        <div class="col-lg-6 col-12 near-footer-list">
+                            Jobs in Hai Phong
+                        </div>
+                        <div class="col-lg-6 col-12 near-footer-list">
+                            Jobs in Da Nang
+                        </div>
+                        <div class="col-lg-6 col-12 near-footer-list">
+                            Jobs in Can Tho
+                        </div>
+                        <div class="col-lg-6 col-12 near-footer-list">
+                            Jobs in Binh Duong
+                        </div>
+                        <div class="col-lg-6 col-12 near-footer-list">
+                            Jobs in Dong Nai
+                        </div>
+                        <div class="col-lg-6 col-12 near-footer-list">
+                            Jobs in Vinh Phuc
+                        </div>
+                        <div class="col-lg-6 col-12 near-footer-list">
+                            Jobs in Bac Ninh
+                        </div>
+                        <div class="col-lg-6 col-12 near-footer-list">
+                            Jobs in Long An
+                        </div>
+                        <a href="#" class="col-12 near-footer-link">
+                            View all Industries »
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Industries and Location -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
