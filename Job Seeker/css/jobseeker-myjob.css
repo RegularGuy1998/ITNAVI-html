@@ -188,8 +188,6 @@ tr .locationdate span {
 
 .applied-text {
     float: left;
-    width: 50%;
-    text-align: center;
 }
 
 
@@ -369,32 +367,18 @@ tr .locationdate span {
     }
 
     .applied-icon {
-        width: 40%;
-        text-align: right;
-    }
-
-    .applied-text {
-        padding-top: 5px;
-        text-align: right;
-    }
-
-    .applied-icon {
-        float: left;
-        width: 100%;
-        margin-bottom: 5px;
-        text-align: center;
-    }
-    
-    .applied-icon img {
-        width: 33px;
-        height: 33px;
-    }
-    
-    .applied-text {
-        float: left;
         width: 50%;
-        text-align: center;
+        padding-right: 10px;
+        text-align: right;
     }
+
+    .applied-text {
+        width: 50%;
+        text-align: left;
+        padding-top: 6px;
+    }
+
+    
 }
 
 @media screen and (max-width: 479.98px) { 
