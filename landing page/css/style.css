@@ -1,0 +1,190 @@
+body {
+    font-family: Roboto !important;
+}
+
+button {
+    border: none;
+}
+
+
+/* Navbar */
+.navi-navbar {
+    margin-top: 5px;
+    height: auto;
+    overflow: auto;
+}
+
+.navi-logolink {
+    height: 50px;
+    margin: 0 3%;
+    padding: 0 2%;
+    float: left;
+    overflow: auto;
+}
+
+.navi-logolink img {
+    height: 50px;
+    width: auto;
+    float: left;
+}
+
+.navi-navbar-item .item {
+    float: left;
+}
+
+.navi-navbar-item .text {
+    font-size: 18px;
+    line-height: 50px;
+    margin-right: 40px;
+}
+
+.navi-navbar-item .text a {
+    color: #7f7f7f;
+    font-weight: 100;
+}
+
+.navi-navbar-item .button {
+
+    float: right;
+    overflow: auto;
+    padding: 0 28px 0 0;
+}
+
+.region-button {
+    float: left;
+    height: 26px;
+    width: 26px;
+    margin-top: 14px;
+    cursor: pointer;
+    background-image: url(../image/vietnam.png);
+    background-repeat: no-repeat;
+    background-size: 26px;
+}
+
+.notify-button {
+    overflow: auto;
+    float: left;
+    margin-top: 14px;
+    height: 26px;
+    width: 23px;
+    background-image: url(../image/notification@3x.png);
+    background-repeat: no-repeat;
+    background-size: 23px 26px;
+}
+
+.notify-button .alent-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-top: 1px;
+    background-color: #f82020;
+    border: 1px solid #ffffff;
+    float: right;
+}
+
+.super-navbar-gray-border {
+    margin-top: 14px;
+    width: 1px;
+    height: 26px;
+    background-color: #707070;
+    opacity: 0.19;
+    float: right;
+}
+
+.button-login {
+    width: 140px;
+    height: 36px;
+    text-align: center;
+    padding: 0 !important;
+    margin: 9px 40px 0 35px;
+    border-radius: 18px;
+    border: solid 1px #1ebdcf;
+    color: #1ebdcf;
+}
+
+.button-signup {
+    width: 140px;
+    height: 36px;
+    text-align: center;
+    padding: 0 !important;
+    margin-top: 9px;
+    margin-right: 5%;
+    border-radius: 18px;
+    background-color:#1ebdcf;
+    color: #ffffff;
+}
+
+
+/* Navbar line */
+.navi-navbar-borderbottom {
+    float: left;
+    width: 100%;
+    height: 14px;
+}
+
+.navi-navbar-borderbottom .top-left {
+    height: 7px;
+    width: 35%;
+    overflow: auto;
+    background-color: #24becf;
+}
+
+.navi-navbar-borderbottom .top-left .rectangle {
+    width: 7px;
+    height: 100%;
+    float: right;
+    border-bottom: 7px solid #212b48;
+    border-left: 7px solid #24becf;
+}
+
+.navi-navbar-borderbottom .bottom-right {
+    height: 7px;
+    margin-left: 35%;
+}
+
+.navi-navbar-borderbottom .bottom-right div {
+    height: 7px;
+    background-color: #f58128;
+    margin-left: -7px;
+}
+
+
+/* Body */
+.navi-body {
+    overflow: auto;
+}
+
+.talent-solution {
+    width: 100%;
+    height: 1000px;
+    background-image: url(../image/mask-group-1@3x.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.two-personal {
+    float: right;
+    width: 38%;
+    height: 827px;
+    margin: 12% 7% 0 0;
+    background-image: url(../image/group-526@3x.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.talent-solution .title {
+    padding: 300px 0 0 7%;
+
+}
+
+.talent-solution .big-title {
+    font-size: 91px;
+    font-weight: bold;
+    color: #16bee5;
+}
+
+.talent-solution .small-title {
+    font-size: 49px;
+    font-weight: bold;
+    color: #16bee5;
+}

@@ -29,6 +29,10 @@
     transition: 0.15s;
 }
 
+.hidden {
+    
+}
+
 
 /* Table */
 .myjob-table{
@@ -251,6 +255,23 @@ tr .locationdate span {
 
 }
 
+.nomyjobbackground {
+    text-align: center;
+    margin: 48px 0;
+}
+
+.nomyjobbackground img {
+    width: 206.1px;
+    height: 142.8px;
+}
+
+.nomyjobbackground-text {
+    margin-top: 30px;
+    width: 100%;
+    font-family: Roboto;
+    font-size: 16px;
+    color: #464545;
+}
 
 
 /* For Mobile */

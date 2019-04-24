@@ -32,6 +32,9 @@ img {
     font-family: Roboto;
 }
 
+.loss {
+    display: none;
+}
 
 /* Menu */
 .hri-menu {
@@ -602,4 +605,54 @@ img {
     .pagging .previousnext {
         display: none;
     }
+}
+
+
+
+
+/* Show image when click to image in Company Info */
+.companyinfo-showimage {
+    z-index: 1;
+    position: fixed;
+    background: rgba(51, 50, 50, 0.90) no-repeat center center fixed;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.image-show {
+    width: 100%;
+    display: flex;
+    border-radius: 6px;
+    height: 85%;
+    text-align: center;
+}
+
+.image-show img {
+    border-radius: 4px;
+    border: 1px solid #2d2d2d;
+    box-shadow: 0 0 10px #2d2d2d;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+.image-list {
+    width: 98%;
+    display: flex;
+    border-radius: 6px;
+    height: 15%;
+    text-align: center;
+    overflow: auto;
+    padding: 0 10px;
+}
+
+.image-list img {
+    float: left;
+    height: 80%;
+    width: auto;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #2d2d2d;
+    margin: 0 5px;
+    cursor: pointer;
 }
