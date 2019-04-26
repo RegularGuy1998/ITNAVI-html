@@ -7,16 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jobseeker-myjob.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -25,714 +24,727 @@
 </head>
 
 <body>
-    <div class="container mt-5">
+    <div id="job-seeker-myaccountinfo">
+        <div class="container">
 
-        <form class="find" method="POST" action="#">
-            <div class="search">
-                <input type="text" id="search-job-input" name="searchjob"
-                    placeholder="Job title, Skills, Keywords or company name" required>
-                <div class="search-icon">
-                    <img id="search-icon" src="image/magnifying-glass-browser@3x.png" alt="icon">
+            <form class="find" method="POST" action="#">
+                <div class="search">
+                    <input type="text" id="search-job-input" name="searchjob"
+                        placeholder="Job title, Skills, Keywords or company name" required>
+                    <div class="search-icon">
+                        <img id="search-icon" src="image/magnifying-glass-browser@3x.png" alt="icon">
+                    </div>
+                </div>
+                <div class="dropdown search-location">
+                    <div type="button" class="" id="dropdownMenuOffset" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <input type="text" id="search-location-input" name="searchlocation" placeholder="Location">
+                        <div class="location-icon location-focus"><img src="image/placeholder@3x.png" alt="icon"></div>
+                        <div class="location-dropdown-icon location-focus"><i class="fas fa-caret-down"></i></div>
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                        <div id="location-item-1" class="location-dropdown-item" data-value="Viet Nam">Viet Nam</div>
+                        <div id="location-item-2" class="location-dropdown-item" data-value="Laos">Laos</div>
+                        <div id="location-item-3" class="location-dropdown-item" data-value="Campuchia">Campuchia</div>
+                        <div id="location-item-4" class="location-dropdown-item" data-value="American Dinh">American
+                            Dinh
+                        </div>
+                        <div id="no-result" class="location-dropdown-no-item hidden" data-value="American Dinh">No
+                            result...
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="search-button">Search</button>
+                <a class="advancedsearch" href="#">
+                    <div class="advancedicon">+</div>
+                    <div class="advancedtext">Advanced Search</div>
+                </a>
+            </form>
+
+            <div class="hri-tab">
+                <button id="DashboardButton" class="hri-tablinks"
+                    onclick="openHri(event, 'Dashboard')">Dashboard</button>
+                <button id="MyResumeButton" class="hri-tablinks" onclick="openHri(event, 'MyResume')">My Resume</button>
+                <button id="MyJobsButton" class="hri-tablinks" onclick="openHri(event, 'MyJobs')">My Jobs</button>
+                <button id="MyAccountInfoButton" class="hri-tablinks" onclick="openHri(event, 'MyAccountInfo')">My
+                    Account
+                    Info</button>
+            </div>
+            <div id="Dashboard" class="hri-tabcontent set-box-shadow">
+            </div>
+            <div id="MyResume" class="hri-tabcontent set-box-shadow">
+            </div>
+            <div id="MyJobs" class="hri-tabcontent set-box-shadow">
+                <div class="myjob-tab">
+                    <button id="MySavedJobsButton" class="myjob-tablinks" onclick="openMyjob(event, 'MySavedJobs')">My
+                        Saved
+                        Jobs</button>
+                    <button id="MyAppliedJobsButton" class="myjob-tablinks"
+                        onclick="openMyjob(event, 'MyAppliedJobs')">My
+                        Applied Jobs</button>
+                </div>
+                <div id="MySavedJobs" class="myjob-tabcontent">
+
+                    <!-- Desktop -->
+                    <table class="myjob-table">
+                        <thead>
+                            <tr>
+                                <th class="jobtitle">Job Title</th>
+                                <th class="location">Location</th>
+                                <th class="saveddate">Saved Date</th>
+                                <th class="expireddate">Expired Date</th>
+
+                                <!-- Tablet -->
+                                <th class="locationdate"></th>
+                                <!-- Tablet -->
+
+                                <th class="action">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td class="jobtitle">
+                                    <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                    <div class="info">
+                                        <div class="jobname">Java Lead</div>
+                                        <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                        <div class="salary">$5.000 - $10.000</div>
+                                    </div>
+                                </td>
+
+                                <td class="location">Ha noi, Cau Giay</td>
+                                <td class="saveddate">15/03/2019</td>
+                                <td class="expireddate">20/03/2019</td>
+
+                                <!-- Tablet -->
+                                <td class="locationdate">
+                                    <div><span>Location:</span>Ha noi, Cau Giay</div>
+                                    <div><span>Saved Date:</span>15/03/2019</div>
+                                    <div><span>Expired Date:</span>20/03/2019</div>
+                                </td>
+                                <!-- Tablet -->
+
+                                <td class="action">
+                                    <button>Apply</button>
+                                    <a href="#"><img class="save-jobs-hearticon mr-2"
+                                            src="image/favorite-heart-button@3x.png" alt="">Saved</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="jobtitle">
+                                    <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                    <div class="info">
+                                        <div class="jobname">Java Lead</div>
+                                        <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                        <div class="salary">$5.000 - $10.000</div>
+                                    </div>
+                                </td>
+
+                                <td class="location">Ha noi, Cau Giay</td>
+                                <td class="saveddate">15/03/2019</td>
+                                <td class="expireddate">20/03/2019</td>
+
+                                <!-- Tablet -->
+                                <td class="locationdate">
+                                    <div><span>Location:</span>Ha noi, Cau Giay</div>
+                                    <div><span>Saved Date:</span>15/03/2019</div>
+                                    <div><span>Expired Date:</span>20/03/2019</div>
+                                </td>
+                                <!-- Tablet -->
+
+                                <td class="action">
+                                    <button>Apply</button>
+                                    <a href="#"><img class="save-jobs-hearticon mr-2"
+                                            src="image/favorite-heart-button@3x.png" alt="">Saved</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="jobtitle">
+                                    <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                    <div class="info">
+                                        <div class="jobname">Java Lead</div>
+                                        <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                        <div class="salary">$5.000 - $10.000</div>
+                                    </div>
+                                </td>
+
+                                <td class="location">Ha noi, Cau Giay</td>
+                                <td class="saveddate">15/03/2019</td>
+                                <td class="expireddate">20/03/2019</td>
+
+                                <!-- Tablet -->
+                                <td class="locationdate">
+                                    <div><span>Location:</span>Ha noi, Cau Giay</div>
+                                    <div><span>Saved Date:</span>15/03/2019</div>
+                                    <div><span>Expired Date:</span>20/03/2019</div>
+                                </td>
+                                <!-- Tablet -->
+
+                                <td class="action">
+                                    <button>Apply</button>
+                                    <a href="#"><img class="save-jobs-hearticon mr-2"
+                                            src="image/favorite-heart-button@3x.png" alt="">Saved</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="jobtitle">
+                                    <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                    <div class="info">
+                                        <div class="jobname">Java Lead</div>
+                                        <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                        <div class="salary">$5.000 - $10.000</div>
+                                    </div>
+                                </td>
+
+                                <td class="location">Ha noi, Cau Giay</td>
+                                <td class="saveddate">15/03/2019</td>
+                                <td class="expireddate">20/03/2019</td>
+
+                                <!-- Tablet -->
+                                <td class="locationdate">
+                                    <div><span>Location:</span>Ha noi, Cau Giay</div>
+                                    <div><span>Saved Date:</span>15/03/2019</div>
+                                    <div><span>Expired Date:</span>20/03/2019</div>
+                                </td>
+                                <!-- Tablet -->
+
+                                <td class="action">
+                                    <button>Apply</button>
+                                    <a href="#"><img class="save-jobs-hearticon mr-2"
+                                            src="image/favorite-heart-button@3x.png" alt="">Saved</a>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+                    <!-- Mobile -->
+                    <!-- Loop -->
+                    <div class="myjob-table-mobile">
+                        <div class="myjob-item">
+                            <div class="jobtitle">
+                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                <div class="info">
+                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                    <div class="salary">$5.000 - $10.000</div>
+                                </div>
+                            </div>
+                            <div class="job-desctiption">
+                                <div class="locationdate">
+                                    <div class="jobname">Java Lead</div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Location:</div>
+                                        <div class="value">Ha noi, Cau Giay</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Saved Date:</div>
+                                        <div class="value">15/03/2019</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Expired Date:</div>
+                                        <div class="value">20/03/2019</div>
+                                    </div>
+                                </div>
+                                <div class="action">
+                                    <button>Apply</button>
+                                    <a href="#"><img class="save-jobs-hearticon mr-2"
+                                            src="image/favorite-heart-button@3x.png" alt="">Saved</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Loop -->
+
+                    <div class="myjob-table-mobile">
+                        <div class="myjob-item">
+                            <div class="jobtitle">
+                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                <div class="info">
+                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                    <div class="salary">$5.000 - $10.000</div>
+                                </div>
+                            </div>
+                            <div class="job-desctiption">
+                                <div class="locationdate">
+                                    <div class="jobname">Java Lead</div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Location:</div>
+                                        <div class="value">Ha noi, Cau Giay</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Saved Date:</div>
+                                        <div class="value">15/03/2019</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Expired Date:</div>
+                                        <div class="value">20/03/2019</div>
+                                    </div>
+                                </div>
+                                <div class="action">
+                                    <button>Apply</button>
+                                    <a href="#"><img class="save-jobs-hearticon mr-2"
+                                            src="image/favorite-heart-button@3x.png" alt="">Saved</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="myjob-table-mobile">
+                        <div class="myjob-item">
+                            <div class="jobtitle">
+                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                <div class="info">
+                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                    <div class="salary">$5.000 - $10.000</div>
+                                </div>
+                            </div>
+                            <div class="job-desctiption">
+                                <div class="locationdate">
+                                    <div class="jobname">Java Lead</div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Location:</div>
+                                        <div class="value">Ha noi, Cau Giay</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Saved Date:</div>
+                                        <div class="value">15/03/2019</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Expired Date:</div>
+                                        <div class="value">20/03/2019</div>
+                                    </div>
+                                </div>
+                                <div class="action">
+                                    <button>Apply</button>
+                                    <a href="#"><img class="save-jobs-hearticon mr-2"
+                                            src="image/favorite-heart-button@3x.png" alt="">Saved</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="myjob-table-mobile">
+                        <div class="myjob-item">
+                            <div class="jobtitle">
+                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                <div class="info">
+                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                    <div class="salary">$5.000 - $10.000</div>
+                                </div>
+                            </div>
+                            <div class="job-desctiption">
+                                <div class="locationdate">
+                                    <div class="jobname">Java Lead</div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Location:</div>
+                                        <div class="value">Ha noi, Cau Giay</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Saved Date:</div>
+                                        <div class="value">15/03/2019</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Expired Date:</div>
+                                        <div class="value">20/03/2019</div>
+                                    </div>
+                                </div>
+                                <div class="action">
+                                    <button>Apply</button>
+                                    <a href="#"><img class="save-jobs-hearticon mr-2"
+                                            src="image/favorite-heart-button@3x.png" alt="">Saved</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile -->
+
+                </div>
+
+                <!-- My Applied Job Tab -->
+                <div id="MyAppliedJobs" class="myjob-tabcontent">
+                    <table class="myjob-table">
+                        <thead>
+                            <tr>
+                                <th class="jobtitle">Job Title</th>
+                                <th class="location">Location</th>
+                                <th class="saveddate">Applied Date</th>
+                                <th class="expireddate">Expired Date</th>
+
+                                <!-- Tablet -->
+                                <th class="locationdate"></th>
+                                <!-- Tablet -->
+
+                                <th class="action">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td class="jobtitle">
+                                    <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                    <div class="info">
+                                        <div class="jobname">Java Lead</div>
+                                        <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                        <div class="salary">$5.000 - $10.000</div>
+                                    </div>
+                                </td>
+
+                                <td class="location">Ha noi, Cau Giay</td>
+                                <td class="saveddate">15/03/2019</td>
+                                <td class="expireddate">20/03/2019</td>
+
+                                <!-- Tablet -->
+                                <td class="locationdate">
+                                    <div><span>Location:</span>Ha noi, Cau Giay</div>
+                                    <div><span>Applied Date:</span>15/03/2019</div>
+                                    <div><span>Expired Date:</span>20/03/2019</div>
+                                </td>
+                                <!-- Tablet -->
+
+                                <td class="action">
+                                    <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
+                                    Applied
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="jobtitle">
+                                    <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                    <div class="info">
+                                        <div class="jobname">Java Lead</div>
+                                        <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                        <div class="salary">$5.000 - $10.000</div>
+                                    </div>
+                                </td>
+
+                                <td class="location">Ha noi, Cau Giay</td>
+                                <td class="saveddate">15/03/2019</td>
+                                <td class="expireddate">20/03/2019</td>
+
+                                <!-- Tablet -->
+                                <td class="locationdate">
+                                    <div><span>Location:</span>Ha noi, Cau Giay</div>
+                                    <div><span>Applied Date:</span>15/03/2019</div>
+                                    <div><span>Expired Date:</span>20/03/2019</div>
+                                </td>
+                                <!-- Tablet -->
+
+                                <td class="action">
+                                    <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
+                                    Applied
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="jobtitle">
+                                    <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                    <div class="info">
+                                        <div class="jobname">Java Lead</div>
+                                        <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                        <div class="salary">$5.000 - $10.000</div>
+                                    </div>
+                                </td>
+
+                                <td class="location">Ha noi, Cau Giay</td>
+                                <td class="saveddate">15/03/2019</td>
+                                <td class="expireddate">20/03/2019</td>
+
+                                <!-- Tablet -->
+                                <td class="locationdate">
+                                    <div><span>Location:</span>Ha noi, Cau Giay</div>
+                                    <div><span>Applied Date:</span>15/03/2019</div>
+                                    <div><span>Expired Date:</span>20/03/2019</div>
+                                </td>
+                                <!-- Tablet -->
+
+                                <td class="action">
+                                    <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
+                                    Applied
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="jobtitle">
+                                    <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                    <div class="info">
+                                        <div class="jobname">Java Lead</div>
+                                        <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                        <div class="salary">$5.000 - $10.000</div>
+                                    </div>
+                                </td>
+
+                                <td class="location">Ha noi, Cau Giay</td>
+                                <td class="saveddate">15/03/2019</td>
+                                <td class="expireddate">20/03/2019</td>
+
+                                <!-- Tablet -->
+                                <td class="locationdate">
+                                    <div><span>Location:</span>Ha noi, Cau Giay</div>
+                                    <div><span>Applied Date:</span>15/03/2019</div>
+                                    <div><span>Expired Date:</span>20/03/2019</div>
+                                </td>
+                                <!-- Tablet -->
+
+                                <td class="action">
+                                    <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
+                                    Applied
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+                    <!-- Mobile -->
+                    <!-- Loop -->
+                    <div class="myjob-table-mobile">
+                        <div class="myjob-item">
+                            <div class="jobtitle">
+                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                <div class="info">
+                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                    <div class="salary">$5.000 - $10.000</div>
+                                </div>
+                            </div>
+                            <div class="job-desctiption">
+                                <div class="locationdate">
+                                    <div class="jobname">Java Lead</div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Location:</div>
+                                        <div class="value">Ha noi, Cau Giay</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Saved Date:</div>
+                                        <div class="value">15/03/2019</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Expired Date:</div>
+                                        <div class="value">20/03/2019</div>
+                                    </div>
+                                </div>
+                                <div class="action">
+                                    <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
+                                    <div class="applied-text">Applied</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Loop -->
+
+                    <div class="myjob-table-mobile">
+                        <div class="myjob-item">
+                            <div class="jobtitle">
+                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                <div class="info">
+                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                    <div class="salary">$5.000 - $10.000</div>
+                                </div>
+                            </div>
+                            <div class="job-desctiption">
+                                <div class="locationdate">
+                                    <div class="jobname">Java Lead</div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Location:</div>
+                                        <div class="value">Ha noi, Cau Giay</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Saved Date:</div>
+                                        <div class="value">15/03/2019</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Expired Date:</div>
+                                        <div class="value">20/03/2019</div>
+                                    </div>
+                                </div>
+                                <div class="action">
+                                    <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
+                                    <div class="applied-text">Applied</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="myjob-table-mobile">
+                        <div class="myjob-item">
+                            <div class="jobtitle">
+                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                <div class="info">
+                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                    <div class="salary">$5.000 - $10.000</div>
+                                </div>
+                            </div>
+                            <div class="job-desctiption">
+                                <div class="locationdate">
+                                    <div class="jobname">Java Lead</div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Location:</div>
+                                        <div class="value">Ha noi, Cau Giay</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Saved Date:</div>
+                                        <div class="value">15/03/2019</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Expired Date:</div>
+                                        <div class="value">20/03/2019</div>
+                                    </div>
+                                </div>
+                                <div class="action">
+                                    <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
+                                    <div class="applied-text">Applied</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="myjob-table-mobile">
+                        <div class="myjob-item">
+                            <div class="jobtitle">
+                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                <div class="info">
+                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                    <div class="salary">$5.000 - $10.000</div>
+                                </div>
+                            </div>
+                            <div class="job-desctiption">
+                                <div class="locationdate">
+                                    <div class="jobname">Java Lead</div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Location:</div>
+                                        <div class="value">Ha noi, Cau Giay</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Saved Date:</div>
+                                        <div class="value">15/03/2019</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Expired Date:</div>
+                                        <div class="value">20/03/2019</div>
+                                    </div>
+                                </div>
+                                <div class="action">
+                                    <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
+                                    <div class="applied-text">Applied</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile -->
+
+                </div>
+                <script src="js/jobseeker-myjob.js"></script>
+            </div>
+            <div id="MyAccountInfo" class="hri-tabcontent set-box-shadow">
+                <div class="tab-title">My Account Information</div>
+                <div class="form">
+                    <div class="name-form">
+                        <div class="left">UPDATE ACCOUNT INFORMATION</div>
+                        <div class="right">(<span class="starr">*</span>) is required field</div>
+                    </div>
+                    <form class="form-body" action="#" method="POST">
+                        <div class="item">
+                            <label for="fullname">Full Name <span class="starr">*</span></label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="item">
+                            <label for="email">Email <span class="starr">*</span></label>
+                            <input type="text" name="email" required>
+                        </div>
+                        <div class="item">
+                            <label for="birthday">Birthday <span class="starr">*</span></label>
+                            <input type="date" name="birthday" required>
+                        </div>
+                        <div class="item">
+                            <label for="gender">Gender <span class="starr">*</span></label>
+                            <div class="radio">
+                                <div class="radio-item">
+                                    <div class="radio1 radioactive" data-name="gender" data-value="male"></div>
+                                    <span>Male</span>
+                                </div>
+                                <div class="radio-item">
+                                    <div class="radio1" data-name="gender" data-value="female"></div>
+                                    <span>Female</span>
+                                </div>
+                                <input type="hidden" id="gender" name="gender" value="male">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label for="gender">Nationality <span class="starr">*</span></label>
+                            <div class="radio">
+                                <div class="radio-item">
+                                    <div class="radio1 radioactive" data-name="nationality" data-value="Vietnamese">
+                                    </div>
+                                    <span>Local Vietnamese</span>
+                                </div>
+                                <div class="radio-item">
+                                    <div class="radio1" data-name="nationality" data-value="Other"></div>
+                                    <span>Other Countries</span>
+                                </div>
+                                <input type="hidden" id="nationality" name="nationality" value="Vietnamese">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label for="address">Address <span class="starr">*</span></label>
+                            <input type="text" name="address" required>
+                        </div>
+                        <div class="item" id="locationItem">
+                            <label for="location">Location <span class="starr">*</span></label>
+                            <select name="location">
+                                <option value="">Select your location</option>
+                                <option value="">Ha Noi</option>
+                                <option value="">TP.HCM</option>
+                                <option value="">Da Nang</option>
+                            </select>
+                        </div>
+                        <div class="item small-item">
+                            <div class="checkbox1" data-name="sendme"></div>
+                            <span>Send me latest jobs and useful career advices</span>
+                            <input type="hidden" id="sendme" name="sendme" value="false">
+                        </div>
+                        <div class="item">
+                            <button type="submit">Save</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="form">
+                    <div class="name-form">
+                        <div class="left">CHANGE PASSWORD</div>
+                        <div class="right">(<span class="starr">*</span>) is required field</div>
+                    </div>
+                    <form class="form-body" action="#" method="POST">
+                        <div class="item">
+                            <label for="fullname">Current password <span class="starr">*</span></label>
+                            <input type="text" name="currentpass" required>
+                        </div>
+                        <div class="item">
+                            <label for="email">New password <span class="starr">*</span></label>
+                            <input type="text" name="newpass" required>
+                            <div class="smalltip">Password must be at least 8 characters.</div>
+                        </div>
+                        <div class="item">
+                            <label for="email">Confirm new password <span class="starr">*</span></label>
+                            <input type="text" name="confirmnewpass" required>
+                        </div>
+                        <div class="item">
+                            <button type="submit">Save</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div type="button" class="search-location" id="dropdownMenuOffset" data-toggle="dropdown"
-                aria-haspopup="true">
-                <input type="text" id="search-location-input" name="searchlocation" placeholder="Location">
-                <div class="location-icon location-focus"><img src="image/placeholder@3x.png" alt="icon"></div>
-                <div class="location-dropdown-icon location-focus"><i class="fas fa-caret-down"></i></div>
-            </div>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                <div id="location-item-1" class="location-dropdown-item" data-value="Viet Nam">Viet Nam</div>
-                <div id="location-item-2" class="location-dropdown-item" data-value="Laos">Laos</div>
-                <div id="location-item-3" class="location-dropdown-item" data-value="Campuchia">Campuchia</div>
-                <div id="location-item-4" class="location-dropdown-item" data-value="American Dinh">American Dinh</div>
-                <div id="no-result" class="location-dropdown-no-item hidden" data-value="American Dinh">No result...
-                </div>
-            </div>
-            <button type="submit" class="search-button">Search</button>
-            <a class="advancedsearch" href="#">
-                <div class="advancedicon">+</div>
-                <div class="advancedtext">Advanced Search</div>
-            </a>
-        </form>
 
-        <div class="hri-tab">
-            <button id="DashboardButton" class="hri-tablinks" onclick="openHri(event, 'Dashboard')">Dashboard</button>
-            <button id="MyResumeButton" class="hri-tablinks" onclick="openHri(event, 'MyResume')">My Resume</button>
-            <button id="MyJobsButton" class="hri-tablinks" onclick="openHri(event, 'MyJobs')">My Jobs</button>
-            <button id="MyAccountInfoButton" class="hri-tablinks" onclick="openHri(event, 'MyAccountInfo')">My Account
-                Info</button>
         </div>
-        <div id="Dashboard" class="hri-tabcontent set-box-shadow">
-        </div>
-        <div id="MyResume" class="hri-tabcontent set-box-shadow">
-        </div>
-        <div id="MyJobs" class="hri-tabcontent set-box-shadow">
-            <div class="myjob-tab">
-                <button id="MySavedJobsButton" class="myjob-tablinks" onclick="openMyjob(event, 'MySavedJobs')">My Saved
-                    Jobs</button>
-                <button id="MyAppliedJobsButton" class="myjob-tablinks" onclick="openMyjob(event, 'MyAppliedJobs')">My
-                    Applied Jobs</button>
-            </div>
-            <div id="MySavedJobs" class="myjob-tabcontent">
-
-                <!-- Desktop -->
-                <table class="myjob-table">
-                    <thead>
-                        <tr>
-                            <th class="jobtitle">Job Title</th>
-                            <th class="location">Location</th>
-                            <th class="saveddate">Saved Date</th>
-                            <th class="expireddate">Expired Date</th>
-
-                            <!-- Tablet -->
-                            <th class="locationdate"></th>
-                            <!-- Tablet -->
-
-                            <th class="action">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                        <tr>
-                            <td class="jobtitle">
-                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
-                                <div class="info">
-                                    <div class="jobname">Java Lead</div>
-                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
-                                    <div class="salary">$5.000 - $10.000</div>
-                                </div>
-                            </td>
-
-                            <td class="location">Ha noi, Cau Giay</td>
-                            <td class="saveddate">15/03/2019</td>
-                            <td class="expireddate">20/03/2019</td>
-
-                            <!-- Tablet -->
-                            <td class="locationdate">
-                                <div><span>Location:</span>Ha noi, Cau Giay</div>
-                                <div><span>Saved Date:</span>15/03/2019</div>
-                                <div><span>Expired Date:</span>20/03/2019</div>
-                            </td>
-                            <!-- Tablet -->
-
-                            <td class="action">
-                                <button>Apply</button>
-                                <a href="#"><img class="save-jobs-hearticon mr-2"
-                                        src="image/favorite-heart-button@3x.png" alt="">Saved</a>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class="jobtitle">
-                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
-                                <div class="info">
-                                    <div class="jobname">Java Lead</div>
-                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
-                                    <div class="salary">$5.000 - $10.000</div>
-                                </div>
-                            </td>
-
-                            <td class="location">Ha noi, Cau Giay</td>
-                            <td class="saveddate">15/03/2019</td>
-                            <td class="expireddate">20/03/2019</td>
-
-                            <!-- Tablet -->
-                            <td class="locationdate">
-                                <div><span>Location:</span>Ha noi, Cau Giay</div>
-                                <div><span>Saved Date:</span>15/03/2019</div>
-                                <div><span>Expired Date:</span>20/03/2019</div>
-                            </td>
-                            <!-- Tablet -->
-
-                            <td class="action">
-                                <button>Apply</button>
-                                <a href="#"><img class="save-jobs-hearticon mr-2"
-                                        src="image/favorite-heart-button@3x.png" alt="">Saved</a>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class="jobtitle">
-                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
-                                <div class="info">
-                                    <div class="jobname">Java Lead</div>
-                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
-                                    <div class="salary">$5.000 - $10.000</div>
-                                </div>
-                            </td>
-
-                            <td class="location">Ha noi, Cau Giay</td>
-                            <td class="saveddate">15/03/2019</td>
-                            <td class="expireddate">20/03/2019</td>
-
-                            <!-- Tablet -->
-                            <td class="locationdate">
-                                <div><span>Location:</span>Ha noi, Cau Giay</div>
-                                <div><span>Saved Date:</span>15/03/2019</div>
-                                <div><span>Expired Date:</span>20/03/2019</div>
-                            </td>
-                            <!-- Tablet -->
-
-                            <td class="action">
-                                <button>Apply</button>
-                                <a href="#"><img class="save-jobs-hearticon mr-2"
-                                        src="image/favorite-heart-button@3x.png" alt="">Saved</a>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class="jobtitle">
-                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
-                                <div class="info">
-                                    <div class="jobname">Java Lead</div>
-                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
-                                    <div class="salary">$5.000 - $10.000</div>
-                                </div>
-                            </td>
-
-                            <td class="location">Ha noi, Cau Giay</td>
-                            <td class="saveddate">15/03/2019</td>
-                            <td class="expireddate">20/03/2019</td>
-
-                            <!-- Tablet -->
-                            <td class="locationdate">
-                                <div><span>Location:</span>Ha noi, Cau Giay</div>
-                                <div><span>Saved Date:</span>15/03/2019</div>
-                                <div><span>Expired Date:</span>20/03/2019</div>
-                            </td>
-                            <!-- Tablet -->
-
-                            <td class="action">
-                                <button>Apply</button>
-                                <a href="#"><img class="save-jobs-hearticon mr-2"
-                                        src="image/favorite-heart-button@3x.png" alt="">Saved</a>
-                            </td>
-                        </tr>
-
-
-                    </tbody>
-                </table>
-
-                <!-- Mobile -->
-                <!-- Loop -->
-                <div class="myjob-table-mobile">
-                    <div class="myjob-item">
-                        <div class="jobtitle">
-                            <img class="jobtitle-image" src="image/1.png" alt="jobImage">
-                            <div class="info">
-                                <div class="companyname">Công ty cổ phần WorldFusion...</div>
-                                <div class="salary">$5.000 - $10.000</div>
-                            </div>
-                        </div>
-                        <div class="job-desctiption">
-                            <div class="locationdate">
-                                <div class="jobname">Java Lead</div>
-                                <div class="locationdate-item">
-                                    <div class="name">Location:</div>
-                                    <div class="value">Ha noi, Cau Giay</div>
-                                </div>
-                                <div class="locationdate-item">
-                                    <div class="name">Saved Date:</div>
-                                    <div class="value">15/03/2019</div>
-                                </div>
-                                <div class="locationdate-item">
-                                    <div class="name">Expired Date:</div>
-                                    <div class="value">20/03/2019</div>
-                                </div>
-                            </div>
-                            <div class="action">
-                                <button>Apply</button>
-                                <a href="#"><img class="save-jobs-hearticon mr-2"
-                                        src="image/favorite-heart-button@3x.png" alt="">Saved</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Loop -->
-
-                <div class="myjob-table-mobile">
-                    <div class="myjob-item">
-                        <div class="jobtitle">
-                            <img class="jobtitle-image" src="image/1.png" alt="jobImage">
-                            <div class="info">
-                                <div class="companyname">Công ty cổ phần WorldFusion...</div>
-                                <div class="salary">$5.000 - $10.000</div>
-                            </div>
-                        </div>
-                        <div class="job-desctiption">
-                            <div class="locationdate">
-                                <div class="jobname">Java Lead</div>
-                                <div class="locationdate-item">
-                                    <div class="name">Location:</div>
-                                    <div class="value">Ha noi, Cau Giay</div>
-                                </div>
-                                <div class="locationdate-item">
-                                    <div class="name">Saved Date:</div>
-                                    <div class="value">15/03/2019</div>
-                                </div>
-                                <div class="locationdate-item">
-                                    <div class="name">Expired Date:</div>
-                                    <div class="value">20/03/2019</div>
-                                </div>
-                            </div>
-                            <div class="action">
-                                <button>Apply</button>
-                                <a href="#"><img class="save-jobs-hearticon mr-2"
-                                        src="image/favorite-heart-button@3x.png" alt="">Saved</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="myjob-table-mobile">
-                    <div class="myjob-item">
-                        <div class="jobtitle">
-                            <img class="jobtitle-image" src="image/1.png" alt="jobImage">
-                            <div class="info">
-                                <div class="companyname">Công ty cổ phần WorldFusion...</div>
-                                <div class="salary">$5.000 - $10.000</div>
-                            </div>
-                        </div>
-                        <div class="job-desctiption">
-                            <div class="locationdate">
-                                <div class="jobname">Java Lead</div>
-                                <div class="locationdate-item">
-                                    <div class="name">Location:</div>
-                                    <div class="value">Ha noi, Cau Giay</div>
-                                </div>
-                                <div class="locationdate-item">
-                                    <div class="name">Saved Date:</div>
-                                    <div class="value">15/03/2019</div>
-                                </div>
-                                <div class="locationdate-item">
-                                    <div class="name">Expired Date:</div>
-                                    <div class="value">20/03/2019</div>
-                                </div>
-                            </div>
-                            <div class="action">
-                                <button>Apply</button>
-                                <a href="#"><img class="save-jobs-hearticon mr-2"
-                                        src="image/favorite-heart-button@3x.png" alt="">Saved</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="myjob-table-mobile">
-                    <div class="myjob-item">
-                        <div class="jobtitle">
-                            <img class="jobtitle-image" src="image/1.png" alt="jobImage">
-                            <div class="info">
-                                <div class="companyname">Công ty cổ phần WorldFusion...</div>
-                                <div class="salary">$5.000 - $10.000</div>
-                            </div>
-                        </div>
-                        <div class="job-desctiption">
-                            <div class="locationdate">
-                                <div class="jobname">Java Lead</div>
-                                <div class="locationdate-item">
-                                    <div class="name">Location:</div>
-                                    <div class="value">Ha noi, Cau Giay</div>
-                                </div>
-                                <div class="locationdate-item">
-                                    <div class="name">Saved Date:</div>
-                                    <div class="value">15/03/2019</div>
-                                </div>
-                                <div class="locationdate-item">
-                                    <div class="name">Expired Date:</div>
-                                    <div class="value">20/03/2019</div>
-                                </div>
-                            </div>
-                            <div class="action">
-                                <button>Apply</button>
-                                <a href="#"><img class="save-jobs-hearticon mr-2"
-                                        src="image/favorite-heart-button@3x.png" alt="">Saved</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Mobile -->
-
-            </div>
-
-            <!-- My Applied Job Tab -->
-            <div id="MyAppliedJobs" class="myjob-tabcontent">
-                <table class="myjob-table">
-                    <thead>
-                        <tr>
-                            <th class="jobtitle">Job Title</th>
-                            <th class="location">Location</th>
-                            <th class="saveddate">Applied Date</th>
-                            <th class="expireddate">Expired Date</th>
-
-                            <!-- Tablet -->
-                            <th class="locationdate"></th>
-                            <!-- Tablet -->
-
-                            <th class="action">Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                        <tr>
-                            <td class="jobtitle">
-                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
-                                <div class="info">
-                                    <div class="jobname">Java Lead</div>
-                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
-                                    <div class="salary">$5.000 - $10.000</div>
-                                </div>
-                            </td>
-
-                            <td class="location">Ha noi, Cau Giay</td>
-                            <td class="saveddate">15/03/2019</td>
-                            <td class="expireddate">20/03/2019</td>
-
-                            <!-- Tablet -->
-                            <td class="locationdate">
-                                <div><span>Location:</span>Ha noi, Cau Giay</div>
-                                <div><span>Applied Date:</span>15/03/2019</div>
-                                <div><span>Expired Date:</span>20/03/2019</div>
-                            </td>
-                            <!-- Tablet -->
-
-                            <td class="action">
-                                <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
-                                Applied
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class="jobtitle">
-                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
-                                <div class="info">
-                                    <div class="jobname">Java Lead</div>
-                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
-                                    <div class="salary">$5.000 - $10.000</div>
-                                </div>
-                            </td>
-
-                            <td class="location">Ha noi, Cau Giay</td>
-                            <td class="saveddate">15/03/2019</td>
-                            <td class="expireddate">20/03/2019</td>
-
-                            <!-- Tablet -->
-                            <td class="locationdate">
-                                <div><span>Location:</span>Ha noi, Cau Giay</div>
-                                <div><span>Applied Date:</span>15/03/2019</div>
-                                <div><span>Expired Date:</span>20/03/2019</div>
-                            </td>
-                            <!-- Tablet -->
-
-                            <td class="action">
-                                <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
-                                Applied
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class="jobtitle">
-                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
-                                <div class="info">
-                                    <div class="jobname">Java Lead</div>
-                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
-                                    <div class="salary">$5.000 - $10.000</div>
-                                </div>
-                            </td>
-
-                            <td class="location">Ha noi, Cau Giay</td>
-                            <td class="saveddate">15/03/2019</td>
-                            <td class="expireddate">20/03/2019</td>
-
-                            <!-- Tablet -->
-                            <td class="locationdate">
-                                <div><span>Location:</span>Ha noi, Cau Giay</div>
-                                <div><span>Applied Date:</span>15/03/2019</div>
-                                <div><span>Expired Date:</span>20/03/2019</div>
-                            </td>
-                            <!-- Tablet -->
-
-                            <td class="action">
-                                <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
-                                Applied
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class="jobtitle">
-                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
-                                <div class="info">
-                                    <div class="jobname">Java Lead</div>
-                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
-                                    <div class="salary">$5.000 - $10.000</div>
-                                </div>
-                            </td>
-
-                            <td class="location">Ha noi, Cau Giay</td>
-                            <td class="saveddate">15/03/2019</td>
-                            <td class="expireddate">20/03/2019</td>
-
-                            <!-- Tablet -->
-                            <td class="locationdate">
-                                <div><span>Location:</span>Ha noi, Cau Giay</div>
-                                <div><span>Applied Date:</span>15/03/2019</div>
-                                <div><span>Expired Date:</span>20/03/2019</div>
-                            </td>
-                            <!-- Tablet -->
-
-                            <td class="action">
-                                <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
-                                Applied
-                            </td>
-                        </tr>
-
-
-                    </tbody>
-                </table>
-
-                <!-- Mobile -->
-                <!-- Loop -->
-                <div class="myjob-table-mobile">
-                    <div class="myjob-item">
-                        <div class="jobtitle">
-                            <img class="jobtitle-image" src="image/1.png" alt="jobImage">
-                            <div class="info">
-                                <div class="companyname">Công ty cổ phần WorldFusion...</div>
-                                <div class="salary">$5.000 - $10.000</div>
-                            </div>
-                        </div>
-                        <div class="job-desctiption">
-                            <div class="locationdate">
-                                <div class="jobname">Java Lead</div>
-                                <div class="locationdate-item">
-                                    <div class="name">Location:</div>
-                                    <div class="value">Ha noi, Cau Giay</div>
-                                </div>
-                                <div class="locationdate-item">
-                                    <div class="name">Saved Date:</div>
-                                    <div class="value">15/03/2019</div>
-                                </div>
-                                <div class="locationdate-item">
-                                    <div class="name">Expired Date:</div>
-                                    <div class="value">20/03/2019</div>
-                                </div>
-                            </div>
-                            <div class="action">
-                                <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
-                                <div class="applied-text">Applied</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Loop -->
-
-                <div class="myjob-table-mobile">
-                    <div class="myjob-item">
-                        <div class="jobtitle">
-                            <img class="jobtitle-image" src="image/1.png" alt="jobImage">
-                            <div class="info">
-                                <div class="companyname">Công ty cổ phần WorldFusion...</div>
-                                <div class="salary">$5.000 - $10.000</div>
-                            </div>
-                        </div>
-                        <div class="job-desctiption">
-                            <div class="locationdate">
-                                <div class="jobname">Java Lead</div>
-                                <div class="locationdate-item">
-                                    <div class="name">Location:</div>
-                                    <div class="value">Ha noi, Cau Giay</div>
-                                </div>
-                                <div class="locationdate-item">
-                                    <div class="name">Saved Date:</div>
-                                    <div class="value">15/03/2019</div>
-                                </div>
-                                <div class="locationdate-item">
-                                    <div class="name">Expired Date:</div>
-                                    <div class="value">20/03/2019</div>
-                                </div>
-                            </div>
-                            <div class="action">
-                                <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
-                                <div class="applied-text">Applied</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="myjob-table-mobile">
-                    <div class="myjob-item">
-                        <div class="jobtitle">
-                            <img class="jobtitle-image" src="image/1.png" alt="jobImage">
-                            <div class="info">
-                                <div class="companyname">Công ty cổ phần WorldFusion...</div>
-                                <div class="salary">$5.000 - $10.000</div>
-                            </div>
-                        </div>
-                        <div class="job-desctiption">
-                            <div class="locationdate">
-                                <div class="jobname">Java Lead</div>
-                                <div class="locationdate-item">
-                                    <div class="name">Location:</div>
-                                    <div class="value">Ha noi, Cau Giay</div>
-                                </div>
-                                <div class="locationdate-item">
-                                    <div class="name">Saved Date:</div>
-                                    <div class="value">15/03/2019</div>
-                                </div>
-                                <div class="locationdate-item">
-                                    <div class="name">Expired Date:</div>
-                                    <div class="value">20/03/2019</div>
-                                </div>
-                            </div>
-                            <div class="action">
-                                <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
-                                <div class="applied-text">Applied</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="myjob-table-mobile">
-                    <div class="myjob-item">
-                        <div class="jobtitle">
-                            <img class="jobtitle-image" src="image/1.png" alt="jobImage">
-                            <div class="info">
-                                <div class="companyname">Công ty cổ phần WorldFusion...</div>
-                                <div class="salary">$5.000 - $10.000</div>
-                            </div>
-                        </div>
-                        <div class="job-desctiption">
-                            <div class="locationdate">
-                                <div class="jobname">Java Lead</div>
-                                <div class="locationdate-item">
-                                    <div class="name">Location:</div>
-                                    <div class="value">Ha noi, Cau Giay</div>
-                                </div>
-                                <div class="locationdate-item">
-                                    <div class="name">Saved Date:</div>
-                                    <div class="value">15/03/2019</div>
-                                </div>
-                                <div class="locationdate-item">
-                                    <div class="name">Expired Date:</div>
-                                    <div class="value">20/03/2019</div>
-                                </div>
-                            </div>
-                            <div class="action">
-                                <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
-                                <div class="applied-text">Applied</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Mobile -->
-
-            </div>
-            <script src="js/jobseeker-myjob.js"></script>
-        </div>
-        <div id="MyAccountInfo" class="hri-tabcontent set-box-shadow">
-            <div class="tab-title">My Account Information</div>
-            <div class="form">
-                <div class="name-form">
-                    <div class="left">UPDATE ACCOUNT INFORMATION</div>
-                    <div class="right">(<span class="starr">*</span>) is required field</div>
-                </div>
-                <form class="form-body" action="#" method="POST">
-                    <div class="item">
-                        <label for="fullname">Full Name <span class="starr">*</span></label>
-                        <input type="text" name="name" required>
-                    </div>
-                    <div class="item">
-                        <label for="email">Email <span class="starr">*</span></label>
-                        <input type="text" name="email" required>
-                    </div>
-                    <div class="item">
-                        <label for="birthday">Birthday <span class="starr">*</span></label>
-                        <input type="date" name="birthday" required>
-                    </div>
-                    <div class="item">
-                        <label for="gender">Gender <span class="starr">*</span></label>
-                        <div class="radio">
-                            <div class="radio-item">
-                                <div class="radio1 radioactive" data-name="gender" data-value="male"></div>
-                                <span>Male</span>
-                            </div>
-                            <div class="radio-item">
-                                <div class="radio1" data-name="gender" data-value="female"></div>
-                                <span>Female</span>
-                            </div>
-                            <input type="hidden" id="gender" name="gender" value="male">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <label for="gender">Nationality <span class="starr">*</span></label>
-                        <div class="radio">
-                            <div class="radio-item">
-                                <div class="radio1 radioactive" data-name="nationality" data-value="Vietnamese"></div>
-                                <span>Local Vietnamese</span>
-                            </div>
-                            <div class="radio-item">
-                                <div class="radio1" data-name="nationality" data-value="Other"></div>
-                                <span>Other Countries</span>
-                            </div>
-                            <input type="hidden" id="nationality" name="nationality" value="Vietnamese">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <label for="address">Address <span class="starr">*</span></label>
-                        <input type="text" name="address" required>
-                    </div>
-                    <div class="item" id="locationItem">
-                        <label for="location">Location <span class="starr">*</span></label>
-                        <select name="location">
-                            <option value="">Select your location</option>
-                            <option value="">Ha Noi</option>
-                            <option value="">TP.HCM</option>
-                            <option value="">Da Nang</option>
-                        </select>
-                    </div>
-                    <div class="item small-item">
-                        <div class="checkbox1" data-name="sendme"></div>
-                        <span>Send me latest jobs and useful career advices</span>
-                        <input type="hidden" id="sendme" name="sendme" value="false">
-                    </div>
-                    <div class="item">
-                        <button type="submit">Save</button>
-                    </div>
-                </form>
-            </div>
-            <div class="form">
-                <div class="name-form">
-                    <div class="left">CHANGE PASSWORD</div>
-                    <div class="right">(<span class="starr">*</span>) is required field</div>
-                </div>
-                <form class="form-body" action="#" method="POST">
-                    <div class="item">
-                        <label for="fullname">Current password <span class="starr">*</span></label>
-                        <input type="text" name="currentpass" required>
-                    </div>
-                    <div class="item">
-                        <label for="email">New password <span class="starr">*</span></label>
-                        <input type="text" name="newpass" required>
-                        <div class="smalltip">Password must be at least 8 characters.</div>
-                    </div>
-                    <div class="item">
-                        <label for="email">Confirm new password <span class="starr">*</span></label>
-                        <input type="text" name="confirmnewpass" required>
-                    </div>
-                    <div class="item">
-                        <button type="submit">Save</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-
+        <script src="js/script.js"></script>
+        <script>
+            document.getElementById("MyJobsButton").click();
+            document.getElementById("MyAppliedJobsButton").click();
+        </script>
     </div>
-    <script src="js/script.js"></script>
-    <script>
-        document.getElementById("MyJobsButton").click();
-        document.getElementById("MyAppliedJobsButton").click();
-    </script>
+
 </body>
 
 </html>

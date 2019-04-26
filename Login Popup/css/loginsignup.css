@@ -1,4 +1,4 @@
-.login-background {
+#Login-Signup-Super-Popup .login-background {
     z-index: 10;
     position: fixed;
     background: rgba(51, 50, 50, 0.68) no-repeat center center fixed;
@@ -9,7 +9,7 @@
     overflow: auto;
 }
 
-.login-popup {
+#Login-Signup-Super-Popup .login-popup {
     width: 600px;
     border-radius: 6px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -18,40 +18,40 @@
     padding: 12px 14px;
 }
 
-.close-icon {
+#Login-Signup-Super-Popup .close-icon {
     float: right;
     font-size: 25px;
     cursor: pointer;
 }
 
-.close-icon i {
+#Login-Signup-Super-Popup .close-icon i {
     float: left;
     color: #d1d0d6;
 }
 
-.close-icon i:hover {
+#Login-Signup-Super-Popup .close-icon i:hover {
     float: left;
     color: #b5b5b5;
 }
 
-.starr {
+#Login-Signup-Super-Popup .starr {
     font-size: 13px;
     color: #f22424;
 }
 
-.hidden {
-    display: none;
+#Login-Signup-Super-Popup .hidden {
+    display: none !important;
 }
 
 
 /* Login tab and Signup tab */
-.login-tab {
+#Login-Signup-Super-Popup .login-tab {
     width: 390px;
     margin: 57px auto 0 auto;
     text-align: center;
 }
 
-.login-tablinks {
+#Login-Signup-Super-Popup .login-tablinks {
     height: 34px;
     width: 49%;
     line-height: 30px;
@@ -64,28 +64,28 @@
     transition: 0.15s;
 }
 
-.login-tablinks:last-child {
+#Login-Signup-Super-Popup .login-tablinks:last-child {
     border-right: none;
 }
 
-.login-tablinks:hover {
+#Login-Signup-Super-Popup .login-tablinks:hover {
     outline: none;
     color: #b5b5b5;
     text-shadow: 2px 2px 5px #d6d6d6;
     transition: 0.15s;
 }
 
-.login-tab .active {
+#Login-Signup-Super-Popup .login-tab .active {
     color: #24becf;
     outline: none;
     transition: 0.15s;
 }
 
-.login-tab .active:hover {
+#Login-Signup-Super-Popup .login-tab .active:hover {
     text-shadow: 2px 2px 5px #b8e9ee;
 }
 
-.login-tabcontent {
+#Login-Signup-Super-Popup .login-tabcontent {
     text-align: center;
     overflow: auto;
     width: 490px;
@@ -95,10 +95,11 @@
 
 
 /* Login with button */
-.btn-loginwith{
+#Login-Signup-Super-Popup .btn-loginwith{
     padding: 0 5px;
 }
-.btn-loginwith button{
+
+#Login-Signup-Super-Popup .btn-loginwith button{
     width: 100%;
     height: 43px;
     border: none;
@@ -112,40 +113,40 @@
     margin-bottom: 8px;
 }
 
-.btn-loginwith button:focus {
+#Login-Signup-Super-Popup .btn-loginwith button:focus {
     outline: none;
 }
 
-.btn-loginwithfacebook {
+#Login-Signup-Super-Popup .btn-loginwithfacebook {
     background-color: #475993;
     background-image: url(../image/facebook@3x.png);
 }
 
-.btn-loginwithfacebook:hover {
+#Login-Signup-Super-Popup .btn-loginwithfacebook:hover {
     box-shadow: 0 0 6px #475993;
     transition: 0.15s;
 }
 
-.btn-loginwithgoogle {
+#Login-Signup-Super-Popup .btn-loginwithgoogle {
     background-color: #cc3333;
     background-image: url(../image/search-1@3x.png);
 }
 
-.btn-loginwithgoogle:hover {
+#Login-Signup-Super-Popup .btn-loginwithgoogle:hover {
     box-shadow: 0 0 6px #cc3333;
     transition: 0.15s;
 }
 
 
 /* Or Line */
-.orline{
+#Login-Signup-Super-Popup .orline{
     border-top: 1px solid #d1d0d6;
     display: flex;
     padding: 0 5px;
     margin-top: 30px;
 }
 
-.orline span {
+#Login-Signup-Super-Popup .orline span {
     padding: 0 8px;
     background-color: #ffffff;
     font-size: 14px;
@@ -154,21 +155,21 @@
 }
 
 /* Form */
-.form-item {
+#Login-Signup-Super-Popup .form-item {
     overflow: auto;
     padding: 5px;
     text-align: left;
     margin-top: 15px;
 }
 
-.form-item label {
+#Login-Signup-Super-Popup .form-item label {
     margin-left: 3px;
     font-size: 16px;
     font-weight: 500;
     color: #232323;
 }
 
-.form-item input {
+#Login-Signup-Super-Popup .form-item input {
     width: 100%;
     height: 43px;
     border-radius: 4px;
@@ -178,13 +179,13 @@
     font-style: italic;
 }
 
-.form-item input:focus {
+#Login-Signup-Super-Popup .form-item input:focus {
     outline: none;
 }
 
 
 /* Keep me login */
-.keep-login {
+#Login-Signup-Super-Popup .keep-login {
     margin-top: 10px;
     text-align: left;
     padding: 0 5px;
@@ -192,12 +193,12 @@
     width: 49%;
 }
 
-.keep-login label {
+#Login-Signup-Super-Popup .keep-login label {
     font-size: 14px;
     color: #464545;
 }
 
-.checkbox-icon {
+#Login-Signup-Super-Popup .checkbox-icon {
     float: left;
     width: 15px;
     height: 15px;
@@ -209,17 +210,17 @@
     margin: 5px 4px 0 0;
 }
 
-.checkbox-icon:hover {
+#Login-Signup-Super-Popup .checkbox-icon:hover {
     border: 5px solid #b5b5b5;
     transition: 0.15s;
 }
 
-.checkbox-icon-active, .checkbox-icon-active:hover {
+#Login-Signup-Super-Popup .checkbox-icon-active, .checkbox-icon-active:hover {
     border: 5px solid #2ec1d1;
     transition: 0.15s;
 }
 
-.forgot-password {
+#Login-Signup-Super-Popup .forgot-password {
     margin-top: 10px;
     text-align: right;
     float: right;
@@ -228,11 +229,11 @@
     color: #2a75f7;
 }
 
-.forgot-password:hover {
+#Login-Signup-Super-Popup .forgot-password:hover {
     color: #2a75f7;
 }
 
-.login-submit {
+#Login-Signup-Super-Popup .login-submit {
     width: 390px;
     height: 50.1px;
     border-radius: 4px;
@@ -245,56 +246,56 @@
     transition: 0.2s;
 }
 
-.login-submit:focus {
+#Login-Signup-Super-Popup .login-submit:focus {
     outline: none;
 }
 
-.login-submit:hover, .form-item input:focus {
+#Login-Signup-Super-Popup .login-submit:hover, .form-item input:focus {
     box-shadow: 0 0 6px #24becf;
     transition: 0.2s;
 }
 
 @media screen and (max-width: 550.98px) { 
-    .login-popup {
+    #Login-Signup-Super-Popup .login-popup {
         width: 100%;
         border-radius: 0;
     }
 
-    .login-tab {
+    #Login-Signup-Super-Popup .login-tab {
         width: 90%;
     }
 
-    .login-submit {
+    #Login-Signup-Super-Popup .login-submit {
         width: 95%;
     }
 
-    .login-tabcontent {
+    #Login-Signup-Super-Popup .login-tabcontent {
         width: 90%;
         padding: 35px 0;
     }
 
-    .btn-loginwith button{
+    #Login-Signup-Super-Popup .btn-loginwith button{
         background-position: 11px 11px;
     }
 }
 
 @media screen and (max-width: 399.98px) { 
-    .login-tabcontent {
+    #Login-Signup-Super-Popup .login-tabcontent {
         width: 100%;
     }
 
-    .keep-login {
+    #Login-Signup-Super-Popup .keep-login {
         width: 100%;
     }
 
-    .forgot-password {
+    #Login-Signup-Super-Popup .forgot-password {
         width: 100%;
     }
 }
 
 
 /* Show login popup animation */
-.showing {
+#Login-Signup-Super-Popup .showing {
     position: relative;
     animation-name: showlogin;
     animation-duration: 0.3s;
@@ -317,7 +318,7 @@
 
 
   /* Hide login popup animation */
-.hiding {
+  #Login-Signup-Super-Popup .hiding {
     position: relative;
     animation-name: hidinglogin;
     animation-duration: 0.3s;

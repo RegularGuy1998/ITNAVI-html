@@ -1,51 +1,51 @@
-body {
+#job-seeker-myaccountinfo {
     background-color: #f2f2f2 !important;
     font-family: Roboto !important;
     color: #454545 !important;
 }
 
 
-.set-box-shadow {
+#job-seeker-myaccountinfo .set-box-shadow {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.11);
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
     background-color: white;
 }
-button, input {
+#job-seeker-myaccountinfo button, input {
     border: none;
 }
 
-input:focus, select:focus, button, button:hover, button:active, button:hover:active, button:focus {
+#job-seeker-myaccountinfo input:focus, select:focus, button, button:hover, button:active, button:hover:active, button:focus {
     outline: none;
     
 }
 
-.hidden {
+#job-seeker-myaccountinfo .hidden {
     display: none;
 }
 
 
 /* Find your next */
-.find {
+#job-seeker-myaccountinfo .find {
     opacity: 0.92;
     height: 107px;
     border-radius: 9px;
     padding: 20px 16px;
     background-color: #1ebdcf;
-    margin-bottom: 40px;
+    margin: 40px 0;
     overflow: initial;
 }
 
 
 /* Find yout next - search */
-.find .search {
+#job-seeker-myaccountinfo .find .search {
     float: left;
     overflow: auto;
     width: 60%;
 }
 
-.find .search-button {
+#job-seeker-myaccountinfo .find .search-button {
     width: 16%;
     height: 43px;
     border-radius: 3px;
@@ -56,12 +56,12 @@ input:focus, select:focus, button, button:hover, button:active, button:hover:act
     transition: 0.15s;
 }
 
-.find .search-button:hover {
+#job-seeker-myaccountinfo .find .search-button:hover {
     box-shadow: 0 0 7px #f7912a;
     transition: 0.15s;
 }
 
-.search input {
+#job-seeker-myaccountinfo .search input {
     float: left;
     border-radius: 3px;
     border: none;
@@ -75,28 +75,27 @@ input:focus, select:focus, button, button:hover, button:active, button:hover:act
 }
 
 
-.search .search-icon {
+#job-seeker-myaccountinfo .search .search-icon {
     float: left;
     padding: 9px 0 0 13px;
     margin-top: -43px;
     cursor: text;
 }
 
-.search .search-icon img {
+#job-seeker-myaccountinfo .search .search-icon img {
     width: 18px;
     height: 18px;
 }
 
-.search-location {
+#job-seeker-myaccountinfo .search-location {
     background-color: #1ebdcf;
-    overflow: auto;
     float: left;
     margin: 0 2%;
     width: 20% ;
     transition: 0.15s;
 }
 
-.search-location input {
+#job-seeker-myaccountinfo .search-location input {
     float: left;
     border-radius: 3px;
     border: none;
@@ -109,29 +108,29 @@ input:focus, select:focus, button, button:hover, button:active, button:hover:act
     cursor: pointer;
 }
 
-.search-location .location-icon {
+#job-seeker-myaccountinfo .search-location .location-icon {
     float: left;
     padding: 9px 0 0 15px;
     margin-top: -43px;
     cursor: pointer;
 }
 
-.search-location .location-icon img {
+#job-seeker-myaccountinfo .search-location .location-icon img {
     width: 13px;
 }
 
-.search-location .location-dropdown-icon {
+#job-seeker-myaccountinfo .search-location .location-dropdown-icon {
     float: right;
     padding: 9px 10px 0 0;
     margin-top: -43px;
     cursor: pointer;
 }
 
-.search-location .location-dropdown-icon i {
+#job-seeker-myaccountinfo .search-location .location-dropdown-icon i {
     width: 13px;
 }
 
-.location-dropdown {
+#job-seeker-myaccountinfo .location-dropdown {
     position: absolute;
     margin: 50px 0 0 23px;
     width: 200px;
@@ -142,29 +141,33 @@ input:focus, select:focus, button, button:hover, button:active, button:hover:act
     overflow: scroll;
 }
 
-.location-dropdown-item {
+#job-seeker-myaccountinfo .location-dropdown-item {
     padding: 5px 10px;
     cursor: pointer;
     transition: 0.15s;
 }
 
-.location-dropdown-item:hover {
+#job-seeker-myaccountinfo .location-dropdown-item:hover {
     background-color: rgba(30, 189, 207, 0.15);
     box-shadow: 0 0 5px rgba(30, 189, 207, 0.15);
     transition: 0.15s;
 }
 
-.location-dropdown-no-item {
+#job-seeker-myaccountinfo .location-dropdown-no-item {
     padding: 5px 10px;
     color: #b5b5b5;
 }
 
-.advancedsearch {
+#job-seeker-myaccountinfo .dropdown-menu {
+    width: 100%;
+}
+
+#job-seeker-myaccountinfo .advancedsearch {
     float: right;
     margin-top: 10px;
 }
 
-.advancedsearch .advancedicon {
+#job-seeker-myaccountinfo .advancedsearch .advancedicon {
     float: left;
     width: 19px;
     height: 19px;
@@ -176,7 +179,7 @@ input:focus, select:focus, button, button:hover, button:active, button:hover:act
     color: #ffffff;
 }
 
-.advancedsearch .advancedtext {
+#job-seeker-myaccountinfo .advancedsearch .advancedtext {
     float: left;
     font-size: 14px;
     color: #ffffff;
@@ -185,11 +188,11 @@ input:focus, select:focus, button, button:hover, button:active, button:hover:act
 
 
 
-.hri-tab {
+#job-seeker-myaccountinfo .hri-tab {
     overflow: hidden;
 }
   
-.hri-tab button {
+#job-seeker-myaccountinfo .hri-tab button {
     border: none;
     width: 152px;
     height: 43px;
@@ -203,12 +206,12 @@ input:focus, select:focus, button, button:hover, button:active, button:hover:act
     border-top-right-radius: 4px;
 }
 
-.hri-tab button:hover {
+#job-seeker-myaccountinfo .hri-tab button:hover {
     outline: none;
     color: #ffffff;
 }
 
-.hri-tab button.active {
+#job-seeker-myaccountinfo .hri-tab button.active {
     color: #ffffff;
     background-color: #f7912a;
     transition: 0.2s;
@@ -217,7 +220,7 @@ input:focus, select:focus, button, button:hover, button:active, button:hover:act
   
 
 /* Tab Content */
-.hri-tabcontent {
+#job-seeker-myaccountinfo .hri-tabcontent {
     display: none;
     padding: 30px 30px;
     transition: 0.2px;
@@ -225,7 +228,7 @@ input:focus, select:focus, button, button:hover, button:active, button:hover:act
     margin-bottom: 50px;
 }
 
-.tab-title {
+#job-seeker-myaccountinfo .tab-title {
     font-size: 20px;
     font-weight: 800;
     color: #2b354d;
@@ -234,19 +237,19 @@ input:focus, select:focus, button, button:hover, button:active, button:hover:act
 
 
 /* Form */
-.form {
+#job-seeker-myaccountinfo .form {
     border-bottom: 1px dashed #d1d0d6;
     padding-bottom: 12px;
     margin-bottom: 40px;
 }
 
-.form:last-child {
+#job-seeker-myaccountinfo .form:last-child {
     border-bottom: none;
     padding-bottom: 0;
     margin-bottom: 0;
 }
 
-.name-form {
+#job-seeker-myaccountinfo .name-form {
     padding: 12px 10px 11px 10px;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
@@ -256,44 +259,44 @@ input:focus, select:focus, button, button:hover, button:active, button:hover:act
     font-size: 16px;
 }
 
-.name-form .left {
+#job-seeker-myaccountinfo .name-form .left {
     font-weight: 500;
     float: left;
 }
 
 
-.name-form .right {
+#job-seeker-myaccountinfo .name-form .right {
     padding-right: 5px;
     font-weight: 500;
     float: right;
 }
 
-.starr{
+#job-seeker-myaccountinfo .starr{
     font-size: 13px;
     color: #f22424;
 }
 
 
-.form-body {
+#job-seeker-myaccountinfo .form-body {
     padding: 6px 50px;
 }
 
-.item {
+#job-seeker-myaccountinfo .item {
     padding: 13px 0;
     overflow: auto;
 }
 
 
-.small-item {
+#job-seeker-myaccountinfo .small-item {
     overflow: auto;
 }
 
-.small-item span {
+#job-seeker-myaccountinfo .small-item span {
     font-size: 14px;
     color: #464545;
 }
 
-.item label {
+#job-seeker-myaccountinfo .item label {
     float: left;
     width: 27%;
     line-height: 41px;
@@ -302,7 +305,7 @@ input:focus, select:focus, button, button:hover, button:active, button:hover:act
     margin-bottom: 0;
 }
 
-.item input, .item select {
+#job-seeker-myaccountinfo .item input, .item select {
     float: left;
     width: 442px;
     height: 41px;
@@ -316,11 +319,11 @@ input:focus, select:focus, button, button:hover, button:active, button:hover:act
     line-height: 30px;
 }
 
-.item select {
+#job-seeker-myaccountinfo .item select {
     padding: 0 15px;
 }
 
-.item button {
+#job-seeker-myaccountinfo .item button {
     margin-left: 27%;
     width: 227px;
     height: 41px;
@@ -334,7 +337,7 @@ input:focus, select:focus, button, button:hover, button:active, button:hover:act
 }
 
 
-.item .radio {
+#job-seeker-myaccountinfo .item .radio {
     float: left;
     overflow: auto;
     width: 442px;
@@ -342,7 +345,7 @@ input:focus, select:focus, button, button:hover, button:active, button:hover:act
 
 
 
-.item .smalltip {
+#job-seeker-myaccountinfo .item .smalltip {
     font-size: 12px;
     line-height: 12px;
     font-style: italic;
@@ -351,14 +354,14 @@ input:focus, select:focus, button, button:hover, button:active, button:hover:act
 }
 
 
-.item input:focus, .item select:focus, .item button:hover {
+#job-seeker-myaccountinfo .item input:focus, .item select:focus, .item button:hover {
     border: solid 1px #2ec1d1;
     box-shadow: 0 0 6px #2ec1d1;
     transition: 0.2s;
 
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator {
+#job-seeker-myaccountinfo input[type="date"]::-webkit-calendar-picker-indicator {
     color: rgba(0, 0, 0, 0);
     opacity: 1;
     display: block;
@@ -368,16 +371,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-width: thin;
 }
 
-input[type="radio"] {
+#job-seeker-myaccountinfo input[type="radio"] {
     display:none;
 }
 
-.radio-item {
+#job-seeker-myaccountinfo .radio-item {
     float: left;
     overflow: auto;
 }
 
-.radio1, .checkbox1 {
+#job-seeker-myaccountinfo .radio1, .checkbox1 {
     float: left;
     width: 15px;
     height: 15px;
@@ -386,36 +389,36 @@ input[type="radio"] {
     cursor: pointer;
 }
 
-.radio1 {
+#job-seeker-myaccountinfo .radio1 {
     margin: 13px 10px 0 0;
     border: 2px solid #b5b5b5;
     border-radius: 50%;
 }
 
-.checkbox1 {
+#job-seeker-myaccountinfo .checkbox1 {
     border-radius: 2px;
     border: 1px solid #b5b5b5;
     margin: 4px 5px 0 0;
 }
 
 
-.radio1:hover, .checkbox1:hover {
+#job-seeker-myaccountinfo .radio1:hover, .checkbox1:hover {
     border: 5px solid #b5b5b5;
     transition: 0.15s;
 }
 
-.radioactive, .checkboxactive, .radioactive:hover, .checkboxactive:hover {
+#job-seeker-myaccountinfo .radioactive, .checkboxactive, .radioactive:hover, .checkboxactive:hover {
     border: 5px solid #2ec1d1;
     transition: 0.15s;
 }
 
-.radio input {
+#job-seeker-myaccountinfo .radio input {
     float: left;
     width: 15px;
     margin: 0 8px 0 1px;
 }
 
-.radio span {
+#job-seeker-myaccountinfo .radio span {
     line-height: 43px;
     float: left;
     margin-right: 45px;
@@ -424,7 +427,7 @@ input[type="radio"] {
 
 
 @media screen and (max-width: 1199.98px) { 
-    .item .smalltip {
+    #job-seeker-myaccountinfo .item .smalltip {
         float: left;
         margin: 3px 0 0 0;
         color: #464545;
@@ -432,40 +435,46 @@ input[type="radio"] {
 }
 
 @media screen and (max-width: 991.98px) { 
-    .item label {
+    #job-seeker-myaccountinfo .item label {
         width: 100%;
     }
 
-    .item input, .item select {
+    #job-seeker-myaccountinfo .item input, .item select {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 767.98px) { 
-    .item button , .item .radio{
+    #job-seeker-myaccountinfo .item button , .item .radio{
         width: 100%;
         margin-left: 0;
     }
 
-    .form-body {
+    #job-seeker-myaccountinfo .form-body {
         padding: 6px 6px;
     }
 
-    .find {
+    #job-seeker-myaccountinfo .find {
         height: 156px;
     }
 
-    .find .search {
+    #job-seeker-myaccountinfo .find .search {
         width: 100%;
         margin-bottom: 10px;
     }
 
-    .find .search-location {
+    #job-seeker-myaccountinfo .find .search-location {
         margin-left: 0;
         width: 60%;
     }
 
-    .find .search-button {
+    #job-seeker-myaccountinfo .find .search-button {
         width: 38%;
+    }
+}
+
+@media screen and (max-width: 393.98px) { 
+    #job-seeker-myaccountinfo .hri-tab button {
+        width: 49%;
     }
 }

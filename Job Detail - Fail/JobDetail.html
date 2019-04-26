@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/jobdetail.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Job Detail 2</title>
+</head>
+
+<body>
+    <div id="Job-Detail-Page">
+        <div class="container">
+            <div class="navi-menu">
+                <a href="#">
+                    <div class="navi-menu-link">All jobs</div>
+                </a>
+                <div class="navi-menu-next"> <img src="image/next@3x.png" alt="next"></div>
+                <div class="navi-menu-text">Job Details</div>
+            </div>
+
+            <div class="ads1 set-box-shadow">
+                <img src="image/1.png" alt="ads1">
+            </div>
+
+            <div class="job-name set-box-shadow">
+                <img class="job-name-image" src="image/2.png" alt="job-name-image">
+
+                <div class="job-name-title">
+                    <div class="job-name-title-bigtitle">Java Developer</div>
+                    <div class="job-name-title-company">WorldFusion Vietnam</div>
+
+                    <div class="job-name-title-views">
+                        <img class="job-name-title-views-eyes" src="image/eye@3x.png" alt="job-name-title-views-eyes">
+                        <div class="job-name-title-views-text"> 230 views</div>
+                    </div>
+
+                    <div class="job-name-title-link">
+                        <a class="job-name-title-link-icon" style="background-color: rgb(43, 71, 141)" href="#">
+                            <i class="fab fa-facebook-f"></i></a>
+                        <a class="job-name-title-link-icon" style="background-color: rgb(120, 120, 120)" href="#">
+                            <i class="fas fa-envelope"></i></a>
+                        <a class="job-name-title-link-icon" style="background-color: rgb(0, 166, 238)" href="#">
+                            <i class="fab fa-skype"></i></a>
+                        <a class="job-name-title-link-icon" style="background-color: rgb(0, 106, 173)" href="#">
+                            <i class="fab fa-linkedin-in"></i></a>
+                        <a class="job-name-title-link-icon" style="background-color: rgb(0, 120, 255)" href="#">
+                            <i class="fab fa-facebook-messenger"></i></a>
+                        <a class="job-name-title-link-icon" style="background-color: rgb(14, 151, 240)" href="#">
+                            <i class="fab fa-twitter"></i></a>
+                        <a class="job-name-title-link-icon" style="background-color: rgb(10, 127, 243)" href="#">
+                            <i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="job-name-title-apply">
+                    <button class="job-name-title-apply-button">Apply Now</button>
+                    <div class="job-name-title-apply-save">
+
+                        <!-- Unsave icon -->
+                        <img class="" src="image/favorite-heart-button@3x.png" alt="">
+
+                        <!-- Saved icon -->
+                        <!-- <img class="" src="image/favorite-heart-button-fill@3x.png" alt="">  -->
+
+                        <div class="job-name-title-apply-save-text">Save job (20)</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="job-tab">
+                        <button class="job-tablinks" id="JobDescriptionButton"
+                            onclick="openJobTab(event, 'JobDescription')">Job Description</button>
+                        <button class="job-tablinks" id="CompanyInfoButton"
+                            onclick="openJobTab(event, 'CompanyInfo')">Company
+                            Info</button>
+                        <button class="job-tablinks" id="OtherJobsButton" onclick="openJobTab(event, 'OtherJobs')">Other
+                            Jobs</button>
+                    </div>
+                    <div id="JobDescription" class="job-tabcontent set-box-shadow">
+
+                        <table class="job-tabcontent-table job-tabcontent-table1">
+                            <tbody>
+                                <tr>
+                                    <th>Job Level:</th>
+                                    <td>Junior Staff</td>
+                                </tr>
+                                <tr>
+                                    <th>Job category:</th>
+                                    <td>Software Quality Assurance</td>
+                                </tr>
+                                <tr>
+                                    <th>Job type:</th>
+                                    <td>Full - time</td>
+                                </tr>
+                                <tr>
+                                    <th>Salary:</th>
+                                    <td><a href="#">Login to views</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="job-tabcontent-table job-tabcontent-table2">
+                            <tbody>
+                                <tr>
+                                    <th>Location:</th>
+                                    <td>TP Ha Noi, Thai Binh</td>
+                                </tr>
+                                <tr>
+                                    <th>Quantity:</th>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <th>Expired date:</th>
+                                    <td>20 April 2019</td>
+                                </tr>
+                                <tr>
+                                    <th>Preferred languages:</th>
+                                    <td>English</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="job-tabcontent-badge">
+                            <div class="job-tabcontent-badge-item">Java</div>
+                            <div class="job-tabcontent-badge-item">Spring</div>
+                            <div class="job-tabcontent-badge-item">Agile</div>
+                            <div class="job-tabcontent-badge-item">English</div>
+                        </div>
+
+                        <div class="job-tabcontent-description">
+                            <div class="orange-title">Responsibilities:</div>
+                            <div class="description">
+                                Tham gia vào các dự án lớn liên quan đến các công nghệ và ngôn ngữ lập trình Java
+                                Web-based cho thị trường Nhật Bản với các yêu cầu như sau: <br />
+                                <br />
+                                • Phân tích yêu cầu kỹ thuật<br />
+                                • Thiết kế chi tiết kỹ thuật, viết code và Unit Test code coverrage hơn 90%<br />
+                                • Review code để đảm bảo chất lượng dự án<br />
+                                • Với vị trí Senior hoặc Tech Lead, bạn thực hiện với vai trò như là key member để đưa
+                                ra các giải pháp kỹ thuật và tham gia quản lý team trong dự án.<br />
+                                • Làm việc trực tiếp với Quản lý dự án và các kỹ sư Nhật Bản theo mô hình
+                                Agile/Scrum<br />
+                            </div>
+                            <div class="orange-title">Requirement:</div>
+                            <div class="description">
+                                • Tốt nghiệp kỹ sư Công nghệ thông tin, Toán tin hoặc tương đương.<br />
+                                • Nắm vững về lập trình hướng đối tượng<br />
+                                • Nắm vững về ngôn ngữ lập trình Java<br />
+                                • Có kinh nghiệm phát triển web application sử dụng Java với các framework Struts,
+                                Hibernate, Spring hoặc Spring Boots.<br />
+                                • Có tinh thần làm việc teamwork.<br />
+                                • Có khả năng chịu áp lực để làm việc trong môi trường chuyên nghiệp có sức ép về
+                                deadline và môi trường cạnh tranh cao.<br />
+                                • Có tư duy phân tích bài toán và khả năng nắm bắt vấn đề nhanh, độc lập tìm hiểu và
+                                giải quyết vấn đề phức tạp.<br />
+                                • Có trách nhiệm cao trong công việc, sẳn sàng thu xếp thời gian để hoàn thành công việc
+                                theo yêu cầu dự án.<br />
+                                • Có kinh nghiệm sử dụng Git<br />
+                            </div>
+                            <div class="orange-title">Benefits:</div>
+                            <div class="job-tabcontent-benefit">
+                                <div class="benefit-item">
+                                    <img src="image/coffee-cup@3x.png" alt="">
+                                    <div class="benefit-name">Canteen</div>
+                                </div>
+                                <div class="benefit-item">
+                                    <img src="image/money@3x.png" alt="">
+                                    <div class="benefit-name">Paid leave</div>
+                                </div>
+                                <div class="benefit-item">
+                                    <img src="image/support@3x.png" alt="">
+                                    <div class="benefit-name">Team activities</div>
+                                </div>
+                                <div class="benefit-item">
+                                    <img src="image/icon-1@3x.png" alt="">
+                                    <div class="benefit-name">Transportation</div>
+                                </div>
+                                <div class="benefit-item">
+                                    <img src="image/tickets@3x.png" alt="">
+                                    <div class="benefit-name">Vouchers</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="CompanyInfo" class="job-tabcontent set-box-shadow">
+                        <table class="job-tabcontent-table job-tabcontent-table3">
+                            <tbody>
+                                <tr>
+                                    <th>Website:</th>
+                                    <td>wf.com.vn</td>
+                                </tr>
+                                <tr>
+                                    <th>Headquarters:</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>Size:</th>
+                                    <td>1-50</td>
+                                </tr>
+                                <tr>
+                                    <th>Founded:</th>
+                                    <td>01 Jul 2005</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="job-tabcontent-table job-tabcontent-table4">
+                            <tbody>
+                                <tr>
+                                    <th>Facebook Fanpage:</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>Type:</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>Industry:</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>Revenue:</th>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="job-tabcontent-description">
+                            <div class="orange-title">Company Overview:</div>
+                            <div class="description">
+                                Công ty TNHH World Fusion Vietnam được thành lập 12/2017, là công ty con 100% vốn từ
+                                Systemsquare Corporation Nhật Bản.<br />
+                                <br />
+                                Là công ty chuyên gia công phần mềm cho thị trường Nhật Bản trong các lĩnh vực: Giáo
+                                dục, y tế, tích hợp hệ thống ...<br />
+                                <br />
+                                Các nền tảng phát triển: PHP, Java, .NET<br />
+                            </div>
+                            <div class="orange-title">Company Overview:</div>
+                            <marquee direction="left" behavior="alternate" scrollamount="2" onmouseover="this.stop()"
+                                onmouseout="this.start()">
+                                <img class="img-slide" src="image/3.png" alt="image2" title="tiêu đề ảnh 1" />
+                                <img class="img-slide" src="image/5.png" alt="image3" title="tiêu đề hình ảnh 2" />
+                                <img class="img-slide" src="image/6.png" alt="image4" title="Tiêu đề ảnh 3" />
+                                <img class="img-slide" src="image/5.png" alt="image5" title="tiêu đề ảnh 4" />
+                                <img class="img-slide" src="image/3.png" alt="image6" title="tiêu đề ảnh 5" />
+                                <img class="img-slide" src="image/6.png" alt="image7" title="tiêu đề ảnh 6" />
+                            </marquee>
+                            <div class="description">
+                                • Có cơ hội đi onsite và làm việc trực tiếp với các khách hàng Nhật.<br />
+                                • Điều chỉnh lương: 1 lần/năm.<br />
+                                • Điều chỉnh lương theo thâm niên làm việc.<br />
+                                • Lương tháng 13 (1 tháng lương)<br />
+                                • Du lịch hàng năm<br />
+                                • Khám sức khỏe định kỳ hàng năm tại bệnh viên uy tín<br />
+                                • Được hưởng đầy đủ các chế độ và bảo hiểm theo luật lao động Việt Nam.<br />
+                                • Học tiếng Nhật miễn phí<br />
+                            </div>
+                        </div>
+                    </div>
+                    <div id="OtherJobs" class="job-tabcontent set-box-shadow">
+                        <div class="otherjob-list">
+
+                            <!-- Loop -->
+                            <div class="otherjob-item">
+                                <div class="otherjob-item-title">
+                                    <div class="otherjob-item-title-bigtitle">
+                                        IT Engineer (Attractive Salary)
+                                    </div>
+                                    <div class="otherjob-item-title-description">
+                                        Carry out the requirement analysis, estimation, preparation of release plan,
+                                        design, development, testing and...
+                                    </div>
+                                </div>
+                                <div class="otherjob-item-contact">
+                                    <div class="otherjob-item-contact-item">
+                                        <div class="otherjob-item-contact-image">
+                                            <img src="image/dollar-symbol@3x.png" alt="">
+                                        </div>
+                                        <div class="otherjob-item-contact-text">Negotiable</div>
+                                    </div>
+
+                                    <div class="otherjob-item-contact-item">
+                                        <div class="otherjob-item-contact-image">
+                                            <img src="image/navigation@3x.png" alt="">
+                                        </div>
+                                        <div class="otherjob-item-contact-text">Hanoi, Ho Chi Minh</div>
+                                    </div>
+
+                                    <div class="otherjob-item-contact-item">
+                                        <div class="otherjob-item-contact-image">
+                                            <img src="image/calendar-with-a-clock-time-tools@3x.png" alt="">
+                                        </div>
+                                        <div class="otherjob-item-contact-text">Posted 2 hours ago</div>
+                                    </div>
+                                </div>
+
+                                <div class="otherjob-item-save">
+                                    <img src="image/favorite-heart-button@3x.png" alt="">
+                                    <!-- <img src="image/favorite-heart-button-fill@3x.png" alt=""> -->
+                                    <div class="otherjob-item-save-text">Save</div>
+                                </div>
+                            </div>
+                            <!-- /Loop -->
+
+                            <div class="otherjob-item">
+                                <div class="otherjob-item-title">
+                                    <div class="otherjob-item-title-bigtitle">
+                                        IT Engineer (Attractive Salary)
+                                    </div>
+                                    <div class="otherjob-item-title-description">
+                                        Carry out the requirement analysis, estimation, preparation of release plan,
+                                        design, development, testing and...
+                                    </div>
+                                </div>
+                                <div class="otherjob-item-contact">
+                                    <div class="otherjob-item-contact-item">
+                                        <div class="otherjob-item-contact-image">
+                                            <img src="image/dollar-symbol@3x.png" alt="">
+                                        </div>
+                                        <div class="otherjob-item-contact-text">Negotiable</div>
+                                    </div>
+
+                                    <div class="otherjob-item-contact-item">
+                                        <div class="otherjob-item-contact-image">
+                                            <img src="image/navigation@3x.png" alt="">
+                                        </div>
+                                        <div class="otherjob-item-contact-text">Hanoi, Ho Chi Minh</div>
+                                    </div>
+
+                                    <div class="otherjob-item-contact-item">
+                                        <div class="otherjob-item-contact-image">
+                                            <img src="image/calendar-with-a-clock-time-tools@3x.png" alt="">
+                                        </div>
+                                        <div class="otherjob-item-contact-text">Posted 2 hours ago</div>
+                                    </div>
+                                </div>
+
+                                <div class="otherjob-item-save">
+                                    <img src="image/favorite-heart-button@3x.png" alt="">
+                                    <!-- <img src="image/favorite-heart-button-fill@3x.png" alt=""> -->
+                                    <div class="otherjob-item-save-text">Save</div>
+                                </div>
+                            </div>
+                            <div class="otherjob-item">
+                                <div class="otherjob-item-title">
+                                    <div class="otherjob-item-title-bigtitle">
+                                        IT Engineer (Attractive Salary)
+                                    </div>
+                                    <div class="otherjob-item-title-description">
+                                        Carry out the requirement analysis, estimation, preparation of release plan,
+                                        design, development, testing and...
+                                    </div>
+                                </div>
+                                <div class="otherjob-item-contact">
+                                    <div class="otherjob-item-contact-item">
+                                        <div class="otherjob-item-contact-image">
+                                            <img src="image/dollar-symbol@3x.png" alt="">
+                                        </div>
+                                        <div class="otherjob-item-contact-text">Negotiable</div>
+                                    </div>
+
+                                    <div class="otherjob-item-contact-item">
+                                        <div class="otherjob-item-contact-image">
+                                            <img src="image/navigation@3x.png" alt="">
+                                        </div>
+                                        <div class="otherjob-item-contact-text">Hanoi, Ho Chi Minh</div>
+                                    </div>
+
+                                    <div class="otherjob-item-contact-item">
+                                        <div class="otherjob-item-contact-image">
+                                            <img src="image/calendar-with-a-clock-time-tools@3x.png" alt="">
+                                        </div>
+                                        <div class="otherjob-item-contact-text">Posted 2 hours ago</div>
+                                    </div>
+                                </div>
+
+                                <div class="otherjob-item-save">
+                                    <img src="image/favorite-heart-button@3x.png" alt="">
+                                    <!-- <img src="image/favorite-heart-button-fill@3x.png" alt=""> -->
+                                    <div class="otherjob-item-save-text">Save</div>
+                                </div>
+                            </div>
+                            <div class="otherjob-item">
+                                <div class="otherjob-item-title">
+                                    <div class="otherjob-item-title-bigtitle">
+                                        IT Engineer (Attractive Salary)
+                                    </div>
+                                    <div class="otherjob-item-title-description">
+                                        Carry out the requirement analysis, estimation, preparation of release plan,
+                                        design, development, testing and...
+                                    </div>
+                                </div>
+                                <div class="otherjob-item-contact">
+                                    <div class="otherjob-item-contact-item">
+                                        <div class="otherjob-item-contact-image">
+                                            <img src="image/dollar-symbol@3x.png" alt="">
+                                        </div>
+                                        <div class="otherjob-item-contact-text">Negotiable</div>
+                                    </div>
+
+                                    <div class="otherjob-item-contact-item">
+                                        <div class="otherjob-item-contact-image">
+                                            <img src="image/navigation@3x.png" alt="">
+                                        </div>
+                                        <div class="otherjob-item-contact-text">Hanoi, Ho Chi Minh</div>
+                                    </div>
+
+                                    <div class="otherjob-item-contact-item">
+                                        <div class="otherjob-item-contact-image">
+                                            <img src="image/calendar-with-a-clock-time-tools@3x.png" alt="">
+                                        </div>
+                                        <div class="otherjob-item-contact-text">Posted 2 hours ago</div>
+                                    </div>
+                                </div>
+
+                                <div class="otherjob-item-save">
+                                    <img src="image/favorite-heart-button@3x.png" alt="">
+                                    <!-- <img src="image/favorite-heart-button-fill@3x.png" alt=""> -->
+                                    <div class="otherjob-item-save-text">Save</div>
+                                </div>
+                            </div>
+                            <div class="otherjob-item">
+                                <div class="otherjob-item-title">
+                                    <div class="otherjob-item-title-bigtitle">
+                                        IT Engineer (Attractive Salary)
+                                    </div>
+                                    <div class="otherjob-item-title-description">
+                                        Carry out the requirement analysis, estimation, preparation of release plan,
+                                        design, development, testing and...
+                                    </div>
+                                </div>
+                                <div class="otherjob-item-contact">
+                                    <div class="otherjob-item-contact-item">
+                                        <div class="otherjob-item-contact-image">
+                                            <img src="image/dollar-symbol@3x.png" alt="">
+                                        </div>
+                                        <div class="otherjob-item-contact-text">Negotiable</div>
+                                    </div>
+
+                                    <div class="otherjob-item-contact-item">
+                                        <div class="otherjob-item-contact-image">
+                                            <img src="image/navigation@3x.png" alt="">
+                                        </div>
+                                        <div class="otherjob-item-contact-text">Hanoi, Ho Chi Minh</div>
+                                    </div>
+
+                                    <div class="otherjob-item-contact-item">
+                                        <div class="otherjob-item-contact-image">
+                                            <img src="image/calendar-with-a-clock-time-tools@3x.png" alt="">
+                                        </div>
+                                        <div class="otherjob-item-contact-text">Posted 2 hours ago</div>
+                                    </div>
+                                </div>
+
+                                <div class="otherjob-item-save">
+                                    <img src="image/favorite-heart-button@3x.png" alt="">
+                                    <!-- <img src="image/favorite-heart-button-fill@3x.png" alt=""> -->
+                                    <div class="otherjob-item-save-text">Save</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="pagging">
+                            <div class="center">
+                                <a href="#" class="previousnext">
+                                    <img src="image/previous@3x.png" alt="">
+                                </a>
+                                <div class="pagger">
+                                    <a href="#" class="pagger-item">1</a>
+                                    <div class="dot">...</div>
+                                    <a href="#" class="pagger-item">6</a>
+                                    <a href="#" class="pagger-item">7</a>
+                                    <div href="#" class="dot this-pagger">8</div>
+                                    <a href="#" class="pagger-item">9</a>
+                                    <a href="#" class="pagger-item">10</a>
+                                    <div class="dot">...</div>
+                                    <a href="#" class="pagger-item">50</a>
+                                </div>
+
+                                <a href="#" class="previousnext">
+                                    <img src="image/next@3x.png" alt="">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="ads2 set-box-shadow">
+                        <img src="image/4.png" alt="">
+                    </div>
+                    <div class="top-employers set-box-shadow">
+                        <div class="top-employers-title">
+                            Top employers
+                        </div>
+                        <div class="row list-top-employers">
+                            <a href="#" class="col-xs-6" style="background-image: url(image/image-23.jpg);">
+                            </a>
+                            <a href="#" class="col-xs-6" style="background-image: url(image/image-24.png);">
+                            </a>
+                            <a href="#" class="col-xs-6" style="background-image: url(image/image-25.png);">
+                            </a>
+                            <a href="#" class="col-xs-6" style="background-image: url(image/image-26.jpg);">
+                            </a>
+                            <a href="#" class="col-xs-6" style="background-image: url(image/image-27.jpg);">
+                            </a>
+                            <a href="#" class="col-xs-6" style="background-image: url(image/image-28.jpg);">
+                            </a>
+                            <a href="#" class="col-xs-6" style="background-image: url(image/image-29.jpg);">
+                            </a>
+                            <a href="#" class="col-xs-6" style="background-image: url(image/270-px-mobifone.png);">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/detailjob.js"></script>
+        <script>
+            document.getElementById("OtherJobsButton").click();
+        </script>
+    </div>
+</body>
+
+</html>

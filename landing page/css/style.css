@@ -6,6 +6,15 @@ button {
     border: none;
 }
 
+button:focus {
+    outline: none !important;
+}
+
+
+button:hover {
+    box-shadow: 0 0 6px #16bee5;
+    transition: 0.15s;
+}
 
 /* Navbar */
 .navi-navbar {
@@ -112,7 +121,11 @@ button {
     border-radius: 18px;
     background-color:#1ebdcf;
     color: #ffffff;
+    transition: 0.15s;
 }
+
+
+
 
 
 /* Navbar line */
@@ -156,7 +169,8 @@ button {
 
 .talent-solution {
     width: 100%;
-    height: 1000px;
+    height: auto;
+    overflow: auto;
     background-image: url(../image/mask-group-1@3x.png);
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -165,26 +179,62 @@ button {
 .two-personal {
     float: right;
     width: 38%;
-    height: 827px;
+    height: auto;
     margin: 12% 7% 0 0;
-    background-image: url(../image/group-526@3x.png);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+}
+
+.two-personal img {
+    width: 100%;
+    height: 100%;
 }
 
 .talent-solution .title {
     padding: 300px 0 0 7%;
-
 }
 
 .talent-solution .big-title {
     font-size: 91px;
-    font-weight: bold;
+    line-height: 109px;
+    font-weight: bolder;
     color: #16bee5;
 }
 
 .talent-solution .small-title {
     font-size: 49px;
+    line-height: 59px;
     font-weight: bold;
     color: #16bee5;
+    padding-left: 10px;
+}
+
+.talent-solution .login-signup {
+    font-size: 18px;
+    font-weight: bold;
+    color: #16bee5;
+    margin-top: 50px;
+}
+
+.talent-solution .button-signup, .talent-solution .button-login {
+    height: 52px;
+    width: 192px;
+    font-size: 18px;
+    font-weight: normal;
+    border-radius: 26px;
+    margin: 0 36px 0 0;
+}
+
+
+
+/* Our Service */
+.our-service {
+    float: left;
+    width: 100%;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.our-service-title {
+    font-size: 44px;
+    font-weight: 900;
+    color: #1ebdcf;
 }
