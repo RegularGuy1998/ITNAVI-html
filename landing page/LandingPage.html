@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../Login Popup/css/loginsignup.css">
     <link rel="stylesheet" href="../Near Footer/css/nearfooter.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -27,34 +28,114 @@
 </head>
 
 <body>
-
-    <nav id="navi-navbar">
-        <a class="navi-logolink" href="#">
-            <img src="image/57129625_481509039051959_7015020202530177024_n.png" alt="logo">
-        </a>
-        <div class="navi-navbar-item">
-            <div class="item text">
-                <a href="#">Services</a>
-            </div>
-            <div class="item text">
-                <a href="#">Contact Us</a>
-            </div>
-            <button class="item button button-signup">Sign Up</button>
-            <button class="item button button-login">Log In</button>
-            <div class="super-navbar-gray-border"></div>
-            <div class="item button">
-                <div class="notify-button">
-                    <div class="alent-dot"></div> <!-- When have notify, Enable this div tab -->
+    <div id="Login-Signup-Super-Popup">
+        <div class="login-background hidden">
+            <div class="login-popup">
+                <div id="close-icon" class="close-icon"><i class="fas fa-times"></i></div>
+                <div class="login-tab">
+                    <button class="login-tablinks" id="LoginTabButton"
+                        onclick="openLoginSignup(event, 'Login')">Login</button>
+                    <button class="login-tablinks" id="SignupTabButton" onclick="openLoginSignup(event, 'Signup')">Sign
+                        up</button>
                 </div>
-            </div>
-            <div class="item button">
-                <div class="region-button"></div>
+                <div id="Login" class="login-tabcontent">
+                    <div class="btn-loginwith">
+                        <button class="btn-loginwithfacebook">Login in with Facebook</button>
+                        <button class="btn-loginwithgoogle">Login in with Google</button>
+                    </div>
+                    <div class="orline">
+                        <span>Or</span>
+                    </div>
+                    <form action="#" method="POST">
+                        <div class="form-item">
+                            <label for="email">Email Address<span class="starr">*</span></label>
+                            <input type="text" placeholder="Type your email address" required>
+                        </div>
+                        <div class="form-item">
+                            <label for="password">Password<span class="starr">*</span></label>
+                            <input type="password" placeholder="Type your password" required>
+                        </div>
+                        <div class="keep-login">
+                            <div id="keeplogin-checkbox" class="checkbox-icon"></div>
+                            <label for="keeplogin">Keep me logged in</label>
+                            <input type="hidden" id="keeplogin" name="keeplogin" value="false">
+                        </div>
+                        <a class="forgot-password" href="#">Forgot your password?</a>
+                        <button class="login-submit" type="submit">Log In</button>
+                    </form>
+                </div>
+                <div id="Signup" class="login-tabcontent">
+                    <div class="btn-loginwith">
+                        <button class="btn-loginwithfacebook">Login in with Facebook</button>
+                        <button class="btn-loginwithgoogle">Login in with Google</button>
+                    </div>
+                    <div class="orline">
+                        <span>Or</span>
+                    </div>
+                    <form action="#" method="POST">
+                        <div class="form-item">
+                            <label for="fullname">Full Name<span class="starr">*</span></label>
+                            <input type="text" name="fullname" placeholder="Type your full name" required>
+                        </div>
+                        <div class="form-item">
+                            <label for="email">Email Address<span class="starr">*</span></label>
+                            <input type="text" name="email" placeholder="Type your email address" required>
+                        </div>
+                        <div class="form-item">
+                            <label for="password">Password<span class="starr">*</span></label>
+                            <input type="password" name="password" placeholder="Type your password" required>
+                        </div>
+                        <div class="form-item">
+                            <label for="repassword">Confirm Password<span class="starr">*</span></label>
+                            <input type="password" name="repassword" placeholder="Re-type your password" required>
+                        </div>
+                        <button class="login-submit" type="submit">Sign up</button>
+                    </form>
+                </div>
             </div>
         </div>
+    </div>
+
+    <nav id="navi-navbar">
+        <div class="navi-navbar-body">
+            <a class="navi-logolink" href="#">
+                <img src="image/57129625_481509039051959_7015020202530177024_n.png" alt="logo">
+            </a>
+
+            <div id="navbar-seemore" class="seemore">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div id="navi-navbar-item" class="navi-navbar-item">
+                <div class="item-left">
+                    <div class="item text">
+                        <a href="#">Services</a>
+                    </div>
+                    <div class="item text">
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+                <div class="item-right">
+                    <div class="item button">
+                        <div class="region-button"></div>
+                    </div>
+                    <div class="item button">
+                        <div class="notify-button">
+                            <div class="alent-dot"></div> <!-- When have notify, Enable this div tab -->
+                        </div>
+                    </div>
+                    <div class="super-navbar-gray-border"></div>
+                    <div class="item button button-login"><button id="LoginButton">Log In</button></div>
+                    <div id="SignupButton" class="item button button-signup"><button id="LoginButton">Sign Up</button></div>
+                </div>
+            </div>
+        </div>
+
         <div class="navi-navbar-borderbottom">
             <div class="top-left">
-                <div class="rectangle">
+                <div class="top-left-background">
+                    <div class="rectangle"></div>
                 </div>
+
             </div>
             <div class="bottom-right">
                 <div></div>
@@ -87,7 +168,7 @@
                     <div class="our-service-list-child row">
                         <div class="col-lg-4 col-sm-6">
                             <div class="our-service-item our-service-item1">
-                                <img class="item-image" src="image/1.png" alt="">
+                                <img class="item-image" src="image/group-325@3x.png" alt="">
                                 <div class="item-title">Search Talent</div>
                                 <div class="item-description">Leading efficient tool with the largest talent pool in
                                     Vietnam
@@ -96,7 +177,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="our-service-item our-service-item1">
-                                <img class="item-image" src="image/2.png" alt="">
+                                <img class="item-image" src="image/group-355@3x.png" alt="">
                                 <div class="item-title">Post Job FREE NOW</div>
                                 <div class="item-description">Attract talents to your vacancies and let them find their
                                     dream job!
@@ -105,7 +186,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="our-service-item our-service-item1">
-                                <img class="item-image" src="image/3.png" alt="">
+                                <img class="item-image" src="image/group-373@3x.png" alt="">
                                 <div class="item-title">Employer Branding</div>
                                 <div class="item-description">Build and expand your employer brand to reach among
                                     the tech
@@ -115,7 +196,7 @@
                         </div>
                         <div class="col-lg-4 col-lg-offset-2 col-sm-6">
                             <div class="our-service-item our-service-item1">
-                                <img class="item-image" src="image/4.png" alt="">
+                                <img class="item-image" src="image/group-387@3x.png" alt="">
                                 <div class="item-title">Tech - Executive Search (Headhunt)</div>
                                 <div class="item-description">Find the best fit candidates - even if they not
                                     looking
@@ -124,7 +205,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6 col-sm-offset-3 col-lg-offset-0">
                             <div class="our-service-item our-service-item1">
-                                <img class="item-image" src="image/5.png" alt="">
+                                <img class="item-image" src="image/group-408@3x.png" alt="">
                                 <div class="item-title">Body-shop</div>
                                 <div class="item-description">Providing short-term and long-term staffing services
                                     to the
@@ -138,49 +219,356 @@
 
             <div class="our-client">
                 <div class="our-client-title">Our Client</div>
-                <div class="our-client-list">
-                    <div class="our-client-item"></div>
+                <div class="container our-client-list">
+                    <div class="our-client-item" style="background-image: url(image/logo-tiki@3x.png)"></div>
+                    <div class="our-client-item" style="background-image: url(image/u2979.png)"></div>
+                    <div class="our-client-item" style="background-image: url(image/u2980.png)"></div>
+                    <div class="our-client-item" style="background-image: url(image/u2981.png)"></div>
+                    <div class="our-client-item" style="background-image: url(image/u2982.png)"></div>
+                    <div class="our-client-item" style="background-image: url(image/u2983.png)"></div>
+                    <div class="our-client-item" style="background-image: url(image/u2984.png)"></div>
+                </div>
+            </div>
+
+            <div class="wts">
+                <div class="wts-title">
+                    What They Say
+                    <div class="wts-title-border"></div>
+                </div>
+                <div class="wts-list">
+
+                    <div id="carousel-wts" class="carousel slide" data-ride="carousel">
+
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-2 wts-small-hidden ">
+                                    <a class="wts-previous" href="#carousel-wts" role="button" data-slide="prev">
+                                        <div class="wts-previous-icon">
+                                            <img src="image/left-arrow-2@3x.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-8 col-md-10 col-md-offset-1 col-lg-offset-0 col-xs-12">
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <div class="row wts-list-item">
+
+                                                <div class="col-xs-4 zoom-xxxs">
+                                                    <div class="wts-item">
+                                                        <div class="wts-item-image">
+                                                            <a href=""><img src="image/ellipse-11@3x.png" alt=""></a>
+                                                        </div>
+                                                        <a href="#">
+                                                            <div class="wts-item-name">Mr. Tu Pham</div>
+                                                        </a>
+                                                        <a href="#">
+                                                            <div class="wts-item-job">( Designer )</div>
+                                                        </a>
+                                                        <div class="wts-item-description">
+                                                            Our company already found the most suitable candidates on
+                                                            ITNavi
+                                                        </div>
+                                                        <div class="wts-item-rate">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-4 zoom-xxxs">
+                                                    <div class="wts-item">
+                                                        <div class="wts-item-image">
+                                                            <a href=""><img src="image/ellipse-11@3x.png" alt=""></a>
+                                                        </div>
+                                                        <a href="#">
+                                                            <div class="wts-item-name">Mr. Tu Pham</div>
+                                                        </a>
+                                                        <a href="#">
+                                                            <div class="wts-item-job">( Designer )</div>
+                                                        </a>
+                                                        <div class="wts-item-description">
+                                                            Our company already found the most suitable candidates on
+                                                            ITNavi
+                                                        </div>
+                                                        <div class="wts-item-rate">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-4 zoom-xxxs">
+                                                    <div class="wts-item">
+                                                        <div class="wts-item-image">
+                                                            <a href=""><img src="image/ellipse-11@3x.png" alt=""></a>
+                                                        </div>
+                                                        <a href="#">
+                                                            <div class="wts-item-name">Mr. Tu Pham</div>
+                                                        </a>
+                                                        <a href="#">
+                                                            <div class="wts-item-job">( Designer )</div>
+                                                        </a>
+                                                        <div class="wts-item-description">
+                                                            Our company already found the most suitable candidates on
+                                                            ITNavi
+                                                        </div>
+                                                        <div class="wts-item-rate">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="row wts-list-item">
+
+                                                <div class="col-xs-4 zoom-xxxs">
+                                                    <div class="wts-item">
+                                                        <div class="wts-item-image">
+                                                            <a href=""><img src="image/ellipse-11@3x.png" alt=""></a>
+                                                        </div>
+                                                        <a href="#">
+                                                            <div class="wts-item-name">Mr. Tu Pham</div>
+                                                        </a>
+                                                        <a href="#">
+                                                            <div class="wts-item-job">( Designer )</div>
+                                                        </a>
+                                                        <div class="wts-item-description">
+                                                            Our company already found the most suitable candidates on
+                                                            ITNavi
+                                                        </div>
+                                                        <div class="wts-item-rate">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-4 zoom-xxxs">
+                                                    <div class="wts-item">
+                                                        <div class="wts-item-image">
+                                                            <a href=""><img src="image/ellipse-11@3x.png" alt=""></a>
+                                                        </div>
+                                                        <a href="#">
+                                                            <div class="wts-item-name">Mr. Tu Pham</div>
+                                                        </a>
+                                                        <a href="#">
+                                                            <div class="wts-item-job">( Designer )</div>
+                                                        </a>
+                                                        <div class="wts-item-description">
+                                                            Our company already found the most suitable candidates on
+                                                            ITNavi
+                                                        </div>
+                                                        <div class="wts-item-rate">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-4 zoom-xxxs">
+                                                    <div class="wts-item">
+                                                        <div class="wts-item-image">
+                                                            <a href=""><img src="image/ellipse-11@3x.png" alt=""></a>
+                                                        </div>
+                                                        <a href="#">
+                                                            <div class="wts-item-name">Mr. Tu Pham</div>
+                                                        </a>
+                                                        <a href="#">
+                                                            <div class="wts-item-job">( Designer )</div>
+                                                        </a>
+                                                        <div class="wts-item-description">
+                                                            Our company already found the most suitable candidates on
+                                                            ITNavi
+                                                        </div>
+                                                        <div class="wts-item-rate">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                            <img src="image/path-160@3x.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-2 wts-small-hidden">
+                                    <a class="wts-next" href="#carousel-wts" role="button" data-slide="next">
+                                        <div class="wts-next-icon">
+                                            <img src="image/right-arrow-2@3x.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ol class="carousel-indicators wts-number">
+                            <li data-target="#carousel-wts" data-name="carousel-dot" data-slide-to="0"
+                                class="wts-number-item active">
+                                <div></div>
+                            </li>
+                            <li data-target="#carousel-wts" data-name="carousel-dot" data-slide-to="1"
+                                class="wts-number-item">
+                                <div></div>
+                            </li>
+                        </ol>
+
+                    </div>
                 </div>
             </div>
         </div>
+        <script src="js/script.js"></script>
+    </div>
 
-        <div id="Super-Near-Footer">
-            <div class="container near-footer">
-                <div class="big-item">
-                    <div class="big-item-title">
-                        JOBS BY INDUSTRIES
-                    </div>
-                    <div class="item">Accounting Jobs</div>
-                    <div class="item">Advertising/Promotion/PR Jobs</div>
-                    <div class="item">Banking Jobs</div>
-                    <div class="item">Airlines/Tourism Jobs</div>
-                    <div class="item">IT - Software Jobs</div>
-                    <div class="item">Education/Training Jobs</div>
-                    <div class="item">IT - Hardware/Networking Jobs</div>
-                    <div class="item">Electrical/Electronics Jobs</div>
-                    <div class="item">Civil/Construction Jobs</div>
-                    <div class="item">Sales Jobs</div>
-                    <a href="#" class="viewall">View all Industries » </a>
+    <link rel="stylesheet" href="../ContactUs/css/contactus.css">
+    <div id="contact-us-form">
+        <div style="background-image: url(image/rectangle-95@3x.png);" class="contactus-body">
+
+            <!-- Title -->
+            <div class="contactus-title">
+                <div class="bigtitle">
+                    Contact Us
                 </div>
-
-                <div class="big-item">
-                    <div class="big-item-title">
-                        JOBS BY INDUSTRIES
-                    </div>
-                    <div class="item">Jobs in Ho Chi Minh</div>
-                    <div class="item">Jobs in Bing Duong</div>
-                    <div class="item">Jobs in Ha Noi</div>
-                    <div class="item">Jobs in Dong Nai</div>
-                    <div class="item">Jobs in Hai Phong</div>
-                    <div class="item">Jobs in Vinh Phuc</div>
-                    <div class="item">Jobs in Da nang</div>
-                    <div class="item">Jobs in Bac Nnh</div>
-                    <div class="item">Jobs in Can Tho</div>
-                    <div class="item">Jobs in Long An</div>
-                    <a href="#" class="viewall">View all Industries » </a>
+                <div class="title">
+                    and we will reply you soon!
                 </div>
             </div>
+
+
+            <!-- Contact -->
+            <div class="contact-form">
+                <div class="container set-box-shadow">
+                    <div class="container-fluid">
+                        <div class="row contact">
+                            <div class="col-xs-12 title">
+                                Contact Us
+                            </div>
+
+                            <!-- Input Form - Contact Left -->
+                            <div class="col-md-8 col-xs-12 contact-left">
+                                <form class="row" method="POST" action="#">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <label for="yourname">Your Name</label>
+                                        <input type="text" name="name" required>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <label for="yourname">Your Email</label>
+                                        <input type="text" name="email" required>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <label for="yourname">Subject</label>
+                                        <input type="text" name="subject" required>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <label for="yourname">Message</label>
+                                        <textarea type="textarea" name="Message" rows="10" required></textarea>
+                                    </div>
+                                    <div class="col-xs-12 submit-button">
+                                        <button type="submit">Send Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- /Input Form -->
+
+                            <!-- Other Contact - Contact Right -->
+                            <div class="col-md-4 col-xs-12 contact-right">
+                                <div class="contact-list">
+                                    <div style="background-image: url(../ContactUs/image/telephone.png);"
+                                        class="contact-icon"></div>
+                                    <div class="title">Phone</div>
+                                    <div class="description">0971989986</div>
+                                </div>
+                                <div class="contact-list">
+                                    <div style="background-image: url(../ContactUs/image/close-envelope.png);"
+                                        class="contact-icon">
+                                    </div>
+                                    <div class="info"></div>
+                                    <div class="title">Email</div>
+                                    <div class="description">support@itnavi.com.vn</div>
+                                </div>
+                                <div class="contact-list">
+                                    <div style="background-image: url(../ContactUs/image/placeholder-filled-point.png);"
+                                        class="contact-icon"></div>
+                                    <div class="title">Address</div>
+                                    <div class="description">AC Building, 78 Duy Tan,
+                                        Cau Giay Ward, Hanoi
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Other Contact -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /Contact -->
+
         </div>
+    </div>
+
+    <div id="Super-Near-Footer">
+        <div class="container near-footer">
+            <div class="big-item">
+                <div class="big-item-title">
+                    JOBS BY INDUSTRIES
+                </div>
+                <div class="item">Accounting Jobs</div>
+                <div class="item">Advertising/Promotion/PR Jobs</div>
+                <div class="item">Banking Jobs</div>
+                <div class="item">Airlines/Tourism Jobs</div>
+                <div class="item">IT - Software Jobs</div>
+                <div class="item">Education/Training Jobs</div>
+                <div class="item">IT - Hardware/Networking Jobs</div>
+                <div class="item">Electrical/Electronics Jobs</div>
+                <div class="item">Civil/Construction Jobs</div>
+                <div class="item">Sales Jobs</div>
+                <a href="#" class="viewall">View all Industries » </a>
+            </div>
+
+            <div class="big-item">
+                <div class="big-item-title">
+                    JOBS BY INDUSTRIES
+                </div>
+                <div class="item">Jobs in Ho Chi Minh</div>
+                <div class="item">Jobs in Bing Duong</div>
+                <div class="item">Jobs in Ha Noi</div>
+                <div class="item">Jobs in Dong Nai</div>
+                <div class="item">Jobs in Hai Phong</div>
+                <div class="item">Jobs in Vinh Phuc</div>
+                <div class="item">Jobs in Da nang</div>
+                <div class="item">Jobs in Bac Nnh</div>
+                <div class="item">Jobs in Can Tho</div>
+                <div class="item">Jobs in Long An</div>
+                <a href="#" class="viewall">View all Industries » </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Login Popup/js/loginsignup.js"></script>
 
 </body>
 

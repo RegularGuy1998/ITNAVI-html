@@ -32,6 +32,7 @@ $('#close-icon').on('click', function () {
 })
 
 $('#LoginButton').on('click', function () {
+  console.log('dddddd');
   $('.login-popup').removeClass('hiding');
   $('.login-background').removeClass('hidden');
   $('.login-popup').addClass('showing');

@@ -6,7 +6,14 @@
 #contact-us-form .contactus-body {
     background-repeat: no-repeat;
     background-position: top center;
-    padding-top: 110px;
+    background-size: 1920px auto;
+}
+
+#contact-us-form .background-blur {
+    position: absolute;
+    width: 1920px;
+    height: 418.3px;
+    background-color: rgba(138, 168, 172, 0.46);
 }
 
 #contact-us-form img {
@@ -20,15 +27,15 @@
     background-color: white;
 }
 
-#contact-us-form .pb-50 {
-    margin-bottom: 50px;
-}
-
 
 
 /* Title */
 #contact-us-form .contactus-title {
-    margin-bottom: 100px
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    padding-top: 110px;
+    padding-bottom: 100px;
 }
 
 #contact-us-form .contactus-title .bigtitle {
@@ -62,6 +69,12 @@
 
 
 /* Contact Left */
+#contact-us-form .contact-form {
+    padding-top: 350px;
+    width: 100%;
+    z-index: 1;
+}
+
 #contact-us-form .contact-left {
     margin-top: 15px;
 }
