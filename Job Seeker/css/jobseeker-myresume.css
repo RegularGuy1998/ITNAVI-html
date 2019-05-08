@@ -327,6 +327,14 @@
     overflow: auto;
 }
 
+#MyResume .text-edit .radio-item:first-child {
+    width: 114px;
+}
+
+#MyResume .text-edit .radio-item:last-child {
+    width: 125px;
+}
+
 #MyResume .text-edit .radio1, .checkbox1 {
     float: left;
     width: 15px;
@@ -360,6 +368,7 @@
 
 #MyResume .text-edit .radio {
     float: left;
+    width: 240px;
     margin: 0;
 }
 
@@ -768,6 +777,10 @@
     margin-bottom: 30px;
 }
 
+#MyResume .biglist-benefit .biglist-benefit-item-edit {
+    color: #b5b5b5;
+}
+
 #MyResume .biglist-benefit-item-image {
     float: left;
     width: 20px;
@@ -802,12 +815,12 @@
 }
 
 #MyResume .benefit-active {
-    color: #f7912a;
+    color: #f7912a !important;
     transition: 0.3s;
 }
 
 #MyResume .benefit-active:hover {
-    color: #24becf;
+    color: #24becf !important;
     transition: 0.3s;
 }
 
@@ -1188,7 +1201,7 @@
 }
 
 
-@media screen and (max-width: 575.98px) { 
+@media screen and (max-width: 456.98px) { 
     #MyResume .biglist-benefit .biglist-benefit-item, #MyResume .biglist-benefit .biglist-benefit-item-edit {
         width: 99.99%;
     }

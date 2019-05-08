@@ -452,7 +452,7 @@
                                             <div class="form-input">
                                                 <div class="form-input-item">
                                                     <input name="skill" class="form-input-text" type="text"
-                                                        placeholder="Profestional skill" required>
+                                                        placeholder="Professional skill" required>
                                                 </div>
                                                 <div class="form-input-item">
                                                     <select class="form-input-select" name="proficiency">
@@ -871,7 +871,8 @@
                                         <label for="from">From <span class="super-star">*</span></label>
                                         <input type="date" name="from" required>
                                     </div>
-                                    <div class="item item-4 item-mr-2 item-lg-3 item-mr-lg-3 item-xs-1 item-xs-mr-1">
+                                    <div id="EMPLOYMENTHISTORY-to"
+                                        class="item item-4 item-mr-2 item-lg-3 item-mr-lg-3 item-xs-1 item-xs-mr-1">
                                         <label for="to">To <span class="super-star">*</span></label>
                                         <input type="date" name="to" required>
                                     </div>
@@ -1505,6 +1506,7 @@
             })
 
             $('#WORKINGPREFERENCES-expectedjoblevel').tagsinput({
+                maxTags: 1,
                 typeahead: {
                     source: places.map(function (item) {
                         return item;
