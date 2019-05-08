@@ -1,0 +1,947 @@
+#MyResume {
+    padding: 0 !important;
+    overflow: auto;
+    padding-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.56;
+    color: #464545;
+}
+
+#MyResume button{
+    background-color: #fff;
+}
+
+#MyResume .boldertext{
+    font-weight: 900;
+}
+
+#MyResume .titletext{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#MyResume .border-top-gray {
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
+}
+
+#MyResume .edit-icon{
+    float: left;
+    width: 15.1px;
+    height: 15.1px;
+    margin: 7px 0 0 9px;
+    background-image: url(../image/edit@3x.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#MyResume .garbage{
+    width: 15.1px;
+    height: 15.1px;
+    display: inline-block;
+    background-image: url(../image/garbage@3x.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#MyResume .addnew-button-orange, #MyResume .addnew-button-blue {
+    float: left;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 1px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+#MyResume .addnew-button-orange {
+    background-color: #f7912a;
+    margin-top: 2px;
+}
+
+#MyResume .addnew-button-blue {
+    background-color: #24becf;
+    margin: 6px 0 0 10px;
+}
+
+#MyResume .super-star {
+    font-size: 12px;
+    color: #f22424;
+}
+
+
+#MyResume .myresume-left, #MyResume .myresume-right {
+    float: right;
+    position: static;
+}
+
+#MyResume .myresume-element {
+    margin-bottom: 15px;
+}
+
+
+#MyResume .myresume-left .myresume-element {
+    border-top-left-radius: 4px;
+    padding: 20px 37px 27px 30px;
+    overflow: auto;
+}
+
+#MyResume .myresume-left .myresume-element:first-child {
+    border-top-left-radius: 0;
+}
+
+
+
+
+/* First Left Element */
+#MyResume .person-avatar {
+    width: 23%;
+    height: auto;
+    margin-right: 3%;
+    float: left;
+}
+
+#MyResume .person-avatar img {
+    width: 100%;
+    height: auto;
+}
+
+#MyResume .person-avatar .edit-tool-tips {
+    color: #b5b5b5;
+    padding-top: 15px;
+    text-align: center;
+}
+
+
+#MyResume .person-avatar-edit {
+    position: relative;
+    cursor: pointer;
+    float: left;
+    margin-top: -50px;
+    padding: 0 12px;
+    width: 100%;
+    height: 20px;
+}
+
+#MyResume .person-avatar-edit-edit {
+    padding: 0 4px;
+}
+
+#MyResume .person-avatar-edit-edit label {
+    width: 100%;
+    height: 34px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 3px;
+    line-height: 34px;
+    vertical-align: middle;
+    background-color: #24becf;
+    transition: 0.3s;
+}
+
+#MyResume .person-avatar-edit-edit label:hover {
+    box-shadow: 0 0 5px #24becf;
+    transition: 0.3s;
+}
+
+#MyResume .person-avatar-edit-edit .div-center {
+    width: 100px;
+    margin: 0 auto;
+}
+
+#MyResume .person-avatar-edit-edit label img {
+    width: 19.1px;
+    height: 17.7px;
+    margin-right: 8px;
+}
+
+#MyResume .border-thin-blue {
+    border: 2px dashed #14c7d9;
+    transition: 0.1s;
+}
+
+#MyResume .person-avatar-edit-view {
+    margin-bottom: 0;
+    overflow: auto;
+    cursor: pointer;
+}
+
+#MyResume .person-avatar-edit-view img {
+    width: 19px;
+    height: 15px;
+    margin-top: 25px;
+    margin-right: 8px;
+    float: left;
+}
+
+#MyResume .person-avatar-edit-view div {
+    font-size: 12px;
+    float: left;
+    text-decoration: underline;
+    margin-top: 25px;
+    color: #2a75f7;
+}
+
+#MyResume .person-info {
+    float: left;
+    width: 74%;
+}
+
+#MyResume .person-name {
+    overflow: auto;
+}
+
+#MyResume .person-name .name {
+    float: left;
+}
+
+#MyResume .product-owner {
+    margin: 5px 0;
+}
+
+#MyResume .simple-experience {
+    line-height: 1.88;
+}
+
+
+
+/* My Resume Element */
+#MyResume .myresume-element .left-title {
+    border-bottom: solid 1px #d1d0d6;
+    padding-bottom: 5px;
+    display: block;
+    overflow: auto;
+}
+
+#MyResume .left-title-image {
+    height: 20px;
+    width: 20px;
+    margin: 4px 10px 0 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    float: left;
+}
+
+#MyResume .left-title-name {
+    float: left;
+}
+
+#MyResume .myresume-element .left-title .edit-icon {
+    margin-top: 6px;
+}
+
+
+
+/* Left Body List */
+#MyResume .left-body {
+    padding-top: 18px;
+}
+
+#MyResume .left-body-list {
+    overflow: auto;
+}
+
+#MyResume .list-item {
+    width: 49%;
+    float: left;
+    overflow: auto;
+    margin: 10px 1% 10px 0;
+}
+
+#MyResume .list-item-1 {
+    width: 35%;
+    float: left;
+    min-width: 108px;
+    margin-right: 5%;
+}
+
+#MyResume .list-item-2 {
+    float: left;
+}
+
+
+
+
+/* Left body Text Edit */
+
+#MyResume .text-edit .item {
+    float: left;
+    width: 100%;
+    overflow: auto;
+    padding-top: 5px;
+    margin-bottom: 15px;
+}
+
+#MyResume .text-edit .item label {
+    width: 201px;
+    float: left;
+    line-height: 41px;
+}
+
+#MyResume .text-edit .item input, #MyResume .text-edit .item select {
+    width: 378px;
+    height: 41px;
+    float: left;
+    border-radius: 4px;
+    border: 1px solid #b5b5b5;
+    background-color: #fff;
+    padding-left: 10px;
+    transition: 0.3s;
+}
+
+#MyResume .text-edit .item input:focus, #MyResume .text-edit .item select:focus {
+    box-shadow: 0 0 5px #24becf;
+    transition: 0.3s;
+    border: 1px solid #24becf;
+}
+
+#MyResume .text-edit input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(../image/calendar-with-a-clock-time-tools@3x.png) no-repeat;
+    background-size: 14px auto;
+    margin-left: 5px;
+    border-width: thin;
+}
+
+#MyResume .text-edit input::-webkit-input-placeholder {
+    font-size: 14px;
+}
+
+#MyResume .text-edit .radio-item {
+    float: left;
+    overflow: auto;
+}
+
+#MyResume .text-edit .radio1, .checkbox1 {
+    float: left;
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+#MyResume .text-edit .radio1 {
+    margin: 13px 10px 0 0;
+    border: 2px solid #b5b5b5;
+    border-radius: 50%;
+}
+
+#MyResume .text-edit .checkbox1 {
+    border-radius: 2px;
+    border: 1px solid #b5b5b5;
+    margin: 4px 5px 0 0;
+}
+
+#MyResume .text-edit .radio1:hover, #MyAccountInfo .checkbox1:hover {
+    border: 5px solid #b5b5b5;
+    transition: 0.15s;
+}
+
+#MyResume .text-edit .radioactive, #MyResume .text-edit .checkboxactive, #MyResume .text-edit .radioactive:hover, #MyResume .text-edit .checkboxactive:hover {
+    border: 5px solid #2ec1d1;
+    transition: 0.15s;
+}
+
+#MyResume .text-edit .radio {
+    float: left;
+    margin: 0;
+}
+
+#MyResume .text-edit .radio span {
+    line-height: 43px;
+    float: left;
+    margin-right: 45px;
+}
+
+#MyResume .text-edit .form-option {
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#MyResume .text-edit .cancel-button {
+    width: 140px;
+    height: 41px;
+    display: inline-block;
+    line-height: 41px;
+    border-radius: 3px;
+    margin-right: 5px;
+    border: solid 1px #b4b2b9;
+    color: #b4b2b9;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#MyResume .text-edit .cancel-button:hover {
+    box-shadow: 0 0 5px #b5b5b5;
+    transition: 0.3s;
+}
+
+#MyResume .text-edit .save-button {
+    width: 227px;
+    height: 41px;
+    line-height: 41px;
+    display: inline-block;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #24becf;
+    cursor: pointer;
+}
+
+#MyResume .text-edit .save-button:hover {
+    box-shadow: 0 0 5px #24becf;
+    transition: 0.3s;
+}
+
+
+/* Text Edit label on top */
+#MyResume .person-info .text-edit {
+    margin-top: -15px;
+}
+
+#MyResume .text-edit .text-edit-labeltop .item {
+    padding: 0 5px 5px 5px;
+}
+
+#MyResume .text-edit .text-edit-labeltop .item-2 {
+    width: 48.5%;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+#MyResume .text-edit .text-edit-labeltop .item-4 {
+    width: 23.5%;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+#MyResume .text-edit .text-edit-labeltop .item-mr-2 {
+    margin-right: 3%;
+}
+
+#MyResume .text-edit .text-edit-labeltop .item-mr-4 {
+    margin-right: 1.5%;
+}
+
+#MyResume .text-edit .text-edit-labeltop .item label {
+    width: 100%;
+    float: left;
+    line-height: normal;
+    height: 19px;
+}
+
+#MyResume .text-edit .text-edit-labeltop .item input, #MyResume .text-edit .text-edit-labeltop .item select {
+    width: 100%;
+    height: 41px;
+    float: left;
+    border-radius: 4px;
+    border: 1px solid #b5b5b5;
+    background-color: #fff;
+    padding-left: 10px;
+}
+
+#MyResume .text-edit .text-edit-labeltop .item .item-checkbox {
+    float: left;
+    width: 100%;
+    height: 41px;
+    padding-top: 8px;
+}
+
+#MyResume .text-edit .text-edit-labeltop .item .item-checkbox span {
+    font-size: 14px;
+    color: #464545;
+}
+
+
+
+/* Left Body Text */
+#MyResume .left-body .left-body-text {
+    font-weight: 100;
+}
+
+#MyResume .left-body .small-text {
+    font-size: 14px;
+}
+
+#MyResume .left-body .text-edit textarea {
+    max-width: 100%;
+    min-width: 100%;
+    padding: 10px;
+    border-radius: 2px;
+    border: solid 1px #b5b5b5;
+}
+
+#MyResume .left-body .text-edit textarea::-webkit-input-placeholder {
+    font-size: 14px;
+}
+
+
+
+/* Left Body Table */
+#MyResume .left-body-table {
+    margin-bottom: 23px;
+}
+
+#MyResume .left-body-table:last-child {
+    margin-bottom: 0;
+}
+
+#MyResume .left-body-table .table-name {
+    overflow: auto;
+}
+
+#MyResume .left-body-table .table-name .name {
+    float: left;
+    margin-right: 10px;
+}
+
+#MyResume .left-body-table .table-here {
+    width: 100%;
+    overflow: scroll;
+}
+
+#MyResume .left-body-table table {
+    margin-top: 8px;
+    width: 100%;
+    min-width: 500px;
+}
+
+#MyResume .left-body-table thead {
+    height: 32px;
+    background-color: rgba(30, 189, 207, 0.15);
+}
+
+#MyResume .left-body-table th, #MyResume .left-body-table td {
+    font-size: 16px;
+    padding: 11px 5px 9px 5px !important;
+    text-align: center;
+    background-color: rgba(30, 189, 207, 0.15);
+}
+
+#MyResume .left-body-table tbody tr {
+    border-bottom: 2px solid #cbf0f5;
+}
+
+#MyResume .left-body-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+#MyResume .left-body-table .skills, #MyResume .left-body-table .proficiency, #MyResume .left-body-table .yeoe {
+    width: 30%;
+}
+
+#MyResume .left-body-table .option {
+    width: 10%;
+    padding: 12px 5px 8px 5px !important;
+    text-align: center;
+}
+
+#MyResume .left-body-table .option .edit-icon{
+    margin: 0;
+    float: none;
+    display: inline-block;
+}
+
+#MyResume .left-body-table .option .garbage{
+    margin-right: 2px;
+}
+
+/* Table 3 element */
+
+#MyResume .left-body-table .but-3-element table {
+    margin-top: 8px;
+    width: 70%;
+    min-width: 350px;
+}
+
+#MyResume .left-body-table .but-3-element .table-edit{
+    width: 73%;
+    min-width: 380px;
+}
+
+/* Table edit */
+#MyResume .left-body-table .table-edit {
+    display: flex;
+    width: 100%;
+    min-width: 500px;
+}
+
+#MyResume .left-body-table .table-edit form {
+    margin-top: 20px;
+    display: flex;
+}
+
+#MyResume .left-body-table .table-edit .form-input {
+    width: 100%;
+    height: 40px;
+    overflow: auto;
+    border-radius: 3px;
+    border: 1px solid #b5b5b5;
+}
+
+#MyResume .left-body-table .table-edit .form-input-item {
+    width: 33.3333%;
+    height: 38px;
+    float: left;
+    text-align: center;
+    border-right: 1px solid #b5b5b5;
+}
+
+#MyResume .left-body-table .but-3-element .table-edit .form-input-item {
+    width: 49.99999%;
+}
+
+#MyResume .left-body-table .table-edit .form-input-item:last-child {
+    border-right: none;
+}
+
+#MyResume .left-body-table .table-edit .form-input-text {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#MyResume .left-body-table .table-edit .form-input-text::-webkit-input-placeholder {
+    font-style: italic;
+    font-size: 14px;
+}
+
+#MyResume .left-body-table .table-edit .form-input-select {
+    width: 85%;
+    height: 100%;
+    border: none;
+    padding-left: 40px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#MyResume .left-body-table .table-edit .form-option {
+    min-width: 135px;
+    height: 40px;
+    overflow: auto;
+}
+
+#MyResume .left-body-table .table-edit .form-option .add-button {
+    width: 85px;
+    height: 40px;
+    float: left;
+    text-align: left;
+    color: #f7912a;
+    padding-left: 15px;
+}
+
+#MyResume .left-body-table .table-edit .form-option .add-button div {
+    margin-right: 10px;
+}
+
+#MyResume .left-body-table .table-edit .form-option .cancel-button {
+    width: 50px;
+    height: 40px;
+    float: left;
+    padding-top: 8px;
+    cursor: pointer;
+}
+
+/* Left Body Timeline */
+
+#MyResume .left-body-timeline {
+    width: 100%;
+    min-width: 269px;
+    margin-bottom: -20px;
+}
+
+#MyResume .left-body-timeline table {
+    width: 100%;
+}
+
+#MyResume .left-body-timeline td {
+    padding: 0 2% 20px 0 !important;
+    vertical-align: top;
+}
+
+#MyResume .left-body-timeline td:last-child {
+    padding-right: 0 !important;
+}
+
+#MyResume .left-body-timeline .timeline-title {
+    width: 25%;
+    min-width: 80px;
+    font-size: 16px;
+}
+
+#MyResume .left-body-timeline .timeline-content {
+}
+
+#MyResume .left-body-timeline .timeline-content .timeline-content-item {
+    margin-bottom: 5px;
+}
+
+#MyResume .left-body-timeline .timeline-content .timeline-content-item:last-child {
+    margin-bottom: 0;
+}
+
+#MyResume .left-body-timeline .timeline-content .timeline-content-item-name {
+    font-size: 16px;
+}
+
+#MyResume .left-body-timeline .timeline-content .italictext {
+    font-size: 14px;
+    font-style: italic; 
+}
+
+#MyResume .left-body-timeline .timeline-content .description {
+    font-size: 14px;
+}
+
+#MyResume .left-body-timeline .timeline-content .descriptiondotdot {
+    font-size: 14px;
+}
+
+#MyResume .left-body-timeline .timeline-option {
+    width: 8%;
+    padding-top: 3px !important;
+    text-align: right;
+    min-width: 37px;
+}
+
+#MyResume .left-body-timeline .timeline-option .edit-icon {
+    float: none;
+    display: inline-block;
+    margin: 0;
+}
+
+#MyResume .left-body-timeline .timeline-option .garbage {
+    float: none;
+    display: inline-block;
+    margin-right: 2px;
+}
+
+
+/* Left Body Big List */
+#MyResume .left-body-biglist .biglist-item {
+    margin-bottom: 13px;
+}
+
+#MyResume .left-body-biglist .biglist-benefit {
+    background-color: rgba(246, 134, 26, 0.05);
+    padding-top: 33px; 
+    overflow: auto;
+}
+
+#MyResume .left-body-biglist .biglist-benefit .biglist-benefit-item {
+    float: left;
+    overflow: auto;
+    width: 33.3333%;
+    font-size: 14px;
+    line-height: 16px;
+    color: #f7912a;
+    padding-left: 45px;
+    margin-bottom: 30px;
+}
+
+#MyResume .left-body-biglist .biglist-benefit-item-image {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+
+
+/* Right Element */
+#MyResume .myresume-right .myresume-element {
+    border-top-left-radius: 4px;
+    padding: 21px 20px;
+}
+
+#MyResume .myresume-right .myresume-element .myresume-element-title {
+    margin-bottom: 15px;
+}
+
+#MyResume .myresume-right .myresume-element .progress-text {
+    margin-bottom: 15px;
+}
+
+#MyResume .myresume-right .myresume-element .progress-text span {
+    margin-left: 5px;
+    font-size: 22px;
+    font-weight: bolder;
+    color: #24becf;
+}
+
+#MyResume .myresume-right .myresume-element .progress { 
+    background-color: #464545;
+    box-shadow: none;
+    width: 95%;
+    margin: 0 auto 30px auto;
+    border-radius: 4px;
+    height: 7px;
+}
+
+#MyResume .myresume-right .myresume-element .progress .progress-bar { 
+    height: 7px;
+    box-shadow: none;
+    border-radius: 4px;
+    border-bottom: none;
+    background-image: linear-gradient(85deg, #0ec2d4, #35e1f1);
+}
+
+#MyResume .myresume-right .myresume-element .downloadprofile {
+    text-align: center;
+}
+
+#MyResume .myresume-right .myresume-element .downloadprofile button { 
+    width: 152px;
+    height: 37px;
+    border-radius: 3px;
+    background-color: #f7912a;
+    line-height: 35px;
+    margin: 0 auto;
+    color: #fff;
+    transition: 0.3s;
+}
+
+#MyResume .myresume-right .myresume-element .downloadprofile button:hover { 
+    box-shadow: 0 0 5px #f7912a;
+    transition: 0.3s;
+}
+
+#MyResume .myresume-right .myresume-element .uploadresume {
+    text-align: center;
+}
+
+#MyResume .myresume-right .myresume-element .uploadresume button { 
+    width: 152px;
+    height: 37px;
+    border-radius: 3px;
+    background-color: #24becf;
+    line-height: 35px;
+    margin: 0 auto 25px auto;
+    color: #fff;
+    transition: 0.3s;
+}
+
+#MyResume .myresume-right .myresume-element .uploadresume button img { 
+    margin-top: -3px;
+    width: 16.9px;
+    height: 12.3px;
+}
+
+#MyResume .myresume-right .myresume-element .uploadresume button:hover { 
+    box-shadow: 0 0 5px #24becf;
+    transition: 0.3s;
+}
+
+#MyResume .myresume-right .myresume-element .upload-history {
+    padding-inline-start: 20px;
+    color: #2a75f7;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+#MyResume .myresume-right .myresume-element .upload-history .fileuploadtime {
+    font-size: 12px;
+    line-height: 14px !important;
+    font-style: italic;
+    line-height: 1.67;
+    color: #b5b5b5;
+}
+
+#MyResume .myresume-right .myresume-element .apple-fake-button {
+    padding-top: 5px;
+}
+
+#MyResume .myresume-right .myresume-element .apple-fake-button .apple-button {
+    width: 57px;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 2px;
+    cursor: pointer;
+    background-color: #b5b5b5;
+    transition: 0.3s;
+}
+
+#MyResume .myresume-right .myresume-element .apple-fake-button .apple-button .little-circle {
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    background-color: #ffffff;
+}
+
+#MyResume .myresume-right .myresume-element .apple-fake-button .apple-button-active {
+    padding-left: 29px;
+    background-color: rgb(59, 212, 87);
+    transition: 0.3s;
+}
+
+
+@media screen and (max-width: 1199.98px) { 
+    #MyResume .text-edit .text-edit-labeltop .item-lg-1 {
+        width: 100%;
+        overflow: auto;
+        margin-bottom: 20px;
+    }
+
+    #MyResume .text-edit .text-edit-labeltop .item-lg-2 {
+        width: 48.5%;
+        overflow: auto;
+        margin-bottom: 20px;
+    }
+
+    #MyResume .text-edit .text-edit-labeltop .item-lg-3 {
+        width: 32.33333%;
+        overflow: auto;
+        margin-bottom: 20px;
+    }
+    
+    #MyResume .text-edit .text-edit-labeltop .item-lg-4 {
+        width: 23.5%;
+        overflow: auto;
+        margin-bottom: 20px;
+    }
+
+    #MyResume .text-edit .text-edit-labeltop .item-mr-lg-1 {
+        margin-right: 0%;
+    }
+    
+    #MyResume .text-edit .text-edit-labeltop .item-mr-lg-2 {
+        margin-right: 3%;
+    }
+
+    #MyResume .text-edit .text-edit-labeltop .item-mr-lg-3 {
+        margin-right: 1.5%;
+    }
+    
+    #MyResume .text-edit .text-edit-labeltop .item-mr-lg-4 {
+        margin-right: 1.5%;
+    }
+}
+
+@media screen and (max-width: 767.98px) { 
+    #MyResume .list-item {
+        width: 99%;
+    }
+}
+
+@media screen and (max-width: 575.98px) { 
+    #MyResume .myresume-left .myresume-element {
+        padding: 20px 10px 27px 10px;
+    }
+
+}

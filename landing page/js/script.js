@@ -8,9 +8,24 @@ $('#navbar-seemore').on('click', function () {
   } else {
     $('#navi-navbar-item').removeClass('navbarfull-hidding');
     $('#navi-navbar-item').addClass('navbarfull-showing');
-    console.log('sdfefe');
     setTimeout(() => {
       $('#navi-navbar-item').addClass('showfullnavbar');
     }, 150);
   }
+})
+
+$('#Services-Scroll').on('click', function () {
+  var elmnt = document.getElementById("Our-Services");
+    elmnt.scrollIntoView();
+    if ($('#navi-navbar-item').hasClass('showfullnavbar')) {
+      document.getElementById("navbar-seemore").click();
+    }
+})
+
+$('#ContactUs-Scroll').on('click', function () {
+  var elmnt = document.getElementById("contact-us-form");
+    elmnt.scrollIntoView();
+    if ($('#navi-navbar-item').hasClass('showfullnavbar')) {
+      document.getElementById("navbar-seemore").click();
+    }
 })

@@ -1,8 +1,8 @@
-#job-seeker-myaccountinfo .myjob-tab {
+#MyJobs .myjob-tab {
     overflow: auto;
 }
 
-#job-seeker-myaccountinfo .myjob-tablinks {
+#MyJobs .myjob-tablinks {
     height: 22px;
     line-height: 22px;
     font-size: 18px;
@@ -14,16 +14,16 @@
     background-color: #ffffff;
 }
 
-#job-seeker-myaccountinfo .myjob-tablinks:first-child {
+#MyJobs .myjob-tablinks:first-child {
     padding-left: 0px;
 }
 
-#job-seeker-myaccountinfo .myjob-tablinks:last-child {
+#MyJobs .myjob-tablinks:last-child {
     padding-right: 0px;
     border: none
 }
 
-#job-seeker-myaccountinfo .myjob-tab .active, .myjob-tablinks:active {
+#MyJobs .myjob-tab .active, .myjob-tablinks:active {
     outline: none;
     color: #454545;
     transition: 0.15s;
@@ -31,39 +31,39 @@
 
 
 /* Table */
-#job-seeker-myaccountinfo .myjob-table{
+#MyJobs .myjob-table{
     margin-top: 20px;
     width: 100%;
 }
 
-#job-seeker-myaccountinfo .myjob-table tr {
+#MyJobs .myjob-table tr {
     text-align: center;
     font-weight: normal;
 }
 
-#job-seeker-myaccountinfo .myjob-table tbody tr {
+#MyJobs .myjob-table tbody tr {
     border-bottom: 1px solid #d1d0d6;
 }
 
-#job-seeker-myaccountinfo .myjob-table tbody tr:last-child {
+#MyJobs .myjob-table tbody tr:last-child {
     border-bottom: none;
 }
 
-#job-seeker-myaccountinfo .myjob-table tbody .jobtitle {
+#MyJobs .myjob-table tbody .jobtitle {
     text-align: left;
 }
 
-#job-seeker-myaccountinfo .myjob-table tbody .locationdate {
+#MyJobs .myjob-table tbody .locationdate {
     text-align: right;
 }
 
-#job-seeker-myaccountinfo .myjob-table thead tr {
+#MyJobs .myjob-table thead tr {
     height: 44px;
     border-radius: 2px;
     background-color: rgba(30, 189, 207, 0.15);
 }
 
-#job-seeker-myaccountinfo .myjob-table thead th {
+#MyJobs .myjob-table thead th {
     text-align: center;
     line-height: 44px;
     font-size: 16px;
@@ -71,61 +71,61 @@
     color: #464545;
 }
 
-#job-seeker-myaccountinfo td {
+#MyJobs td {
     padding: 13px 15px 12px 15px !important;
     overflow: auto;
     font-size: 14px;
 }
 
-#job-seeker-myaccountinfo tr .jobtitle {
+#MyJobs tr .jobtitle {
     width: 35%;
 }
 
 
-#job-seeker-myaccountinfo tr .location {
+#MyJobs tr .location {
     width: 20%;
 }
 
-#job-seeker-myaccountinfo tr .saveddate {
+#MyJobs tr .saveddate {
     width: 15%;
 }
 
-#job-seeker-myaccountinfo tr .expireddate {
+#MyJobs tr .expireddate {
     width: 15%;
 }
 
-#job-seeker-myaccountinfo tr .locationdate {
+#MyJobs tr .locationdate {
     width: 35%;
     padding-right: 15px;
 }
 
-#job-seeker-myaccountinfo tr .action {
+#MyJobs tr .action {
     width: 15%;
 }
 
-#job-seeker-myaccountinfo .jobtitle-image {
+#MyJobs .jobtitle-image {
     float: left;
     width: 74px;
     height: 74px;
     margin-right: 30px;
 }
 
-#job-seeker-myaccountinfo .jobtitle .info {
+#MyJobs .jobtitle .info {
     float: left;
 }
 
-#job-seeker-myaccountinfo .jobtitle .jobname {
+#MyJobs .jobtitle .jobname {
     font-size: 16px;
     font-weight: 900;
     color: #464545;
 }
 
-#job-seeker-myaccountinfo .jobtitle .companyname, .jobtitle .salary {
+#MyJobs .jobtitle .companyname, .jobtitle .salary {
     margin-top: 7px;
     color: #464545;
 }
 
-#job-seeker-myaccountinfo tr .action button {
+#MyJobs tr .action button {
     width: 100%;
     height: 35px;
     border-radius: 4px;
@@ -135,134 +135,134 @@
     transition: 0.2s;
 }
 
-#job-seeker-myaccountinfo tr .action button:hover {
+#MyJobs tr .action button:hover {
     box-shadow: 0 0 6px #2ec1d1;
 }
 
-#job-seeker-myaccountinfo tr .action .applied {
+#MyJobs tr .action .applied {
     background-color: #d1d0d6;
     color: #000000;
 }
 
-#job-seeker-myaccountinfo tr .action .applied:hover {
+#MyJobs tr .action .applied:hover {
     box-shadow: 0 0 6px #d1d0d6;
 }
 
-#job-seeker-myaccountinfo tr .action .save-jobs-hearticon {
+#MyJobs tr .action .save-jobs-hearticon {
     width: 21px;
     height: 20px;
     margin-right: 10px;
 }
 
-#job-seeker-myaccountinfo tr .action a {
+#MyJobs tr .action a {
     color: #454545;
 }
 
-#job-seeker-myaccountinfo tr .action a:hover {
+#MyJobs tr .action a:hover {
     color: #454545;
 }
 
-#job-seeker-myaccountinfo tr .locationdate div {
+#MyJobs tr .locationdate div {
     margin-top: 7px;
 }
 
-#job-seeker-myaccountinfo tr .locationdate div:first-child {
+#MyJobs tr .locationdate div:first-child {
     margin-top: 0;
 }
 
-#job-seeker-myaccountinfo tr .locationdate span {
+#MyJobs tr .locationdate span {
     font-weight: 900;
     margin-right: 15px;
 }
 
-#job-seeker-myaccountinfo .applied-icon {
+#MyJobs .applied-icon {
     float: left;
     width: 100%;
     margin-bottom: 5px;
     text-align: center;
 }
 
-#job-seeker-myaccountinfo .applied-icon img {
+#MyJobs .applied-icon img {
     width: 33px;
     height: 33px;
 }
 
-#job-seeker-myaccountinfo .applied-text {
+#MyJobs .applied-text {
     float: left;
 }
 
 
 
 @media screen and (max-width: 1199.98px) { 
-    #job-seeker-myaccountinfo tr .jobtitle {
+    #MyJobs tr .jobtitle {
         width: 40%;
     }
     
     
-    #job-seeker-myaccountinfo tr .location {
+    #MyJobs tr .location {
         width: 15%;
     }
 
-    #job-seeker-myaccountinfo td {
+    #MyJobs td {
         padding: 13px 10px 12px 10px;
     }
     
-    #job-seeker-myaccountinfo .jobtitle-image {
+    #MyJobs .jobtitle-image {
         width: 23%;
         height: auto;
         margin-right: 5%;
     }
     
-    #job-seeker-myaccountinfo .jobtitle .info {
+    #MyJobs .jobtitle .info {
         width: 72%;
         float: left;
     }
 }
 
 @media (min-width: 992px) { 
-    #job-seeker-myaccountinfo tr .locationdate {
+    #MyJobs tr .locationdate {
         display: none;
     }
 }
 
 @media screen and (max-width: 991.98px) { 
-    #job-seeker-myaccountinfo td {
+    #MyJobs td {
         padding: 13px 8px 12px 8px;
     }
 
-    #job-seeker-myaccountinfo tr .location, tr .saveddate, tr .expireddate  {
+    #MyJobs tr .location, tr .saveddate, tr .expireddate  {
         display: none;
         width: 0;
     }
 
-    #job-seeker-myaccountinfo tr .jobtitle {
+    #MyJobs tr .jobtitle {
         width: 50%;
     }
 
-    #job-seeker-myaccountinfo .jobtitle-image {
+    #MyJobs .jobtitle-image {
         width: 25%;
         height: auto;
         margin-right: 5%;
     }
     
-    #job-seeker-myaccountinfo .jobtitle .info {
+    #MyJobs .jobtitle .info {
         width: 70%;
         float: left;
     }
 
 }
 
-#job-seeker-myaccountinfo .nomyjobbackground {
+#MyJobs .nomyjobbackground {
     text-align: center;
     margin: 48px 0;
 }
 
-#job-seeker-myaccountinfo .nomyjobbackground img {
+#MyJobs .nomyjobbackground img {
     width: 206.1px;
     height: 142.8px;
 }
 
-#job-seeker-myaccountinfo .nomyjobbackground-text {
+#MyJobs .nomyjobbackground-text {
     margin-top: 30px;
     width: 100%;
     font-family: Roboto;
@@ -273,60 +273,60 @@
 
 /* For Mobile */
 
-#job-seeker-myaccountinfo .myjob-table-mobile {
+#MyJobs .myjob-table-mobile {
     display: none;
     font-size: 14px;
 }
 
-#job-seeker-myaccountinfo .myjob-table-mobile .myjob-item {
+#MyJobs .myjob-table-mobile .myjob-item {
     border-bottom: 1px solid #d1d0d6;
     margin-top: 20px;
     padding-bottom: 20px;
     overflow: auto;
 }
 
-#job-seeker-myaccountinfo .myjob-table-mobile .jobtitle {
+#MyJobs .myjob-table-mobile .jobtitle {
     width: 56%;
     margin-right: 4%;
     float: left;
 }
 
-#job-seeker-myaccountinfo .myjob-table-mobile .job-desctiption {
+#MyJobs .myjob-table-mobile .job-desctiption {
     width: 40%;
     float: left;
 }
 
-#job-seeker-myaccountinfo .myjob-table-mobile .job-desctiption .locationdate {
+#MyJobs .myjob-table-mobile .job-desctiption .locationdate {
     text-align: right;
 }
 
-#job-seeker-myaccountinfo .myjob-table-mobile .job-desctiption .locationdate .jobname {
+#MyJobs .myjob-table-mobile .job-desctiption .locationdate .jobname {
     font-size: 18px;
     font-weight: 900;
 }
 
-#job-seeker-myaccountinfo .myjob-table-mobile .job-desctiption .locationdate .locationdate-item {
+#MyJobs .myjob-table-mobile .job-desctiption .locationdate .locationdate-item {
     margin-top: 10px;
     overflow: auto;
 }
 
-#job-seeker-myaccountinfo .myjob-table-mobile .job-desctiption .locationdate .locationdate-item:first-child {
+#MyJobs .myjob-table-mobile .job-desctiption .locationdate .locationdate-item:first-child {
     margin-top: 0;
 }
 
-#job-seeker-myaccountinfo .myjob-table-mobile .job-desctiption .locationdate .name {
+#MyJobs .myjob-table-mobile .job-desctiption .locationdate .name {
     font-weight: 900;
     font-size: 14px;
     float: left;
 }
 
-#job-seeker-myaccountinfo .myjob-table-mobile .action {
+#MyJobs .myjob-table-mobile .action {
     overflow: auto;
     text-align: center;
     margin-top: 15px;
 }
 
-#job-seeker-myaccountinfo .myjob-table-mobile .action button {
+#MyJobs .myjob-table-mobile .action button {
     width: 40%;
     height: 35px;
     border-radius: 4px;
@@ -336,61 +336,61 @@
     transition: 0.2s;
 }
 
-#job-seeker-myaccountinfo .myjob-table-mobile .action button:hover {
+#MyJobs .myjob-table-mobile .action button:hover {
     box-shadow: 0 0 6px #2ec1d1;
 }
 
-#job-seeker-myaccountinfo .myjob-table-mobile .action .applied {
+#MyJobs .myjob-table-mobile .action .applied {
     background-color: #d1d0d6;
     color: #000000;
 }
 
-#job-seeker-myaccountinfo .myjob-table-mobile .action .applied:hover {
+#MyJobs .myjob-table-mobile .action .applied:hover {
     box-shadow: 0 0 6px #d1d0d6;
 }
 
 
-#job-seeker-myaccountinfo .myjob-table-mobile .action .save-jobs-hearticon {
+#MyJobs .myjob-table-mobile .action .save-jobs-hearticon {
     width: 21px;
     height: 20px;
     margin-right: 10px;
 }
 
-#job-seeker-myaccountinfo .myjob-table-mobile .action a {
+#MyJobs .myjob-table-mobile .action a {
     color: #454545;
 }
 
-#job-seeker-myaccountinfo .myjob-table-mobile .action a:hover {
+#MyJobs .myjob-table-mobile .action a:hover {
     color: #454545;
 }
 
 @media screen and (max-width: 767.98px) { 
-    #job-seeker-myaccountinfo .myjob-table {
+    #MyJobs .myjob-table {
         display: none;
     }
 
-    #job-seeker-myaccountinfo .myjob-table-mobile {
+    #MyJobs .myjob-table-mobile {
         display: block;
     }
 
-    #job-seeker-myaccountinfo .jobtitle-image {
+    #MyJobs .jobtitle-image {
         width: 100px;
         height: auto;
     }
     
-    #job-seeker-myaccountinfo .jobtitle .info {
+    #MyJobs .jobtitle .info {
         width: 100%;
         float: left;
         margin-top: 15px;
     }
 
-    #job-seeker-myaccountinfo .applied-icon {
+    #MyJobs .applied-icon {
         width: 50%;
         padding-right: 10px;
         text-align: right;
     }
 
-    #job-seeker-myaccountinfo .applied-text {
+    #MyJobs .applied-text {
         width: 50%;
         text-align: left;
         padding-top: 6px;
@@ -401,18 +401,18 @@
 
 @media screen and (max-width: 479.98px) { 
 
-    #job-seeker-myaccountinfo .myjob-table-mobile .jobtitle {
+    #MyJobs .myjob-table-mobile .jobtitle {
         width: 48%;
         margin-right: 4%;
         float: left;
     }
     
-    #job-seeker-myaccountinfo .myjob-table-mobile .job-desctiption {
+    #MyJobs .myjob-table-mobile .job-desctiption {
         width: 48%;
         float: left;
     }
     
-    #job-seeker-myaccountinfo .myjob-table-mobile .job-desctiption .locationdate .name {
+    #MyJobs .myjob-table-mobile .job-desctiption .locationdate .name {
         float: none;
         font-size: 15px;
     }
@@ -420,28 +420,28 @@
 
 @media screen and (max-width: 393.98px) { 
 
-    #job-seeker-myaccountinfo .myjob-tablinks {
+    #MyJobs .myjob-tablinks {
         height: 42px;
         padding: 10px 20px;
         border-right: none;
         border-bottom: 1px solid #d1d0d6;
     }
     
-    #job-seeker-myaccountinfo .myjob-tablinks:first-child {
+    #MyJobs .myjob-tablinks:first-child {
         padding: 10px 20px;
     }
     
-    #job-seeker-myaccountinfo .myjob-tablinks:last-child {
+    #MyJobs .myjob-tablinks:last-child {
         padding: 10px 20px;
     }
     
-    #job-seeker-myaccountinfo .myjob-tab .active, .myjob-tablinks:active {
+    #MyJobs .myjob-tab .active, .myjob-tablinks:active {
         outline: none;
         color: #454545;
         transition: 0.15s;
     }
 
-    #job-seeker-myaccountinfo .myjob-table-mobile .action button {
+    #MyJobs .myjob-table-mobile .action button {
         width: 100%;
         margin-bottom: 10px;
         margin-right: 0px;

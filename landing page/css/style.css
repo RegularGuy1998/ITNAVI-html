@@ -1,5 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Roboto !important;
+    height: 100%;
+    overflow: scroll;
 }
 
 button {
@@ -68,6 +74,8 @@ button:focus {
     font-size: 18px;
     line-height: 50px;
     margin-right: 40px;
+    cursor: pointer;
+    color: #7f7f7f;
 }
 
 #navi-navbar .navi-navbar-item .text a {
@@ -514,6 +522,7 @@ button:focus {
 #ITNavi-Super-Landing-Page .wts-number {
     position: relative !important;
     overflow: auto;
+    z-index: 0 !important;
     margin-top: 30px;
     left: auto !important;
     width: auto !important;
@@ -768,4 +777,5 @@ button:focus {
 #navi-navbar .navbarfull-hidding {
     animation-name: navbarhiding;
     animation-duration: 0.15s;
+    overflow: hidden;
 }

@@ -1,0 +1,248 @@
+
+#MyAccountInfo .tab-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #2b354d;
+    margin-bottom: 16px;
+}
+
+
+/* Form */
+#MyAccountInfo .form {
+    border-bottom: 1px dashed #d1d0d6;
+    padding-bottom: 12px;
+    margin-bottom: 40px;
+}
+
+#MyAccountInfo .form:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#MyAccountInfo .name-form {
+    padding: 12px 10px 11px 10px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: rgba(30, 189, 207, 0.15);
+    border-left: 4px solid #f7912a;
+    overflow: auto;
+    font-size: 16px;
+}
+
+#MyAccountInfo .name-form .left {
+    font-weight: 500;
+    float: left;
+}
+
+
+#MyAccountInfo .name-form .right {
+    padding-right: 5px;
+    font-weight: 500;
+    float: right;
+}
+
+#MyAccountInfo .starr{
+    font-size: 13px;
+    color: #f22424;
+}
+
+
+#MyAccountInfo .form-body {
+    padding: 6px 50px;
+}
+
+#MyAccountInfo .item {
+    padding: 13px 0;
+    overflow: auto;
+}
+
+
+#MyAccountInfo .small-item {
+    overflow: auto;
+}
+
+#MyAccountInfo .small-item span {
+    font-size: 14px;
+    color: #464545;
+}
+
+#MyAccountInfo .item label {
+    float: left;
+    width: 27%;
+    line-height: 41px;
+    font-size: 16px;
+    color: #464545;
+    margin-bottom: 0;
+}
+
+#MyAccountInfo .item input, .item select {
+    float: left;
+    width: 442px;
+    height: 41px;
+    padding: 0 10px;
+    border-radius: 3px;
+    border: solid 1px #b5b5b5;
+    background-color: #ffffff;
+    color: #464545;
+    transition: 0.2s;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+#MyAccountInfo .item select {
+    padding: 0 15px;
+}
+
+#MyAccountInfo .item button {
+    margin-left: 27%;
+    width: 227px;
+    height: 41px;
+    border-radius: 3px;
+    background-color: #24becf;
+    line-height: 4px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+
+#MyAccountInfo .item .radio {
+    float: left;
+    overflow: auto;
+    width: 442px;
+    margin: 0;
+}
+
+
+
+#MyAccountInfo .item .smalltip {
+    font-size: 12px;
+    line-height: 12px;
+    font-style: italic;
+    margin: 45px 0 0 27%;
+    color: #464545;
+}
+
+
+#MyAccountInfo .item input:focus, .item select:focus, .item button:hover {
+    border: solid 1px #2ec1d1;
+    box-shadow: 0 0 6px #2ec1d1;
+    transition: 0.2s;
+
+}
+
+#MyAccountInfo input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(../image/calendar-with-a-clock-time-tools@3x.png) no-repeat;
+    background-size: 14px auto;
+    margin-left: 5px;
+    border-width: thin;
+}
+
+#MyAccountInfo .radio-item {
+    float: left;
+    overflow: auto;
+}
+
+#MyAccountInfo .radio1, .checkbox1 {
+    float: left;
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+#MyAccountInfo .radio1 {
+    margin: 13px 10px 0 0;
+    border: 2px solid #b5b5b5;
+    border-radius: 50%;
+}
+
+#MyAccountInfo .checkbox1 {
+    border-radius: 2px;
+    border: 1px solid #b5b5b5;
+    margin: 4px 5px 0 0;
+}
+
+
+#MyAccountInfo .radio1:hover, #MyAccountInfo .checkbox1:hover {
+    border: 5px solid #b5b5b5;
+    transition: 0.15s;
+}
+
+#MyAccountInfo .radioactive, #MyAccountInfo .checkboxactive, #MyAccountInfo .radioactive:hover, #MyAccountInfo .checkboxactive:hover {
+    border: 5px solid #2ec1d1;
+    transition: 0.15s;
+}
+
+#MyAccountInfo .radio input {
+    float: left;
+    width: 15px;
+    margin: 0 8px 0 1px;
+}
+
+#MyAccountInfo .radio span {
+    line-height: 43px;
+    float: left;
+    margin-right: 45px;
+}
+
+
+
+@media screen and (max-width: 1199.98px) { 
+    #MyAccountInfo .item .smalltip {
+        float: left;
+        margin: 3px 0 0 0;
+        color: #464545;
+    }
+}
+
+@media screen and (max-width: 991.98px) { 
+    #MyAccountInfo .item label {
+        width: 100%;
+    }
+
+    #MyAccountInfo .item input, .item select {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767.98px) { 
+    #MyAccountInfo .item button , .item .radio{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #MyAccountInfo .form-body {
+        padding: 6px 6px;
+    }
+
+    #MyAccountInfo .find {
+        height: 156px;
+    }
+
+    #MyAccountInfo .find .search {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #MyAccountInfo .find .search-location {
+        margin-left: 0;
+        width: 60%;
+    }
+
+    #MyAccountInfo .find .search-button {
+        width: 38%;
+    }
+}
+
+@media screen and (max-width: 393.98px) { 
+    #MyAccountInfo .hri-tab button {
+        width: 49%;
+    }
+}
