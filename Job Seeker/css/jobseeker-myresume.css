@@ -246,6 +246,10 @@
     padding-top: 18px;
 }
 
+#MyResume .left-body form {
+    overflow: -webkit-paged-y;
+}
+
 #MyResume .left-body-list {
     overflow: auto;
 }
@@ -368,11 +372,12 @@
 #MyResume .text-edit .form-option {
     width: 100%;
     margin-top: 15px;
+    float: left;
     text-align: center;
 }
 
 #MyResume .text-edit .cancel-button {
-    width: 140px;
+    width: 130px;
     height: 41px;
     display: inline-block;
     line-height: 41px;
@@ -390,7 +395,7 @@
 }
 
 #MyResume .text-edit .save-button {
-    width: 227px;
+    width: 200px;
     height: 41px;
     line-height: 41px;
     display: inline-block;
@@ -411,20 +416,24 @@
     margin-top: -15px;
 }
 
+#MyResume .text-edit .text-edit-labeltop  {
+    overflow: -webkit-paged-y;
+}
+
 #MyResume .text-edit .text-edit-labeltop .item {
     padding: 0 5px 5px 5px;
+    margin-bottom: 0;
+    margin-top: 20px;
 }
 
 #MyResume .text-edit .text-edit-labeltop .item-2 {
     width: 48.5%;
     overflow: auto;
-    margin-bottom: 20px;
 }
 
 #MyResume .text-edit .text-edit-labeltop .item-4 {
     width: 23.5%;
     overflow: auto;
-    margin-bottom: 20px;
 }
 
 #MyResume .text-edit .text-edit-labeltop .item-mr-2 {
@@ -734,31 +743,83 @@
     margin-bottom: 13px;
 }
 
-#MyResume .left-body-biglist .biglist-benefit {
+#MyResume .text-edit-labeltop .biglist-item {
+    margin-bottom: 13px;
+    padding-top: 15px;
+    float: left;
+    width: 100%;
+}
+
+#MyResume  .biglist-benefit {
     background-color: rgba(246, 134, 26, 0.05);
+    margin-top: 15px;
     padding-top: 33px; 
     overflow: auto;
 }
 
-#MyResume .left-body-biglist .biglist-benefit .biglist-benefit-item {
+#MyResume .biglist-benefit .biglist-benefit-item, #MyResume .biglist-benefit .biglist-benefit-item-edit {
     float: left;
     overflow: auto;
     width: 33.3333%;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 20px;
     color: #f7912a;
     padding-left: 45px;
     margin-bottom: 30px;
 }
 
-#MyResume .left-body-biglist .biglist-benefit-item-image {
+#MyResume .biglist-benefit-item-image {
     float: left;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     margin-right: 7px;
+    background-image: url(../image/benefits-icon.png);
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
+    background-position-y: -40px;
+    background-size: auto 60px;
+    transition: 0.3s;
+}
+
+#MyResume .biglist-benefit-item-edit {
+    color: #b5b5b5;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#MyResume .biglist-benefit-item-edit .biglist-benefit-item-image {
+    background-position-y: 0px;
+}
+
+#MyResume .biglist-benefit-item-edit:hover {
+    color: #24becf;
+    transition: 0.3s;
+}
+
+#MyResume .biglist-benefit-item-edit:hover > .biglist-benefit-item-image {
+    background-position-y: -20px;
+    color: #24becf;
+    transition: 0.3s;
+}
+
+#MyResume .benefit-active {
+    color: #f7912a;
+    transition: 0.3s;
+}
+
+#MyResume .benefit-active:hover {
+    color: #24becf;
+    transition: 0.3s;
+}
+
+#MyResume .benefit-active > .biglist-benefit-item-image {
+    background-position-y: -40px;
+    transition: 0.3s;
+}
+
+#MyResume .benefit-active:hover > .biglist-benefit-item-image {
+    background-position-y: -40px;
+    color: #f7912a;
+    transition: 0.3s;
 }
 
 
@@ -891,29 +952,59 @@
 }
 
 
+
+
+/* Delete Bootstrap template */
+#MyResume .text-edit .text-edit-labeltop .item .bootstrap-tagsinput {
+    box-shadow: none;
+    min-height: 41px;
+    width: 100%;
+    border: 1px solid #b5b5b5;
+    transition: 0.3s;
+}
+
+#MyResume .text-edit .text-edit-labeltop .item .bootstrap-tagsinput:focus-within {
+    box-shadow: 0 0 5px #24becf;
+    transition: 0.3s;
+}
+
+#MyResume .text-edit .text-edit-labeltop .item .bootstrap-tagsinput input {
+    border: 0;
+    height: 30px;
+    margin-top: 2px;
+    float: none;
+    border-radius: 0;
+    width: 40%;
+}
+
+#MyResume .text-edit .text-edit-labeltop .item .bootstrap-tagsinput input:focus {
+    box-shadow: none;
+}
+
+#MyResume .text-edit .text-edit-labeltop .item .bootstrap-tagsinput ul {
+    max-width: 1px;
+}
+
+
 @media screen and (max-width: 1199.98px) { 
     #MyResume .text-edit .text-edit-labeltop .item-lg-1 {
         width: 100%;
         overflow: auto;
-        margin-bottom: 20px;
     }
 
     #MyResume .text-edit .text-edit-labeltop .item-lg-2 {
         width: 48.5%;
         overflow: auto;
-        margin-bottom: 20px;
     }
 
     #MyResume .text-edit .text-edit-labeltop .item-lg-3 {
         width: 32.33333%;
         overflow: auto;
-        margin-bottom: 20px;
     }
     
     #MyResume .text-edit .text-edit-labeltop .item-lg-4 {
         width: 23.5%;
         overflow: auto;
-        margin-bottom: 20px;
     }
 
     #MyResume .text-edit .text-edit-labeltop .item-mr-lg-1 {
@@ -933,15 +1024,173 @@
     }
 }
 
+@media screen and (max-width: 991.98px) { 
+    #MyResume .text-edit .text-edit-labeltop .item-md-1 {
+        width: 100%;
+        overflow: auto;
+    }
+
+    #MyResume .text-edit .text-edit-labeltop .item-md-2 {
+        width: 48.5%;
+        overflow: auto;
+    }
+
+    #MyResume .text-edit .text-edit-labeltop .item-md-3 {
+        width: 32.33333%;
+        overflow: auto;
+    }
+    
+    #MyResume .text-edit .text-edit-labeltop .item-md-4 {
+        width: 23.5%;
+        overflow: auto;
+    }
+
+    #MyResume .text-edit .text-edit-labeltop .item-mr-md-1 {
+        margin-right: 0%;
+    }
+    
+    #MyResume .text-edit .text-edit-labeltop .item-mr-md-2 {
+        margin-right: 3%;
+    }
+
+    #MyResume .text-edit .text-edit-labeltop .item-mr-md-3 {
+        margin-right: 1.5%;
+    }
+    
+    #MyResume .text-edit .text-edit-labeltop .item-mr-md-4 {
+        margin-right: 1.5%;
+    }
+}
+
+
 @media screen and (max-width: 767.98px) { 
     #MyResume .list-item {
         width: 99%;
     }
+
+    #MyResume .person-avatar {
+        width: 100%;
+        text-align: center
+    }
+
+    #MyResume .person-avatar .person-avatar-img {
+        width: 182px;
+    }
+
+    #MyResume .person-avatar .person-avatar-edit form {
+        width: 182px;
+        margin: auto;
+        padding: 0 9px;
+    }
+
+    #MyResume .person-info {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    #MyResume .text-edit .text-edit-labeltop .item-sm-1 {
+        width: 100%;
+        overflow: auto;
+    }
+
+    #MyResume .text-edit .text-edit-labeltop .item-sm-2 {
+        width: 48.5%;
+        overflow: auto;
+    }
+
+    #MyResume .text-edit .text-edit-labeltop .item-sm-3 {
+        width: 32.33333%;
+        overflow: auto;
+    }
+    
+    #MyResume .text-edit .text-edit-labeltop .item-sm-4 {
+        width: 23.5%;
+        overflow: auto;
+    }
+
+    #MyResume .text-edit .text-edit-labeltop .item-mr-sm-1 {
+        margin-right: 0%;
+    }
+    
+    #MyResume .text-edit .text-edit-labeltop .item-mr-sm-2 {
+        margin-right: 3%;
+    }
+
+    #MyResume .text-edit .text-edit-labeltop .item-mr-sm-3 {
+        margin-right: 1.5%;
+    }
+    
+    #MyResume .text-edit .text-edit-labeltop .item-mr-sm-4 {
+        margin-right: 1.5%;
+    }
+
+    #MyResume .biglist-benefit .biglist-benefit-item, #MyResume .biglist-benefit .biglist-benefit-item-edit {
+        width: 49.999%;
+    }
 }
+
+
 
 @media screen and (max-width: 575.98px) { 
     #MyResume .myresume-left .myresume-element {
         padding: 20px 10px 27px 10px;
+    }
+
+    #MyResume .text-edit .cancel-button {
+        width: 38%;
+        margin-right: 2%;
+    }
+
+    #MyResume .text-edit .save-button {
+        width: 56%;
+    }
+
+    #MyResume .text-edit .item input, #MyResume .text-edit .item select {
+        width: 100%;
+    }
+
+    #MyResume .text-edit .text-edit-labeltop .item-xs-1 {
+        width: 100%;
+        overflow: auto;
+    }
+
+    #MyResume .text-edit .text-edit-labeltop .item-xs-2 {
+        width: 48.5%;
+        overflow: auto;
+    }
+
+    #MyResume .text-edit .text-edit-labeltop .item-xs-3 {
+        width: 32.33333%;
+        overflow: auto;
+    }
+    
+    #MyResume .text-edit .text-edit-labeltop .item-xs-4 {
+        width: 23.5%;
+        overflow: auto;
+    }
+
+    #MyResume .text-edit .text-edit-labeltop .item-mr-xs-1 {
+        margin-right: 0%;
+    }
+    
+    #MyResume .text-edit .text-edit-labeltop .item-mr-xs-2 {
+        margin-right: 3%;
+    }
+
+    #MyResume .text-edit .text-edit-labeltop .item-mr-xs-3 {
+        margin-right: 1.5%;
+    }
+    
+    #MyResume .text-edit .text-edit-labeltop .item-mr-xs-4 {
+        margin-right: 1.5%;
+    }
+
+}
+
+
+@media screen and (max-width: 575.98px) { 
+    #MyResume .biglist-benefit .biglist-benefit-item, #MyResume .biglist-benefit .biglist-benefit-item-edit {
+        width: 99.99%;
     }
 
 }

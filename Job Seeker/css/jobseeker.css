@@ -227,3 +227,32 @@
     margin-top: -3px;
     margin-bottom: 50px;
 }
+
+
+@media screen and (max-width: 767.98px) { 
+
+    #Job-Seeker .find {
+        height: 156px;
+    }
+
+    #Job-Seeker .find .search {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #Job-Seeker .find .search-location {
+        margin-left: 0;
+        width: 60%;
+    }
+
+    #Job-Seeker .find .search-button {
+        width: 38%;
+    }
+}
+
+
+@media screen and (max-width: 393.98px) { 
+    #Job-Seeker .hri-tab button {
+        width: 49%;
+    }
+}

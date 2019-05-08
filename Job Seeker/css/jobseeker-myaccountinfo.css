@@ -221,28 +221,4 @@
     #MyAccountInfo .form-body {
         padding: 6px 6px;
     }
-
-    #MyAccountInfo .find {
-        height: 156px;
-    }
-
-    #MyAccountInfo .find .search {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    #MyAccountInfo .find .search-location {
-        margin-left: 0;
-        width: 60%;
-    }
-
-    #MyAccountInfo .find .search-button {
-        width: 38%;
-    }
-}
-
-@media screen and (max-width: 393.98px) { 
-    #MyAccountInfo .hri-tab button {
-        width: 49%;
-    }
 }

@@ -152,6 +152,17 @@ $(document).ready(function () {
         CallSomethingShow('JS-MR-REFERENCES-edit-form');
     })
 
+    // Show and Hide for WORKINGPREFERENCES Edit form
+    $('#JS-MR-WORKINGPREFERENCES-Cancel-Button').on('click', function () {
+        CallSomethingShow('JS-MR-WORKINGPREFERENCES-view');
+        CallSomethingHide('JS-MR-WORKINGPREFERENCES-edit-form');
+    })
+
+    $('#JS-MR-WORKINGPREFERENCES-show-edit').on('click', function () {
+        CallSomethingShow('JS-MR-WORKINGPREFERENCES-edit-form');
+        CallSomethingHide('JS-MR-WORKINGPREFERENCES-view');
+    })
+
 
 
 
