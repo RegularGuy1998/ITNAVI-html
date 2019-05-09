@@ -1,0 +1,136 @@
+body {
+    background-color: #f2f2f2 !important;
+    font-family: 'roboto' !important;
+    color: #464545;
+}
+
+#Post-Job {
+    margin-top: 110px;
+    font-size: 16px;
+
+    .bordertext {
+        font-weight: 900;
+    }
+
+    .padding-width-30 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .set-box-shadow {
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.11);
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+        background-color: white;
+    }
+
+    .super-starr {
+        color: #F22424;
+        font-size: 14px;
+    }
+
+    %defaut-input-form {
+        height: 41px;
+        border: none;
+        float: left;
+        border-radius: 5px;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            outline: none;
+        }
+
+        &::-webkit-input-placeholder {
+            font-size: 14px;
+        }
+    }
+
+    .super-radio-button {
+        float: left;
+        width: 15px;
+        height: 15px;
+        border: 2px solid #b5b5b5;
+        border-radius: 50%;
+        transition: 0.15s;
+        cursor: pointer;
+
+        &:hover {
+            border: 5px solid #b5b5b5;
+            transition: 0.15s;
+        }
+    }
+
+    .super-checkbox-button {
+        @extend .super-radio-button;
+
+        border-radius: 2px;
+        border: 1px solid #b5b5b5;
+    }
+
+    .super-radio-button-active,
+    .super-checkbox-button-active,
+    .super-radio-button-active:hover,
+    .super-checkbox-button-active:hover {
+        border: 5px solid #2ec1d1;
+        transition: 0.15s;
+    }
+
+    .hri-tab {
+        overflow: hidden;
+
+        button {
+            border: none;
+            width: 152px;
+            height: 43px;
+            font-size: 18px;
+            text-align: center;
+            line-height: 43px;
+            color: #464545;
+            margin-bottom: 3px;
+            background-color: #d1d0d6;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+
+            &:hover {
+                outline: none;
+                color: #fff;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .active {
+            color: #ffffff;
+            background-color: #f7912a;
+            transition: 0.2s;
+            outline: none;
+        }
+    }
+
+    .hri-tabcontent {
+        display: none;
+        transition: 0.2px;
+        margin-top: -3px;
+        margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: 575.98px) {
+        .padding-width-xs-10 {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
+
+        .padding-width-xs-20 {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+    }
+
+    @import "postjob-managejobs";
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/postjob.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="Post-Job">
+        <div class="container">
+            <div class="hri-tab">
+                <button id="DashboardButton" class="hri-tablinks"
+                    onclick="openPostJobTab(event, 'Dashboard')">Dashboard</button>
+                <button id="ManageJobsButton" class="hri-tablinks" onclick="openPostJobTab(event, 'ManageJobs')">
+                    Manage Jobs</button>
+                <button id="ManageCandidateButton" class="hri-tablinks"
+                    onclick="openPostJobTab(event, 'ManageCandidate')">
+                    Manage Candidate</button>
+            </div>
+
+            <div id="Dashboard" class="hri-tabcontent set-box-shadow">
+                aaa
+            </div>
+            <div id="ManageJobs" class="hri-tabcontent set-box-shadow">
+                <form action="#" method="POST">
+                    <div class="padding-width-30 padding-width-xs-10">
+                        <div class="big-title">
+                            Post Job
+                        </div>
+                        <div class="list-form-item">
+                            <div class="item">
+                                <label for="jobtitle">Job Title <span class="super-starr">*</span> </label>
+                                <input type="text" name="jobtitle" placeholder="e.g. Java Developer" required>
+                            </div>
+                            <div class="item">
+                                <label for="vacancies">No. of vacancies <span class="super-starr">*</span> </label>
+                                <input type="text" name="vacancies" required>
+                            </div>
+                            <div class="item">
+                                <label for="category">Job Category <span class="super-starr">*</span> </label>
+                                <select name="category" id="category">
+                                    <option value="Select Category" disabled selected>Select Category</option>
+                                    <option value="Marketing">Marketing</option>
+                                    <option value="Sales">Sales</option>
+                                </select>
+                                <div class="small-tip">(Up to 3 categories)</div>
+                            </div>
+                            <div class="item">
+                                <label for="location">Location <span class="super-starr">*</span> </label>
+                                <select name="location" id="location">
+                                    <option value="Select Category" disabled selected>Select your Location</option>
+                                    <option value="Marketing">Viet Nam</option>
+                                    <option value="Sales">ThaiLand</option>
+                                </select>
+                                <div class="small-tip">(Up to 3 categories)</div>
+                            </div>
+                            <div class="item">
+                                <label for="joblevel">Job Level <span class="super-starr">*</span> </label>
+                                <select name="joblevel" id="joblevel">
+                                    <option value="Select Lrvrl" disabled selected>Select Job Level</option>
+                                    <option value="Marketing">Viet Nam</option>
+                                    <option value="Sales">ThaiLand</option>
+                                </select>
+                            </div>
+                            <div class="item">
+                                <label for="preferredlanguage">Preferred Language
+                                </label>
+                                <select name="location" id="location">
+                                    <option value="Select Category" disabled selected>Select Language</option>
+                                    <option value="Marketing">Viet Nam</option>
+                                    <option value="Sales">ThaiLand</option>
+                                </select>
+                            </div>
+                            <div class="item">
+                                <label for="jobtype">Job Type <span class="super-starr">*</span> </label>
+                                <select name="jobtype" id="jobtype">
+                                    <option value="Select Category" disabled selected>Select Job Type</option>
+                                    <option value="Marketing">Viet Nam</option>
+                                    <option value="Sales">ThaiLand</option>
+                                </select>
+                            </div>
+                            <div class="item">
+                                <label for="vacancies">Contact Person </label>
+                                <input type="text" name="vacancies" placeholder="Kieu Nguyen Nhung">
+                            </div>
+                            <div class="item">
+                                <label for="salaryrangetype">Salary range <span class="super-starr">*</span></label>
+                                <input class="many-input" type="number" name="salaryrangefrom" placeholder="From"
+                                    required>
+                                <input class="many-input" type="number" name="salaryrangeto" placeholder="To" required>
+                                <select class="many-input-select" name="salaryrangetype" id="salaryrangetype">
+                                    <option value="Select Category" disabled selected>VND</option>
+                                    <option value="Marketing">USD</option>
+                                </select>
+                                <div class="item-checkbox">
+                                    <div class="super-checkbox-button" data-name="showsalaryinfo"></div>
+                                    Show the salary info
+                                    <input type="hidden" id="showsalaryinfo" value="false">
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <label for="vacancies">Email for Applications</label>
+                                <input type="text" name="vacancies" placeholder="nhung.kieu@hri.com.vn">
+                                <div class="small-tip">(Various emails should be separated by , or ;)</div>
+                            </div>
+                            <div class="item-100">
+                                <label for="vacancies">Skill Tag <span class="super-starr">*</span></label>
+                                <input type="text" name="vacancies" placeholder="e.g. Java Developer" required>
+                            </div>
+                            <div class="item-100">
+                                <label for="jobdescription">Job Description <span class="super-starr">*</span></label>
+                                <textarea name="jobdescription" id="jobdescription" required></textarea>
+                            </div>
+                            <div class="item-100">
+                                <label for="requirement">Requirement <span class="super-starr">*</span></label>
+                                <textarea name="requirement" id="requirement" required></textarea>
+                            </div>
+                            <div class="item-100">
+                                <label for="benefit">Benefit <span class="super-starr">*</span></label>
+                                <textarea name="benefit" id="benefit" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advertisingvalueoptions">
+                        <div class="title">Advertising Added Value Options</div>
+                        <div class="body padding-width-xs-20">
+                            <div class="option-item">
+                                <div class="super-checkbox-button" data-name="hotjob"></div>
+                                <input type="hidden" name="hotjob" id="hotjob" value="false">
+                                Hot Job: Your job will be attached a red icon to attract candidate.
+                            </div>
+                            <div class="option-item">
+                                <div class="super-checkbox-button" data-name="homepagejob"></div>
+                                <input type="hidden" name="homepagejob" id="homepagejob" value="false">
+                                Homepage Job: Your job will be displayed on homepage which easily approach potential
+                                candidate.
+                            </div>
+                        </div>
+
+                        <div class="submit">
+                            <div class="submit-form">
+                                <button type="button" class="option-cancel">CANCEL</button>
+                                <button type="button" class="option-savedraft">SAVE AS DRAFT</button>
+                                <button type="submit" class="option-postjob">POST JOB</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div id="ManageCandidate" class="hri-tabcontent set-box-shadow">
+                sdgdd
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+            crossorigin="anonymous"></script>
+        <script src="js/postjob.js"></script>
+        <script
+            src="https://cloud.tinymce.com/5/tinymce.min.js?apiKey=91qgxs5hmb6bibrhkl8m68rklgf5ko03cq1h2lv2mr0utvcp"></script>
+
+        <script>
+            document.getElementById('ManageJobsButton').click();
+
+            tinymce.init({
+                selector: '#jobdescription'
+            });
+
+            tinymce.init({
+                selector: '#requirement'
+            });
+
+            tinymce.init({
+                selector: '#benefit'
+            });
+        </script>
+    </div>
+</body>
+
+</html>

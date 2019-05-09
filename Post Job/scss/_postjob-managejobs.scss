@@ -1,0 +1,328 @@
+#ManageJobs {
+    padding: 20px 0px;
+
+    .big-title {
+        font-size: 22px;
+        font-weight: 500;
+        color: #464545;
+    }
+
+    .list-form-item {
+        overflow: auto;
+
+        .item {
+            float: left;
+            width: 47.999%;
+            overflow: auto;
+            padding: 23px 5px 5px 0;
+
+            &:nth-child(even) {
+                margin-left: 4%;
+            }
+
+            label {
+                height: 41px;
+                line-height: 20px;
+                float: left;
+                display: flex;
+                align-items: center;
+                width: 35%;
+                margin-bottom: 0;
+            }
+
+            input {
+                @extend %defaut-input-form;
+
+                border: 1px solid #b5b5b5;
+                transition: 0.3s;
+                width: 65%;
+                padding: 0 10px;
+
+                &:focus {
+                    box-shadow: 0 0 5px #f7912a;
+                    transition: 0.3s;
+                }
+            }
+
+            select {
+                @extend %defaut-input-form;
+                border: 1px solid #b5b5b5;
+                transition: 0.3s;
+                width: 65%;
+                padding: 0 10px;
+                background-color: #fff;
+
+                &:focus {
+                    box-shadow: 0 0 5px #f7912a;
+                    transition: 0.3s;
+                }
+            }
+
+            .many-input {
+                width: 24%;
+                overflow: auto;
+                margin: 0 1% 0 0;
+            }
+
+            .many-input-select {
+                width: 15%;
+                margin: 0;
+            }
+
+            .small-tip {
+                float: left;
+                font-size: 14px;
+                line-height: 16px;
+                font-style: italic;
+                text-align: left;
+                color: #464545;
+                width: 100%;
+                padding-left: 35%;
+                margin-top: 4px;
+            }
+
+            .item-checkbox {
+                float: left;
+                overflow: auto;
+                width: 100%;
+                padding-left: 35%;
+                margin-top: 7px;
+                font-size: 14px;
+
+                .super-checkbox-button {
+                    margin: 2px 4px 0 0;
+                }
+            }
+        }
+
+        .item-fill {
+            margin-right: 50%;
+        }
+
+        .item-100 {
+            @extend .item;
+            width: 100%;
+            margin-top: 10px;
+
+            &:nth-child(even) {
+                margin-left: 0;
+            }
+
+            label {
+                width: 16.8%;
+                display: block;
+                align-items: baseline;
+            }
+
+            input {
+                width: 83.2%;
+            }
+
+            textarea {
+                width: 66.4%;
+            }
+
+            .tox-tinymce {
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .advertisingvalueoptions {
+        .title {
+            margin-top: 50px;
+            padding: 18px 30px;
+            background-color: rgb(160, 226, 234);
+            font-size: 18px;
+            font-weight: 900;
+            color: #464545;
+        }
+
+        .body {
+            padding: 25px 100px;
+
+            .option-item {
+                margin-bottom: 10px;
+
+                .super-checkbox-button {
+                    margin: 2px 7px 0 0;
+                }
+            }
+        }
+
+        .submit {
+            text-align: center;
+
+            .submit-form {
+                padding: 10px;
+                overflow: auto;
+                display: inline-block;
+                margin: 10px auto 0 auto;
+
+                .option-cancel {
+                    @extend %defaut-input-form;
+
+                    width: 140px;
+                    border: 1px solid #b4b2b9;
+                    color: #b4b2b9;
+                    line-height: 40px;
+                    margin: 0 10px;
+                    transition: 0.3s;
+
+                    &:hover {
+                        box-shadow: 0 0 5px #b4b2b9;
+                        transition: 0.3s;
+                    }
+
+                    &:active {
+                        box-shadow: inset 1px 1px 2px #b4b2b9;
+                    }
+                }
+
+                .option-savedraft {
+                    @extend .option-cancel;
+
+                    border-color: #24becf;
+                    color: #24becf;
+
+
+                    &:hover {
+                        box-shadow: 0 0 5px #24becf;
+                    }
+
+                    &:active {
+                        box-shadow: inset 1px 1px 2px #b4b2b9;
+                    }
+                }
+
+                .option-postjob {
+                    @extend .option-savedraft;
+
+                    border: none;
+                    background-color: #24becf;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 991.98px) {
+
+        .list-form-item {
+            .item {
+                width: 100%;
+
+                &:nth-child(even) {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 767.98px) {
+
+        .list-form-item {
+            .item-100 {
+                label {
+                    width: 100%;
+                }
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 575.98px) {
+
+        .list-form-item {
+            .item {
+                padding-top: 15px;
+
+                label {
+                    width: 100%;
+                    height: 20px;
+                }
+
+                input {
+                    width: 100%;
+                }
+
+                select {
+                    width: 100%;
+                }
+
+                .many-input {
+                    width: 38%;
+                    overflow: auto;
+                    margin: 0 2% 0 0;
+                }
+
+                .many-input-select {
+                    width: 20%;
+                    margin: 0;
+                }
+
+                .small-tip {
+                    padding-left: 0;
+                }
+
+                .item-checkbox {
+                    padding-left: 0;
+                }
+            }
+        }
+
+        .advertisingvalueoptions {
+
+            .submit {
+
+                .submit-form {
+
+                    width: 100%;
+                    overflow: auto;
+
+                    .option-cancel,
+                    .option-savedraft,
+                    .option-postjob {
+                        float: left;
+                        width: 31.33333%;
+                        margin: 0 1%;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 479.98px) {
+        .advertisingvalueoptions {
+
+            .submit {
+
+                .submit-form {
+
+                    .option-cancel {
+                        width: 38%;
+                    }
+
+                    .option-savedraft {
+                        width: 58%;
+                    }
+
+                    .option-postjob {
+                        width: 98%;
+                        margin-top: 7px;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+}
