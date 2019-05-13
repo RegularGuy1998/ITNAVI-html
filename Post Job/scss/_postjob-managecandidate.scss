@@ -1,0 +1,1160 @@
+%default-pagging {
+    float: left;
+    padding: 6px;
+    overflow: auto;
+    margin-top: 10px;
+
+    .default-pagging-button {
+        float: left;
+        width: 33px;
+        height: 33px;
+        color: #707070;
+        transition: 0.15s;
+        border-radius: 50%;
+
+        &:hover {
+            background-color: #1ebdcf;
+            border-radius: 6px;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            color: #fff;
+            transition: 0.15s;
+        }
+    }
+
+    .previous {
+        @extend .default-pagging-button;
+
+        background-color: #e8e8e8;
+
+        img {
+            width: 5.3px;
+            height: 9.6px;
+            margin: 10px 0 0 14px;
+        }
+    }
+
+    .next {
+        @extend .default-pagging-button;
+
+        background-color: #e8e8e8;
+
+        img {
+            width: 5.3px;
+            height: 9.6px;
+            margin: 10px 0 0 14px;
+        }
+    }
+
+    .pagging-list {
+        float: left;
+        padding: 0 8px;
+        margin: 0 11px;
+        overflow: auto;
+        border-radius: 16px;
+        background-color: #e8e8e8;
+
+        .pagger {
+            @extend .default-pagging-button;
+
+            text-align: center;
+            line-height: 35px;
+            font-size: 12px;
+
+
+            @media screen and (max-width: 575.98px) {
+                width: auto;
+                padding: 0 7px;
+            }
+        }
+
+        .active {
+            background-color: #1ebdcf;
+            border-radius: 6px;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            color: #fff;
+            transition: 0.15s;
+        }
+
+        .disable {
+            &:hover {
+                box-shadow: none;
+                color: #707070;
+                background-color: #e8e8e8;
+            }
+        }
+
+    }
+}
+
+#ManageCandidate-AppliedCandidate {
+    overflow: auto;
+    padding-bottom: 20px;
+
+    .set-box-shadow {
+        border-top-right-radius: 0;
+    }
+
+    .form-title {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        form {
+            padding: 10px 0;
+            overflow: auto;
+
+            label {
+                float: left;
+                line-height: 41px;
+                color: #707070;
+                font-weight: 100;
+            }
+
+            .item-jobtitle {
+                float: left;
+                width: 45%;
+
+                label {
+                    width: 20%;
+                }
+
+                input {
+                    @extend %defaut-input-form;
+                    border: 1px solid #b5b5b5;
+                    padding: 0 10px;
+                    width: 70%;
+
+                    &:focus {
+                        box-shadow: 0 0 5px #f7912a;
+                    }
+                }
+            }
+
+            .item-status {
+                float: left;
+                width: 30%;
+
+                label {
+                    width: 20%;
+                }
+
+                select {
+                    @extend %defaut-input-form;
+                    border: 1px solid #b5b5b5;
+                    background-color: #fff;
+                    padding: 0 10px;
+                    width: 70%;
+
+                    &:focus {
+                        box-shadow: 0 0 5px #f7912a;
+                    }
+                }
+            }
+
+            button {
+                @extend %defaut-input-form;
+                background-color: #f7912a;
+                line-height: 40px;
+                font-weight: 900;
+                width: 140px;
+                color: #fff;
+
+                &:hover {
+                    box-shadow: 0 0 5px #f7912a;
+                }
+
+            }
+        }
+    }
+
+    %applicedjob-table {
+        width: 100%;
+        min-width: 940px;
+
+        tr {
+
+            th,
+            td {
+                text-align: center;
+                color: #464545;
+                font-size: 14px;
+            }
+
+            td {
+                padding: 20px 5px;
+            }
+
+            .sharp {
+                width: 3%;
+            }
+
+            .candidatename {
+                width: 30%;
+            }
+
+            .contactinfomation {
+                width: 15%;
+            }
+
+            .appliedjobpost {
+                width: 10%;
+            }
+
+            .applieddate {
+                width: 10%;
+            }
+
+            .hiringstatus {
+                width: 10%;
+            }
+
+            .note {
+                width: 10%;
+            }
+
+            .action {
+                width: 14%;
+            }
+
+        }
+    }
+
+    .applicedjob-table-thead {
+        @extend %applicedjob-table;
+        width: 100%;
+        margin-top: 16px;
+
+        tr {
+            background-color: rgba(30, 189, 207, 0.15);
+            height: 57px;
+
+        }
+    }
+
+
+    .applicedjob-table-tbody {
+        @extend %applicedjob-table;
+        border-collapse: separate;
+        border-spacing: 0 6px;
+        margin-top: -6px;
+        width: 100%;
+
+        tr {
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.11);
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+
+            .candidatename {
+                overflow: auto;
+                text-align: left;
+
+                .avatar {
+                    width: 24%;
+                    height: auto;
+                    float: left;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 5px;
+                    }
+                }
+
+                .info {
+
+                    margin-left: 3%;
+                    width: 73%;
+                    overflow: auto;
+                    float: left;
+
+                    .ghim {
+                        @extend %default-background-color;
+
+                        float: left;
+                        width: 11.7px;
+                        height: 13px;
+                        margin: 3px 3px 0 0;
+                        background-image: url(../image/paperclip@3x.png);
+                    }
+
+                    .name {
+                        float: left;
+                        width: 100%;
+                        font-size: 16px;
+                        font-weight: 900;
+
+                        &.link {
+                            color: #2a75f7;
+                        }
+                    }
+
+                    .job {
+                        width: 100%;
+                        font-weight: 900;
+                        float: left;
+                    }
+
+                    .more-info {
+
+                        .more-info-icon {
+                            @extend %default-background-color;
+
+                            float: left;
+                            width: 10px;
+                            height: 10px;
+                            margin: 5px 5px 0 0;
+                        }
+                    }
+
+                    .null {
+                        height: 55px;
+                        width: 10px;
+                    }
+
+                    .extend-file {
+                        font-style: italic;
+                        color: #2a75f7;
+                    }
+                }
+            }
+
+            .action {
+                text-align: left;
+                overflow: auto;
+
+
+                .action-item {
+                    color: #2a75f7;
+                    padding-bottom: 9px;
+                    float: left;
+                    cursor: pointer;
+
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                    .item-icon {
+                        @extend %default-background-color;
+
+                        float: left;
+                        width: 13px;
+                        height: 13px;
+                        margin: 3px 7px 0 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .pagging-right {
+        @extend %default-pagging;
+        margin-right: 25px;
+        float: right;
+    }
+
+    @media screen and (max-width: 1199.98px) {
+        %applicedjob-table {
+            tr {
+                .appliedjobpost {
+                    width: 8%;
+                }
+    
+                .applieddate {
+                    width: 10%;
+                }
+    
+                .hiringstatus {
+                    width: 10%;
+                }
+    
+                .note {
+                    width: 10%;
+                }
+    
+                .action {
+                    width: 14%;
+                }
+    
+            }
+        }
+    }
+
+    @media screen and (max-width: 991.98px) {
+        .form-title {
+            form {
+                .item-jobtitle {
+                    width: 100%;
+                    label {
+                        width: 25%;
+                    }
+
+                    input {
+                        width: 75%;
+                    }
+                }
+
+                .item-status {
+                    width: 70%;
+                }
+
+                button {
+                    width: 30%;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 575.98px) {
+        .form-title {
+            form {
+
+                .item-status {
+                    width: 100%;
+
+                    label {
+                        width: 25%;
+                    }
+
+                    select {
+                        width: 75%;
+                    }
+                }
+
+                button {
+                    width: 60%;
+                    margin-left: 20%;
+                }
+            }
+        }
+    }
+
+}
+
+#ManageCandidate-UsedCreditCandidate {
+    overflow: auto;
+    padding-bottom: 20px;
+
+    .set-box-shadow {
+        border-top-right-radius: 0;
+    }
+
+    .form-title {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        form {
+            padding: 10px 0;
+            overflow: auto;
+
+            label {
+                float: left;
+                line-height: 41px;
+                color: #707070;
+                font-weight: 100;
+            }
+
+            .item-jobtitle {
+                float: left;
+                width: 50%;
+
+                label {
+                    width: 30%;
+                }
+
+                input {
+                    @extend %defaut-input-form;
+                    border: 1px solid #b5b5b5;
+                    padding: 0 10px;
+                    width: 65%;
+
+                    &:focus {
+                        box-shadow: 0 0 5px #f7912a;
+                    }
+                }
+            }
+
+            .item-status {
+                float: left;
+                width: 30%;
+
+                label {
+                    width: 20%;
+                }
+
+                select {
+                    @extend %defaut-input-form;
+                    border: 1px solid #b5b5b5;
+                    background-color: #fff;
+                    padding: 0 10px;
+                    width: 70%;
+
+                    &:focus {
+                        box-shadow: 0 0 5px #f7912a;
+                    }
+                }
+            }
+
+            button {
+                @extend %defaut-input-form;
+                background-color: #f7912a;
+                line-height: 40px;
+                font-weight: 900;
+                width: 140px;
+                color: #fff;
+
+                &:hover {
+                    box-shadow: 0 0 5px #f7912a;
+                }
+
+            }
+        }
+    }
+
+    %applicedjob-table {
+        width: 100%;
+        min-width: 940px;
+
+        tr {
+
+            th,
+            td {
+                text-align: center;
+                color: #464545;
+                font-size: 14px;
+            }
+
+            td {
+                padding: 20px 5px;
+            }
+
+            .sharp {
+                width: 3%;
+            }
+
+            .candidatename {
+                width: 25%;
+            }
+
+            .contactinfomation {
+                width: 10%;
+            }
+
+            .lastupdateddate {
+                width: 10%;
+            }
+
+            .vieweddate {
+                width: 10%;
+            }
+
+            .expireddate {
+                width: 10%;
+            }
+
+            .hiringstatus {
+                width: 10%;
+            }
+
+            .note {
+                width: 10%;
+            }
+
+            .action {
+                width: 14%;
+            }
+
+        }
+    }
+
+    .applicedjob-table-thead {
+        @extend %applicedjob-table;
+        width: 100%;
+        margin-top: 16px;
+
+        tr {
+            background-color: rgba(30, 189, 207, 0.15);
+            height: 57px;
+
+        }
+    }
+
+
+    .applicedjob-table-tbody {
+        @extend %applicedjob-table;
+        border-collapse: separate;
+        border-spacing: 0 6px;
+        margin-top: -6px;
+        width: 100%;
+
+        tr {
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.11);
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+
+            .candidatename {
+                overflow: auto;
+                text-align: left;
+
+                .avatar {
+                    width: 29%;
+                    height: auto;
+                    float: left;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 5px;
+                    }
+                }
+
+                .info {
+
+                    margin-left: 3%;
+                    width: 68%;
+                    overflow: auto;
+                    float: left;
+
+                    .ghim {
+                        @extend %default-background-color;
+
+                        float: left;
+                        width: 11.7px;
+                        height: 13px;
+                        margin: 3px 3px 0 0;
+                        background-image: url(../image/paperclip@3x.png);
+                    }
+
+                    .name {
+                        float: left;
+                        width: 100%;
+                        font-size: 16px;
+                        font-weight: 900;
+
+                        &.link {
+                            color: #2a75f7;
+                        }
+                    }
+
+                    .job {
+                        width: 100%;
+                        font-weight: 900;
+                        float: left;
+                    }
+
+                    .more-info {
+
+                        .more-info-icon {
+                            @extend %default-background-color;
+
+                            float: left;
+                            width: 10px;
+                            height: 10px;
+                            margin: 5px 5px 0 0;
+                        }
+                    }
+
+                    .null {
+                        height: 55px;
+                        width: 10px;
+                    }
+
+                    .extend-file {
+                        font-style: italic;
+                        color: #2a75f7;
+                    }
+                }
+            }
+
+            .action {
+                text-align: left;
+                overflow: auto;
+
+
+                .action-item {
+                    color: #2a75f7;
+                    padding-bottom: 9px;
+                    float: left;
+
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+
+                    .item-icon {
+                        @extend %default-background-color;
+
+                        float: left;
+                        width: 13px;
+                        height: 13px;
+                        margin: 3px 7px 0 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .pagging-right {
+        @extend %default-pagging;
+        margin-right: 25px;
+        float: right;
+    }
+
+    @media screen and (max-width: 1199.98px) {
+        %applicedjob-table {
+            tr {
+                .candidatename {
+                    width: 30%;
+                
+                    .avatar {
+                        width: 25%;
+                    }
+
+                    .info {
+                        width: 71%;
+                    }
+                }
+
+                .lastupdateddate {
+                    width: 8%;
+                }
+    
+                .vieweddate {
+                    width: 7%;
+                }
+
+                .expireddate {
+                    width: 7%;
+                }
+    
+                .hiringstatus {
+                    width: 10%;
+                }
+    
+                .note {
+                    width: 10%;
+                }
+    
+                .action {
+                    width: 14%;
+                }
+    
+            }
+        }
+    }
+
+    @media screen and (max-width: 991.98px) {
+        .form-title {
+            form {
+                .item-jobtitle {
+                    width: 100%;
+                    label {
+                        width: 30%;
+                    }
+
+                    input {
+                        width: 70%;
+                    }
+                }
+
+                .item-status {
+                    width: 70%;
+                }
+
+                button {
+                    width: 30%;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 575.98px) {
+        .form-title {
+            form {
+                .item-jobtitle {
+                    label {
+                        width: 30%;
+                        line-height: 20px;
+                    }
+
+                    input {
+                        width: 70%;
+                    }
+                }
+
+                .item-status {
+                    width: 100%;
+
+                    label {
+                        width: 25%;
+                    }
+
+                    select {
+                        width: 75%;
+                    }
+                }
+
+                button {
+                    width: 60%;
+                    margin-left: 20%;
+                }
+            }
+        }
+    }
+
+
+}
+
+#ManageCandidate-BookmarkedCandidate {
+    overflow: auto;
+    padding-bottom: 20px;
+
+    .set-box-shadow {
+        border-top-right-radius: 0;
+    }
+
+    .form-title {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        form {
+            padding: 10px 0;
+            overflow: auto;
+
+            label {
+                float: left;
+                line-height: 41px;
+                color: #707070;
+                font-weight: 100;
+            }
+
+            .item-jobtitle {
+                float: left;
+                width: 50%;
+
+                label {
+                    width: 30%;
+                }
+
+                input {
+                    @extend %defaut-input-form;
+                    border: 1px solid #b5b5b5;
+                    padding: 0 10px;
+                    width: 65%;
+
+                    &:focus {
+                        box-shadow: 0 0 5px #f7912a;
+                    }
+                }
+            }
+
+            .item-status {
+                float: left;
+                width: 30%;
+
+                label {
+                    width: 20%;
+                }
+
+                select {
+                    @extend %defaut-input-form;
+                    border: 1px solid #b5b5b5;
+                    background-color: #fff;
+                    padding: 0 10px;
+                    width: 70%;
+
+                    &:focus {
+                        box-shadow: 0 0 5px #f7912a;
+                    }
+                }
+            }
+
+            button {
+                @extend %defaut-input-form;
+                background-color: #f7912a;
+                line-height: 40px;
+                font-weight: 900;
+                width: 140px;
+                color: #fff;
+
+                &:hover {
+                    box-shadow: 0 0 5px #f7912a;
+                }
+
+            }
+        }
+    }
+
+    %applicedjob-table {
+        width: 100%;
+        min-width: 940px;
+
+        tr {
+
+            th,
+            td {
+                text-align: center;
+                color: #464545;
+                font-size: 14px;
+            }
+
+            td {
+                padding: 20px 5px;
+            }
+
+            .sharp {
+                width: 3%;
+            }
+
+            .candidatename {
+                width: 30%;
+            }
+            .lastupdateddate {
+                width: 18%;
+            }
+
+            .saveddate {
+                width: 18%;
+            }
+
+            .note {
+                width: 18%;
+            }
+
+            .action {
+                width: 16%;
+            }
+
+        }
+    }
+
+    .applicedjob-table-thead {
+        @extend %applicedjob-table;
+        width: 100%;
+        margin-top: 16px;
+
+        tr {
+            background-color: rgba(30, 189, 207, 0.15);
+            height: 57px;
+
+        }
+    }
+
+
+    .applicedjob-table-tbody {
+        @extend %applicedjob-table;
+        border-collapse: separate;
+        border-spacing: 0 6px;
+        margin-top: -6px;
+        width: 100%;
+
+        tr {
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.11);
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+
+            .candidatename {
+                overflow: auto;
+                text-align: left;
+
+                .avatar {
+                    width: 24%;
+                    height: auto;
+                    float: left;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 5px;
+                    }
+                }
+
+                .info {
+
+                    margin-left: 3%;
+                    width: 73%;
+                    overflow: auto;
+                    float: left;
+
+                    .ghim {
+                        @extend %default-background-color;
+
+                        float: left;
+                        width: 11.7px;
+                        height: 13px;
+                        margin: 3px 3px 0 0;
+                        background-image: url(../image/paperclip@3x.png);
+                    }
+
+                    .name {
+                        float: left;
+                        width: 100%;
+                        font-size: 16px;
+                        font-weight: 900;
+
+                        &.link {
+                            color: #2a75f7;
+                        }
+                    }
+
+                    .job {
+                        width: 100%;
+                        font-weight: 900;
+                        float: left;
+                    }
+
+                    .more-info {
+
+                        .more-info-icon {
+                            @extend %default-background-color;
+
+                            float: left;
+                            width: 10px;
+                            height: 10px;
+                            margin: 5px 5px 0 0;
+                        }
+                    }
+
+                    .null {
+                        height: 55px;
+                        width: 10px;
+                    }
+
+                    .extend-file {
+                        font-style: italic;
+                        color: #2a75f7;
+                    }
+                }
+            }
+
+            .action {
+                text-align: left;
+                overflow: auto;
+
+
+                .action-item {
+                    color: #2a75f7;
+                    width: 100%;
+                    padding-bottom: 9px;
+                    float: left;
+
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+
+                    .item-icon {
+                        @extend %default-background-color;
+
+                        float: left;
+                        width: 13px;
+                        height: 13px;
+                        margin: 3px 7px 0 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .pagging-right {
+        @extend %default-pagging;
+        margin-right: 25px;
+        float: right;
+    }
+
+    @media screen and (max-width: 1199.98px) {
+        %applicedjob-table {
+            tr {
+                .candidatename {
+                    width: 30%;
+                
+                    .avatar {
+                        width: 25%;
+                    }
+
+                    .info {
+                        width: 71%;
+                    }
+                }
+
+                .lastupdateddate {
+                    width: 15%;
+                }
+
+                .saveddate {
+                    width: 15%;
+                }
+    
+                .note {
+                    width: 20%;
+                }
+    
+                .action {
+                    width: 14%;
+                }
+    
+            }
+        }
+    }
+
+    @media screen and (max-width: 991.98px) {
+        .form-title {
+            form {
+                .item-jobtitle {
+                    width: 100%;
+                    label {
+                        width: 30%;
+                    }
+
+                    input {
+                        width: 70%;
+                    }
+                }
+
+                .item-status {
+                    width: 70%;
+                }
+
+                button {
+                    width: 30%;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 575.98px) {
+        .form-title {
+            form {
+                .item-jobtitle {
+                    label {
+                        width: 30%;
+                        line-height: 20px;
+                    }
+
+                    input {
+                        width: 70%;
+                    }
+                }
+
+                .item-status {
+                    width: 100%;
+
+                    label {
+                        width: 25%;
+                    }
+
+                    select {
+                        width: 75%;
+                    }
+                }
+
+                button {
+                    width: 60%;
+                    margin-left: 20%;
+                }
+            }
+        }
+    }
+
+
+}

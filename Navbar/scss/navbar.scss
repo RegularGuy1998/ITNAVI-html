@@ -1,0 +1,333 @@
+body {
+    background-color: #f2f2f2 !important;
+    font-family: 'roboto' !important;
+    color: #464545;
+}
+
+#ITNavi-Navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    overflow: auto;
+
+    .set-box-shadow {
+        border-bottom-left-radius: 4px;
+    }
+
+    .background-color-default {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+
+    .body {
+        background-color: #fff;
+        overflow: auto;
+        width: 100%;
+
+        .logo-page {
+            padding-left: 4%;
+            height: 64px;
+            float: left;
+
+            img {
+                height: 64px;
+                width: auto;
+            }
+        }
+
+        .option-left {
+            float: left;
+            height: 64px;
+            padding-left: 1%;
+
+            a {
+                padding: 0 15px;
+                height: 100%;
+                display: inline-flex;
+                align-items: center;
+                font-size: 18px;
+                color: #707070;
+
+                &:hover,
+                &:focus {
+                    text-decoration: none;
+                }
+
+            }
+        }
+
+        .option-right {
+            float: right;
+            padding: 19px 1% 0 1%;
+            overflow: auto;
+            height: 64px;
+
+            .item {
+                cursor: pointer;
+                width: 26px;
+                height: 26px;
+                float: left;
+                margin: 0 10px;
+            }
+
+            .region-item {
+                @extend .background-color-default;
+                background-image: url(../../Navbar/image/vietnam.png);
+            }
+
+            .notify-item {
+                @extend .background-color-default;
+                background-image: url(../../Navbar/image/notification@3x.png);
+
+                .have-notify {
+                    width: 9px;
+                    height: 9px;
+                    float: right;
+                    margin: 2px 1px;
+                    border-radius: 50%;
+                    border: solid 1px #ffffff;
+                    background-color: #f82020;
+                }
+            }
+        }
+
+        .register {
+            height: 64px;
+            float: right;
+            width: 250px;
+            overflow: auto;
+
+            .borderleft {
+                width: 2px;
+                height: 27px;
+                margin-top: 18px;
+                float: left;
+                background-color: #cecece;
+            }
+
+            .company-link {
+                position: static;
+                float: left;
+                height: 35px;
+                margin: 17px 5px 0 0;
+
+                .company-button {
+                    cursor: pointer;
+                    font-size: 18px;
+                    margin-left: 20px;
+                    color: #707070;
+
+                    &:hover,
+                    &:focus {
+                        text-decoration: none;
+                    }
+
+                    img {
+                        margin-right: 15px;
+                        width: 35px;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+
+                    i {
+                        margin-left: 10px;
+                    }
+                }
+
+                .company-dropdown {
+                    z-index: 1;
+                    position: fixed;
+                    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+                    background-color: #ffffff;
+                    width: 248px;
+                    margin-top: 10px;
+                    padding: 0 13px;
+
+                    &.dropdown-menu {
+                        top: auto;
+                        left: auto;
+                        border: none;
+                    }
+
+                    .item {
+                        display: block;
+                        padding: 16px 0;
+                        margin: 0;
+                        border-bottom: 1px solid #f2f2f2;
+                        font-size: 16px;
+                        color: #707070;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+
+                        &:last-child {
+                            border-bottom: none;
+                        }
+
+                        i {
+                            margin: 0;
+                            font-size: 12px;
+                            color: #f58128;
+                            margin-right: 20px;
+                        }
+
+                        img {
+                            float: left;
+                            width: 16.7px;
+                            height: 15.2px;
+                            margin: 3px 9px 0 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .have-collapse {
+            display: none;
+        }
+
+        .seemore {
+            float: right;
+
+            .seemore-button {
+                width: 44px;
+                height: 34px;
+                border-radius: 4px;
+                border: 1px solid #cecece;
+                cursor: pointer;
+                padding: 9px 10px;
+                transition: 0.2s;
+                margin: 15px 20px;
+
+                div {
+                    width: 22px;
+                    height: 2px;
+                    border-radius: 1px;
+                    margin-top: 4px;
+                    background-color: #707070;
+
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                }
+
+                &:hover {
+                    box-shadow: 0 0 5px #cecece;
+                    background-color: #f2f2f2;
+                    transition: 0.2s;
+                }
+            }
+
+        }
+
+        #Navbar-Mobile-Item {
+            float: left;
+            overflow: auto;
+            padding: 0 4%;
+            width: 100%;
+
+            .nav-link {
+                float: left;
+                margin-top: 15px;
+                width: 100%;
+
+                a {
+                    float: left;
+                    margin-right: 30px;
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                    color: #707070;
+
+                    &:hover,
+                    &:focus {
+                        text-decoration: none;
+                    }
+
+                    img {
+                        margin-right: 15px;
+                        width: 35px;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+
+                    i {
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            .option-region {
+                @extend .option-right;
+
+                float: left;
+                margin-bottom: 15px;
+                padding-top: 10px;
+
+                .item {
+                    margin-left: 0;
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+
+    .nav-foot {
+        width: 100%;
+
+        .up {
+            height: 7px;
+            width: 100%;
+            overflow: auto;
+            background-color: #fff;
+
+            .blue {
+                height: 7px;
+                width: 35%;
+                float: left;
+                background-color: #24becf;
+            }
+
+            .triangle {
+                height: 7px;
+                width: 7px;
+                float: left;
+                border-top: 3.5px solid #24becf;
+                border-left: 3.5px solid #24becf;
+                border-right: 3.5px solid #212b48;
+                border-bottom: 3.5px solid #212b48;
+            }
+        }
+
+        .down {
+            height: 7px;
+            width: 100%;
+
+            .orange {
+                height: 7px;
+                margin-left: 35%;
+                width: 65%;
+                background-color: #f58128;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 991.98px) {
+        .non-collapse {
+            display: none;
+        }
+
+        .have-collapse {
+            display: block !important;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        .have-collapse-item {
+            display: none !important;
+        }
+    }
+}

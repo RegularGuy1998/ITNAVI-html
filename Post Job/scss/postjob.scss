@@ -5,11 +5,29 @@ body {
 }
 
 #Post-Job {
-    margin-top: 110px;
+    margin-top: 20px;
     font-size: 16px;
+    overflow: auto;
+
+    %default-background-color {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+
+    .div-scroll {
+        width: 100%;
+        overflow: scroll;
+    }
 
     .bordertext {
         font-weight: 900;
+    }
+
+    .big-title {
+        font-size: 22px;
+        font-weight: 900;
+        color: #464545;
     }
 
     .padding-width-30 {
@@ -35,13 +53,16 @@ body {
         border: none;
         float: left;
         border-radius: 5px;
+        transition: 0.3s;
 
         &:focus {
             outline: none;
+            transition: 0.3s;
         }
 
         &:hover {
             outline: none;
+            transition: 0.3s;
         }
 
         &::-webkit-input-placeholder {
@@ -81,16 +102,20 @@ body {
 
     .hri-tab {
         overflow: hidden;
+        position: static;
 
-        button {
+        .hri-tablinks {
             border: none;
-            width: 152px;
+            float: left;
             height: 43px;
+            width: 171px;
+            position: static;
             font-size: 18px;
             text-align: center;
             line-height: 43px;
             color: #464545;
-            margin-bottom: 3px;
+            cursor: pointer;
+            margin: 0 3px 3px 0;
             background-color: #d1d0d6;
             border-top-left-radius: 4px;
             border-top-right-radius: 4px;
@@ -98,10 +123,52 @@ body {
             &:hover {
                 outline: none;
                 color: #fff;
+
+                .tablinks-dropdown {
+                    color: #464545;
+                    display: block;
+                }
             }
 
             &:focus {
                 outline: none;
+            }
+
+            .tablinks-dropdown {
+                display: none;
+                position: absolute;
+                list-style: none;
+                padding-left: 0;
+                width: 171px;
+                padding: 0 11px;
+                text-align: left;
+                background-color: #fff;
+                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+
+                &:hover {
+                    outline: none;
+                    color: #464545;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+
+                li {
+                    font-size: 14px;
+                    color: #707070;
+                    border-bottom: 1px solid rgba(246, 134, 26, 0.11);
+                    transition: 0.3s;
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    &:hover {
+                        text-shadow: 2px 2px 4px #f7912a;
+                        transition: 0.3s;
+                    }
+                }
             }
         }
 
@@ -133,4 +200,283 @@ body {
     }
 
     @import "postjob-managejobs";
+    @import "postjob-managecandidate";
+}
+
+#Free-Job-Notification {
+    margin-top: 90px;
+
+    .container {
+
+        .notification {
+            margin-top: 16px;
+            padding: 14px 0;
+            font-size: 18px;
+            text-align: center;
+            background-color: #ffff99;
+            border-radius: 6px;
+            color: #707070;
+
+            a {
+                color: #2a75f7;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+#background-for-notification {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(51, 50, 50, 0.68);
+
+
+    %default-notification {
+        margin: 20% auto;
+        overflow: auto;
+        padding: 8px 10px 10px 10px;
+        border-radius: 6px;
+        position: relative;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        border: solid 1px #707070;
+        background-color: #ffffff;
+
+        .close-notify {
+            float: right;
+            font-size: 20px;
+            line-height: 20px;
+            color: #d1d0d6;
+            cursor: pointer;
+        }
+    }
+
+    .show-notification {
+        animation-name: notify-show;
+        animation-duration: 0.5s;
+    }
+
+    @keyframes notify-show {
+        0% {
+            opacity: 0;
+            top: -200px;
+        }
+
+        100% {
+            opacity: 1;
+            top: 0;
+        }
+    }
+
+    .hide-notification {
+        animation-name: notify-hide;
+        animation-duration: 0.5s;
+    }
+
+    @keyframes notify-hide {
+        from {
+            opacity: 1;
+            top: 0;
+        }
+
+        to {
+            opacity: 0;
+            top: -200px;
+        }
+    }
+
+    #Message-Out-Of-Free-Post-Job {
+        @extend %default-notification;
+
+        max-width: 390px;
+        min-height: 222px;
+
+        .description {
+            width: 100%;
+            float: left;
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        .ok-button {
+            float: left;
+            width: 100%;
+            margin-top: 15px;
+            text-align: center;
+
+            button {
+                @extend %defaut-input-form;
+
+                float: none !important;
+                width: 152px;
+                border-radius: 3px;
+                background-color: #f7912a;
+                font-size: 18px;
+                color: #fff;
+                line-height: 18px;
+
+                &:hover {
+                    box-shadow: 0 0 5px #f7912a;
+                }
+
+            }
+        }
+    }
+
+    #Message-Change-Status {
+        @extend %default-notification;
+
+        max-width: 390px;
+        min-height: 210px;
+
+        .title {
+            float: left;
+            width: 100%;
+            text-align: center;
+            font-weight: 900;
+            font-size: 18px;
+            color: #040404;
+        }
+
+        form {
+            float: left;
+            overflow: auto;
+            width: 100%;
+            margin-top: 15px;
+
+            .form-item {
+                padding: 5px 0;
+                float: left;
+                width: 100%;
+                text-align: center;
+
+                select {
+                    @extend %defaut-input-form;
+
+                    width: 70%;
+                    margin: 0 15%;
+                    border: 1px solid #b5b5b5 !important;
+                    background-color: #fff;
+
+                    &:focus {
+                        box-shadow: 0 0 5px #2ec1d1;
+                    }
+                }
+            }
+
+            .form-item-haft {
+                float: left;
+                width: 100%;
+                padding: 0 15%;
+                margin-top: 10px;
+                overflow: auto;
+
+                .cancel-button {
+                    @extend %defaut-input-form;
+
+                    float: left;
+                    width: 49%;
+                    margin-right: 2%;
+                    border: 1px solid #b5b5b5 !important;
+                    color: #b5b5b5;
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 40px;
+                    cursor: pointer;
+                }
+
+                .change-button {
+                    @extend %defaut-input-form;
+
+                    float: left;
+                    width: 49%;
+                    background-color: #f7912a;
+                    color: #fff;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    #Message-Add-Note {
+        @extend %default-notification;
+
+        max-width: 390px;
+        min-height: 210px;
+
+        .title {
+            float: left;
+            width: 100%;
+            text-align: center;
+            font-weight: 900;
+            font-size: 18px;
+            color: #040404;
+        }
+
+        form {
+            float: left;
+            overflow: auto;
+            width: 100%;
+            margin: 15px 0 30px 0;
+
+            .form-item {
+                padding: 5px 0;
+                float: left;
+                width: 100%;
+                text-align: center;
+
+                textarea {
+                    min-width: 70%;
+                    max-width: 70%;
+                    margin: 0 15%;
+                    border-radius: 4px;
+                    border: 1px solid #b5b5b5 !important;
+                    background-color: #fff;
+                    transition: 0.3s;
+
+                    &:focus {
+                        box-shadow: 0 0 5px #2ec1d1;
+                        outline: none;
+                        transition: 0.3s;
+                    }
+                }
+            }
+
+            .form-item-haft {
+                float: left;
+                width: 100%;
+                padding: 0 15%;
+                margin-top: 8px;
+                overflow: auto;
+
+                .cancel-button {
+                    @extend %defaut-input-form;
+
+                    float: left;
+                    width: 49%;
+                    margin-right: 2%;
+                    border: 1px solid #b5b5b5 !important;
+                    color: #b5b5b5;
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 40px;
+                    cursor: pointer;
+                }
+
+                .change-button {
+                    @extend %defaut-input-form;
+
+                    float: left;
+                    width: 49%;
+                    background-color: #f7912a;
+                    color: #fff;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
 }

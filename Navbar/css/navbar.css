@@ -1,0 +1,221 @@
+body {
+  background-color: #f2f2f2 !important;
+  font-family: 'roboto' !important;
+  color: #464545; }
+
+#ITNavi-Navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  overflow: auto; }
+  #ITNavi-Navbar .set-box-shadow {
+    border-bottom-left-radius: 4px; }
+  #ITNavi-Navbar .background-color-default, #ITNavi-Navbar .body .option-right .region-item, #ITNavi-Navbar .body #Navbar-Mobile-Item .option-region .region-item, #ITNavi-Navbar .body .option-right .notify-item, #ITNavi-Navbar .body #Navbar-Mobile-Item .option-region .notify-item {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; }
+  #ITNavi-Navbar .body {
+    background-color: #fff;
+    overflow: auto;
+    width: 100%; }
+    #ITNavi-Navbar .body .logo-page {
+      padding-left: 4%;
+      height: 64px;
+      float: left; }
+      #ITNavi-Navbar .body .logo-page img {
+        height: 64px;
+        width: auto; }
+    #ITNavi-Navbar .body .option-left {
+      float: left;
+      height: 64px;
+      padding-left: 1%; }
+      #ITNavi-Navbar .body .option-left a {
+        padding: 0 15px;
+        height: 100%;
+        display: inline-flex;
+        align-items: center;
+        font-size: 18px;
+        color: #707070; }
+        #ITNavi-Navbar .body .option-left a:hover, #ITNavi-Navbar .body .option-left a:focus {
+          text-decoration: none; }
+    #ITNavi-Navbar .body .option-right, #ITNavi-Navbar .body #Navbar-Mobile-Item .option-region {
+      float: right;
+      padding: 19px 1% 0 1%;
+      overflow: auto;
+      height: 64px; }
+      #ITNavi-Navbar .body .option-right .item, #ITNavi-Navbar .body #Navbar-Mobile-Item .option-region .item {
+        cursor: pointer;
+        width: 26px;
+        height: 26px;
+        float: left;
+        margin: 0 10px; }
+      #ITNavi-Navbar .body .option-right .region-item, #ITNavi-Navbar .body #Navbar-Mobile-Item .option-region .region-item {
+        background-image: url(../../Navbar/image/vietnam.png); }
+      #ITNavi-Navbar .body .option-right .notify-item, #ITNavi-Navbar .body #Navbar-Mobile-Item .option-region .notify-item {
+        background-image: url(../../Navbar/image/notification@3x.png); }
+        #ITNavi-Navbar .body .option-right .notify-item .have-notify, #ITNavi-Navbar .body #Navbar-Mobile-Item .option-region .notify-item .have-notify {
+          width: 9px;
+          height: 9px;
+          float: right;
+          margin: 2px 1px;
+          border-radius: 50%;
+          border: solid 1px #ffffff;
+          background-color: #f82020; }
+    #ITNavi-Navbar .body .register {
+      height: 64px;
+      float: right;
+      width: 250px;
+      overflow: auto; }
+      #ITNavi-Navbar .body .register .borderleft {
+        width: 2px;
+        height: 27px;
+        margin-top: 18px;
+        float: left;
+        background-color: #cecece; }
+      #ITNavi-Navbar .body .register .company-link {
+        position: static;
+        float: left;
+        height: 35px;
+        margin: 17px 5px 0 0; }
+        #ITNavi-Navbar .body .register .company-link .company-button {
+          cursor: pointer;
+          font-size: 18px;
+          margin-left: 20px;
+          color: #707070; }
+          #ITNavi-Navbar .body .register .company-link .company-button:hover, #ITNavi-Navbar .body .register .company-link .company-button:focus {
+            text-decoration: none; }
+          #ITNavi-Navbar .body .register .company-link .company-button img {
+            margin-right: 15px;
+            width: 35px;
+            height: 100%;
+            border-radius: 50%; }
+          #ITNavi-Navbar .body .register .company-link .company-button i {
+            margin-left: 10px; }
+        #ITNavi-Navbar .body .register .company-link .company-dropdown {
+          z-index: 1;
+          position: fixed;
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          background-color: #ffffff;
+          width: 248px;
+          margin-top: 10px;
+          padding: 0 13px; }
+          #ITNavi-Navbar .body .register .company-link .company-dropdown.dropdown-menu {
+            top: auto;
+            left: auto;
+            border: none; }
+          #ITNavi-Navbar .body .register .company-link .company-dropdown .item {
+            display: block;
+            padding: 16px 0;
+            margin: 0;
+            border-bottom: 1px solid #f2f2f2;
+            font-size: 16px;
+            color: #707070; }
+            #ITNavi-Navbar .body .register .company-link .company-dropdown .item:hover {
+              text-decoration: underline; }
+            #ITNavi-Navbar .body .register .company-link .company-dropdown .item:last-child {
+              border-bottom: none; }
+            #ITNavi-Navbar .body .register .company-link .company-dropdown .item i {
+              margin: 0;
+              font-size: 12px;
+              color: #f58128;
+              margin-right: 20px; }
+            #ITNavi-Navbar .body .register .company-link .company-dropdown .item img {
+              float: left;
+              width: 16.7px;
+              height: 15.2px;
+              margin: 3px 9px 0 0; }
+    #ITNavi-Navbar .body .have-collapse {
+      display: none; }
+    #ITNavi-Navbar .body .seemore {
+      float: right; }
+      #ITNavi-Navbar .body .seemore .seemore-button {
+        width: 44px;
+        height: 34px;
+        border-radius: 4px;
+        border: 1px solid #cecece;
+        cursor: pointer;
+        padding: 9px 10px;
+        transition: 0.2s;
+        margin: 15px 20px; }
+        #ITNavi-Navbar .body .seemore .seemore-button div {
+          width: 22px;
+          height: 2px;
+          border-radius: 1px;
+          margin-top: 4px;
+          background-color: #707070; }
+          #ITNavi-Navbar .body .seemore .seemore-button div:first-child {
+            margin-top: 0; }
+        #ITNavi-Navbar .body .seemore .seemore-button:hover {
+          box-shadow: 0 0 5px #cecece;
+          background-color: #f2f2f2;
+          transition: 0.2s; }
+    #ITNavi-Navbar .body #Navbar-Mobile-Item {
+      float: left;
+      overflow: auto;
+      padding: 0 4%;
+      width: 100%; }
+      #ITNavi-Navbar .body #Navbar-Mobile-Item .nav-link {
+        float: left;
+        margin-top: 15px;
+        width: 100%; }
+        #ITNavi-Navbar .body #Navbar-Mobile-Item .nav-link a {
+          float: left;
+          margin-right: 30px;
+          font-size: 18px;
+          margin-bottom: 15px;
+          color: #707070; }
+          #ITNavi-Navbar .body #Navbar-Mobile-Item .nav-link a:hover, #ITNavi-Navbar .body #Navbar-Mobile-Item .nav-link a:focus {
+            text-decoration: none; }
+          #ITNavi-Navbar .body #Navbar-Mobile-Item .nav-link a img {
+            margin-right: 15px;
+            width: 35px;
+            height: 100%;
+            border-radius: 50%; }
+          #ITNavi-Navbar .body #Navbar-Mobile-Item .nav-link a i {
+            margin-left: 10px; }
+      #ITNavi-Navbar .body #Navbar-Mobile-Item .option-region {
+        float: left;
+        margin-bottom: 15px;
+        padding-top: 10px; }
+        #ITNavi-Navbar .body #Navbar-Mobile-Item .option-region .item {
+          margin-left: 0;
+          margin-right: 25px; }
+  #ITNavi-Navbar .nav-foot {
+    width: 100%; }
+    #ITNavi-Navbar .nav-foot .up {
+      height: 7px;
+      width: 100%;
+      overflow: auto;
+      background-color: #fff; }
+      #ITNavi-Navbar .nav-foot .up .blue {
+        height: 7px;
+        width: 35%;
+        float: left;
+        background-color: #24becf; }
+      #ITNavi-Navbar .nav-foot .up .triangle {
+        height: 7px;
+        width: 7px;
+        float: left;
+        border-top: 3.5px solid #24becf;
+        border-left: 3.5px solid #24becf;
+        border-right: 3.5px solid #212b48;
+        border-bottom: 3.5px solid #212b48; }
+    #ITNavi-Navbar .nav-foot .down {
+      height: 7px;
+      width: 100%; }
+      #ITNavi-Navbar .nav-foot .down .orange {
+        height: 7px;
+        margin-left: 35%;
+        width: 65%;
+        background-color: #f58128; }
+  @media screen and (max-width: 991.98px) {
+    #ITNavi-Navbar .non-collapse {
+      display: none; }
+    #ITNavi-Navbar .have-collapse {
+      display: block !important; } }
+  @media screen and (min-width: 992px) {
+    #ITNavi-Navbar .have-collapse-item {
+      display: none !important; } }
+
+/*# sourceMappingURL=navbar.css.map */

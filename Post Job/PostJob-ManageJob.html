@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/postjob.css">
+    <link rel="stylesheet" href="../Navbar/css/navbar.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
         integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
@@ -17,24 +18,284 @@
 </head>
 
 <body>
+    <nav id="ITNavi-Navbar">
+        <div class="body">
+            <div class="logo-page">
+                <a href="#">
+                    <img src="../Navbar/image/itnavi-logo.png" alt="">
+                </a>
+            </div>
+
+            <!-- Big Monitor -->
+            <div class="option-left non-collapse">
+                <a class="nav-link" href="#">
+                    Product and Services
+                </a>
+                <a class="nav-link" href="#">
+                    Search Resume
+                </a>
+            </div>
+            <div class="register non-collapse">
+                <div class="borderleft"></div>
+                <div class="company-link">
+                    <div id="Company-Downy" class="company-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="../Navbar/image/register-image.png" alt="">
+                        Cty Cổ Phần...
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                    <div aria-labelledby="Company-Downy" class="company-dropdown set-box-shadow dropdown-menu">
+                        <a href="#" class="item">
+                            <i class="fas fa-caret-right"></i>Dashboard
+                        </a>
+                        <a href="#" class="item">
+                            <i class="fas fa-caret-right"></i>Manage Job
+                        </a>
+                        <a href="#" class="item">
+                            <i class="fas fa-caret-right"></i>Manage Candidate
+                        </a>
+                        <a href="#" class="item">
+                            <i class="fas fa-caret-right"></i>Account Information
+                        </a>
+                        <a href="#" class="item">
+                            <i class="fas fa-caret-right"></i>Company Profile
+                        </a>
+                        <a href="#" class="item">
+                            <i class="fas fa-caret-right"></i>Customer Support: 1800 1800
+                        </a>
+                        <a href="#" class="item">
+                            <img src="../Navbar/image/logout@3x.png" alt="">Log Out
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="option-right non-collapse">
+                <div class="item region-item">
+
+                </div>
+                <div class="item notify-item">
+                    <div class="have-notify"></div>
+                </div>
+            </div>
+            <!-- / Big Monitor -->
+
+
+            <!-- Mobile Monitor -->
+            <div class="seemore have-collapse">
+                <div id="Navbar-Mobile-Button" class="seemore-button">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div style="display: none;" id="Navbar-Mobile-Item" class="have-collapse-item collapse">
+                <div class="nav-link">
+                    <a href="#">
+                        Product and Services
+                    </a>
+                    <a href="#">
+                        Search Resume
+                    </a>
+                </div>
+
+                <div class="option-region">
+                    <div class="item region-item">
+
+                    </div>
+                    <div class="item notify-item">
+                        <div class="have-notify"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Monitor -->
+
+        </div>
+        <div class="nav-foot">
+            <div class="up">
+                <div class="blue"></div>
+                <div class="triangle"></div>
+            </div>
+            <div class="down">
+                <div class="orange"></div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="Free-Job-Notification">
+        <div class="container">
+            <div class="notification">
+                Congratulations! ITNavi give your company 3 free job posts (3 credits).
+                <span><a href="#">Post FREE Job</a></span> now!
+            </div>
+        </div>
+    </div>
+
     <div id="Post-Job">
         <div class="container">
             <div class="hri-tab">
-                <button id="DashboardButton" class="hri-tablinks"
-                    onclick="openPostJobTab(event, 'Dashboard')">Dashboard</button>
-                <button id="ManageJobsButton" class="hri-tablinks" onclick="openPostJobTab(event, 'ManageJobs')">
-                    Manage Jobs</button>
-                <button id="ManageCandidateButton" class="hri-tablinks"
-                    onclick="openPostJobTab(event, 'ManageCandidate')">
-                    Manage Candidate</button>
+                <div id="DashboardButton" class="hri-tablinks" onclick="openPostJobTab(event, 'Dashboard')">Dashboard
+                </div>
+                <div id="ManageJobsButton" class="hri-tablinks" onclick="openPostJobTab(event, 'ManageJobs')">
+                    Manage Jobs</div>
+                <div class="hri-tablinks" id="ManageCandidateButton">
+                    Manage Candidate
+
+                    <ul class="tablinks-dropdown ">
+                        <li id="ManageCandidate-AppliedCandidateButton" class="child-of-ManageCandidateButton"
+                            onclick="openPostJobTab(event, 'ManageCandidate-AppliedCandidate')">Applied Candidate</li>
+                        <li id="ManageCandidate-UsedCreditCandidateButton" class="child-of-ManageCandidateButton"
+                            onclick="openPostJobTab(event, 'ManageCandidate-UsedCreditCandidate')">
+                            Used Credit Candidate</li>
+                        <li id="ManageCandidate-BookmarkedCandidateButton" class=" child-of-ManageCandidateButton"
+                            onclick="openPostJobTab(event, 'ManageCandidate-BookmarkedCandidate')">
+                            Bookmarked Candidate</li>
+                    </ul>
+                </div>
             </div>
 
             <div id="Dashboard" class="hri-tabcontent set-box-shadow">
                 aaa
             </div>
             <div id="ManageJobs" class="hri-tabcontent set-box-shadow">
-                <form action="#" method="POST">
+                <div id="ManageJobs-JobList" class="collapse in">
+
                     <div class="padding-width-30 padding-width-xs-10">
+                        <div class="big-title">Job List</div>
+
+                        <div class="search-job">
+                            <form action="#" method="POST">
+                                <label for="search">Job Title</label>
+                                <input type="text">
+                                <button type="submit">Search</button>
+                            </form>
+                        </div>
+
+                        <div class="show-job-for">
+                            <div>Show job for</div>
+                            <a href="#">All (4)</a>
+                            <a href="#">Active (1)</a>
+                            <a href="#">Inactive (1)</a>
+                            <a href="#">Draft (1)</a>
+                            <a href="#">Pending Review (1)</a>
+                            <a href="#">Expired (1)</a>
+                        </div>
+
+                        <div class="no-job hidden">
+                            <img src="image/group-515@3x.png" alt="">
+                            <div class="description">You currently donot have any jobs.</div>
+                            <button class="PJ-ManageJob-PostJob-button">Post Job</button>
+                        </div>
+
+                        <div class="have-jobs">
+                            <button class="PJ-ManageJob-PostJob-button">Post Job</button>
+
+                            <div class="listjob-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="jobid">Job ID</th>
+                                            <th class="jobtitle">Job Title</th>
+                                            <th class="service">Service</th>
+                                            <th class="posteddate">Posted Date</th>
+                                            <th class="expireddate">Expired Date</th>
+                                            <th class="views">#Views</th>
+                                            <th class="application">#Applications</th>
+                                            <th class="status">Status</th>
+                                            <th class="action">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="jobid">1</td>
+                                            <td class="jobtitle"><a href="#">Java Developer</a></td>
+                                            <td class="service">Job Post, Hot Icon</td>
+                                            <td class="posteddate">19 Mar 2019</td>
+                                            <td class="expireddate">19 Apr 2019</td>
+                                            <td class="views">20</td>
+                                            <td class="application"><a href="#">5</a></td>
+                                            <td class="status">Active</td>
+                                            <td class="action">
+                                                <a href="#">Inactive</a>
+                                                <a href="#"> Copy</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="jobid">2</td>
+                                            <td class="jobtitle"><a href="#">Business Anlyst</a></td>
+                                            <td class="service">Job Post, Hot Icon</td>
+                                            <td class="posteddate">19 Mar 2019</td>
+                                            <td class="expireddate">19 Apr 2019</td>
+                                            <td class="views">20</td>
+                                            <td class="application"><a href="#">5</a></td>
+                                            <td class="status">Inactive</td>
+                                            <td class="action">
+                                                <a href="#">Inactive</a>
+                                                <a href="#"> Copy</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="jobid">3</td>
+                                            <td class="jobtitle"><a href="#">Project Manager</a></td>
+                                            <td class="service">Job Post, Hot Icon</td>
+                                            <td class="posteddate">19 Mar 2019</td>
+                                            <td class="expireddate">19 Apr 2019</td>
+                                            <td class="views">20</td>
+                                            <td class="application"><a href="#">5</a></td>
+                                            <td class="status">Expired</td>
+                                            <td class="action">
+                                                <a href="#"> Copy</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="jobid">4</td>
+                                            <td class="jobtitle"><a href="#">Tester</a></td>
+                                            <td class="service">Job Post, Hot Icon</td>
+                                            <td class="posteddate">19 Mar 2019</td>
+                                            <td class="expireddate">19 Apr 2019</td>
+                                            <td class="views">20</td>
+                                            <td class="application"><a href="#">5</a></td>
+                                            <td class="status">Peding Review</td>
+                                            <td class="action">
+                                                <a href="#">Copy</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="pagging-right">
+                                <a href="#" class="previous hidden">
+                                    <img src="image/previous@3x.png" alt="">
+                                </a>
+
+                                <div class="pagging-list">
+                                    <div href="#" class="pagger active">1</div>
+                                    <a href="#" class="pagger">2</a>
+                                    <a href="#" class="pagger">3</a>
+                                    <a href="#" class="pagger">4</a>
+                                    <div class="pagger disable">...</div>
+                                </div>
+
+                                <a href="#" class="next">
+                                    <img src="image/next@3x.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+                <form class="collapse" style="display: none;" id="ManageJobs-PostJob" action="#" method="POST">
+                    <div class="padding-width-30 padding-width-xs-10">
+                        <div id="MJ-PostJob-Turnback" class="turnback">
+                            <i class="fas fa-angle-double-left"></i> Back to Job List
+                        </div>
                         <div class="big-title">
                             Post Job
                         </div>
@@ -150,7 +411,7 @@
 
                         <div class="submit">
                             <div class="submit-form">
-                                <button type="button" class="option-cancel">CANCEL</button>
+                                <button id="MJ-PostJob-Cancel" type="button" class="option-cancel">CANCEL</button>
                                 <button type="button" class="option-savedraft">SAVE AS DRAFT</button>
                                 <button type="submit" class="option-postjob">POST JOB</button>
                             </div>
@@ -159,9 +420,582 @@
                 </form>
 
             </div>
-            <div id="ManageCandidate" class="hri-tabcontent set-box-shadow">
-                sdgdd
+
+            <div id="ManageCandidate-AppliedCandidate" class="hri-tabcontent set-box-shadow">
+                <div class="form-title set-box-shadow padding-width-30 padding-width-xs-10 ">
+                    <div class="big-title">Applied Candidate</div>
+                    <form action="#" method="POST">
+                        <div class="item-jobtitle">
+                            <label for="jobtitle">Job Title</label>
+                            <input type="text" name="jobtitle">
+                        </div>
+
+                        <div class="item-status">
+                            <label for="status">Status</label>
+                            <select name="status" id="">
+                                <option value="All">All</option>
+                                <option value="Not evaluated yet">Not evaluated yet</option>
+                            </select>
+                        </div>
+
+                        <button type="submit">Search</button>
+
+                    </form>
+                </div>
+
+                <div class="div-scroll">
+
+                    <table class="applicedjob-table-thead">
+                        <thead>
+                            <tr>
+                                <th class="sharp">#</th>
+                                <th class="candidatename">Candidate Name</th>
+                                <th class="contactinfomation">Contact Information</th>
+                                <th class="appliedjobpost">Applied Job Post</th>
+                                <th class="applieddate">Applied Date</th>
+                                <th class="hiringstatus">Hiring Status</th>
+                                <th class="note">Note</th>
+                                <th class="action">Action</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table class="applicedjob-table-tbody">
+                        <tr>
+                            <td class="sharp">1</td>
+                            <td class="candidatename">
+                                <div class="avatar">
+                                    <img src="image/5.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <a href="#" class="name link">
+                                        <div class="ghim"></div>
+                                        Nguyen Van A
+                                    </a>
+                                    <div class="job">Product Owner</div>
+                                    <div class="more-info">
+                                        <div class="more-info-icon"
+                                            style="background-image: url(image/old-fashion-briefcase@3x.png);"></div>
+                                        Experienced (non manager)
+                                    </div>
+                                    <div class="more-info">
+                                        <div style="background-image: url(image/three-buildings@3x.png);"
+                                            class="more-info-icon"></div>
+                                        HarveyNash Vietnam
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td class="contactinfomation">
+                                0912345678 <br>
+                                anguyen@gmail.com</td>
+                            <td class="appliedjobpost">Java Developer</td>
+                            <td class="applieddate">19 Apr 2019</td>
+                            <td class="hiringstatus">Not evaluated yet</td>
+                            <td class="note">lorem ipsum lorem</td>
+                            <td class="action">
+                                <a href="#" class="action-item">
+                                    <div style="background-image: url(image/eye@3x.png);" class="item-icon"></div>
+                                    View Candidate
+                                </a>
+                                <div class="action-item" onclick="OpenMessage(event, 'Message-Change-Status')">
+                                    <div style="background-image: url(image/exchange-arrows@3x.png);" class="item-icon">
+                                    </div>
+                                    Change Status
+                                </div>
+                                <div class="action-item" onclick="OpenMessage(event, 'Message-Add-Note')">
+                                    <div style="background-image: url(image/edit@3x.png);" class="item-icon"></div>
+                                    Add Note
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sharp">1</td>
+                            <td class="candidatename">
+                                <div class="avatar">
+                                    <img src="image/5.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <a href="#" class="name link">
+                                        Nguyen Van A
+                                    </a>
+                                    <div class="job">Product Owner</div>
+                                    <div class="more-info">
+                                        <div class="more-info-icon"
+                                            style="background-image: url(image/old-fashion-briefcase@3x.png);"></div>
+                                        Experienced (non manager)
+                                    </div>
+                                    <div class="more-info">
+                                        <div style="background-image: url(image/three-buildings@3x.png);"
+                                            class="more-info-icon"></div>
+                                        HarveyNash Vietnam
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td class="contactinfomation">
+                                0912345678 <br>
+                                anguyen@gmail.com</td>
+                            <td class="appliedjobpost">Java Developer</td>
+                            <td class="applieddate">19 Apr 2019</td>
+                            <td class="hiringstatus">Not evaluated yet</td>
+                            <td class="note">lorem ipsum lorem</td>
+                            <td class="action">
+                                <a href="#" class="action-item">
+                                    <div style="background-image: url(image/eye@3x.png);" class="item-icon"></div>
+                                    View Candidate
+                                </a>
+                                <a href="#" class="action-item">
+                                    <div style="background-image: url(image/exchange-arrows@3x.png);" class="item-icon">
+                                    </div>
+                                    Change Status
+                                </a>
+                                <a href="#" class="action-item">
+                                    <div style="background-image: url(image/edit@3x.png);" class="item-icon"></div>
+                                    Add Note
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sharp">1</td>
+                            <td class="candidatename">
+                                <div class="avatar">
+                                    <img src="image/5.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <div href="#" class="name">
+                                        Nguyen Van A
+                                    </div>
+                                    <div class="job">Tester</div>
+                                    <div class="null"></div>
+                                    <a href="#" class="extend-file">
+                                        <div class="ghim"></div>
+                                        nguyenvana.doc
+                                    </a>
+
+                                </div>
+                            </td>
+                            <td class="contactinfomation">
+                                0912345678 <br>
+                                anguyen@gmail.com</td>
+                            <td class="appliedjobpost">Java Developer</td>
+                            <td class="applieddate">19 Apr 2019</td>
+                            <td class="hiringstatus">Not evaluated yet</td>
+                            <td class="note">lorem ipsum lorem</td>
+                            <td class="action">
+                                <a href="#" class="action-item">
+                                    <div style="background-image: url(image/eye@3x.png);" class="item-icon"></div>
+                                    View Candidate
+                                </a>
+                                <a href="#" class="action-item">
+                                    <div style="background-image: url(image/exchange-arrows@3x.png);" class="item-icon">
+                                    </div>
+                                    Change Status
+                                </a>
+                                <a href="#" class="action-item">
+                                    <div style="background-image: url(image/edit@3x.png);" class="item-icon"></div>
+                                    Add Note
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="pagging-right">
+                    <a href="#" class="previous hidden">
+                        <img src="image/previous@3x.png" alt="">
+                    </a>
+
+                    <div class="pagging-list">
+                        <div href="#" class="pagger active">1</div>
+                        <a href="#" class="pagger">2</a>
+                        <a href="#" class="pagger">3</a>
+                        <a href="#" class="pagger">4</a>
+                        <div class="pagger disable">...</div>
+                    </div>
+
+                    <a href="#" class="next">
+                        <img src="image/next@3x.png" alt="">
+                    </a>
+                </div>
+
+
             </div>
+
+            <div id="ManageCandidate-UsedCreditCandidate" class="hri-tabcontent set-box-shadow">
+                <div class="form-title set-box-shadow padding-width-30 padding-width-xs-10 ">
+                    <div class="big-title">Used Credit Candidate</div>
+                    <form action="#" method="POST">
+                        <div class="item-jobtitle">
+                            <label for="jobtitle">Professional Title</label>
+                            <input type="text" name="jobtitle">
+                        </div>
+
+                        <div class="item-status">
+                            <label for="status">Status</label>
+                            <select name="status" id="">
+                                <option value="" selected disabled>Select Status</option>
+                                <option value="Not evaluated yet">Not evaluated yet</option>
+                            </select>
+                        </div>
+
+                        <button type="submit">Search</button>
+
+                    </form>
+                </div>
+
+                <div class="div-scroll">
+
+                    <table class="applicedjob-table-thead">
+                        <thead>
+                            <tr>
+                                <th class="sharp">#</th>
+                                <th class="candidatename">Candidate Name</th>
+                                <th class="contactinfomation">Contact Information</th>
+                                <th class="lastupdateddate">Last Updated Date</th>
+                                <th class="vieweddate">Viewed Date</th>
+                                <th class="expireddate">Expired Date</th>
+                                <th class="hiringstatus">Hiring Status</th>
+                                <th class="note">Note</th>
+                                <th class="action">Action</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table class="applicedjob-table-tbody">
+                        <tr>
+                            <td class="sharp">1</td>
+                            <td class="candidatename">
+                                <div class="avatar">
+                                    <img src="image/5.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <a href="#" class="name link">
+                                        <div class="ghim"></div>
+                                        Nguyen Van A
+                                    </a>
+                                    <div class="job">Product Owner</div>
+                                    <div class="more-info">
+                                        <div class="more-info-icon"
+                                            style="background-image: url(image/old-fashion-briefcase@3x.png);"></div>
+                                        Experienced (non manager)
+                                    </div>
+                                    <div class="more-info">
+                                        <div style="background-image: url(image/three-buildings@3x.png);"
+                                            class="more-info-icon"></div>
+                                        HarveyNash Vietnam
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td class="contactinfomation">
+                                0912345678 <br>
+                                anguyen @gmail.com</td>
+                            <td class="lastupdateddate">19 Apr 2019</td>
+                            <td class="vieweddate">19 Apr 2019</td>
+                            <td class="expireddate">19 Apr 2019</td>
+                            <td class="hiringstatus">Not evaluated yet</td>
+                            <td class="note">lorem ipsum lorem</td>
+                            <td class="action">
+                                <a href="#" class="action-item">
+                                    <div style="background-image: url(image/eye@3x.png);" class="item-icon"></div>
+                                    View Candidate
+                                </a>
+                                <a href="#" class="action-item">
+                                    <div style="background-image: url(image/exchange-arrows@3x.png);" class="item-icon">
+                                    </div>
+                                    Change Status
+                                </a>
+                                <a href="#" class="action-item">
+                                    <div style="background-image: url(image/edit@3x.png);" class="item-icon"></div>
+                                    Add Note
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="pagging-right">
+                    <a href="#" class="previous hidden">
+                        <img src="image/previous@3x.png" alt="">
+                    </a>
+
+                    <div class="pagging-list">
+                        <div href="#" class="pagger active">1</div>
+                        <a href="#" class="pagger">2</a>
+                        <a href="#" class="pagger">3</a>
+                        <a href="#" class="pagger">4</a>
+                        <div class="pagger disable">...</div>
+                    </div>
+
+                    <a href="#" class="next">
+                        <img src="image/next@3x.png" alt="">
+                    </a>
+                </div>
+
+
+            </div>
+
+            <div id="ManageCandidate-BookmarkedCandidate" class="hri-tabcontent set-box-shadow">
+                <div class="form-title set-box-shadow padding-width-30 padding-width-xs-10 ">
+                    <div class="big-title">Bookmarked Candidate</div>
+                    <form action="#" method="POST">
+                        <div class="item-jobtitle">
+                            <label for="jobtitle">Professional Title</label>
+                            <input type="text" name="jobtitle">
+                        </div>
+
+                        <button type="submit">Search</button>
+
+                    </form>
+                </div>
+
+                <div class="div-scroll">
+
+                    <table class="applicedjob-table-thead">
+                        <thead>
+                            <tr>
+                                <th class="sharp">#</th>
+                                <th class="candidatename">Candidate Name</th>
+                                <th class="lastupdateddate">Last Updated Date</th>
+                                <th class="saveddate">Saved Date</th>
+                                <th class="note">Note</th>
+                                <th class="action">Action</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table class="applicedjob-table-tbody">
+                        <tr>
+                            <td class="sharp">1</td>
+                            <td class="candidatename">
+                                <div class="avatar">
+                                    <img src="image/5.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <div href="#" class="name">
+                                        Nguyen Van A
+                                    </div>
+                                    <div class="more-info">
+                                        <div class="more-info-icon"
+                                            style="background-image: url(image/old-fashion-briefcase@3x.png);"></div>
+                                        Experienced (non manager)
+                                    </div>
+                                    <div class="more-info">
+                                        <div class="more-info-icon"
+                                            style="background-image: url(image/placeholder-filled-point@3x.png);"></div>
+                                        Da Nang
+                                    </div>
+                                    <div class="more-info">
+                                        <div style="background-image: url(image/three-buildings@3x.png);"
+                                            class="more-info-icon"></div>
+                                        HarveyNash Vietnam
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td class="lastupdateddate">19 Apr 2019</td>
+                            <td class="saveddate">19 Apr 2019</td>
+                            <td class="note">lorem ipsum lorem</td>
+                            <td class="action">
+                                <a href="#" class="action-item">
+                                    <div style="background-image: url(image/eye@3x.png);" class="item-icon"></div>
+                                    View Candidate
+                                </a>
+                                <a href="#" class="action-item">
+                                    <div style="background-image: url(image/edit@3x.png);" class="item-icon"></div>
+                                    Add Note
+                                </a>
+                                <a href="#" class="action-item">
+                                    <div style="background-image: url(image/garbage@3x.png);" class="item-icon">
+                                    </div>
+                                    Remove
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sharp">1</td>
+                            <td class="candidatename">
+                                <div class="avatar">
+                                    <img src="image/5.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <div href="#" class="name">
+                                        Nguyen Van A
+                                    </div>
+                                    <div class="more-info">
+                                        <div class="more-info-icon"
+                                            style="background-image: url(image/old-fashion-briefcase@3x.png);"></div>
+                                        Experienced (non manager)
+                                    </div>
+                                    <div class="more-info">
+                                        <div class="more-info-icon"
+                                            style="background-image: url(image/placeholder-filled-point@3x.png);"></div>
+                                        Da Nang
+                                    </div>
+                                    <div class="more-info">
+                                        <div style="background-image: url(image/three-buildings@3x.png);"
+                                            class="more-info-icon"></div>
+                                        HarveyNash Vietnam
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td class="lastupdateddate">19 Apr 2019</td>
+                            <td class="saveddate">19 Apr 2019</td>
+                            <td class="note">lorem ipsum lorem</td>
+                            <td class="action">
+                                <a href="#" class="action-item">
+                                    <div style="background-image: url(image/eye@3x.png);" class="item-icon"></div>
+                                    View Candidate
+                                </a>
+                                <a href="#" class="action-item">
+                                    <div style="background-image: url(image/edit@3x.png);" class="item-icon"></div>
+                                    Add Note
+                                </a>
+                                <a href="#" class="action-item">
+                                    <div style="background-image: url(image/garbage@3x.png);" class="item-icon">
+                                    </div>
+                                    Remove
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sharp">1</td>
+                            <td class="candidatename">
+                                <div class="avatar">
+                                    <img src="image/5.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <div href="#" class="name">
+                                        Nguyen Van A
+                                    </div>
+                                    <div class="more-info">
+                                        <div class="more-info-icon"
+                                            style="background-image: url(image/old-fashion-briefcase@3x.png);"></div>
+                                        Experienced (non manager)
+                                    </div>
+                                    <div class="more-info">
+                                        <div class="more-info-icon"
+                                            style="background-image: url(image/placeholder-filled-point@3x.png);"></div>
+                                        Da Nang
+                                    </div>
+                                    <div class="more-info">
+                                        <div style="background-image: url(image/three-buildings@3x.png);"
+                                            class="more-info-icon"></div>
+                                        HarveyNash Vietnam
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td class="lastupdateddate">19 Apr 2019</td>
+                            <td class="saveddate">19 Apr 2019</td>
+                            <td class="note">lorem ipsum lorem</td>
+                            <td class="action">
+                                <a href="#" class="action-item">
+                                    <div style="background-image: url(image/eye@3x.png);" class="item-icon"></div>
+                                    View Candidate
+                                </a>
+                                <a href="#" class="action-item">
+                                    <div style="background-image: url(image/edit@3x.png);" class="item-icon"></div>
+                                    Add Note
+                                </a>
+                                <a href="#" class="action-item">
+                                    <div style="background-image: url(image/garbage@3x.png);" class="item-icon">
+                                    </div>
+                                    Remove
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="pagging-right">
+                    <a href="#" class="previous hidden">
+                        <img src="image/previous@3x.png" alt="">
+                    </a>
+
+                    <div class="pagging-list">
+                        <div href="#" class="pagger active">1</div>
+                        <a href="#" class="pagger">2</a>
+                        <a href="#" class="pagger">3</a>
+                        <a href="#" class="pagger">4</a>
+                        <div class="pagger disable">...</div>
+                    </div>
+
+                    <a href="#" class="next">
+                        <img src="image/next@3x.png" alt="">
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+        <div id="background-for-notification" class="hidden">
+            <!-- Use class 'show-notification' in id Message-Out-Of-Free-Post-Job to show this message -->
+            <div id="Message-Out-Of-Free-Post-Job" class="hidden">
+                <div class="close-notify">
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <div class="description">You have 0 credit for job post. <br>
+                    Please contact ITNavi's customer support to continue your recruitment plan. <br> <br>
+
+                    Thank you!
+                </div>
+
+                <div class="ok-button">
+                    <button>OK</button>
+                </div>
+            </div>
+
+            <div id="Message-Change-Status" class="hidden">
+                <div class="close-notify" onclick="CloseMessage(event, 'Message-Change-Status')">
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <div class="title">
+                    Change status
+                </div>
+
+                <form action="#" method="POST">
+                    <div class="form-item">
+                        <select name="status">
+                            <option value="Select status" selected disabled> Select status</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="form-item-haft">
+                        <div onclick="CloseMessage(event, 'Message-Change-Status')" class="cancel-button">Cancel</div>
+                        <button class="change-button">Change</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="Message-Add-Note" class="hidden">
+                <div class="close-notify" onclick="CloseMessage(event, 'Message-Add-Note')">
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <div class="title">
+                    Change status
+                </div>
+
+                <form action="#" method="POST">
+                    <div class="form-item">
+                        <textarea name="note" id="" rows="4"></textarea>
+                    </div>
+                    <div class="form-item-haft">
+                        <div onclick="CloseMessage(event, 'Message-Add-Note')" class="cancel-button">Cancel</div>
+                        <button class="change-button">Change</button>
+                    </div>
+                </form>
+            </div>
+
+
         </div>
 
 
@@ -173,23 +1007,25 @@
             integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
             crossorigin="anonymous"></script>
         <script src="js/postjob.js"></script>
-        <script
-            src="https://cloud.tinymce.com/5/tinymce.min.js?apiKey=91qgxs5hmb6bibrhkl8m68rklgf5ko03cq1h2lv2mr0utvcp"></script>
+        <script src="../Navbar/js/navbar.js"></script>
+        <script src=""></script>
+        <!-- <script
+            src="https://cloud.tinymce.com/5/tinymce.min.js?apiKey=91qgxs5hmb6bibrhkl8m68rklgf5ko03cq1h2lv2mr0utvcp"></script> -->
 
         <script>
             document.getElementById('ManageJobsButton').click();
 
-            tinymce.init({
-                selector: '#jobdescription'
-            });
+            // tinymce.init({
+            //     selector: '#jobdescription'
+            // });
 
-            tinymce.init({
-                selector: '#requirement'
-            });
+            // tinymce.init({
+            //     selector: '#requirement'
+            // });
 
-            tinymce.init({
-                selector: '#benefit'
-            });
+            // tinymce.init({
+            //     selector: '#benefit'
+            // });
         </script>
     </div>
 </body>
