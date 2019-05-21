@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/postjob.css">
+    <link rel="stylesheet" href="css/postjob2.css">
     <link rel="stylesheet" href="../Navbar/css/navbar.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
         integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
@@ -38,7 +39,8 @@
             <div class="register non-collapse">
                 <div class="borderleft"></div>
                 <div class="company-link">
-                    <div id="Company-Downy" class="company-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div id="Company-Downy" class="company-button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
                         <img src="../Navbar/image/register-image.png" alt="">
                         Cty Cổ Phần...
                         <i class="fas fa-caret-down"></i>
@@ -138,8 +140,8 @@
                 </div>
                 <div id="ManageJobsButton" class="hri-tablinks" onclick="openPostJobTab(event, 'ManageJobs')">
                     Manage Jobs</div>
-                <div class="hri-tablinks" id="ManageCandidateButton">
-                    Manage Candidate
+                <div class="hri-tablinks tab-dropdown" id="ManageCandidateButton">
+                    <div class="tab-dropdown-name">Manage Candidate</div>
 
                     <ul class="tablinks-dropdown ">
                         <li id="ManageCandidate-AppliedCandidateButton" class="child-of-ManageCandidateButton"
@@ -152,6 +154,14 @@
                             Bookmarked Candidate</li>
                     </ul>
                 </div>
+                <div id="CompanyProfileButton" class="hri-tablinks" onclick="openPostJobTab(event, 'CompanyProfile')">
+                    Company Profile</div>
+                <div id="AccountInformationButton" class="hri-tablinks"
+                    onclick="openPostJobTab(event, 'AccountInformation')">
+                    Account Information</div>
+                <div id="Search-CandidateButton" onclick="openPostJobTab(event, 'Search-Candidate')"></div>
+                <div id="Candidate-SummaryButton" onclick="openPostJobTab(event, 'Candidate-Summary')"></div>
+                <div id="Candidate-DetailButton" onclick="openPostJobTab(event, 'Candidate-Detail')"></div>
             </div>
 
             <div id="Dashboard" class="hri-tabcontent set-box-shadow">
@@ -927,93 +937,1619 @@
 
 
             </div>
-        </div>
 
+            <div id="Search-Candidate" class="hri-tabcontent">
+                <div class="set-box-shadow">
+                    <form class="form-search padding-width-30 padding-width-xs-10" action="#">
+                        <div class="big-title"> Search Candidate</div>
+                        <input class="item item-full" type="text" placeholder="Keyword">
+                        <div class="show-search">
+                            <div class="item-checkbox">
+                                <div class="super-checkbox-button" data-name="search-by-job"></div>
+                                Show the salary info
+                                <input type="hidden" id="search-by-job" value="false">
+                            </div>
+                            <div class="search-tips">
+                                <div id="search-tips-button" onclick="openSearchTips(event);">
+                                    <img src="image/apple@3x.png" alt="">
+                                    Search tips
+                                </div>
 
+                                <div id="search-tip-show" class="search-tip-show hidden">
+                                    <div class="tip-title">
+                                        Feel Awesome Using Search Tips
+                                    </div>
+                                    <div class="div-scroll">
+                                        <div class="tip-list">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th class="operators">Operators</th>
+                                                        <th class="samplekeywords">Sample Keywords</th>
+                                                        <th class="searchresults">Search Results</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="operators"></td>
+                                                        <td class="samplekeywords">IT Director</td>
+                                                        <td class="searchresults">Return resumes that contain both "IT"
+                                                            AND
+                                                            "director"</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="operators">
+                                                            <div class="example hyphen">
+                                                                " "
+                                                            </div>
+                                                        </td>
+                                                        <td class="samplekeywords"><span>"</span>IT
+                                                            Director<span>"</span>
+                                                        </td>
+                                                        <td class="searchresults">Return resumes that contain exact "IT
+                                                            Director"</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="operators">
+                                                            <div class="example">+</div>
+                                                        </td>
+                                                        <td class="samplekeywords"><span>+</span>IT
+                                                            <span>+</span>Director
+                                                        </td>
+                                                        <td class="searchresults">Return resumes that contain both "IT"
+                                                            AND
+                                                            "Director"</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="operators">
+                                                            <div class="example">+</div>
+                                                        </td>
+                                                        <td class="samplekeywords"><span>+</span>IT Director
+                                                        </td>
+                                                        <td class="searchresults">Return resumes that contain "IT" but
+                                                            rank
+                                                            rows higher if they</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="operators">
+                                                            <div class="example">-</div>
+                                                        </td>
+                                                        <td class="samplekeywords"><span>"</span>IT
+                                                            <span>+</span>Director
+                                                            <span>-</span>ITnavi
+                                                        </td>
+                                                        <td class="searchresults">Return resumes that contain both "IT"
+                                                            AND
+                                                            "Director" but not "ITnavi" <br>
 
+                                                            <span>You could use this operator to exclude employees from
+                                                                your
+                                                                company</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="operators">
+                                                            <div class="example">*</div>
+                                                        </td>
+                                                        <td class="samplekeywords">IT Director<span>*</span>
+                                                        </td>
+                                                        <td class="searchresults">Return resumes that contain words such
+                                                            as
+                                                            "elastic", "elasticse copy"
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item item-location">
+                            <img src="image/placeholder-gray-point@3x.png" alt="">
+                            <input type="text" name="location" placeholder="Location">
+                        </div>
+                        <div class="item item-jlevel">
+                            <img src="image/old-fashion-briefcase@3x.png" alt="">
+                            <input type="text" name="joblevel" placeholder="Job Level">
+                        </div>
+                        <!-- <input class="item item-location" type="text" placeholder="Keyword"> -->
+                        <!-- <input class="item item-jlevel" type="text" placeholder="Keyword"> -->
 
-        <div id="background-for-notification" class="hidden">
-            <!-- Use class 'show-notification' in id Message-Out-Of-Free-Post-Job to show this message -->
-            <div id="Message-Out-Of-Free-Post-Job" class="hidden">
-                <div class="close-notify">
-                    <i class="fas fa-times"></i>
+                        <div class="submit-advanced">
+                            <button type="submit" class="button-submit">Search</button>
+                            <div class="search-advanced">
+                                <div class="advanced-icon">+</div>
+                                Advanced Search
+                            </div>
+                        </div>
+                    </form>
                 </div>
 
-                <div class="description">You have 0 credit for job post. <br>
-                    Please contact ITNavi's customer support to continue your recruitment plan. <br> <br>
+                <div class="set-box-shadow result-found">
+                    <div class="title padding-width-30 padding-width-xs-10">
+                        <div class="result-count">
+                            1,000 Results Found <span>"Developer"</span>
+                        </div>
+                        <div class="result-option">
+                            <div class="item">
+                                <div style="background-image: url(image/placeholder-gray-point@3x.png);"
+                                    class="item-icon"></div>
+                                Location: <span>Any</span>
+                            </div>
+                            <div class="item">
+                                <div style="background-image: url(image/placeholder-gray-point@3x.png);"
+                                    class="item-icon"></div>
+                                Job level: <span>Any</span>
+                            </div>
+                        </div>
+                    </div>
 
-                    Thank you!
-                </div>
+                    <div class="div-scroll">
+                        <div class="found-element">
+                            <div class="element-left padding-width-30 padding-width-xs-10">
+                                <div class="left-title">
+                                    <div class="ghim-icon"></div>
+                                    Android <span>Developer</span>, React, React Native <span>Developer</span>, PHP
+                                    <span>Developer</span>, Javascript
+                                </div>
 
-                <div class="ok-button">
-                    <button>OK</button>
+                                <div class="left-item">
+                                    <div class="item">
+                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
+                                            class="item-icon"></div>
+                                        Experienced ( non manager )
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
+                                            class="item-icon"></div>
+                                        Da Nang, Ho Chi Minh
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
+                                            class="item-icon"></div>
+                                        HarveyNash Vietnam
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
+                                            class="item-icon"></div>
+                                        Experienced: 4 years
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="element-right">
+                                <div class="status viewed">Viewed</div>
+                                <div class="activity">
+                                    <div class="item">
+                                        <div style="background-image: url(image/eye@3x.png);" class="item-icon"></div>93
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/download@3x.png);" class="item-icon">
+                                        </div>
+                                        26
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/diamond@3x.png);" class="item-icon">
+                                        </div>2
+                                    </div>
+                                </div>
+                                <div class="last-modified">
+                                    <img src="image/calendar-with-a-clock-time-tools@3x.png" alt="">
+                                    Last modified: 07/02/2017
+                                </div>
+                                <div class="profile-completed">
+                                    <img src="image/battery@3x.png" alt="">
+                                    Profile Completeness: 95%
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="found-element">
+                            <div class="element-left padding-width-30 padding-width-xs-10">
+                                <div class="left-title">
+                                    Android <span>Developer</span>, React, React Native <span>Developer</span>, PHP
+                                    <span>Developer</span>, Javascript
+                                </div>
+
+                                <div class="left-item">
+                                    <div class="item">
+                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
+                                            class="item-icon"></div>
+                                        Experienced ( non manager )
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
+                                            class="item-icon"></div>
+                                        Da Nang, Ho Chi Minh
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
+                                            class="item-icon"></div>
+                                        HarveyNash Vietnam
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
+                                            class="item-icon"></div>
+                                        Experienced: 4 years
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/dollar-symbol@3x.png);"
+                                            class="item-icon">
+                                        </div>
+                                        600 USD
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="element-right">
+                                <div class="status viewed">Viewed</div>
+                                <div class="activity">
+                                    <div class="item">
+                                        <div style="background-image: url(image/eye@3x.png);" class="item-icon"></div>93
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/download@3x.png);" class="item-icon">
+                                        </div>
+                                        26
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/diamond@3x.png);" class="item-icon">
+                                        </div>2
+                                    </div>
+                                </div>
+                                <div class="last-modified">
+                                    <img src="image/calendar-with-a-clock-time-tools@3x.png" alt="">
+                                    Last modified: 07/02/2017
+                                </div>
+                                <div class="profile-completed">
+                                    <img src="image/battery@3x.png" alt="">
+                                    Profile Completeness: 95%
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="found-element">
+                            <div class="element-left padding-width-30 padding-width-xs-10">
+                                <div class="left-title">
+                                    Android <span>Developer</span>, React, React Native <span>Developer</span>, PHP
+                                    <span>Developer</span>, Javascript
+                                </div>
+
+                                <div class="left-item">
+                                    <div class="item">
+                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
+                                            class="item-icon"></div>
+                                        Experienced ( non manager )
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
+                                            class="item-icon"></div>
+                                        Da Nang, Ho Chi Minh
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
+                                            class="item-icon"></div>
+                                        HarveyNash Vietnam
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
+                                            class="item-icon"></div>
+                                        Experienced: 4 years
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/dollar-symbol@3x.png);"
+                                            class="item-icon">
+                                        </div>
+                                        600 USD
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="element-right">
+                                <div class="status bookmarked">Bookmarked</div>
+                                <div class="activity">
+                                    <div class="item">
+                                        <div style="background-image: url(image/eye@3x.png);" class="item-icon"></div>93
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/download@3x.png);" class="item-icon">
+                                        </div>
+                                        26
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/diamond@3x.png);" class="item-icon">
+                                        </div>2
+                                    </div>
+                                </div>
+                                <div class="last-modified">
+                                    <img src="image/calendar-with-a-clock-time-tools@3x.png" alt="">
+                                    Last modified: 07/02/2017
+                                </div>
+                                <div class="profile-completed">
+                                    <img src="image/battery@3x.png" alt="">
+                                    Profile Completeness: 95%
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="found-element">
+                            <div class="element-left padding-width-30 padding-width-xs-10">
+                                <div class="left-title">
+                                    NGUYEN THANH HUNG | Android <span>Developer</span>, React, React Native
+                                    <span>Developer</span>, PHP
+                                    <span>Developer</span>, Javascript
+                                </div>
+
+                                <div class="left-item">
+                                    <div class="item">
+                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
+                                            class="item-icon"></div>
+                                        Experienced ( non manager )
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
+                                            class="item-icon"></div>
+                                        Da Nang, Ho Chi Minh
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
+                                            class="item-icon"></div>
+                                        HarveyNash Vietnam
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
+                                            class="item-icon"></div>
+                                        Experienced: 4 years
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/dollar-symbol@3x.png);"
+                                            class="item-icon">
+                                        </div>
+                                        600 USD
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="element-right">
+                                <div class="status creditused">Credit Used</div>
+                                <div class="activity">
+                                    <div class="item">
+                                        <div style="background-image: url(image/eye@3x.png);" class="item-icon"></div>93
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/download@3x.png);" class="item-icon">
+                                        </div>
+                                        26
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/diamond@3x.png);" class="item-icon">
+                                        </div>2
+                                    </div>
+                                </div>
+                                <div class="last-modified">
+                                    <img src="image/calendar-with-a-clock-time-tools@3x.png" alt="">
+                                    Last modified: 07/02/2017
+                                </div>
+                                <div class="profile-completed">
+                                    <img src="image/battery@3x.png" alt="">
+                                    Profile Completeness: 95%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagging-left">
+                        <a href="#" class="previous hidden">
+                            <img src="image/previous@3x.png" alt="">
+                        </a>
+
+                        <div class="pagging-list">
+                            <div href="#" class="pagger active">1</div>
+                            <a href="#" class="pagger">2</a>
+                            <a href="#" class="pagger">3</a>
+                            <a href="#" class="pagger">4</a>
+                            <div class="pagger disable">...</div>
+                        </div>
+
+                        <a href="#" class="next">
+                            <img src="image/next@3x.png" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div id="Message-Change-Status" class="hidden">
-                <div class="close-notify" onclick="CloseMessage(event, 'Message-Change-Status')">
-                    <i class="fas fa-times"></i>
+            <div id="Candidate-Summary" class="hri-tabcontent">
+                <div class="set-box-shadow">
+                    <div class="infomation padding-width-30 padding-width-xs-10">
+                        <div class="big-title">Candidate Details</div>
+                        <div class="info">
+                            <img class="avatar" src="image/rectangle-580@3x.png" alt="">
+                            <div class="content">
+                                <div class="big-title">
+                                    PHP Developer
+                                </div>
+                                <div class="life">
+                                    Local Vietnamese | Female | Married <br>
+                                    Tan Phu District, Ho Chi Minh
+                                </div>
+                                <div class="list-item">
+                                        <div class="item">
+                                            <div style="background-image: url(image/eye@3x.png)" class="item-icon"></div>
+                                            View: 46
+                                        </div>
+                                        <div class="item">
+                                            <div style="background-image: url(image/group-674@3x.png)" class="item-icon">
+                                            </div>
+                                            Credit: 3
+                                        </div>
+                                        <div class="item item-null"></div>
+                                        <div class="item">
+                                            <div style="background-image: url(image/black-battery@3x.png)"
+                                                class="item-icon"></div>
+                                            Progress: 65%
+                                        </div>
+                                        <div class="item">
+                                            <div style="background-image: url(image/group-690@3x.png)" class="item-icon">
+                                            </div>
+                                            Download: 12
+                                        </div>
+                                        <div class="item">
+                                            <div style="background-image: url(image/calendar-with-a-clock-time-tools@3x.png)"
+                                                class="item-icon"></div>
+                                            Updated: 09/09/2019
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="viewcontact padding-width-30 padding-width-xs-10">
+                        <button onclick="OpenMessage(event, 'Message-View-Contact-Infomation')">View Contact
+                            Information</button>
+                    </div>
+
+                    <div class="summary-infomation-gray summary-infomation-gray padding-width-30 padding-width-xs-10">
+                        <div class="gray-left">
+                            Summary Information
+                        </div>
+                        <div class="gray-right">
+                            <button class="orange-button">
+                                <div style="background-image: url(image/bookmark-white@3x.png)" class="button-icon">
+                                </div>
+                                Bookmark
+                            </button>
+                            <button class="gray-button">
+                                <div style="background-image: url(image/forward-arrow@3x.png)" class="button-icon">
+                                </div>
+                                Forward
+                            </button>
+                            <button class="gray-button">
+                                <div style="background-image: url(image/forward-arrow@3x.png)" class="button-icon">
+                                </div>
+                                Print
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="two-table padding-width-30 padding-width-xs-10">
+                        <div class="table-left padding-width-30 padding-width-xs-10">
+                            <div class="item">
+                                <div class="name">Highest Education</div>
+                                <div class="value">Bachelor of Engineering</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Year of Experience</div>
+                                <div class="value">10 years</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Top Skills</div>
+                                <div class="value">Java, Project Management,
+                                    Photoshop, AI</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Language</div>
+                                <div class="value">English, Japanese</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Domain Experience</div>
+                                <div class="value">Banking $ Finance</div>
+                            </div>
+                        </div>
+                        <div class="table-right padding-width-30 padding-width-xs-10">
+                            <div class="item">
+                                <div class="name">Most Recent Jobs</div>
+                                <div class="value">Team Lead</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Latest Company</div>
+                                <div class="value">FPT Software</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Experience Level</div>
+                                <div class="value">Experiences ( non manager )</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Expected Position</div>
+                                <div class="value">Team Lead</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Expected Job Location</div>
+                                <div class="value">Ho Chi Minh city</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Minimum Expected Salary</div>
+                                <div class="value">1000 USD</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="title">
-                    Change status
-                </div>
+                <div id="itnavi-attached2" class="attached set-box-shadow">
+                    <div class="attached-title set-box-shadow padding-width-30 padding-width-xs-10">
+                        <div class="title-left">
+                            <div class="left-icon"></div>
+                            Attached CV
+                        </div>
+                        <div class="title-right">
+                                <button id="fullscreenbutton2" onclick="TitleRightfull2()">
+                                <div style="background-image: url(image/full-size@3x.png)" class="button-icon"></div>
+                                View Fullscreen
+                            </button>
+                            <button>
+                                <div style="background-image: url(image/tab@3x.png)" class="button-icon"></div>
+                                View On New Tab
+                            </button>
+                        </div>
+                    </div>
 
-                <form action="#" method="POST">
-                    <div class="form-item">
-                        <select name="status">
-                            <option value="Select status" selected disabled> Select status</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
+                    <div class="attached-file">
+                        <embed src="tran-thi-lan-chi.pdf"
+                            type="application/pdf" />
                     </div>
-                    <div class="form-item-haft">
-                        <div onclick="CloseMessage(event, 'Message-Change-Status')" class="cancel-button">Cancel</div>
-                        <button class="change-button">Change</button>
-                    </div>
-                </form>
+                </div>
             </div>
 
-            <div id="Message-Add-Note" class="hidden">
-                <div class="close-notify" onclick="CloseMessage(event, 'Message-Add-Note')">
-                    <i class="fas fa-times"></i>
+            <div id="Candidate-Detail" class="hri-tabcontent">
+                <div class="set-box-shadow">
+                    <div class="infomation padding-width-30 padding-width-xs-10">
+                        <div class="big-title">Candidate Details</div>
+                        <div class="info">
+                            <img class="avatar" src="image/rectangle-580@3x.png" alt="">
+                            <div class="content">
+                                <div class="big-title">
+                                    Nguyen Van A
+                                </div>
+                                <div class="life">
+                                    PHP Developer <br>
+                                    Local Vietnamese | Female | Married <br>
+                                    Tan Phu District, Ho Chi Minh
+                                </div>
+                                <div class="list-item">
+                                    <div class="item">
+                                        <div style="background-image: url(image/eye@3x.png)" class="item-icon"></div>
+                                        View: 46
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/group-674@3x.png)" class="item-icon">
+                                        </div>
+                                        Credit: 3
+                                    </div>
+                                    <div class="item item-null"></div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/black-battery@3x.png)"
+                                            class="item-icon"></div>
+                                        Progress: 65%
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/group-690@3x.png)" class="item-icon">
+                                        </div>
+                                        Download: 12
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/calendar-with-a-clock-time-tools@3x.png)"
+                                            class="item-icon"></div>
+                                        Updated: 09/09/2019
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="viewcontact padding-width-30 padding-width-xs-10">
+                        <button disabled>Viewed Contact Information</button>
+                    </div>
+
+                    <div class="summary-infomation-gray summary-infomation-gray padding-width-30 padding-width-xs-10">
+                        <div class="gray-left">
+                            Summary Information
+                        </div>
+                        <div class="gray-right">
+                            <button class="orange-button">
+                                <div style="background-image: url(image/bookmark-black-shape@3x.png)"
+                                    class="button-icon">
+                                </div>
+                                Bookmark
+                            </button>
+                            <button class="orange-full-button">
+                                <div style="background-image: url(image/group-684@3x.png)" class="button-icon">
+                                </div>
+                                Download
+                            </button>
+                            <button class="gray-button">
+                                <div style="background-image: url(image/printer@3x.png)" class="button-icon">
+                                </div>
+                                Print
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="two-table">
+                        <div class="table-left padding-width-30 padding-width-xs-10">
+                            <div class="item">
+                                <div class="name">
+                                    <div style="background-image: url(image/college-graduation-1@3x.png)"
+                                        class="name-icon"></div>
+                                    Highest Education
+                                </div>
+                                <div class="value">Bachelor of Engineering</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">
+                                    <div style="background-image: url(image/road-with-broken-line@3x.png)"
+                                        class="name-icon"></div>
+                                    Year of Experience
+                                </div>
+                                <div class="value">10 years</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">
+                                    <div style="background-image: url(image/group-948@3x.png)" class="name-icon"></div>
+                                    Top Skills
+                                </div>
+                                <div class="value">Java, Project Management</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">
+                                    <div style="background-image: url(image/language@3x.png)" class="name-icon"></div>
+                                    Language
+                                </div>
+                                <div class="value">English, Japanese</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">
+                                    <div style="background-image: url(image/skills@3x.png)" class="name-icon"></div>
+                                    Domain Experience
+                                </div>
+                                <div class="value">Banking $ Finance</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">
+                                    <div style="background-image: url(image/old-fashion-briefcase@3x.png)"
+                                        class="name-icon"></div>
+                                    Most Recent Jobs
+                                </div>
+                                <div class="value">Team Lead</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">
+                                    <div style="background-image: url(image/three-buildings@3x.png)" class="name-icon">
+                                    </div>
+                                    Latest Company
+                                </div>
+                                <div class="value">FPT Software</div>
+                            </div>
+                        </div>
+                        <div class="table-right padding-width-30 padding-width-xs-10">
+                            <div class="item">
+                                <div class="name">
+                                    <div style="background-image: url(image/path-1128@3x.png)" class="name-icon"></div>
+                                    Most Recent Jobs
+                                </div>
+                                <div class="value">Team Lead</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">
+                                    <div style="background-image: url(image/boss@3x.png)" class="name-icon"></div>
+                                    Latest Company
+                                </div>
+                                <div class="value">FPT Software</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">
+                                    <div style="background-image: url(image/placeholder-filled-point@3x.png)"
+                                        class="name-icon"></div>
+                                    Experience Level
+                                </div>
+                                <div class="value">Experiences ( non manager )</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">
+                                    <div style="background-image: url(image/navigation@3x.png)" class="name-icon"></div>
+                                    Expected Position
+                                </div>
+                                <div class="value">Team Lead</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">
+                                    <div style="background-image: url(image/list@3x.png)" class="name-icon"></div>
+                                    Expected Job Location
+                                </div>
+                                <div class="value">Ho Chi Minh city</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">
+                                    <div style="background-image: url(image/dollar-black-symbol@3x.png)"
+                                        class="name-icon"></div>
+                                    Minimum Expected Salary
+                                </div>
+                                <div class="value">1000 USD</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="title">
-                    Change status
+                <div id="itnavi-attached" class="attached set-box-shadow">
+                    <div class="attached-title set-box-shadow padding-width-30 padding-width-xs-10">
+                        <div class="title-left">
+                            <div id="Attached-CVButton" class="info-tablinks active"
+                                onclick="openInfoTab(event, 'Attached-CV');">
+                                Attached CV
+                            </div>
+                            <div id="ITNavisOnline-CVButton" class="info-tablinks"
+                                onclick="openInfoTab(event, 'ITNavisOnline-CV');">
+                                ITNavi's Online CV
+                            </div>
+                        </div>
+                        <div id="ITNavi-TitleRight" class="title-right">
+                            <button id="fullscreenbutton" onclick="TitleRightfull()">
+                                <div style="background-image: url(image/full-size@3x.png)" class="button-icon"></div>
+                                View Fullscreen
+                            </button>
+                            <button>
+                                <div style="background-image: url(image/tab@3x.png)" class="button-icon"></div>
+                                View On New Tab
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="Attached-CV" class="info-tabcontent attached-file">
+                        <embed src="tran-thi-lan-chi.pdf"
+                            type="application/pdf" />
+                    </div>
+                    <div id="ITNavisOnline-CV" class="info-tabcontent padding-width-30 padding-width-xs-10">
+                        <div class="row">
+                            <div class="col-lg-10 col-xs-12">
+                                <div class="info-element set-box-shadow">
+                                    <div class="left-title">
+                                        <div style="background-image: url(image/business-card-of-a-man-with-contact-info@3x.png);"
+                                            class="left-title-image"></div>
+                                        <div class="left-title-name">PERSONAL INFORMATION</div>
+                                    </div>
+                                    <div class="left-body">
+                                        <div class="left-body-list">
+                                            <div class="list-item">
+                                                <div class="list-item-1 boldertext">Email<span class="super-starr">
+                                                        *</span></div>
+                                                <div class="list-item-2">nhungkieu@gmail.com</div>
+                                            </div>
+                                            <div class="list-item">
+                                                <div class="list-item-1 boldertext">Nationality<span
+                                                        class="super-starr">
+                                                        *</span>
+                                                </div>
+                                                <div class="list-item-2">Vietnamese</div>
+                                            </div>
+                                            <div class="list-item">
+                                                <div class="list-item-1 boldertext">Phone No.<span class="super-starr">
+                                                        *</span>
+                                                </div>
+                                                <div class="list-item-2">0912345678</div>
+                                            </div>
+                                            <div class="list-item">
+                                                <div class="list-item-1 boldertext">Country<span class="super-starr">
+                                                        *</span></div>
+                                                <div class="list-item-2">Vietnam</div>
+                                            </div>
+                                            <div class="list-item">
+                                                <div class="list-item-1 boldertext">Date of Birth<span
+                                                        class="super-starr"> *</span>
+                                                </div>
+                                                <div class="list-item-2">05/11/1988</div>
+                                            </div>
+                                            <div class="list-item">
+                                                <div class="list-item-1 boldertext">Province/City<span
+                                                        class="super-starr"> *</span>
+                                                </div>
+                                                <div class="list-item-2">Hanoi</div>
+                                            </div>
+                                            <div class="list-item">
+                                                <div class="list-item-1 boldertext">Gender<span class="super-starr">
+                                                        *</span></div>
+                                                <div class="list-item-2">Female</div>
+                                            </div>
+                                            <div class="list-item">
+                                                <div class="list-item-1 boldertext">District<span class="super-starr">
+                                                        *</span></div>
+                                                <div class="list-item-2">Ba Đình</div>
+                                            </div>
+                                            <div class="list-item">
+                                                <div class="list-item-1 boldertext">Marital Status<span
+                                                        class="super-starr"> *</span>
+                                                </div>
+                                                <div class="list-item-2">Married</div>
+                                            </div>
+                                            <div class="list-item">
+                                                <div class="list-item-1 boldertext">Address<span class="super-starr">
+                                                        *</span></div>
+                                                <div class="list-item-2">Số 12 Phố Nguyễn Văn Trỗi</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="info-element set-box-shadow">
+                                    <div class="left-title">
+                                        <div style="background-image: url(image/success-1@3x.png);"
+                                            class="left-title-image"></div>
+                                        <div class="left-title-name">CAREER OBJECTIVE</div>
+                                    </div>
+                                    <div class="left-body">
+                                        <div class="left-body-text">
+                                            IT Professional with over 10 years of experience specializing in IT
+                                            department management for international logistics companies. I can implement
+                                            effective IT strategic at local and global levels. My greatest strength is
+                                            business awareness, which enables me to permanently streamline
+                                            infrastructure and applications.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="info-element set-box-shadow">
+                                    <div class="left-title">
+                                        <div style="background-image: url(image/skills@3x.png);"
+                                            class="left-title-image"></div>
+                                        <div class="left-title-name">SKILLS</div>
+                                    </div>
+                                    <div class="left-body">
+
+                                        <div class="left-body-table">
+                                            <div class="table-name">
+                                                <div class="name">Professional Skills</div>
+                                            </div>
+                                            <div class="table-here">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="skills">Skills</th>
+                                                            <th class="proficiency">Proficiency</th>
+                                                            <th class="yeoe">Year of Experience</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="skills">Project Management</td>
+                                                            <td class="proficiency">Basic</td>
+                                                            <td class="yeoe">2 years</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="skills">Business Analyst</td>
+                                                            <td class="proficiency">Basic</td>
+                                                            <td class="yeoe">5 years</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="skills">Problem Solving</td>
+                                                            <td class="proficiency">Basic</td>
+                                                            <td class="yeoe">4 years</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="left-body-table">
+                                            <div class="table-name">
+                                                <div class="name">Technology Skills</div>
+                                            </div>
+                                            <div class="table-here">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="skills">Skills</th>
+                                                            <th class="proficiency">Proficiency</th>
+                                                            <th class="yeoe">Year of Experience</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="skills">Business Intelligence</td>
+                                                            <td class="proficiency">Basic</td>
+                                                            <td class="yeoe">2 years</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="skills">Web Architecture and
+                                                                Development Framework</td>
+                                                            <td class="proficiency">Basic</td>
+                                                            <td class="yeoe">5 years</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="skills">SEO/SEM Marketing</td>
+                                                            <td class="proficiency">Basic</td>
+                                                            <td class="yeoe">4 years</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="left-body-table">
+                                            <div class="table-name">
+                                                <div class="name">Domain Skills</div>
+                                            </div>
+                                            <div class="table-here">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="skills">Skills</th>
+                                                            <th class="proficiency">Proficiency</th>
+                                                            <th class="yeoe">Year of Experience</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="skills">Recruitment</td>
+                                                            <td class="proficiency">Intermediate</td>
+                                                            <td class="yeoe">2 years</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="skills">E-commerce</td>
+                                                            <td class="proficiency">Basic</td>
+                                                            <td class="yeoe">5 years</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="left-body-table">
+                                            <div class="table-name">
+                                                <div class="name">Language Skills</div>
+                                            </div>
+                                            <div class="table-here but-3-element">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="skills">Skills</th>
+                                                            <th class="proficiency">Proficiency</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="skills">Recruitment</td>
+                                                            <td class="proficiency">General Working
+                                                                Proficiency</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="skills">E-commerce</td>
+                                                            <td class="proficiency">Basic</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="info-element set-box-shadow">
+                                    <div class="left-title">
+                                        <div style="background-image: url(image/business-presentation@3x.png);"
+                                            class="left-title-image"></div>
+                                        <div class="left-title-name titletext">PROJECT EXPERIENCE</div>
+                                    </div>
+                                    <div class="left-body">
+                                        <div class="left-body-timeline">
+                                            <div class="timeline-title">03/2018 - 01/2019</div>
+                                            <div class="timeline-content">
+                                                <div class="timeline-content-item content-name">
+                                                    Developing Video Mail
+                                                </div>
+                                                <div class="timeline-content-item italictext">ITNavi JSC.</div>
+                                                <div class="timeline-content-item">
+                                                    Developing application by C/C++ to attach video to mail and
+                                                    to extract
+                                                    and play video from email
+                                                </div>
+                                                <div class="timeline-content-item">
+                                                    • Team size: 5
+                                                </div>
+                                                <div class="timeline-content-item">
+                                                    • Technical Skills: Laravel Framework, PHP, MySQL
+                                                </div>
+                                                <div class="timeline-content-item">
+                                                    • Role: Product Owner
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-element set-box-shadow">
+                                    <div class="left-title">
+                                        <div style="background-image: url(image/passage-of-time@3x.png);"
+                                            class="left-title-image">
+                                        </div>
+                                        <div class="left-title-name">EMPLOYMENT HISTORY</div>
+                                    </div>
+                                    <div class="left-body">
+
+                                        <div class="left-body-timeline">
+                                            <div class="timeline-title">07/2016 - 02/2018</div>
+                                            <div class="timeline-content">
+                                                <div class="timeline-content-item content-name">
+                                                    Product Lead</div>
+                                                <div class="timeline-content-item italictext">Haravan JSC.</div>
+                                                <div class="timeline-content-item description">
+                                                    HARAVAN has been established in March, 2014 as a software
+                                                    solution
+                                                    company,
+                                                    provide cloud-based multichannel commerce platform for SMEs,
+                                                    e-commerce
+                                                    merchants, retailers, shop to run their business online and
+                                                    offline.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="info-element set-box-shadow">
+                                    <div class="left-title">
+                                        <div style="background-image: url(image/college-graduation-1@3x.png);"
+                                            class="left-title-image">
+                                        </div>
+                                        <div class="left-title-name">EDUCATIONAL BACKGROUND</div>
+                                    </div>
+                                    <div class="left-body">
+
+                                        <div class="left-body-timeline">
+                                            <div class="timeline-title">09/2006 - 01/2011</div>
+                                            <div class="timeline-content">
+                                                <div class="timeline-content-item content-name">
+                                                    Bachelor of Information Technology
+                                                </div>
+                                                <div class="timeline-content-item description">Hanoi University -
+                                                    Vietnam
+                                                </div>
+                                                <div class="timeline-content-item description">Grade: 3.5</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-element set-box-shadow">
+                                    <div class="left-title">
+                                        <div style="background-image: url(image/certification-file@3x.png);"
+                                            class="left-title-image">
+                                        </div>
+                                        <div class="left-title-name">CERTIFICATION</div>
+                                    </div>
+                                    <div class="left-body">
+
+                                        <div class="left-body-timeline">
+                                            <div class="timeline-title ">05/2018</div>
+                                            <div class="timeline-content">
+                                                <div class="timeline-content-item content-name">
+                                                    PMP (Score:5)
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-element set-box-shadow">
+                                    <div class="left-title">
+                                        <div style="background-image: url(image/business-people-meeting@3x.png);"
+                                            class="left-title-image">
+                                        </div>
+                                        <div class="left-title-name titletext">TRAINING & SEMINAR ATTENDED</div>
+                                    </div>
+                                    <div class="left-body">
+
+                                        <div class="left-body-timeline">
+                                            <div class="timeline-title boldertext">01/2017- 03/2017</div>
+                                            <div class="timeline-content">
+                                                <div class="timeline-content-item content-name">
+                                                    Project Management Essentials</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-element set-box-shadow">
+                                    <div class="left-title">
+                                        <div style="background-image: url(image/quality@3x.png);"
+                                            class="left-title-image">
+                                        </div>
+                                        <div class="left-title-name titletext">QUALIFICATIONS</div>
+                                    </div>
+                                    <div class="left-body">
+                                        <div class="left-body-text small-text">
+                                            Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="info-element set-box-shadow">
+                                    <div class="left-title">
+                                        <div style="background-image: url(image/award@3x.png);"
+                                            class="left-title-image"></div>
+                                        <div class="left-title-name titletext">ACHIEVEMENT/ RESPONSIBILITY</div>
+                                    </div>
+                                    <div class="left-body">
+                                        <div class="left-body-text small-text">
+                                            Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="info-element set-box-shadow">
+                                    <div class="left-title">
+                                        <div style="background-image: url(image/file-in-folder@3x.png);"
+                                            class="left-title-image">
+                                        </div>
+                                        <div class="left-title-name titletext">REFERENCES</div>
+                                    </div>
+                                    <div class="left-body">
+
+                                        <div class="left-body-timeline">
+                                            <div class="timeline-title boldertext">Trần Thị Hồng</div>
+                                            <div class="timeline-content">
+                                                <div class="timeline-content-item content-name">
+                                                    CEO - HRI Vietnam</div>
+                                                <div class="timeline-content-item content-name">
+                                                    Email: hong.tran@hri.com.vn - Phone: 0912345678</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="CompanyProfile" class="hri-tabcontent set-box-shadow">
+                        <div id="Companyprofile-Header" class="headertab padding-width-30 padding-width-xs-10">
+                            <div class="big-title">Company Profile</div>
+                            <div class="form-list">
+                                <div id="BASICINFOMATIONButton" class="form-item active">Basic Information</div>
+                                <div id="WORKENVIRONMENTButton" class="form-item">Work Enviroment</div>
+                                <div id="HEADERIMAGEPICTURESButton" class="form-item">Header Image & Picture</div>
+                            </div>
+                            <div class="completion">
+                                <div class="progress-text">
+                                    Your Profile Completion<span>82%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 82%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="body-tab">
+
+                            <div class="profile-form">
+                                <div id="BASICINFOMATION" class="profile-header">
+                                    BASIC INFOMATION
+                                </div>
+                                <form action="#" method="POST"
+                                    class="profile-body padding-width-100 padding-width-lg-30 padding-width-xs-10">
+                                    <div class="body-right">
+                                        <div class="avatar-background">
+                                            <img src="image/rectangle-580@3x.png" alt="">
+                                            <label class="label-fake-input" for="avatarphoto">
+                                                <img src="image/upload@3x.png" alt="">
+                                                Upload
+                                            </label>
+                                            <input type="file" class="hidden" name="avatarphoto" id="avatarphoto">
+                                        </div>
+                                    </div>
+                                    <div class="body-left">
+                                        <div class="item">
+                                            <label for="companyname">Company Name<span class="super-starr">*</span>
+                                            </label>
+                                            <input type="text" name="companyname" required>
+                                        </div>
+                                        <div class="item">
+                                            <label for="foundedtime">Founded Time</label>
+                                            <input type="date" name="foundedtime">
+                                        </div>
+                                        <div class="item">
+                                            <label for="website">Website</label>
+                                            <input type="text" name="website">
+                                        </div>
+                                        <div class="item">
+                                            <label for="facebookfanpage">Facebook Fanpage</label>
+                                            <input type="text" name="facebookfanpage">
+                                        </div>
+                                        <div class="item">
+                                            <label for="companysize">Company Size</label>
+                                            <input type="text" name="companysize">
+                                        </div>
+                                        <div class="item">
+                                            <label for="headquarter">Headquarter<span
+                                                    class="super-starr">*</span></label>
+                                            <select name="headquarter" id="">
+                                                <option value="A">A</option>
+                                                <option value="B">B</option>
+                                                <option value="C">C</option>
+                                            </select>
+                                        </div>
+                                        <div class="item">
+                                            <label for="industry">Industry<span class="super-starr">*</span></label>
+                                            <select name="industry" id="">
+                                                <option value="A">A</option>
+                                                <option value="B">B</option>
+                                                <option value="C">C</option>
+                                            </select>
+                                        </div>
+                                        <div class="item">
+                                            <label for="revenue">Revenue</label>
+                                            <input class="half-7" type="number" name="revenue">
+                                            <select class="half-3" name="revenue-select" id="">
+                                                <option value="A">A</option>
+                                                <option value="B">B</option>
+                                                <option value="C">C</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="body-full">
+                                        <div class="item">
+                                            <label for="companyoverview">Company Overview</label>
+                                            <textarea name="companyoverview" id="companyoverview"></textarea>
+                                        </div>
+                                        <div class="item item-submit">
+                                            <button type="submit">Save</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="profile-form">
+                                <div id="WORKENVIRONMENT" class="profile-header">WORK ENVIRONMENT</div>
+                                <form action="#" method="POST"
+                                    class="profile-body padding-width-100 padding-width-lg-30 padding-width-xs-10">
+                                    <div class="body-full">
+                                        <div class="item">
+                                            <label class="have-span" for="">
+                                                Benefits <br>
+                                                <span>(Max 5)</span>
+                                            </label>
+                                            <div class="benefit">
+                                                <div class="benefit-item">
+                                                    <div style="background-position-x: 0px;" class="benefit-item-image">
+                                                    </div>
+                                                    Ha Noi
+                                                </div>
+                                                <div class="benefit-item">
+                                                    <div style="background-position-x: -66px;"
+                                                        class="benefit-item-image">
+                                                    </div>
+                                                    Ha Noi
+                                                </div>
+                                                <div class="benefit-item benefit-active">
+                                                    <div style="background-position-x: -132px;"
+                                                        class="benefit-item-image">
+                                                    </div>
+                                                    Canteen
+                                                </div>
+                                                <div class="benefit-item">
+                                                    <div style="background-position-x: -194px;"
+                                                        class="benefit-item-image">
+                                                    </div>
+                                                    Ha Noi
+                                                </div>
+                                                <div class="benefit-item">
+                                                    <div style="background-position-x: -153px;"
+                                                        class="benefit-item-image">
+                                                    </div>
+                                                    Mobile
+                                                </div>
+                                                <div class="benefit-item">
+                                                    <div style="background-position-x: -21px;"
+                                                        class="benefit-item-image">
+                                                    </div>
+                                                    Laptop
+                                                </div>
+                                                <div class="benefit-item benefit-active">
+                                                    <div style="background-position-x: -89px;"
+                                                        class="benefit-item-image">
+                                                    </div>
+                                                    Library
+                                                </div>
+                                                <div class="benefit-item benefit-active">
+                                                    <div style="background-position-x: -267px;"
+                                                        class="benefit-item-image">
+                                                    </div>
+                                                    Kindergarten
+                                                </div>
+                                                <div class="benefit-item">
+                                                    <div style="background-position-x: -288px;"
+                                                        class="benefit-item-image">
+                                                    </div>
+                                                    Paid leave
+                                                </div>
+                                                <div class="benefit-item">
+                                                    <div style="background-position-x: -217px;"
+                                                        class="benefit-item-image">
+                                                    </div>
+                                                    Team activities
+                                                </div>
+                                                <div class="benefit-item">
+                                                    <div style="background-position-x: -42px;"
+                                                        class="benefit-item-image">
+                                                    </div>
+                                                    Trainning
+                                                </div>
+                                                <div class="benefit-item benefit-active">
+                                                    <div style="background-position-x: -110px;"
+                                                        class="benefit-item-image">
+                                                    </div>
+                                                    Transportation
+                                                </div>
+                                                <div class="benefit-item benefit-active">
+                                                    <div style="background-position-x: -173px;"
+                                                        class="benefit-item-image">
+                                                    </div>
+                                                    Travel opportunity
+                                                </div>
+                                                <div class="benefit-item">
+                                                    <div style="background-position-x: -243px;"
+                                                        class="benefit-item-image">
+                                                    </div>
+                                                    Vouchers
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <label class="have-span" for="whyjoinus">
+                                                Why join us <br>
+                                                <span>Attach the right candidates</span>
+                                            </label>
+                                            <textarea name="whyjoinus" id="whyjoinus"></textarea>
+                                        </div>
+                                        <div class="item item-submit">
+                                            <button type="submit">Save</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="profile-form">
+                                <div id="HEADERIMAGEPICTURES" class="profile-header">HEADER IMAGE & PICTURES</div>
+                                <form action="#" method="POST"
+                                    class="profile-body padding-width-100 padding-width-lg-30 padding-width-xs-10">
+                                    <div class="body-full">
+                                        <div class="item">
+                                            <label class="have-span" for="">Header Image</label>
+                                            <div class="list-image">
+                                                <div class="description">
+                                                    Make you company profile and every job ad attractive
+                                                </div>
+                                                <div class="put-image-here">
+                                                    <label for="headerimage">
+                                                        <img src="image/upload@3x.png" alt="">
+                                                        Upload Header Image
+                                                    </label>
+                                                    <input type="file" class="hidden" name="headerimage"
+                                                        id="headerimage">
+                                                </div>
+                                                <div class="uploaded">
+                                                    <img class="image" src="image/7.png" alt="">
+                                                    <div class="garbage">
+                                                        <img onclick="" class="garbage-icon" src="image/garbage@3x.png"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <label class="have-span" for="">Header Image</label>
+                                            <div class="list-image-half">
+                                                <div class="description">
+                                                    Showcase your products, people, office, etc, to illustrate your
+                                                    company
+                                                    better
+                                                    <br>
+                                                    Upload the most eye-catching photo first. (Max 10)
+                                                </div>
+                                                <div class="item-image-half">
+                                                    <div class="row">
+                                                        <div class="element col-md-6 col-xs-12">
+                                                            <div class="put-image-here">
+                                                                <label for="newpicture">
+                                                                    + Upload New Picture
+                                                                </label>
+                                                                <span class="small-text">
+                                                                    Minimum 350 x 250 px, high resolution
+                                                                </span>
+                                                                <input type="file" class="hidden" name="newpicture"
+                                                                    id="newpicture">
+                                                            </div>
+                                                        </div>
+                                                        <div class="element col-md-6 col-xs-12">
+                                                            <img class="half-image" src="image/6.png" alt="">
+                                                            <div class="garbage-half" onclick="console.log('deleted');">
+                                                                <img onclick="" class="garbage-icon"
+                                                                    src="image/garbage@3x.png" alt="">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="element col-md-6 col-xs-12">
+                                                            <img class="half-image" src="image/6.png" alt="">
+                                                            <div class="garbage-half" onclick="console.log('deleted');">
+                                                                <img onclick="" class="garbage-icon"
+                                                                    src="image/garbage@3x.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <label class="have-span" for="">Video</label>
+                                            <div class="list-image">
+                                                <div class="description">
+                                                    Share your YouTube video to provide a good introduction of your
+                                                    company
+                                                </div>
+                                                <div class="item-input">
+                                                    <div>YouTube Video Link</div>
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item item-submit">
+                                            <button type="submit">Save</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <form action="#" method="POST">
-                    <div class="form-item">
-                        <textarea name="note" id="" rows="4"></textarea>
+
+
+
+                <div id="background-for-notification" class="hidden">
+                    <!-- Use class 'show-notification' in id Message-Out-Of-Free-Post-Job to show this message -->
+                    <div id="Message-Out-Of-Free-Post-Job" class="hidden">
+                        <div class="close-notify">
+                            <i class="fas fa-times"></i>
+                        </div>
+
+                        <div class="description">You have 0 credit for job post. <br>
+                            Please contact ITNavi's customer support to continue your recruitment plan. <br> <br>
+
+                            Thank you!
+                        </div>
+
+                        <div class="ok-button">
+                            <button>OK</button>
+                        </div>
                     </div>
-                    <div class="form-item-haft">
-                        <div onclick="CloseMessage(event, 'Message-Add-Note')" class="cancel-button">Cancel</div>
-                        <button class="change-button">Change</button>
+
+                    <div id="Message-Change-Status" class="hidden">
+                        <div class="close-notify" onclick="CloseMessage(event, 'Message-Change-Status')">
+                            <i class="fas fa-times"></i>
+                        </div>
+
+                        <div class="title">
+                            Change status
+                        </div>
+
+                        <form action="#" method="POST">
+                            <div class="form-item">
+                                <select name="status">
+                                    <option value="Select status" selected disabled> Select status</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <div class="form-item-haft">
+                                <div onclick="CloseMessage(event, 'Message-Change-Status')" class="cancel-button">
+                                    Cancel
+                                </div>
+                                <button class="change-button">Change</button>
+                            </div>
+                        </form>
                     </div>
-                </form>
-            </div>
+
+                    <div id="Message-Add-Note" class="hidden">
+                        <div class="close-notify" onclick="CloseMessage(event, 'Message-Add-Note')">
+                            <i class="fas fa-times"></i>
+                        </div>
+
+                        <div class="title">
+                            Change status
+                        </div>
+
+                        <form action="#" method="POST">
+                            <div class="form-item">
+                                <textarea name="note" id="" rows="4"></textarea>
+                            </div>
+                            <div class="form-item-haft">
+                                <div onclick="CloseMessage(event, 'Message-Add-Note')" class="cancel-button">Cancel
+                                </div>
+                                <button class="change-button">Change</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div id="Message-View-Contact-Infomation" class="hidden">
+                        <div class="close-notify" onclick="CloseMessage(event, 'Message-View-Contact-Infomation')">
+                            <i class="fas fa-times"></i>
+                        </div>
+
+                        <div class="title">
+                            View Contact Information
+                        </div>
+
+                        <div class="contactinfo-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Service</th>
+                                        <th>Usage Amount</th>
+                                        <th>Order</th>
+                                        <th>Remaining</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Resume Search</td>
+                                        <td>3</td>
+                                        <td>OR123</td>
+                                        <td>3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="have-enough hidden">
+                            You donot have enough credit to view contact information of this resume. <br>
+                            Please contact our customer support: <a href="#">1800 1800</a> for more details
+                        </div>
+                        <div class="message-button">
+                            <button class="cancel"
+                                onclick="CloseMessage(event, 'Message-View-Contact-Infomation')">Cancel</button>
+                            <button class="viewcontact disabled" disabled>View Contact</button>
+                        </div>
+                    </div>
 
 
-        </div>
+                </div>
 
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-            crossorigin="anonymous"></script>
-        <script src="js/postjob.js"></script>
-        <script src="../Navbar/js/navbar.js"></script>
-        <script src=""></script>
-        <!-- <script
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+                    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+                    crossorigin="anonymous"></script>
+                <script src="js/postjob.js"></script>
+                <script src="../Navbar/js/navbar.js"></script>
+                <script src=""></script>
+                <!-- <script
             src="https://cloud.tinymce.com/5/tinymce.min.js?apiKey=91qgxs5hmb6bibrhkl8m68rklgf5ko03cq1h2lv2mr0utvcp"></script> -->
 
-        <script>
-            document.getElementById('ManageJobsButton').click();
+                <script>
+                    // document.getElementById('Search-CandidateButton').click();
+                    // document.getElementById('Candidate-SummaryButton').click();
+                    document.getElementById('Candidate-DetailButton').click();
+                    // document.getElementById('CompanyProfileButton').click();
+
+
+                    document.getElementById('Attached-CVButton').click();
+                    // document.getElementById('ITNavisOnline-CVButton').click();
+
+
+                    var defaultheader = document.getElementById('Companyprofile-Header').offsetTop;
+                    var BASICINFOMATION = document.getElementById('BASICINFOMATION').offsetTop;
+                    var WORKENVIRONMENT = document.getElementById('WORKENVIRONMENT').offsetTop;
+                    var HEADERIMAGEPICTURES = document.getElementById('HEADERIMAGEPICTURES').offsetTop;
 
             // tinymce.init({
             //     selector: '#jobdescription'
@@ -1026,8 +2562,16 @@
             // tinymce.init({
             //     selector: '#benefit'
             // });
-        </script>
-    </div>
+
+            // tinymce.init({
+            //     selector: '#companyoverview'
+            // });
+
+            // tinymce.init({
+            //     selector: '#whyjoinus'
+            // });
+                </script>
+            </div>
 </body>
 
 </html>

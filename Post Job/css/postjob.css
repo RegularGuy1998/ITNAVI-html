@@ -7,10 +7,14 @@ body {
   margin-top: 20px;
   font-size: 16px;
   overflow: auto; }
-  #Post-Job #ManageCandidate-AppliedCandidate .applicedjob-table-tbody tr .candidatename .info .ghim, #Post-Job #ManageCandidate-AppliedCandidate .applicedjob-table-tbody tr .candidatename .info .more-info .more-info-icon, #Post-Job #ManageCandidate-AppliedCandidate .applicedjob-table-tbody tr .action .action-item .item-icon, #Post-Job #ManageCandidate-UsedCreditCandidate .applicedjob-table-tbody tr .candidatename .info .ghim, #Post-Job #ManageCandidate-UsedCreditCandidate .applicedjob-table-tbody tr .candidatename .info .more-info .more-info-icon, #Post-Job #ManageCandidate-UsedCreditCandidate .applicedjob-table-tbody tr .action .action-item .item-icon, #Post-Job #ManageCandidate-BookmarkedCandidate .applicedjob-table-tbody tr .candidatename .info .ghim, #Post-Job #ManageCandidate-BookmarkedCandidate .applicedjob-table-tbody tr .candidatename .info .more-info .more-info-icon, #Post-Job #ManageCandidate-BookmarkedCandidate .applicedjob-table-tbody tr .action .action-item .item-icon {
+  #Post-Job #ManageCandidate-AppliedCandidate .applicedjob-table-tbody tr .candidatename .info .ghim, #Post-Job #ManageCandidate-AppliedCandidate .applicedjob-table-tbody tr .candidatename .info .more-info .more-info-icon, #Post-Job #ManageCandidate-AppliedCandidate .applicedjob-table-tbody tr .action .action-item .item-icon, #Post-Job #ManageCandidate-UsedCreditCandidate .applicedjob-table-tbody tr .candidatename .info .ghim, #Post-Job #ManageCandidate-UsedCreditCandidate .applicedjob-table-tbody tr .candidatename .info .more-info .more-info-icon, #Post-Job #ManageCandidate-UsedCreditCandidate .applicedjob-table-tbody tr .action .action-item .item-icon, #Post-Job #ManageCandidate-BookmarkedCandidate .applicedjob-table-tbody tr .candidatename .info .ghim, #Post-Job #ManageCandidate-BookmarkedCandidate .applicedjob-table-tbody tr .candidatename .info .more-info .more-info-icon, #Post-Job #ManageCandidate-BookmarkedCandidate .applicedjob-table-tbody tr .action .action-item .item-icon, #Post-Job #Search-Candidate .form-search .submit-advanced .search-advanced .advanced-icon, #Post-Job #Search-Candidate .result-found .title .result-option .item .item-icon, #Post-Job #Search-Candidate .result-found .title .result-option #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .item-icon, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .result-found .title .result-option .item-100 .item-icon, #Post-Job #Search-Candidate .result-found .found-element .element-left .left-title .ghim-icon, #Post-Job #Search-Candidate .result-found .found-element .element-left .left-item .item .item-icon, #Post-Job #Search-Candidate .result-found .found-element .element-left .left-item #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .item-icon, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .result-found .found-element .element-left .left-item .item-100 .item-icon, #Post-Job #Search-Candidate .result-found .found-element .element-right .activity .item .item-icon, #Post-Job #Search-Candidate .result-found .found-element .element-right .activity #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .item-icon, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .result-found .found-element .element-right .activity .item-100 .item-icon, #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .content .list-item .item .item-icon, #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .content .list-item #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .item-icon, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Candidate-Summary .set-box-shadow .infomation .info .content .list-item .item-100 .item-icon, #Post-Job #Candidate-Summary .set-box-shadow .summary-infomation-gray .gray-right button .button-icon, #Post-Job #Candidate-Summary .attached .attached-title .title-left .left-icon, #Post-Job #Candidate-Summary .attached .attached-title .title-right button .button-icon, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-right label img, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image .put-image-here label img, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image .put-image-here label img, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image .put-image-here label img, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half .item-image-half .row .element .put-image-here label img, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half .row .element .put-image-here label img, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half .item-image-half .row .element .put-image-here label img {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain; }
+  #Post-Job .overflow-auto {
+    float: left;
+    width: 100%;
+    overflow: auto; }
   #Post-Job .div-scroll {
     width: 100%;
     overflow: scroll; }
@@ -23,6 +27,9 @@ body {
   #Post-Job .padding-width-30 {
     padding-left: 30px;
     padding-right: 30px; }
+  #Post-Job .padding-width-100 {
+    padding-left: 100px;
+    padding-right: 100px; }
   #Post-Job .set-box-shadow {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.11);
     border-bottom-left-radius: 4px;
@@ -32,20 +39,83 @@ body {
   #Post-Job .super-starr {
     color: #F22424;
     font-size: 14px; }
-  #Post-Job #ManageJobs #ManageJobs-JobList .search-job input, #Post-Job #ManageJobs #ManageJobs-JobList .search-job button, #Post-Job #ManageJobs #ManageJobs-JobList .PJ-ManageJob-PostJob-button, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item input, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 input, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item select, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 select, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-cancel, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-savedraft, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-postjob, #Post-Job #ManageCandidate-AppliedCandidate .form-title form .item-jobtitle input, #Post-Job #ManageCandidate-AppliedCandidate .form-title form .item-status select, #Post-Job #ManageCandidate-AppliedCandidate .form-title form button, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form .item-jobtitle input, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form .item-status select, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form button, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form .item-jobtitle input, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form .item-status select, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form button, #Post-Job #background-for-notification #Message-Out-Of-Free-Post-Job .ok-button button, #background-for-notification #Message-Out-Of-Free-Post-Job .ok-button #Post-Job button, #Post-Job #background-for-notification #Message-Change-Status form .form-item select, #background-for-notification #Message-Change-Status form .form-item #Post-Job select, #Post-Job #background-for-notification #Message-Change-Status form .form-item-haft .cancel-button, #background-for-notification #Message-Change-Status form .form-item-haft #Post-Job .cancel-button, #Post-Job #background-for-notification #Message-Change-Status form .form-item-haft .change-button, #background-for-notification #Message-Change-Status form .form-item-haft #Post-Job .change-button, #Post-Job #background-for-notification #Message-Add-Note form .form-item-haft .cancel-button, #background-for-notification #Message-Add-Note form .form-item-haft #Post-Job .cancel-button, #Post-Job #background-for-notification #Message-Add-Note form .form-item-haft .change-button, #background-for-notification #Message-Add-Note form .form-item-haft #Post-Job .change-button {
+  #Post-Job #ManageCandidate-AppliedCandidate .pagging-right, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right, #Post-Job #Search-Candidate .result-found .pagging-left {
+    float: left;
+    padding: 6px;
+    overflow: auto;
+    margin-top: 10px; }
+    #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .default-pagging-button, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .default-pagging-button, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .default-pagging-button, #Post-Job #Search-Candidate .result-found .pagging-left .default-pagging-button, #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .previous, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .previous, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .previous, #Post-Job #Search-Candidate .result-found .pagging-left .previous, #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .next, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .next, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .next, #Post-Job #Search-Candidate .result-found .pagging-left .next, #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .pagging-list .pagger, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .pagging-list .pagger, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .pagging-list .pagger, #Post-Job #Search-Candidate .result-found .pagging-left .pagging-list .pagger, #Post-Job #ManageCandidate-AppliedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .previous, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-AppliedCandidate .pagging-right .previous, #Post-Job #ManageCandidate-UsedCreditCandidate #ManageJobs #ManageJobs-JobList .pagging-right .previous, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-UsedCreditCandidate .pagging-right .previous, #Post-Job #ManageCandidate-BookmarkedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .previous, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-BookmarkedCandidate .pagging-right .previous, #Post-Job #Search-Candidate .result-found .pagging-left #ManageJobs #ManageJobs-JobList .pagging-right .previous, #Post-Job #ManageJobs #ManageJobs-JobList .pagging-right #Search-Candidate .result-found .pagging-left .previous, #Post-Job #ManageCandidate-AppliedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .next, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-AppliedCandidate .pagging-right .next, #Post-Job #ManageCandidate-UsedCreditCandidate #ManageJobs #ManageJobs-JobList .pagging-right .next, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-UsedCreditCandidate .pagging-right .next, #Post-Job #ManageCandidate-BookmarkedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .next, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-BookmarkedCandidate .pagging-right .next, #Post-Job #Search-Candidate .result-found .pagging-left #ManageJobs #ManageJobs-JobList .pagging-right .next, #Post-Job #ManageJobs #ManageJobs-JobList .pagging-right #Search-Candidate .result-found .pagging-left .next, #Post-Job #ManageCandidate-AppliedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .pagging-list .pagger, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-AppliedCandidate .pagging-right .pagging-list .pagger, #Post-Job #ManageCandidate-UsedCreditCandidate #ManageJobs #ManageJobs-JobList .pagging-right .pagging-list .pagger, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-UsedCreditCandidate .pagging-right .pagging-list .pagger, #Post-Job #ManageCandidate-BookmarkedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .pagging-list .pagger, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-BookmarkedCandidate .pagging-right .pagging-list .pagger, #Post-Job #Search-Candidate .result-found .pagging-left #ManageJobs #ManageJobs-JobList .pagging-right .pagging-list .pagger, #Post-Job #ManageJobs #ManageJobs-JobList .pagging-right .pagging-list #Search-Candidate .result-found .pagging-left .pagger {
+      float: left;
+      width: 33px;
+      height: 33px;
+      color: #707070;
+      transition: 0.15s;
+      border-radius: 50%; }
+      #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .default-pagging-button:hover, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .default-pagging-button:hover, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .default-pagging-button:hover, #Post-Job #Search-Candidate .result-found .pagging-left .default-pagging-button:hover, #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .previous:hover, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .previous:hover, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .previous:hover, #Post-Job #Search-Candidate .result-found .pagging-left .previous:hover, #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .next:hover, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .next:hover, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .next:hover, #Post-Job #Search-Candidate .result-found .pagging-left .next:hover, #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .pagging-list .pagger:hover, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .pagging-list .pagger:hover, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .pagging-list .pagger:hover, #Post-Job #Search-Candidate .result-found .pagging-left .pagging-list .pagger:hover, #Post-Job #ManageCandidate-AppliedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .previous:hover, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-AppliedCandidate .pagging-right .previous:hover, #Post-Job #ManageCandidate-UsedCreditCandidate #ManageJobs #ManageJobs-JobList .pagging-right .previous:hover, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-UsedCreditCandidate .pagging-right .previous:hover, #Post-Job #ManageCandidate-BookmarkedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .previous:hover, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-BookmarkedCandidate .pagging-right .previous:hover, #Post-Job #Search-Candidate .result-found .pagging-left #ManageJobs #ManageJobs-JobList .pagging-right .previous:hover, #Post-Job #ManageJobs #ManageJobs-JobList .pagging-right #Search-Candidate .result-found .pagging-left .previous:hover, #Post-Job #ManageCandidate-AppliedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .next:hover, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-AppliedCandidate .pagging-right .next:hover, #Post-Job #ManageCandidate-UsedCreditCandidate #ManageJobs #ManageJobs-JobList .pagging-right .next:hover, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-UsedCreditCandidate .pagging-right .next:hover, #Post-Job #ManageCandidate-BookmarkedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .next:hover, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-BookmarkedCandidate .pagging-right .next:hover, #Post-Job #Search-Candidate .result-found .pagging-left #ManageJobs #ManageJobs-JobList .pagging-right .next:hover, #Post-Job #ManageJobs #ManageJobs-JobList .pagging-right #Search-Candidate .result-found .pagging-left .next:hover, #Post-Job #ManageCandidate-AppliedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .pagging-list .pagger:hover, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-AppliedCandidate .pagging-right .pagging-list .pagger:hover, #Post-Job #ManageCandidate-UsedCreditCandidate #ManageJobs #ManageJobs-JobList .pagging-right .pagging-list .pagger:hover, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-UsedCreditCandidate .pagging-right .pagging-list .pagger:hover, #Post-Job #ManageCandidate-BookmarkedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .pagging-list .pagger:hover, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-BookmarkedCandidate .pagging-right .pagging-list .pagger:hover, #Post-Job #Search-Candidate .result-found .pagging-left #ManageJobs #ManageJobs-JobList .pagging-right .pagging-list .pagger:hover, #Post-Job #ManageJobs #ManageJobs-JobList .pagging-right .pagging-list #Search-Candidate .result-found .pagging-left .pagger:hover {
+        background-color: #1ebdcf;
+        border-radius: 6px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        color: #fff;
+        transition: 0.15s; }
+    #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .previous, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .previous, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .previous, #Post-Job #Search-Candidate .result-found .pagging-left .previous {
+      background-color: #e8e8e8; }
+      #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .previous img, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .previous img, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .previous img, #Post-Job #Search-Candidate .result-found .pagging-left .previous img {
+        width: 5.3px;
+        height: 9.6px;
+        margin: 10px 0 0 14px; }
+    #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .next, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .next, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .next, #Post-Job #Search-Candidate .result-found .pagging-left .next {
+      background-color: #e8e8e8; }
+      #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .next img, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .next img, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .next img, #Post-Job #Search-Candidate .result-found .pagging-left .next img {
+        width: 5.3px;
+        height: 9.6px;
+        margin: 10px 0 0 14px; }
+    #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .pagging-list, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .pagging-list, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .pagging-list, #Post-Job #Search-Candidate .result-found .pagging-left .pagging-list {
+      float: left;
+      padding: 0 8px;
+      margin: 0 11px;
+      overflow: auto;
+      border-radius: 16px;
+      background-color: #e8e8e8; }
+      #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .pagging-list .pagger, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .pagging-list .pagger, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .pagging-list .pagger, #Post-Job #Search-Candidate .result-found .pagging-left .pagging-list .pagger {
+        text-align: center;
+        line-height: 35px;
+        font-size: 12px; }
+        @media screen and (max-width: 575.98px) {
+          #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .pagging-list .pagger, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .pagging-list .pagger, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .pagging-list .pagger, #Post-Job #Search-Candidate .result-found .pagging-left .pagging-list .pagger {
+            width: auto;
+            padding: 0 7px; } }
+      #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .pagging-list .active, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .pagging-list .active, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .pagging-list .active, #Post-Job #Search-Candidate .result-found .pagging-left .pagging-list .active {
+        background-color: #1ebdcf;
+        border-radius: 6px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        color: #fff;
+        transition: 0.15s; }
+      #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .pagging-list .disable:hover, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .pagging-list .disable:hover, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .pagging-list .disable:hover, #Post-Job #Search-Candidate .result-found .pagging-left .pagging-list .disable:hover {
+        box-shadow: none;
+        color: #707070;
+        background-color: #e8e8e8; }
+  #Post-Job #ManageJobs #ManageJobs-JobList .search-job input, #Post-Job #ManageJobs #ManageJobs-JobList .search-job button, #Post-Job #ManageJobs #ManageJobs-JobList .PJ-ManageJob-PostJob-button, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item input, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 input, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item select, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 select, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-cancel, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-savedraft, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-postjob, #Post-Job #ManageCandidate-AppliedCandidate .form-title form .item-jobtitle input, #Post-Job #ManageCandidate-AppliedCandidate .form-title form .item-status select, #Post-Job #ManageCandidate-AppliedCandidate .form-title form button, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form .item-jobtitle input, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form .item-status select, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form button, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form .item-jobtitle input, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form .item-status select, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form button, #Post-Job #Search-Candidate .form-search .item, #Post-Job #Search-Candidate .form-search #ManageJobs #ManageJobs-PostJob .list-form-item .item-100, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .form-search .item-100, #Post-Job #Search-Candidate .form-search .submit-advanced .button-submit, #Post-Job #Candidate-Summary .set-box-shadow .viewcontact button, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-right label, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image .put-image-here label, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image .put-image-here label, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image .put-image-here label, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half .item-image-half .row .element .put-image-here label, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half .row .element .put-image-here label, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half .item-image-half .row .element .put-image-here label, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item input, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item input, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item select, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item select, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item.item-submit button, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item.item-submit button, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-submit.item-100 button, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-submit.item-100 button, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-submit.item-100 button, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-submit.item-100 button, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .item-input input, #Post-Job #background-for-notification #Message-Out-Of-Free-Post-Job .ok-button button, #background-for-notification #Message-Out-Of-Free-Post-Job .ok-button #Post-Job button, #Post-Job #background-for-notification #Message-Change-Status form .form-item select, #background-for-notification #Message-Change-Status form .form-item #Post-Job select, #Post-Job #background-for-notification #Message-Change-Status form .form-item-haft .cancel-button, #background-for-notification #Message-Change-Status form .form-item-haft #Post-Job .cancel-button, #Post-Job #background-for-notification #Message-Change-Status form .form-item-haft .change-button, #background-for-notification #Message-Change-Status form .form-item-haft #Post-Job .change-button, #Post-Job #background-for-notification #Message-Add-Note form .form-item-haft .cancel-button, #background-for-notification #Message-Add-Note form .form-item-haft #Post-Job .cancel-button, #Post-Job #background-for-notification #Message-Add-Note form .form-item-haft .change-button, #background-for-notification #Message-Add-Note form .form-item-haft #Post-Job .change-button, #Post-Job #background-for-notification #Message-View-Contact-Infomation .message-button .cancel, #background-for-notification #Message-View-Contact-Infomation .message-button #Post-Job .cancel, #Post-Job #background-for-notification #Message-View-Contact-Infomation .message-button .viewcontact, #background-for-notification #Message-View-Contact-Infomation .message-button #Post-Job .viewcontact {
     height: 41px;
     border: none;
     float: left;
     border-radius: 5px;
     transition: 0.3s; }
-    #Post-Job #ManageJobs #ManageJobs-JobList .search-job input:focus, #Post-Job #ManageJobs #ManageJobs-JobList .search-job button:focus, #Post-Job #ManageJobs #ManageJobs-JobList .PJ-ManageJob-PostJob-button:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item input:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 input:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item select:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 select:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-cancel:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-savedraft:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-postjob:focus, #Post-Job #ManageCandidate-AppliedCandidate .form-title form .item-jobtitle input:focus, #Post-Job #ManageCandidate-AppliedCandidate .form-title form .item-status select:focus, #Post-Job #ManageCandidate-AppliedCandidate .form-title form button:focus, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form .item-jobtitle input:focus, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form .item-status select:focus, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form button:focus, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form .item-jobtitle input:focus, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form .item-status select:focus, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form button:focus, #Post-Job #background-for-notification #Message-Out-Of-Free-Post-Job .ok-button button:focus, #background-for-notification #Message-Out-Of-Free-Post-Job .ok-button #Post-Job button:focus, #Post-Job #background-for-notification #Message-Change-Status form .form-item select:focus, #background-for-notification #Message-Change-Status form .form-item #Post-Job select:focus, #Post-Job #background-for-notification #Message-Change-Status form .form-item-haft .cancel-button:focus, #background-for-notification #Message-Change-Status form .form-item-haft #Post-Job .cancel-button:focus, #Post-Job #background-for-notification #Message-Change-Status form .form-item-haft .change-button:focus, #background-for-notification #Message-Change-Status form .form-item-haft #Post-Job .change-button:focus, #Post-Job #background-for-notification #Message-Add-Note form .form-item-haft .cancel-button:focus, #background-for-notification #Message-Add-Note form .form-item-haft #Post-Job .cancel-button:focus, #Post-Job #background-for-notification #Message-Add-Note form .form-item-haft .change-button:focus, #background-for-notification #Message-Add-Note form .form-item-haft #Post-Job .change-button:focus {
+    #Post-Job #ManageJobs #ManageJobs-JobList .search-job input:focus, #Post-Job #ManageJobs #ManageJobs-JobList .search-job button:focus, #Post-Job #ManageJobs #ManageJobs-JobList .PJ-ManageJob-PostJob-button:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item input:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 input:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item select:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 select:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-cancel:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-savedraft:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-postjob:focus, #Post-Job #ManageCandidate-AppliedCandidate .form-title form .item-jobtitle input:focus, #Post-Job #ManageCandidate-AppliedCandidate .form-title form .item-status select:focus, #Post-Job #ManageCandidate-AppliedCandidate .form-title form button:focus, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form .item-jobtitle input:focus, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form .item-status select:focus, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form button:focus, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form .item-jobtitle input:focus, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form .item-status select:focus, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form button:focus, #Post-Job #Search-Candidate .form-search .item:focus, #Post-Job #Search-Candidate .form-search #ManageJobs #ManageJobs-PostJob .list-form-item .item-100:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .form-search .item-100:focus, #Post-Job #Search-Candidate .form-search .submit-advanced .button-submit:focus, #Post-Job #Candidate-Summary .set-box-shadow .viewcontact button:focus, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-right label:focus, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image .put-image-here label:focus, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image .put-image-here label:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image .put-image-here label:focus, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half .item-image-half .row .element .put-image-here label:focus, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half .row .element .put-image-here label:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half .item-image-half .row .element .put-image-here label:focus, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item input:focus, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item input:focus, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item select:focus, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item select:focus, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item.item-submit button:focus, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item.item-submit button:focus, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-submit.item-100 button:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-submit.item-100 button:focus, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-submit.item-100 button:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-submit.item-100 button:focus, #Post-Job #background-for-notification #Message-Out-Of-Free-Post-Job .ok-button button:focus, #background-for-notification #Message-Out-Of-Free-Post-Job .ok-button #Post-Job button:focus, #Post-Job #background-for-notification #Message-Change-Status form .form-item select:focus, #background-for-notification #Message-Change-Status form .form-item #Post-Job select:focus, #Post-Job #background-for-notification #Message-Change-Status form .form-item-haft .cancel-button:focus, #background-for-notification #Message-Change-Status form .form-item-haft #Post-Job .cancel-button:focus, #Post-Job #background-for-notification #Message-Change-Status form .form-item-haft .change-button:focus, #background-for-notification #Message-Change-Status form .form-item-haft #Post-Job .change-button:focus, #Post-Job #background-for-notification #Message-Add-Note form .form-item-haft .cancel-button:focus, #background-for-notification #Message-Add-Note form .form-item-haft #Post-Job .cancel-button:focus, #Post-Job #background-for-notification #Message-Add-Note form .form-item-haft .change-button:focus, #background-for-notification #Message-Add-Note form .form-item-haft #Post-Job .change-button:focus, #Post-Job #background-for-notification #Message-View-Contact-Infomation .message-button .cancel:focus, #background-for-notification #Message-View-Contact-Infomation .message-button #Post-Job .cancel:focus, #Post-Job #background-for-notification #Message-View-Contact-Infomation .message-button .viewcontact:focus, #background-for-notification #Message-View-Contact-Infomation .message-button #Post-Job .viewcontact:focus {
       outline: none;
       transition: 0.3s; }
-    #Post-Job #ManageJobs #ManageJobs-JobList .search-job input:hover, #Post-Job #ManageJobs #ManageJobs-JobList .search-job button:hover, #Post-Job #ManageJobs #ManageJobs-JobList .PJ-ManageJob-PostJob-button:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item input:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 input:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item select:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 select:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-cancel:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-savedraft:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-postjob:hover, #Post-Job #ManageCandidate-AppliedCandidate .form-title form .item-jobtitle input:hover, #Post-Job #ManageCandidate-AppliedCandidate .form-title form .item-status select:hover, #Post-Job #ManageCandidate-AppliedCandidate .form-title form button:hover, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form .item-jobtitle input:hover, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form .item-status select:hover, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form button:hover, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form .item-jobtitle input:hover, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form .item-status select:hover, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form button:hover, #Post-Job #background-for-notification #Message-Out-Of-Free-Post-Job .ok-button button:hover, #background-for-notification #Message-Out-Of-Free-Post-Job .ok-button #Post-Job button:hover, #Post-Job #background-for-notification #Message-Change-Status form .form-item select:hover, #background-for-notification #Message-Change-Status form .form-item #Post-Job select:hover, #Post-Job #background-for-notification #Message-Change-Status form .form-item-haft .cancel-button:hover, #background-for-notification #Message-Change-Status form .form-item-haft #Post-Job .cancel-button:hover, #Post-Job #background-for-notification #Message-Change-Status form .form-item-haft .change-button:hover, #background-for-notification #Message-Change-Status form .form-item-haft #Post-Job .change-button:hover, #Post-Job #background-for-notification #Message-Add-Note form .form-item-haft .cancel-button:hover, #background-for-notification #Message-Add-Note form .form-item-haft #Post-Job .cancel-button:hover, #Post-Job #background-for-notification #Message-Add-Note form .form-item-haft .change-button:hover, #background-for-notification #Message-Add-Note form .form-item-haft #Post-Job .change-button:hover {
+    #Post-Job #ManageJobs #ManageJobs-JobList .search-job input:hover, #Post-Job #ManageJobs #ManageJobs-JobList .search-job button:hover, #Post-Job #ManageJobs #ManageJobs-JobList .PJ-ManageJob-PostJob-button:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item input:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 input:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item select:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 select:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-cancel:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-savedraft:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-postjob:hover, #Post-Job #ManageCandidate-AppliedCandidate .form-title form .item-jobtitle input:hover, #Post-Job #ManageCandidate-AppliedCandidate .form-title form .item-status select:hover, #Post-Job #ManageCandidate-AppliedCandidate .form-title form button:hover, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form .item-jobtitle input:hover, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form .item-status select:hover, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form button:hover, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form .item-jobtitle input:hover, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form .item-status select:hover, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form button:hover, #Post-Job #Search-Candidate .form-search .item:hover, #Post-Job #Search-Candidate .form-search #ManageJobs #ManageJobs-PostJob .list-form-item .item-100:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .form-search .item-100:hover, #Post-Job #Search-Candidate .form-search .submit-advanced .button-submit:hover, #Post-Job #Candidate-Summary .set-box-shadow .viewcontact button:hover, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-right label:hover, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image .put-image-here label:hover, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image .put-image-here label:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image .put-image-here label:hover, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half .item-image-half .row .element .put-image-here label:hover, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half .row .element .put-image-here label:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half .item-image-half .row .element .put-image-here label:hover, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item input:hover, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item input:hover, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item select:hover, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item select:hover, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item.item-submit button:hover, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item.item-submit button:hover, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-submit.item-100 button:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-submit.item-100 button:hover, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-submit.item-100 button:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-submit.item-100 button:hover, #Post-Job #background-for-notification #Message-Out-Of-Free-Post-Job .ok-button button:hover, #background-for-notification #Message-Out-Of-Free-Post-Job .ok-button #Post-Job button:hover, #Post-Job #background-for-notification #Message-Change-Status form .form-item select:hover, #background-for-notification #Message-Change-Status form .form-item #Post-Job select:hover, #Post-Job #background-for-notification #Message-Change-Status form .form-item-haft .cancel-button:hover, #background-for-notification #Message-Change-Status form .form-item-haft #Post-Job .cancel-button:hover, #Post-Job #background-for-notification #Message-Change-Status form .form-item-haft .change-button:hover, #background-for-notification #Message-Change-Status form .form-item-haft #Post-Job .change-button:hover, #Post-Job #background-for-notification #Message-Add-Note form .form-item-haft .cancel-button:hover, #background-for-notification #Message-Add-Note form .form-item-haft #Post-Job .cancel-button:hover, #Post-Job #background-for-notification #Message-Add-Note form .form-item-haft .change-button:hover, #background-for-notification #Message-Add-Note form .form-item-haft #Post-Job .change-button:hover, #Post-Job #background-for-notification #Message-View-Contact-Infomation .message-button .cancel:hover, #background-for-notification #Message-View-Contact-Infomation .message-button #Post-Job .cancel:hover, #Post-Job #background-for-notification #Message-View-Contact-Infomation .message-button .viewcontact:hover, #background-for-notification #Message-View-Contact-Infomation .message-button #Post-Job .viewcontact:hover {
       outline: none;
       transition: 0.3s; }
-    #Post-Job #ManageJobs #ManageJobs-JobList .search-job input::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-JobList .search-job button::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-JobList .PJ-ManageJob-PostJob-button::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item input::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 input::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item select::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 select::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-cancel::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-savedraft::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-postjob::-webkit-input-placeholder, #Post-Job #ManageCandidate-AppliedCandidate .form-title form .item-jobtitle input::-webkit-input-placeholder, #Post-Job #ManageCandidate-AppliedCandidate .form-title form .item-status select::-webkit-input-placeholder, #Post-Job #ManageCandidate-AppliedCandidate .form-title form button::-webkit-input-placeholder, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form .item-jobtitle input::-webkit-input-placeholder, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form .item-status select::-webkit-input-placeholder, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form button::-webkit-input-placeholder, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form .item-jobtitle input::-webkit-input-placeholder, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form .item-status select::-webkit-input-placeholder, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form button::-webkit-input-placeholder, #Post-Job #background-for-notification #Message-Out-Of-Free-Post-Job .ok-button button::-webkit-input-placeholder, #background-for-notification #Message-Out-Of-Free-Post-Job .ok-button #Post-Job button::-webkit-input-placeholder, #Post-Job #background-for-notification #Message-Change-Status form .form-item select::-webkit-input-placeholder, #background-for-notification #Message-Change-Status form .form-item #Post-Job select::-webkit-input-placeholder, #Post-Job #background-for-notification #Message-Change-Status form .form-item-haft .cancel-button::-webkit-input-placeholder, #background-for-notification #Message-Change-Status form .form-item-haft #Post-Job .cancel-button::-webkit-input-placeholder, #Post-Job #background-for-notification #Message-Change-Status form .form-item-haft .change-button::-webkit-input-placeholder, #background-for-notification #Message-Change-Status form .form-item-haft #Post-Job .change-button::-webkit-input-placeholder, #Post-Job #background-for-notification #Message-Add-Note form .form-item-haft .cancel-button::-webkit-input-placeholder, #background-for-notification #Message-Add-Note form .form-item-haft #Post-Job .cancel-button::-webkit-input-placeholder, #Post-Job #background-for-notification #Message-Add-Note form .form-item-haft .change-button::-webkit-input-placeholder, #background-for-notification #Message-Add-Note form .form-item-haft #Post-Job .change-button::-webkit-input-placeholder {
+    #Post-Job #ManageJobs #ManageJobs-JobList .search-job input::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-JobList .search-job button::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-JobList .PJ-ManageJob-PostJob-button::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item input::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 input::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item select::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 select::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-cancel::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-savedraft::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-postjob::-webkit-input-placeholder, #Post-Job #ManageCandidate-AppliedCandidate .form-title form .item-jobtitle input::-webkit-input-placeholder, #Post-Job #ManageCandidate-AppliedCandidate .form-title form .item-status select::-webkit-input-placeholder, #Post-Job #ManageCandidate-AppliedCandidate .form-title form button::-webkit-input-placeholder, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form .item-jobtitle input::-webkit-input-placeholder, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form .item-status select::-webkit-input-placeholder, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form button::-webkit-input-placeholder, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form .item-jobtitle input::-webkit-input-placeholder, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form .item-status select::-webkit-input-placeholder, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form button::-webkit-input-placeholder, #Post-Job #Search-Candidate .form-search .item::-webkit-input-placeholder, #Post-Job #Search-Candidate .form-search #ManageJobs #ManageJobs-PostJob .list-form-item .item-100::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .form-search .item-100::-webkit-input-placeholder, #Post-Job #Search-Candidate .form-search .submit-advanced .button-submit::-webkit-input-placeholder, #Post-Job #Candidate-Summary .set-box-shadow .viewcontact button::-webkit-input-placeholder, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-right label::-webkit-input-placeholder, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image .put-image-here label::-webkit-input-placeholder, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image .put-image-here label::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image .put-image-here label::-webkit-input-placeholder, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half .item-image-half .row .element .put-image-here label::-webkit-input-placeholder, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half .row .element .put-image-here label::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half .item-image-half .row .element .put-image-here label::-webkit-input-placeholder, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item input::-webkit-input-placeholder, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item input::-webkit-input-placeholder, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item select::-webkit-input-placeholder, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item select::-webkit-input-placeholder, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item.item-submit button::-webkit-input-placeholder, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item.item-submit button::-webkit-input-placeholder, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-submit.item-100 button::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-submit.item-100 button::-webkit-input-placeholder, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-submit.item-100 button::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-submit.item-100 button::-webkit-input-placeholder, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .item-input input::-webkit-input-placeholder, #Post-Job #background-for-notification #Message-Out-Of-Free-Post-Job .ok-button button::-webkit-input-placeholder, #background-for-notification #Message-Out-Of-Free-Post-Job .ok-button #Post-Job button::-webkit-input-placeholder, #Post-Job #background-for-notification #Message-Change-Status form .form-item select::-webkit-input-placeholder, #background-for-notification #Message-Change-Status form .form-item #Post-Job select::-webkit-input-placeholder, #Post-Job #background-for-notification #Message-Change-Status form .form-item-haft .cancel-button::-webkit-input-placeholder, #background-for-notification #Message-Change-Status form .form-item-haft #Post-Job .cancel-button::-webkit-input-placeholder, #Post-Job #background-for-notification #Message-Change-Status form .form-item-haft .change-button::-webkit-input-placeholder, #background-for-notification #Message-Change-Status form .form-item-haft #Post-Job .change-button::-webkit-input-placeholder, #Post-Job #background-for-notification #Message-Add-Note form .form-item-haft .cancel-button::-webkit-input-placeholder, #background-for-notification #Message-Add-Note form .form-item-haft #Post-Job .cancel-button::-webkit-input-placeholder, #Post-Job #background-for-notification #Message-Add-Note form .form-item-haft .change-button::-webkit-input-placeholder, #background-for-notification #Message-Add-Note form .form-item-haft #Post-Job .change-button::-webkit-input-placeholder, #Post-Job #background-for-notification #Message-View-Contact-Infomation .message-button .cancel::-webkit-input-placeholder, #background-for-notification #Message-View-Contact-Infomation .message-button #Post-Job .cancel::-webkit-input-placeholder, #Post-Job #background-for-notification #Message-View-Contact-Infomation .message-button .viewcontact::-webkit-input-placeholder, #background-for-notification #Message-View-Contact-Infomation .message-button #Post-Job .viewcontact::-webkit-input-placeholder {
       font-size: 14px; }
+    #Post-Job #ManageJobs #ManageJobs-JobList .search-job input[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #ManageJobs #ManageJobs-JobList .search-job button[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #ManageJobs #ManageJobs-JobList [type="date"].PJ-ManageJob-PostJob-button::-webkit-calendar-picker-indicator, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item input[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 input[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item select[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 select[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form [type="date"].option-cancel::-webkit-calendar-picker-indicator, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form [type="date"].option-savedraft::-webkit-calendar-picker-indicator, #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form [type="date"].option-postjob::-webkit-calendar-picker-indicator, #Post-Job #ManageCandidate-AppliedCandidate .form-title form .item-jobtitle input[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #ManageCandidate-AppliedCandidate .form-title form .item-status select[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #ManageCandidate-AppliedCandidate .form-title form button[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form .item-jobtitle input[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form .item-status select[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #ManageCandidate-UsedCreditCandidate .form-title form button[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form .item-jobtitle input[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form .item-status select[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form button[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #Search-Candidate .form-search [type="date"].item::-webkit-calendar-picker-indicator, #Post-Job #Search-Candidate .form-search #ManageJobs #ManageJobs-PostJob .list-form-item [type="date"].item-100::-webkit-calendar-picker-indicator, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .form-search [type="date"].item-100::-webkit-calendar-picker-indicator, #Post-Job #Search-Candidate .form-search .submit-advanced [type="date"].button-submit::-webkit-calendar-picker-indicator, #Post-Job #Candidate-Summary .set-box-shadow .viewcontact button[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-right label[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image .put-image-here label[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image .put-image-here label[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image .put-image-here label[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half .item-image-half .row .element .put-image-here label[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half .row .element .put-image-here label[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half .item-image-half .row .element .put-image-here label[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item input[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item input[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item select[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item select[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item.item-submit button[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item.item-submit button[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-submit.item-100 button[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-submit.item-100 button[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-submit.item-100 button[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-submit.item-100 button[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #background-for-notification #Message-Out-Of-Free-Post-Job .ok-button button[type="date"]::-webkit-calendar-picker-indicator, #background-for-notification #Message-Out-Of-Free-Post-Job .ok-button #Post-Job button[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #background-for-notification #Message-Change-Status form .form-item select[type="date"]::-webkit-calendar-picker-indicator, #background-for-notification #Message-Change-Status form .form-item #Post-Job select[type="date"]::-webkit-calendar-picker-indicator, #Post-Job #background-for-notification #Message-Change-Status form .form-item-haft [type="date"].cancel-button::-webkit-calendar-picker-indicator, #background-for-notification #Message-Change-Status form .form-item-haft #Post-Job [type="date"].cancel-button::-webkit-calendar-picker-indicator, #Post-Job #background-for-notification #Message-Change-Status form .form-item-haft [type="date"].change-button::-webkit-calendar-picker-indicator, #background-for-notification #Message-Change-Status form .form-item-haft #Post-Job [type="date"].change-button::-webkit-calendar-picker-indicator, #Post-Job #background-for-notification #Message-Add-Note form .form-item-haft [type="date"].cancel-button::-webkit-calendar-picker-indicator, #background-for-notification #Message-Add-Note form .form-item-haft #Post-Job [type="date"].cancel-button::-webkit-calendar-picker-indicator, #Post-Job #background-for-notification #Message-Add-Note form .form-item-haft [type="date"].change-button::-webkit-calendar-picker-indicator, #background-for-notification #Message-Add-Note form .form-item-haft #Post-Job [type="date"].change-button::-webkit-calendar-picker-indicator, #Post-Job #background-for-notification #Message-View-Contact-Infomation .message-button [type="date"].cancel::-webkit-calendar-picker-indicator, #background-for-notification #Message-View-Contact-Infomation .message-button #Post-Job [type="date"].cancel::-webkit-calendar-picker-indicator, #Post-Job #background-for-notification #Message-View-Contact-Infomation .message-button [type="date"].viewcontact::-webkit-calendar-picker-indicator, #background-for-notification #Message-View-Contact-Infomation .message-button #Post-Job [type="date"].viewcontact::-webkit-calendar-picker-indicator {
+      color: rgba(0, 0, 0, 0);
+      opacity: 1;
+      display: block;
+      background: url(../image/calendar-with-a-clock-time-tools@3x.png) no-repeat;
+      background-size: 16px auto;
+      margin-left: 7px;
+      border-width: thin; }
   #Post-Job .super-radio-button, #Post-Job .super-checkbox-button {
     float: left;
     width: 15px;
@@ -73,9 +143,10 @@ body {
       border: none;
       float: left;
       height: 43px;
-      width: 171px;
+      width: auto;
       position: static;
       font-size: 18px;
+      padding: 0 15px;
       text-align: center;
       line-height: 43px;
       color: #464545;
@@ -92,12 +163,17 @@ body {
           display: block; }
       #Post-Job .hri-tab .hri-tablinks:focus {
         outline: none; }
+      #Post-Job .hri-tab .hri-tablinks.tab-dropdown {
+        padding: 0 0; }
+        #Post-Job .hri-tab .hri-tablinks.tab-dropdown .tab-dropdown-name {
+          padding: 0 15px; }
       #Post-Job .hri-tab .hri-tablinks .tablinks-dropdown {
         display: none;
+        z-index: 1;
         position: absolute;
         list-style: none;
         padding-left: 0;
-        width: 171px;
+        width: 180.64px;
         padding: 0 11px;
         text-align: left;
         background-color: #fff;
@@ -127,6 +203,10 @@ body {
     transition: 0.2px;
     margin-top: -3px;
     margin-bottom: 50px; }
+  @media screen and (max-width: 991.98px) {
+    #Post-Job .padding-width-lg-30 {
+      padding-left: 30px !important;
+      padding-right: 30px !important; } }
   @media screen and (max-width: 575.98px) {
     #Post-Job .padding-width-xs-10 {
       padding-left: 10px !important;
@@ -239,14 +319,14 @@ body {
         padding: 6px;
         overflow: auto;
         margin-top: 10px; }
-        #Post-Job #ManageJobs #ManageJobs-JobList .pagging-right .default-pagging-button, #Post-Job #ManageJobs #ManageJobs-JobList .pagging-right .previous, #Post-Job #ManageJobs #ManageJobs-JobList .pagging-right .next, #Post-Job #ManageJobs #ManageJobs-JobList .pagging-right .pagging-list .pagger {
+        #Post-Job #ManageJobs #ManageJobs-JobList .pagging-right .default-pagging-button, #Post-Job #Search-Candidate .result-found .pagging-left .pagging-list #ManageJobs #ManageJobs-JobList .pagging-right .pagger, #Post-Job #ManageJobs #ManageJobs-JobList .pagging-right .previous, #Post-Job #ManageJobs #ManageJobs-JobList .pagging-right .next, #Post-Job #ManageJobs #ManageJobs-JobList .pagging-right .pagging-list .pagger {
           float: left;
           width: 33px;
           height: 33px;
           color: #707070;
           transition: 0.15s;
           border-radius: 50%; }
-          #Post-Job #ManageJobs #ManageJobs-JobList .pagging-right .default-pagging-button:hover, #Post-Job #ManageJobs #ManageJobs-JobList .pagging-right .previous:hover, #Post-Job #ManageJobs #ManageJobs-JobList .pagging-right .next:hover, #Post-Job #ManageJobs #ManageJobs-JobList .pagging-right .pagging-list .pagger:hover {
+          #Post-Job #ManageJobs #ManageJobs-JobList .pagging-right .default-pagging-button:hover, #Post-Job #Search-Candidate .result-found .pagging-left .pagging-list #ManageJobs #ManageJobs-JobList .pagging-right .pagger:hover, #Post-Job #ManageJobs #ManageJobs-JobList .pagging-right .previous:hover, #Post-Job #ManageJobs #ManageJobs-JobList .pagging-right .next:hover, #Post-Job #ManageJobs #ManageJobs-JobList .pagging-right .pagging-list .pagger:hover {
             background-color: #1ebdcf;
             border-radius: 6px;
             box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -478,61 +558,6 @@ body {
         #Post-Job #ManageJobs #ManageJobs-PostJob .advertisingvalueoptions .submit .submit-form .option-postjob {
           width: 98%;
           margin-top: 7px; } }
-  #Post-Job #ManageCandidate-AppliedCandidate .pagging-right, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right {
-    float: left;
-    padding: 6px;
-    overflow: auto;
-    margin-top: 10px; }
-    #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .default-pagging-button, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .default-pagging-button, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .default-pagging-button, #Post-Job #ManageCandidate-AppliedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .previous, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-AppliedCandidate .pagging-right .previous, #Post-Job #ManageCandidate-UsedCreditCandidate #ManageJobs #ManageJobs-JobList .pagging-right .previous, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-UsedCreditCandidate .pagging-right .previous, #Post-Job #ManageCandidate-BookmarkedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .previous, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-BookmarkedCandidate .pagging-right .previous, #Post-Job #ManageCandidate-AppliedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .next, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-AppliedCandidate .pagging-right .next, #Post-Job #ManageCandidate-UsedCreditCandidate #ManageJobs #ManageJobs-JobList .pagging-right .next, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-UsedCreditCandidate .pagging-right .next, #Post-Job #ManageCandidate-BookmarkedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .next, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-BookmarkedCandidate .pagging-right .next, #Post-Job #ManageCandidate-AppliedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .pagging-list .pagger, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-AppliedCandidate .pagging-right .pagging-list .pagger, #Post-Job #ManageCandidate-UsedCreditCandidate #ManageJobs #ManageJobs-JobList .pagging-right .pagging-list .pagger, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-UsedCreditCandidate .pagging-right .pagging-list .pagger, #Post-Job #ManageCandidate-BookmarkedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .pagging-list .pagger, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-BookmarkedCandidate .pagging-right .pagging-list .pagger, #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .previous, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .previous, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .previous, #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .next, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .next, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .next, #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .pagging-list .pagger, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .pagging-list .pagger, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .pagging-list .pagger {
-      float: left;
-      width: 33px;
-      height: 33px;
-      color: #707070;
-      transition: 0.15s;
-      border-radius: 50%; }
-      #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .default-pagging-button:hover, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .default-pagging-button:hover, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .default-pagging-button:hover, #Post-Job #ManageCandidate-AppliedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .previous:hover, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-AppliedCandidate .pagging-right .previous:hover, #Post-Job #ManageCandidate-UsedCreditCandidate #ManageJobs #ManageJobs-JobList .pagging-right .previous:hover, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-UsedCreditCandidate .pagging-right .previous:hover, #Post-Job #ManageCandidate-BookmarkedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .previous:hover, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-BookmarkedCandidate .pagging-right .previous:hover, #Post-Job #ManageCandidate-AppliedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .next:hover, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-AppliedCandidate .pagging-right .next:hover, #Post-Job #ManageCandidate-UsedCreditCandidate #ManageJobs #ManageJobs-JobList .pagging-right .next:hover, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-UsedCreditCandidate .pagging-right .next:hover, #Post-Job #ManageCandidate-BookmarkedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .next:hover, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-BookmarkedCandidate .pagging-right .next:hover, #Post-Job #ManageCandidate-AppliedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .pagging-list .pagger:hover, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-AppliedCandidate .pagging-right .pagging-list .pagger:hover, #Post-Job #ManageCandidate-UsedCreditCandidate #ManageJobs #ManageJobs-JobList .pagging-right .pagging-list .pagger:hover, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-UsedCreditCandidate .pagging-right .pagging-list .pagger:hover, #Post-Job #ManageCandidate-BookmarkedCandidate #ManageJobs #ManageJobs-JobList .pagging-right .pagging-list .pagger:hover, #Post-Job #ManageJobs #ManageJobs-JobList #ManageCandidate-BookmarkedCandidate .pagging-right .pagging-list .pagger:hover, #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .previous:hover, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .previous:hover, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .previous:hover, #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .next:hover, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .next:hover, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .next:hover, #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .pagging-list .pagger:hover, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .pagging-list .pagger:hover, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .pagging-list .pagger:hover {
-        background-color: #1ebdcf;
-        border-radius: 6px;
-        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-        color: #fff;
-        transition: 0.15s; }
-    #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .previous, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .previous, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .previous {
-      background-color: #e8e8e8; }
-      #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .previous img, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .previous img, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .previous img {
-        width: 5.3px;
-        height: 9.6px;
-        margin: 10px 0 0 14px; }
-    #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .next, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .next, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .next {
-      background-color: #e8e8e8; }
-      #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .next img, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .next img, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .next img {
-        width: 5.3px;
-        height: 9.6px;
-        margin: 10px 0 0 14px; }
-    #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .pagging-list, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .pagging-list, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .pagging-list {
-      float: left;
-      padding: 0 8px;
-      margin: 0 11px;
-      overflow: auto;
-      border-radius: 16px;
-      background-color: #e8e8e8; }
-      #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .pagging-list .pagger, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .pagging-list .pagger, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .pagging-list .pagger {
-        text-align: center;
-        line-height: 35px;
-        font-size: 12px; }
-        @media screen and (max-width: 575.98px) {
-          #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .pagging-list .pagger, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .pagging-list .pagger, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .pagging-list .pagger {
-            width: auto;
-            padding: 0 7px; } }
-      #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .pagging-list .active, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .pagging-list .active, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .pagging-list .active {
-        background-color: #1ebdcf;
-        border-radius: 6px;
-        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-        color: #fff;
-        transition: 0.15s; }
-      #Post-Job #ManageCandidate-AppliedCandidate .pagging-right .pagging-list .disable:hover, #Post-Job #ManageCandidate-UsedCreditCandidate .pagging-right .pagging-list .disable:hover, #Post-Job #ManageCandidate-BookmarkedCandidate .pagging-right .pagging-list .disable:hover {
-        box-shadow: none;
-        color: #707070;
-        background-color: #e8e8e8; }
   #Post-Job #ManageCandidate-AppliedCandidate {
     overflow: auto;
     padding-bottom: 20px; }
@@ -1103,6 +1128,907 @@ body {
       #Post-Job #ManageCandidate-BookmarkedCandidate .form-title form button {
         width: 60%;
         margin-left: 20%; } }
+  #Post-Job #Search-Candidate {
+    color: #464545; }
+    #Post-Job #Search-Candidate .form-search {
+      overflow: auto; }
+      #Post-Job #Search-Candidate .form-search .big-title {
+        margin: 21px 0 9px; }
+      #Post-Job #Search-Candidate .form-search .item, #Post-Job #Search-Candidate .form-search #ManageJobs #ManageJobs-PostJob .list-form-item .item-100, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .form-search .item-100 {
+        float: left;
+        border: 1px solid #b5b5b5;
+        padding: 0 10px;
+        margin-bottom: 10px; }
+        #Post-Job #Search-Candidate .form-search .item:focus, #Post-Job #Search-Candidate .form-search #ManageJobs #ManageJobs-PostJob .list-form-item .item-100:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .form-search .item-100:focus {
+          box-shadow: 0 0 5px #24becf; }
+        #Post-Job #Search-Candidate .form-search .item.item-full, #Post-Job #Search-Candidate .form-search #ManageJobs #ManageJobs-PostJob .list-form-item .item-full.item-100, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .form-search .item-full.item-100 {
+          width: 100%; }
+        #Post-Job #Search-Candidate .form-search .item.item-location, #Post-Job #Search-Candidate .form-search #ManageJobs #ManageJobs-PostJob .list-form-item .item-location.item-100, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .form-search .item-location.item-100 {
+          width: 48%;
+          display: inline-flex;
+          margin-right: 4%; }
+          #Post-Job #Search-Candidate .form-search .item.item-location img, #Post-Job #Search-Candidate .form-search #ManageJobs #ManageJobs-PostJob .list-form-item .item-location.item-100 img, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .form-search .item-location.item-100 img {
+            margin: 10px 10px 0 3px;
+            width: 13.1px;
+            height: 17.8px; }
+          #Post-Job #Search-Candidate .form-search .item.item-location input, #Post-Job #Search-Candidate .form-search #ManageJobs #ManageJobs-PostJob .list-form-item .item-location.item-100 input, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .form-search .item-location.item-100 input {
+            border: 0;
+            width: 100%; }
+            #Post-Job #Search-Candidate .form-search .item.item-location input::-webkit-input-placeholder, #Post-Job #Search-Candidate .form-search #ManageJobs #ManageJobs-PostJob .list-form-item .item-location.item-100 input::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .form-search .item-location.item-100 input::-webkit-input-placeholder {
+              font-size: 14px; }
+            #Post-Job #Search-Candidate .form-search .item.item-location input:focus, #Post-Job #Search-Candidate .form-search #ManageJobs #ManageJobs-PostJob .list-form-item .item-location.item-100 input:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .form-search .item-location.item-100 input:focus {
+              outline: none; }
+          #Post-Job #Search-Candidate .form-search .item.item-location:focus-within, #Post-Job #Search-Candidate .form-search #ManageJobs #ManageJobs-PostJob .list-form-item .item-location.item-100:focus-within, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .form-search .item-location.item-100:focus-within {
+            box-shadow: 0 0 5px #24becf; }
+        #Post-Job #Search-Candidate .form-search .item.item-jlevel, #Post-Job #Search-Candidate .form-search #ManageJobs #ManageJobs-PostJob .list-form-item .item-jlevel.item-100, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .form-search .item-jlevel.item-100 {
+          width: 48%;
+          display: inline-flex; }
+          #Post-Job #Search-Candidate .form-search .item.item-jlevel img, #Post-Job #Search-Candidate .form-search #ManageJobs #ManageJobs-PostJob .list-form-item .item-jlevel.item-100 img, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .form-search .item-jlevel.item-100 img {
+            margin: 10px 10px 0 3px;
+            width: 19px;
+            height: 17.8px; }
+          #Post-Job #Search-Candidate .form-search .item.item-jlevel input, #Post-Job #Search-Candidate .form-search #ManageJobs #ManageJobs-PostJob .list-form-item .item-jlevel.item-100 input, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .form-search .item-jlevel.item-100 input {
+            border: 0;
+            width: 100%; }
+            #Post-Job #Search-Candidate .form-search .item.item-jlevel input::-webkit-input-placeholder, #Post-Job #Search-Candidate .form-search #ManageJobs #ManageJobs-PostJob .list-form-item .item-jlevel.item-100 input::-webkit-input-placeholder, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .form-search .item-jlevel.item-100 input::-webkit-input-placeholder {
+              font-size: 14px; }
+            #Post-Job #Search-Candidate .form-search .item.item-jlevel input:focus, #Post-Job #Search-Candidate .form-search #ManageJobs #ManageJobs-PostJob .list-form-item .item-jlevel.item-100 input:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .form-search .item-jlevel.item-100 input:focus {
+              outline: none; }
+          #Post-Job #Search-Candidate .form-search .item.item-jlevel:focus-within, #Post-Job #Search-Candidate .form-search #ManageJobs #ManageJobs-PostJob .list-form-item .item-jlevel.item-100:focus-within, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .form-search .item-jlevel.item-100:focus-within {
+            box-shadow: 0 0 5px #24becf; }
+      #Post-Job #Search-Candidate .form-search .show-search {
+        width: 100%;
+        float: left;
+        overflow: auto;
+        margin-bottom: 15px; }
+        #Post-Job #Search-Candidate .form-search .show-search .item-checkbox {
+          float: left; }
+          #Post-Job #Search-Candidate .form-search .show-search .item-checkbox .super-checkbox-button {
+            margin: 2px 5px 0 0; }
+        #Post-Job #Search-Candidate .form-search .show-search .search-tips {
+          float: right;
+          color: #24becf;
+          overflow: auto;
+          position: static; }
+          #Post-Job #Search-Candidate .form-search .show-search .search-tips #search-tips-button {
+            cursor: pointer; }
+          #Post-Job #Search-Candidate .form-search .show-search .search-tips img {
+            float: left;
+            width: 20px;
+            height: 20px;
+            margin-right: 8px; }
+          #Post-Job #Search-Candidate .form-search .show-search .search-tips .search-tip-show {
+            right: 20%;
+            position: absolute;
+            display: block;
+            z-index: 1;
+            max-width: 880px;
+            border-radius: 11px;
+            padding-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); }
+            #Post-Job #Search-Candidate .form-search .show-search .search-tips .search-tip-show .tip-title {
+              background-color: #24becf;
+              border-top-left-radius: 11px;
+              border-top-right-radius: 11px;
+              color: #fff;
+              padding: 15px;
+              font-weight: 900;
+              text-align: center; }
+            #Post-Job #Search-Candidate .form-search .show-search .search-tips .search-tip-show .tip-list {
+              color: #464545;
+              width: 100%;
+              font-size: 14px; }
+              #Post-Job #Search-Candidate .form-search .show-search .search-tips .search-tip-show .tip-list table {
+                width: 100%; }
+                #Post-Job #Search-Candidate .form-search .show-search .search-tips .search-tip-show .tip-list table tr td,
+                #Post-Job #Search-Candidate .form-search .show-search .search-tips .search-tip-show .tip-list table tr th {
+                  padding: 0 15px; }
+                #Post-Job #Search-Candidate .form-search .show-search .search-tips .search-tip-show .tip-list table tr .operators {
+                  width: 15%; }
+                #Post-Job #Search-Candidate .form-search .show-search .search-tips .search-tip-show .tip-list table tr .samplekeywords {
+                  width: 25%; }
+                #Post-Job #Search-Candidate .form-search .show-search .search-tips .search-tip-show .tip-list table tr .searchresults {
+                  width: 60%; }
+                #Post-Job #Search-Candidate .form-search .show-search .search-tips .search-tip-show .tip-list table thead tr {
+                  height: 65px;
+                  border-bottom: 1px solid #e2e2e2; }
+                #Post-Job #Search-Candidate .form-search .show-search .search-tips .search-tip-show .tip-list table tbody tr {
+                  height: 50px; }
+                  #Post-Job #Search-Candidate .form-search .show-search .search-tips .search-tip-show .tip-list table tbody tr:nth-child(even) {
+                    background-color: #f9f9f9; }
+                  #Post-Job #Search-Candidate .form-search .show-search .search-tips .search-tip-show .tip-list table tbody tr .operators {
+                    text-align: center; }
+                    #Post-Job #Search-Candidate .form-search .show-search .search-tips .search-tip-show .tip-list table tbody tr .operators .example {
+                      width: 57px;
+                      height: 33px;
+                      border-radius: 3px;
+                      border: solid 1px #24becf;
+                      text-align: center;
+                      font-size: 20px;
+                      color: #24becf;
+                      display: inline-block; }
+                  #Post-Job #Search-Candidate .form-search .show-search .search-tips .search-tip-show .tip-list table tbody tr .samplekeywords span {
+                    color: #24becf; }
+                  #Post-Job #Search-Candidate .form-search .show-search .search-tips .search-tip-show .tip-list table tbody tr .searchresults span {
+                    font-size: 13px;
+                    color: #24becf;
+                    font-weight: 100;
+                    font-style: italic; }
+            @media screen and (max-width: 991.98px) {
+              #Post-Job #Search-Candidate .form-search .show-search .search-tips .search-tip-show {
+                right: 10%; } }
+            @media screen and (max-width: 676.98px) {
+              #Post-Job #Search-Candidate .form-search .show-search .search-tips .search-tip-show {
+                right: 0; } }
+      #Post-Job #Search-Candidate .form-search .submit-advanced {
+        width: 100%;
+        float: left;
+        overflow: auto;
+        padding: 5px;
+        margin: 10px 0 15px -5px; }
+        #Post-Job #Search-Candidate .form-search .submit-advanced .button-submit {
+          float: left;
+          color: #fff;
+          background-color: #f7912a;
+          padding: 0 40px;
+          line-height: 40px;
+          font-size: 16px; }
+          #Post-Job #Search-Candidate .form-search .submit-advanced .button-submit:hover {
+            box-shadow: 0 0 5px #f7912a; }
+        #Post-Job #Search-Candidate .form-search .submit-advanced .search-advanced {
+          float: left;
+          overflow: auto;
+          color: #24becf;
+          margin: 10px 0 0 45px;
+          cursor: pointer; }
+          #Post-Job #Search-Candidate .form-search .submit-advanced .search-advanced .advanced-icon {
+            font-size: 10px;
+            padding: 0 0 0 4.5px;
+            color: #24becf;
+            width: 19px;
+            height: 19px;
+            float: left;
+            margin-right: 10px;
+            background-image: url(../image/searching-magnifying-glass@3x.png); }
+    #Post-Job #Search-Candidate .result-found {
+      overflow: auto;
+      margin-top: 10px; }
+      #Post-Job #Search-Candidate .result-found .title {
+        padding-bottom: 17px;
+        background-color: rgba(30, 189, 207, 0.15);
+        overflow: auto; }
+        #Post-Job #Search-Candidate .result-found .title .result-count {
+          float: left;
+          padding-top: 17px;
+          font-size: 18px;
+          color: #464545; }
+          #Post-Job #Search-Candidate .result-found .title .result-count span {
+            font-weight: 900;
+            color: #f7912a; }
+        #Post-Job #Search-Candidate .result-found .title .result-option {
+          padding-top: 21px;
+          float: right;
+          overflow: auto; }
+          #Post-Job #Search-Candidate .result-found .title .result-option .item, #Post-Job #Search-Candidate .result-found .title .result-option #ManageJobs #ManageJobs-PostJob .list-form-item .item-100, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .result-found .title .result-option .item-100 {
+            float: left;
+            overflow: auto;
+            margin-right: 90px;
+            color: #b5b5b5; }
+            #Post-Job #Search-Candidate .result-found .title .result-option .item:last-child, #Post-Job #Search-Candidate .result-found .title .result-option #ManageJobs #ManageJobs-PostJob .list-form-item .item-100:last-child, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .result-found .title .result-option .item-100:last-child {
+              margin-right: 0; }
+            #Post-Job #Search-Candidate .result-found .title .result-option .item .item-icon, #Post-Job #Search-Candidate .result-found .title .result-option #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .item-icon, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .result-found .title .result-option .item-100 .item-icon {
+              margin: 1px 10px 0 0;
+              width: 18px;
+              height: 18px;
+              float: left; }
+            #Post-Job #Search-Candidate .result-found .title .result-option .item span, #Post-Job #Search-Candidate .result-found .title .result-option #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 span, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .result-found .title .result-option .item-100 span {
+              color: #464545;
+              font-weight: 900; }
+      #Post-Job #Search-Candidate .result-found .found-element {
+        border-bottom: 1px solid #b5b5b5;
+        display: inline-flex;
+        width: 100%;
+        min-width: 720px; }
+        #Post-Job #Search-Candidate .result-found .found-element .element-left {
+          width: 75%;
+          border-right: 3px solid rgba(20, 183, 201, 0.48); }
+          #Post-Job #Search-Candidate .result-found .found-element .element-left .left-title {
+            margin-top: 25px;
+            font-weight: 900; }
+            #Post-Job #Search-Candidate .result-found .found-element .element-left .left-title .ghim-icon {
+              float: left;
+              margin-right: 10px;
+              background-image: url(../image/paperclip@3x.png);
+              width: 15.3px;
+              height: 17px; }
+            #Post-Job #Search-Candidate .result-found .found-element .element-left .left-title span {
+              color: #f7912a; }
+          #Post-Job #Search-Candidate .result-found .found-element .element-left .left-item {
+            margin: 15px 0 5px 0;
+            overflow: auto; }
+            #Post-Job #Search-Candidate .result-found .found-element .element-left .left-item .item, #Post-Job #Search-Candidate .result-found .found-element .element-left .left-item #ManageJobs #ManageJobs-PostJob .list-form-item .item-100, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .result-found .found-element .element-left .left-item .item-100 {
+              float: left;
+              overflow: auto;
+              width: 33.3333%;
+              margin-bottom: 12px; }
+              #Post-Job #Search-Candidate .result-found .found-element .element-left .left-item .item .item-icon, #Post-Job #Search-Candidate .result-found .found-element .element-left .left-item #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .item-icon, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .result-found .found-element .element-left .left-item .item-100 .item-icon {
+                float: left;
+                width: 16px;
+                height: 16px;
+                margin: 2px 10px 0 0; }
+        #Post-Job #Search-Candidate .result-found .found-element .element-right {
+          width: 25%;
+          background-color: rgba(192, 192, 192, 0.13);
+          overflow: auto; }
+          #Post-Job #Search-Candidate .result-found .found-element .element-right .status {
+            width: 92px;
+            height: 36px;
+            float: right;
+            font-size: 14px;
+            text-align: center;
+            line-height: 35px;
+            color: #fff; }
+            #Post-Job #Search-Candidate .result-found .found-element .element-right .status.viewed {
+              background-color: #f7912a; }
+            #Post-Job #Search-Candidate .result-found .found-element .element-right .status.bookmarked {
+              background-color: #24becf; }
+            #Post-Job #Search-Candidate .result-found .found-element .element-right .status.creditused {
+              background-color: #be351f; }
+          #Post-Job #Search-Candidate .result-found .found-element .element-right .activity {
+            float: left;
+            padding: 15px 0 0 15px;
+            overflow: auto; }
+            #Post-Job #Search-Candidate .result-found .found-element .element-right .activity .item, #Post-Job #Search-Candidate .result-found .found-element .element-right .activity #ManageJobs #ManageJobs-PostJob .list-form-item .item-100, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .result-found .found-element .element-right .activity .item-100 {
+              float: left;
+              margin-right: 20px;
+              color: #b5b5b5; }
+              #Post-Job #Search-Candidate .result-found .found-element .element-right .activity .item .item-icon, #Post-Job #Search-Candidate .result-found .found-element .element-right .activity #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .item-icon, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .result-found .found-element .element-right .activity .item-100 .item-icon {
+                float: left;
+                width: 16px;
+                height: 16px;
+                margin: 2px 3px 0 0; }
+          #Post-Job #Search-Candidate .result-found .found-element .element-right .last-modified {
+            float: left;
+            overflow: auto;
+            padding: 17px 0 0 15px;
+            width: 100%; }
+            #Post-Job #Search-Candidate .result-found .found-element .element-right .last-modified img {
+              width: 21px;
+              height: 21px;
+              margin-right: 10px; }
+          #Post-Job #Search-Candidate .result-found .found-element .element-right .profile-completed {
+            float: left;
+            overflow: auto;
+            padding: 17px 0 0 15px;
+            width: 100%;
+            color: #f22424; }
+            #Post-Job #Search-Candidate .result-found .found-element .element-right .profile-completed img {
+              width: 21px;
+              height: 11px;
+              margin: -2px 10px 0 0; }
+      #Post-Job #Search-Candidate .result-found .pagging-left {
+        margin: 20px 10px; }
+    @media screen and (max-width: 1199.98px) {
+      #Post-Job #Search-Candidate .result-found .found-element .element-left {
+        width: 70%; }
+        #Post-Job #Search-Candidate .result-found .found-element .element-left .left-item .item, #Post-Job #Search-Candidate .result-found .found-element .element-left .left-item #ManageJobs #ManageJobs-PostJob .list-form-item .item-100, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .result-found .found-element .element-left .left-item .item-100 {
+          width: 50%; }
+      #Post-Job #Search-Candidate .result-found .found-element .element-right {
+        width: 30%; } }
+    @media screen and (max-width: 991.98px) {
+      #Post-Job #Search-Candidate .result-found .found-element .element-left {
+        width: 60%; }
+        #Post-Job #Search-Candidate .result-found .found-element .element-left .left-item .item, #Post-Job #Search-Candidate .result-found .found-element .element-left .left-item #ManageJobs #ManageJobs-PostJob .list-form-item .item-100, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Search-Candidate .result-found .found-element .element-left .left-item .item-100 {
+          width: 100%; }
+      #Post-Job #Search-Candidate .result-found .found-element .element-right {
+        width: 40%; } }
+  #Post-Job #Candidate-Summary .set-box-shadow {
+    margin-bottom: 15px;
+    overflow: auto; }
+    #Post-Job #Candidate-Summary .set-box-shadow .infomation .big-title {
+      padding-top: 20px; }
+    #Post-Job #Candidate-Summary .set-box-shadow .infomation .info {
+      overflow: auto;
+      width: 100%;
+      margin-top: 20px; }
+      #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .avatar {
+        width: 17%;
+        margin-right: 2%;
+        float: left;
+        height: auto;
+        border: 1px solid #b5b5b5; }
+      #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .content {
+        width: 81%;
+        float: left; }
+        #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .content .big-title {
+          padding-top: 0; }
+        #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .content .life {
+          margin-top: 10px;
+          line-height: 30px; }
+        #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .content .list-item {
+          overflow: auto;
+          width: 100%;
+          margin-top: 12px; }
+          #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .content .list-item .item, #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .content .list-item #ManageJobs #ManageJobs-PostJob .list-form-item .item-100, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Candidate-Summary .set-box-shadow .infomation .info .content .list-item .item-100 {
+            margin-bottom: 12px;
+            float: left;
+            width: 33.3333%;
+            overflow: auto; }
+            #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .content .list-item .item.item-null, #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .content .list-item #ManageJobs #ManageJobs-PostJob .list-form-item .item-null.item-100, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Candidate-Summary .set-box-shadow .infomation .info .content .list-item .item-null.item-100 {
+              height: 22.22px; }
+            #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .content .list-item .item .item-icon, #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .content .list-item #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .item-icon, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Candidate-Summary .set-box-shadow .infomation .info .content .list-item .item-100 .item-icon {
+              width: 18px;
+              float: left;
+              height: 18px;
+              margin: 1px 8px 0 0; }
+    @media screen and (max-width: 1199.98px) {
+      #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .avatar {
+        width: 19%;
+        margin-right: 3%; }
+      #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .content {
+        width: 78%; } }
+    @media screen and (max-width: 991.98px) {
+      #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .avatar {
+        width: 27%; }
+      #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .content {
+        width: 70%; }
+        #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .content .list-item .item, #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .content .list-item #ManageJobs #ManageJobs-PostJob .list-form-item .item-100, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Candidate-Summary .set-box-shadow .infomation .info .content .list-item .item-100 {
+          width: 49.999%; }
+          #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .content .list-item .item.item-null, #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .content .list-item #ManageJobs #ManageJobs-PostJob .list-form-item .item-null.item-100, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Candidate-Summary .set-box-shadow .infomation .info .content .list-item .item-null.item-100 {
+            display: none; } }
+    @media screen and (max-width: 575.98px) {
+      #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .avatar {
+        width: 181px;
+        margin-left: 10px; }
+      #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .content {
+        width: 100%;
+        margin-top: 10px; }
+        #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .content .list-item .item, #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .content .list-item #ManageJobs #ManageJobs-PostJob .list-form-item .item-100, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Candidate-Summary .set-box-shadow .infomation .info .content .list-item .item-100 {
+          width: 49.999%; } }
+    @media screen and (max-width: 399.98px) {
+      #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .content .list-item .item, #Post-Job #Candidate-Summary .set-box-shadow .infomation .info .content .list-item #ManageJobs #ManageJobs-PostJob .list-form-item .item-100, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Candidate-Summary .set-box-shadow .infomation .info .content .list-item .item-100 {
+        width: 100%; } }
+    #Post-Job #Candidate-Summary .set-box-shadow .viewcontact {
+      float: left;
+      overflow: auto;
+      width: 100%;
+      padding-top: 15px;
+      padding-bottom: 25px; }
+      #Post-Job #Candidate-Summary .set-box-shadow .viewcontact button {
+        width: 17%;
+        background-color: #24becf;
+        color: #fff;
+        font-size: 14px;
+        line-height: 40px; }
+        #Post-Job #Candidate-Summary .set-box-shadow .viewcontact button:hover {
+          box-shadow: 0 0 5px #24becf; }
+      @media screen and (max-width: 1199.98px) {
+        #Post-Job #Candidate-Summary .set-box-shadow .viewcontact button {
+          width: 20%; } }
+      @media screen and (max-width: 991.98px) {
+        #Post-Job #Candidate-Summary .set-box-shadow .viewcontact button {
+          width: auto;
+          padding: 0 10px; } }
+    #Post-Job #Candidate-Summary .set-box-shadow .summary-infomation-gray {
+      overflow: auto;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      float: left;
+      width: 100%;
+      background-color: #f8f8f8; }
+      #Post-Job #Candidate-Summary .set-box-shadow .summary-infomation-gray .gray-left {
+        float: left;
+        font-size: 18px;
+        line-height: 47px;
+        font-weight: 900; }
+      #Post-Job #Candidate-Summary .set-box-shadow .summary-infomation-gray .gray-right {
+        float: right;
+        overflow: auto; }
+        #Post-Job #Candidate-Summary .set-box-shadow .summary-infomation-gray .gray-right button {
+          float: left;
+          height: 37px;
+          padding: 0 17px;
+          margin: 5px;
+          line-height: 36px;
+          transition: 0.3s; }
+          #Post-Job #Candidate-Summary .set-box-shadow .summary-infomation-gray .gray-right button:hover {
+            transition: 0.3s; }
+          #Post-Job #Candidate-Summary .set-box-shadow .summary-infomation-gray .gray-right button:focus {
+            outline: none; }
+          #Post-Job #Candidate-Summary .set-box-shadow .summary-infomation-gray .gray-right button .button-icon {
+            float: left;
+            width: 16px;
+            height: 16px;
+            margin: 8px 8px 0 0; }
+          #Post-Job #Candidate-Summary .set-box-shadow .summary-infomation-gray .gray-right button.orange-button {
+            color: #f7912a;
+            background-color: #fff;
+            border-radius: 6px;
+            border: 1px solid #f7912a; }
+            #Post-Job #Candidate-Summary .set-box-shadow .summary-infomation-gray .gray-right button.orange-button:hover {
+              box-shadow: 0 0 5px #f7912a; }
+          #Post-Job #Candidate-Summary .set-box-shadow .summary-infomation-gray .gray-right button.gray-button {
+            background-color: #f8f8f8;
+            color: #b5b5b5;
+            border-radius: 3px;
+            border: 1px solid #b5b5b5; }
+            #Post-Job #Candidate-Summary .set-box-shadow .summary-infomation-gray .gray-right button.gray-button:hover {
+              box-shadow: 0 0 5px #b5b5b5; }
+    #Post-Job #Candidate-Summary .set-box-shadow .two-table {
+      float: left;
+      display: inline-flex;
+      width: 100%; }
+      #Post-Job #Candidate-Summary .set-box-shadow .two-table .table-left, #Post-Job #Candidate-Summary .set-box-shadow .two-table .table-right {
+        overflow: auto;
+        width: 49.9999%;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        border-right: 1px solid #d1d0d6; }
+        #Post-Job #Candidate-Summary .set-box-shadow .two-table .table-left .item, #Post-Job #Candidate-Summary .set-box-shadow .two-table .table-right .item, #Post-Job #Candidate-Summary .set-box-shadow .two-table .table-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Candidate-Summary .set-box-shadow .two-table .table-left .item-100, #Post-Job #Candidate-Summary .set-box-shadow .two-table .table-right #ManageJobs #ManageJobs-PostJob .list-form-item .item-100, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Candidate-Summary .set-box-shadow .two-table .table-right .item-100 {
+          margin-bottom: 30px;
+          overflow: auto;
+          float: left;
+          width: 100%; }
+          #Post-Job #Candidate-Summary .set-box-shadow .two-table .table-left .item .name, #Post-Job #Candidate-Summary .set-box-shadow .two-table .table-right .item .name, #Post-Job #Candidate-Summary .set-box-shadow .two-table .table-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .name, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Candidate-Summary .set-box-shadow .two-table .table-left .item-100 .name, #Post-Job #Candidate-Summary .set-box-shadow .two-table .table-right #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .name, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Candidate-Summary .set-box-shadow .two-table .table-right .item-100 .name {
+            font-weight: 900;
+            float: left;
+            width: 45%; }
+          #Post-Job #Candidate-Summary .set-box-shadow .two-table .table-left .item .value, #Post-Job #Candidate-Summary .set-box-shadow .two-table .table-right .item .value, #Post-Job #Candidate-Summary .set-box-shadow .two-table .table-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .value, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Candidate-Summary .set-box-shadow .two-table .table-left .item-100 .value, #Post-Job #Candidate-Summary .set-box-shadow .two-table .table-right #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .value, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #Candidate-Summary .set-box-shadow .two-table .table-right .item-100 .value {
+            float: left;
+            width: 55%; }
+      #Post-Job #Candidate-Summary .set-box-shadow .two-table .table-right {
+        padding-left: 60px;
+        border-right: none; }
+      @media screen and (max-width: 767.98px) {
+        #Post-Job #Candidate-Summary .set-box-shadow .two-table {
+          display: block;
+          overflow: auto; }
+          #Post-Job #Candidate-Summary .set-box-shadow .two-table .table-left, #Post-Job #Candidate-Summary .set-box-shadow .two-table .table-right {
+            width: 100%;
+            float: left;
+            border-right: none; }
+          #Post-Job #Candidate-Summary .set-box-shadow .two-table .table-right {
+            padding-top: 0;
+            padding-left: 30px; } }
+  #Post-Job #Candidate-Summary .attached.fullscreen {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow-y: scroll; }
+    #Post-Job #Candidate-Summary .attached.fullscreen .attached-title {
+      margin-bottom: 0 !important; }
+    #Post-Job #Candidate-Summary .attached.fullscreen .attached-file {
+      padding: 0 !important;
+      height: 85% !important; }
+      #Post-Job #Candidate-Summary .attached.fullscreen .attached-file embed {
+        height: 100% !important; }
+  #Post-Job #Candidate-Summary .attached .attached-title {
+    overflow: auto;
+    padding-bottom: 2px;
+    padding-top: 2px; }
+    #Post-Job #Candidate-Summary .attached .attached-title .title-left {
+      float: left;
+      overflow: auto;
+      font-size: 18px;
+      font-weight: 900;
+      margin-top: 9px;
+      margin-bottom: 9px; }
+      #Post-Job #Candidate-Summary .attached .attached-title .title-left .left-icon {
+        width: 19.6px;
+        float: left;
+        height: 21.7px;
+        margin: 3px 11px 0 0;
+        background-image: url(../image/paperclip@3x.png); }
+    #Post-Job #Candidate-Summary .attached .attached-title .title-right {
+      float: right;
+      overflow: auto; }
+      #Post-Job #Candidate-Summary .attached .attached-title .title-right button {
+        height: 33px;
+        line-height: 32px;
+        font-size: 14px;
+        padding: 0 15px;
+        margin: 5px;
+        border: none;
+        background-color: #f7912a;
+        border-radius: 3px;
+        color: #fff;
+        transition: 0.3s; }
+        #Post-Job #Candidate-Summary .attached .attached-title .title-right button:hover {
+          transition: 0.3s;
+          box-shadow: 0 0 5px #f7912a; }
+        #Post-Job #Candidate-Summary .attached .attached-title .title-right button:focus {
+          outline: none; }
+        #Post-Job #Candidate-Summary .attached .attached-title .title-right button .button-icon {
+          width: 14px;
+          height: 14px;
+          float: left;
+          margin: 9px 7px 0 0; }
+  #Post-Job #Candidate-Summary .attached-file {
+    padding: 20px 10% 40px 10%;
+    width: 100%; }
+    @media screen and (max-width: 575.98px) {
+      #Post-Job #Candidate-Summary .attached-file {
+        padding: 20px 10px 40px 10px; } }
+    #Post-Job #Candidate-Summary .attached-file embed {
+      height: 500px;
+      width: 100%; }
+  #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-right label, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image .put-image-here label, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image .put-image-here label, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image .put-image-here label, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half .item-image-half .row .element .put-image-here label, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half .row .element .put-image-here label, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half .item-image-half .row .element .put-image-here label {
+    cursor: pointer;
+    margin-bottom: 0;
+    padding-top: 9px;
+    float: none;
+    background-color: #24becf;
+    color: #fff;
+    transition: 0.3s; }
+    #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-right label img, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image .put-image-here label img, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image .put-image-here label img, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image .put-image-here label img, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half .item-image-half .row .element .put-image-here label img, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half .row .element .put-image-here label img, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half .item-image-half .row .element .put-image-here label img {
+      display: inline-block; }
+    #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-right label:hover, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image .put-image-here label:hover, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image .put-image-here label:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image .put-image-here label:hover, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half .item-image-half .row .element .put-image-here label:hover, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half .row .element .put-image-here label:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half .item-image-half .row .element .put-image-here label:hover {
+      transition: 0.3s;
+      box-shadow: 0 0 5px #24becf; }
+  #Post-Job #CompanyProfile .headertab {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    overflow: auto;
+    transition: 0.2s; }
+    #Post-Job #CompanyProfile .headertab.headerfixtop {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 0 5px #b5b5b5;
+      transition: 0.2s;
+      z-index: 1; }
+    #Post-Job #CompanyProfile .headertab .form-list {
+      float: left;
+      overflow: auto;
+      margin-top: 15px; }
+      #Post-Job #CompanyProfile .headertab .form-list .form-item {
+        float: left;
+        color: #fff;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        padding: 5px 11px;
+        border-radius: 19px;
+        opacity: 0.5;
+        background-color: #24becf;
+        cursor: pointer; }
+        #Post-Job #CompanyProfile .headertab .form-list .form-item.active {
+          opacity: 1; }
+    #Post-Job #CompanyProfile .headertab .completion {
+      float: right;
+      width: 220px; }
+      #Post-Job #CompanyProfile .headertab .completion .progress-text span {
+        color: #24becf;
+        font-weight: 900;
+        margin-left: 15px; }
+      #Post-Job #CompanyProfile .headertab .completion .progress {
+        background-color: #464545;
+        box-shadow: none;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 0;
+        border-radius: 4px;
+        height: 7px; }
+        #Post-Job #CompanyProfile .headertab .completion .progress .progress-bar {
+          border-radius: 6px;
+          background-image: linear-gradient(85deg, #0ec2d4, #35e1f1); }
+  #Post-Job #CompanyProfile .headerfixtop + .body-tab {
+    padding-top: 136px; }
+  #Post-Job #CompanyProfile .body-tab .profile-form .profile-header {
+    padding: 13px 21px 10px 21px;
+    border-left: 11px solid #24becf;
+    width: 100%;
+    background-color: rgba(30, 189, 207, 0.15); }
+  #Post-Job #CompanyProfile .body-tab .profile-form .profile-body {
+    width: 100%;
+    overflow: auto;
+    padding-bottom: 30px;
+    padding-top: 10px; }
+    #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full {
+      width: 70%;
+      float: left;
+      overflow: auto; }
+      #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 {
+        padding: 15px 5px;
+        float: left;
+        width: 100%;
+        overflow: auto; }
+        #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item label, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item label, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 label, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 label, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 label, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 label {
+          float: left;
+          width: 30%;
+          margin-right: 2%;
+          margin-top: 8px; }
+          #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item label.have-span, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item label.have-span, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 label.have-span, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 label.have-span, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 label.have-span, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 label.have-span {
+            margin-top: 0; }
+            #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item label.have-span span, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item label.have-span span, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 label.have-span span, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 label.have-span span, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 label.have-span span, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 label.have-span span {
+              font-size: 14px;
+              font-style: italic;
+              color: #b5b5b5; }
+        #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item input, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item input, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 input, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 input, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 input, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 input {
+          float: left;
+          width: 68%;
+          border: 1px solid #b5b5b5;
+          padding: 0 10px; }
+          #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item input:focus, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item input:focus, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 input:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 input:focus, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 input:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 input:focus {
+            box-shadow: 0 0 5px #24becf; }
+          #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item input.half-7, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item input.half-7, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 input.half-7, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 input.half-7, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 input.half-7, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 input.half-7 {
+            width: 45%;
+            margin-right: 3%; }
+        #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item select, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item select, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 select, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 select, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 select, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 select {
+          float: left;
+          width: 68%;
+          border: 1px solid #b5b5b5;
+          padding: 0 10px;
+          background-color: #fff; }
+          #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item select:focus, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item select:focus, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 select:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 select:focus, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 select:focus, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 select:focus {
+            box-shadow: 0 0 5px #24becf; }
+          #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item select.half-3, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item select.half-3, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 select.half-3, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 select.half-3, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 select.half-3, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 select.half-3 {
+            width: 20%; }
+        #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item.item-submit, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item.item-submit, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-submit.item-100, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-submit.item-100, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-submit.item-100, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-submit.item-100 {
+          text-align: center; }
+          #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item.item-submit button, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item.item-submit button, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-submit.item-100 button, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-submit.item-100 button, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-submit.item-100 button, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-submit.item-100 button {
+            float: none;
+            color: #fff;
+            background-color: #24becf;
+            width: 220px; }
+            #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item.item-submit button:hover, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item.item-submit button:hover, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-submit.item-100 button:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-submit.item-100 button:hover, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-submit.item-100 button:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-submit.item-100 button:hover {
+              box-shadow: 0 0 5px #24becf; }
+    #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-right {
+      float: right;
+      width: 30%;
+      overflow: auto; }
+      #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-right .avatar-background {
+        float: right;
+        border: 2px dashed #24becf;
+        border-radius: 3px;
+        background-color: rgba(30, 189, 207, 0.15);
+        padding: 15px 20px;
+        width: 177px;
+        margin-top: 75px; }
+      #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-right img {
+        width: 100%; }
+      #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-right label {
+        width: 100%;
+        padding-left: 26px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0; }
+        #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-right label img {
+          width: 16px;
+          height: 15px;
+          margin-right: 6px;
+          margin-top: -4px; }
+    #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full {
+      width: 100%; }
+      #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item label, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 label, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 label {
+        width: 20.2%; }
+      #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .tox-tinymce, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .tox-tinymce, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .tox-tinymce {
+        border-radius: 5px !important;
+        width: 77.8%; }
+      #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .benefit, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .benefit, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .benefit {
+        float: left;
+        width: 77.8%;
+        overflow: auto;
+        border-radius: 4px;
+        background-color: rgba(246, 134, 26, 0.05);
+        padding: 5px; }
+        #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .benefit .benefit-item, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .benefit .benefit-item, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .benefit .benefit-item {
+          float: left;
+          width: 33.3333%;
+          margin: 10px 0;
+          font-size: 14px;
+          color: #b5b5b5;
+          transition: 0.2s;
+          cursor: pointer; }
+          #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .benefit .benefit-item .benefit-item-image, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .benefit .benefit-item .benefit-item-image, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .benefit .benefit-item .benefit-item-image {
+            background-repeat: no-repeat;
+            background-position-y: 0px;
+            background-size: auto 60px;
+            width: 20px;
+            height: 20px;
+            float: left;
+            margin: 0 12px 0 0;
+            background-image: url(../image/benefits-icon.png);
+            transition: 0.2s; }
+          #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .benefit .benefit-item:hover, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .benefit .benefit-item:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .benefit .benefit-item:hover {
+            transition: 0.2s;
+            color: #24becf; }
+            #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .benefit .benefit-item:hover .benefit-item-image, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .benefit .benefit-item:hover .benefit-item-image, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .benefit .benefit-item:hover .benefit-item-image {
+              background-position-y: -20px;
+              transition: 0.2s; }
+          #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .benefit .benefit-item.benefit-active, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .benefit .benefit-item.benefit-active, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .benefit .benefit-item.benefit-active {
+            color: #f7912a; }
+            #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .benefit .benefit-item.benefit-active .benefit-item-image, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .benefit .benefit-item.benefit-active .benefit-item-image, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .benefit .benefit-item.benefit-active .benefit-item-image {
+              background-position-y: -40px; }
+            #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .benefit .benefit-item.benefit-active:hover, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .benefit .benefit-item.benefit-active:hover, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .benefit .benefit-item.benefit-active:hover {
+              color: #24becf; }
+              #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .benefit .benefit-item.benefit-active:hover .benefit-item-image, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .benefit .benefit-item.benefit-active:hover .benefit-item-image, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .benefit .benefit-item.benefit-active:hover .benefit-item-image {
+                background-position-y: -40px; }
+      #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image {
+        float: left;
+        width: 77.8%;
+        overflow: auto; }
+        #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image .description, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image .description, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image .description {
+          width: 100%;
+          float: left;
+          margin-bottom: 15px; }
+        #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image .put-image-here, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image .put-image-here, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image .put-image-here {
+          float: left;
+          width: 70%;
+          padding: 50px 0;
+          border: 2px dashed #24becf;
+          border-radius: 3px;
+          text-align: center;
+          background-color: rgba(30, 189, 207, 0.15); }
+          #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image .put-image-here label, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image .put-image-here label, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image .put-image-here label {
+            width: 228px;
+            margin: 0 auto;
+            display: inline-block;
+            font-size: 15px; }
+            #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image .put-image-here label img, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image .put-image-here label img, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image .put-image-here label img {
+              width: 16px;
+              height: 15px;
+              margin-right: 6px;
+              margin-top: -3px; }
+        #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image .uploaded, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image .uploaded, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image .uploaded {
+          width: 100%;
+          float: left;
+          margin-top: 13px;
+          display: table; }
+          #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image .uploaded .image, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image .uploaded .image, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image .uploaded .image {
+            width: 100%;
+            border-radius: 3px; }
+          #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image .uploaded .garbage, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image .uploaded .garbage, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image .uploaded .garbage {
+            width: 30%;
+            display: table-cell; }
+            #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image .uploaded .garbage .garbage-icon, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image .uploaded .garbage .garbage-icon, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image .uploaded .garbage .garbage-icon {
+              cursor: pointer;
+              margin-left: 15px;
+              width: 14.9px;
+              height: 16.7px; }
+      #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half {
+        float: left;
+        width: 77.8%;
+        overflow: auto; }
+        #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half .description, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .description, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half .description {
+          width: 100%;
+          float: left;
+          margin-bottom: 15px; }
+        #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half .item-image-half, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half .item-image-half {
+          width: 70%; }
+          #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half .item-image-half .row, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half .row, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half .item-image-half .row {
+            margin-left: -7px;
+            margin-right: -7px; }
+            #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half .item-image-half .row .element, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half .row .element, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half .item-image-half .row .element {
+              float: left;
+              padding-left: 7px;
+              padding-right: 7px;
+              padding-bottom: 15px;
+              position: relative; }
+              #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half .item-image-half .row .element .put-image-here, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half .row .element .put-image-here, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half .item-image-half .row .element .put-image-here {
+                float: left;
+                width: 100%;
+                padding: 70px 0 27px 0;
+                border: 2px dashed #24becf;
+                border-radius: 3px;
+                text-align: center;
+                background-color: rgba(30, 189, 207, 0.15); }
+                #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half .item-image-half .row .element .put-image-here label, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half .row .element .put-image-here label, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half .item-image-half .row .element .put-image-here label {
+                  width: 157px;
+                  margin: 0 auto;
+                  display: inline-block;
+                  font-size: 15px; }
+                  #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half .item-image-half .row .element .put-image-here label img, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half .row .element .put-image-here label img, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half .item-image-half .row .element .put-image-here label img {
+                    width: 16px;
+                    height: 15px;
+                    margin-right: 6px;
+                    margin-top: -3px; }
+                #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half .item-image-half .row .element .put-image-here .small-text, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half .row .element .put-image-here .small-text, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half .item-image-half .row .element .put-image-here .small-text {
+                  margin-top: 29px;
+                  width: 100%;
+                  float: left;
+                  font-size: 10px;
+                  color: #b5b5b5; }
+              #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half .item-image-half .row .element .half-image, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half .row .element .half-image, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half .item-image-half .row .element .half-image {
+                border-radius: 3px;
+                width: 100%;
+                height: auto; }
+              #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half .item-image-half .row .element .garbage-half, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half .row .element .garbage-half, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half .item-image-half .row .element .garbage-half {
+                position: absolute;
+                bottom: 20px;
+                right: 12px;
+                width: 21px;
+                height: 23px;
+                border-radius: 3px;
+                cursor: pointer;
+                background-color: rgba(255, 255, 255, 0.5); }
+                #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half .item-image-half .row .element .garbage-half img, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half .row .element .garbage-half img, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half .item-image-half .row .element .garbage-half img {
+                  margin-left: 3px;
+                  width: 14.9px;
+                  height: 16.7px; }
+      #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .item-input, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .item-input, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .item-input {
+        width: 70%;
+        float: left;
+        overflow: auto;
+        padding: 5px 5px 5px 0; }
+        #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .item-input div, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .item-input div, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .item-input div {
+          width: 32%;
+          margin-right: 3%;
+          float: left; }
+        #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .item-input input, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .item-input input, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .item-input input {
+          width: 65%;
+          float: left;
+          border: 1px solid #b5b5b5; }
+  @media screen and (max-width: 1199.98px) {
+    #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item .list-image .put-image-here, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image .put-image-here, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image .put-image-here, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 .list-image .put-image-here, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image .put-image-here, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image .put-image-here {
+      width: 90%; }
+    #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item .list-image .uploaded img, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image .uploaded img, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image .uploaded img, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 .list-image .uploaded img, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image .uploaded img, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image .uploaded img {
+      width: 10%; }
+    #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item .list-image .uploaded .garbage, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image .uploaded .garbage, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image .uploaded .garbage, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 .list-image .uploaded .garbage, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image .uploaded .garbage, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image .uploaded .garbage {
+      width: 10%; }
+    #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item .list-image-half .item-image-half, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half .item-image-half, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 .list-image-half .item-image-half, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half .item-image-half {
+      width: 90%; }
+      #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item .list-image-half .item-image-half .row .element .put-image-here, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half .item-image-half .row .element .put-image-here, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half .row .element .put-image-here, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 .list-image-half .item-image-half .row .element .put-image-here, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half .row .element .put-image-here, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half .item-image-half .row .element .put-image-here {
+        padding-top: 63px; }
+    #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item .item-input, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .item-input, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .item-input, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 .item-input, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .item-input, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .item-input {
+      width: 90%; } }
+  @media screen and (max-width: 991.98px) {
+    #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full {
+      width: 100%; }
+    #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-right {
+      width: 100%; }
+      #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-right .avatar-background {
+        float: none;
+        margin: 20px auto; } }
+  @media screen and (max-width: 767.98px) {
+    #Post-Job #CompanyProfile .headertab.headerfixtop {
+      position: relative;
+      top: auto;
+      left: auto;
+      width: auto;
+      background-color: #fff;
+      box-shadow: none;
+      transition: 0.2s;
+      z-index: 0; }
+    #Post-Job #CompanyProfile .headerfixtop + .body-tab {
+      padding-top: 0; } }
+  @media screen and (max-width: 676.98px) {
+    #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item label, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item label, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 label, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 label, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 label, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 label,
+    #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item select,
+    #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item select,
+    #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 select,
+    #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 select,
+    #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 select,
+    #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 select {
+      width: 100%; }
+    #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item input, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item input, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 input, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 input, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 input, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 input {
+      width: 100%; }
+      #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item input.half-7, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item input.half-7, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 input.half-7, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 input.half-7, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 input.half-7, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 input.half-7 {
+        width: 67%; }
+    #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item select, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item select, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 select, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 select, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 select, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 select {
+      width: 100%; }
+      #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item select.half-3, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item select.half-3, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 select.half-3, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 select.half-3, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 select.half-3, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 select.half-3 {
+        width: 30%; }
+    #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item .benefit, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .benefit, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .benefit, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 .benefit, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .benefit, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .benefit {
+      width: 100%; }
+      #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item .benefit .benefit-item, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .benefit .benefit-item, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .benefit .benefit-item, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 .benefit .benefit-item, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .benefit .benefit-item, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .benefit .benefit-item {
+        width: 49.9999%; }
+    #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item .list-image, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 .list-image, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image {
+      width: 100%; }
+    #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item .list-image-half, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 .list-image-half, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half {
+      width: 100%; }
+      #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item .list-image-half .item-image-half .row .element .put-image-here, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .list-image-half .item-image-half .row .element .put-image-here, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half .row .element .put-image-here, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 .list-image-half .item-image-half .row .element .put-image-here, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .list-image-half .item-image-half .row .element .put-image-here, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .list-image-half .item-image-half .row .element .put-image-here {
+        padding-top: 63px; }
+    #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left .item .item-input, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full .item .item-input, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-left #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .item-input, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-left .item-100 .item-input, #Post-Job #CompanyProfile .body-tab .profile-form .profile-body .body-full #ManageJobs #ManageJobs-PostJob .list-form-item .item-100 .item-input, #Post-Job #ManageJobs #ManageJobs-PostJob .list-form-item #CompanyProfile .body-tab .profile-form .profile-body .body-full .item-100 .item-input {
+      width: 85%; } }
 
 #Free-Job-Notification {
   margin-top: 90px; }
@@ -1127,7 +2053,7 @@ body {
   right: 0;
   left: 0;
   background-color: rgba(51, 50, 50, 0.68); }
-  #background-for-notification #Message-Out-Of-Free-Post-Job, #background-for-notification #Message-Change-Status, #background-for-notification #Message-Add-Note {
+  #background-for-notification #Message-Out-Of-Free-Post-Job, #background-for-notification #Message-Change-Status, #background-for-notification #Message-Add-Note, #background-for-notification #Message-View-Contact-Infomation {
     margin: 20% auto;
     overflow: auto;
     padding: 8px 10px 10px 10px;
@@ -1136,7 +2062,7 @@ body {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     border: solid 1px #707070;
     background-color: #ffffff; }
-    #background-for-notification #Message-Out-Of-Free-Post-Job .close-notify, #background-for-notification #Message-Change-Status .close-notify, #background-for-notification #Message-Add-Note .close-notify {
+    #background-for-notification #Message-Out-Of-Free-Post-Job .close-notify, #background-for-notification #Message-Change-Status .close-notify, #background-for-notification #Message-Add-Note .close-notify, #background-for-notification #Message-View-Contact-Infomation .close-notify {
       float: right;
       font-size: 20px;
       line-height: 20px;
@@ -1288,5 +2214,56 @@ body {
           background-color: #f7912a;
           color: #fff;
           font-size: 18px; }
+  #background-for-notification #Message-View-Contact-Infomation {
+    max-width: 536px; }
+    #background-for-notification #Message-View-Contact-Infomation .title {
+      margin: 10px 0 0 15px;
+      font-size: 20px;
+      font-weight: 900; }
+    #background-for-notification #Message-View-Contact-Infomation .contactinfo-table {
+      margin: 15px 15px 0 15px;
+      border-top: 1px solid #d1d0d6;
+      padding: 20px 0; }
+      #background-for-notification #Message-View-Contact-Infomation .contactinfo-table table {
+        width: 100%; }
+        #background-for-notification #Message-View-Contact-Infomation .contactinfo-table table tr {
+          height: 42px;
+          background-color: #f2f2f2; }
+          #background-for-notification #Message-View-Contact-Infomation .contactinfo-table table tr th,
+          #background-for-notification #Message-View-Contact-Infomation .contactinfo-table table tr td {
+            text-align: center; }
+        #background-for-notification #Message-View-Contact-Infomation .contactinfo-table table thead tr {
+          background-color: rgba(30, 189, 207, 0.15); }
+    #background-for-notification #Message-View-Contact-Infomation .have-enough {
+      text-align: center;
+      font-size: 13px;
+      margin-bottom: 15px;
+      color: #f22424; }
+      #background-for-notification #Message-View-Contact-Infomation .have-enough a {
+        color: #2a75f7; }
+    #background-for-notification #Message-View-Contact-Infomation .message-button {
+      text-align: center;
+      width: 100%; }
+      #background-for-notification #Message-View-Contact-Infomation .message-button .cancel, #background-for-notification #Message-View-Contact-Infomation .message-button .viewcontact {
+        float: none !important;
+        width: 125px;
+        border: 1px solid #b5b5b5 !important;
+        font-size: 18px;
+        line-height: 35px;
+        color: #b5b5b5;
+        margin: 5px; }
+        #background-for-notification #Message-View-Contact-Infomation .message-button .cancel:hover, #background-for-notification #Message-View-Contact-Infomation .message-button .viewcontact:hover {
+          box-shadow: 0 0 5px #b5b5b5; }
+      #background-for-notification #Message-View-Contact-Infomation .message-button .viewcontact {
+        border: none !important;
+        background-color: #f7912a;
+        color: #fff; }
+        #background-for-notification #Message-View-Contact-Infomation .message-button .viewcontact:hover {
+          box-shadow: 0 0 5px #f7912a; }
+        #background-for-notification #Message-View-Contact-Infomation .message-button .viewcontact.disabled {
+          background-color: #b5b5b5; }
+          #background-for-notification #Message-View-Contact-Infomation .message-button .viewcontact.disabled:hover {
+            box-shadow: none;
+            cursor: not-allowed; }
 
 /*# sourceMappingURL=postjob.css.map */

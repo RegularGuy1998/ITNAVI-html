@@ -15,6 +15,12 @@ body {
         background-size: contain;
     }
 
+    .overflow-auto {
+        float: left;
+        width: 100%;
+        overflow: auto;
+    }
+
     .div-scroll {
         width: 100%;
         overflow: scroll;
@@ -35,6 +41,11 @@ body {
         padding-right: 30px;
     }
 
+    .padding-width-100 {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
     .set-box-shadow {
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.11);
         border-bottom-left-radius: 4px;
@@ -46,6 +57,94 @@ body {
     .super-starr {
         color: #F22424;
         font-size: 14px;
+    }
+
+    %default-pagging {
+        float: left;
+        padding: 6px;
+        overflow: auto;
+        margin-top: 10px;
+
+        .default-pagging-button {
+            float: left;
+            width: 33px;
+            height: 33px;
+            color: #707070;
+            transition: 0.15s;
+            border-radius: 50%;
+
+            &:hover {
+                background-color: #1ebdcf;
+                border-radius: 6px;
+                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+                color: #fff;
+                transition: 0.15s;
+            }
+        }
+
+        .previous {
+            @extend .default-pagging-button;
+
+            background-color: #e8e8e8;
+
+            img {
+                width: 5.3px;
+                height: 9.6px;
+                margin: 10px 0 0 14px;
+            }
+        }
+
+        .next {
+            @extend .default-pagging-button;
+
+            background-color: #e8e8e8;
+
+            img {
+                width: 5.3px;
+                height: 9.6px;
+                margin: 10px 0 0 14px;
+            }
+        }
+
+        .pagging-list {
+            float: left;
+            padding: 0 8px;
+            margin: 0 11px;
+            overflow: auto;
+            border-radius: 16px;
+            background-color: #e8e8e8;
+
+            .pagger {
+                @extend .default-pagging-button;
+
+                text-align: center;
+                line-height: 35px;
+                font-size: 12px;
+
+
+                @media screen and (max-width: 575.98px) {
+                    width: auto;
+                    padding: 0 7px;
+                }
+            }
+
+            .active {
+                background-color: #1ebdcf;
+                border-radius: 6px;
+                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+                color: #fff;
+                transition: 0.15s;
+            }
+
+            .disable {
+                &:hover {
+                    box-shadow: none;
+                    color: #707070;
+                    background-color: #e8e8e8;
+                }
+            }
+
+        }
     }
 
     %defaut-input-form {
@@ -67,6 +166,16 @@ body {
 
         &::-webkit-input-placeholder {
             font-size: 14px;
+        }
+
+        &[type="date"]::-webkit-calendar-picker-indicator {
+            color: rgba(0, 0, 0, 0);
+            opacity: 1;
+            display: block;
+            background: url(../image/calendar-with-a-clock-time-tools@3x.png) no-repeat;
+            background-size: 16px auto;
+            margin-left: 7px;
+            border-width: thin;
         }
     }
 
@@ -108,9 +217,10 @@ body {
             border: none;
             float: left;
             height: 43px;
-            width: 171px;
+            width: auto;
             position: static;
             font-size: 18px;
+            padding: 0 15px;
             text-align: center;
             line-height: 43px;
             color: #464545;
@@ -134,12 +244,21 @@ body {
                 outline: none;
             }
 
+            &.tab-dropdown {
+                padding: 0 0;
+
+                .tab-dropdown-name {
+                    padding: 0 15px;
+                }
+            }
+
             .tablinks-dropdown {
                 display: none;
+                z-index: 1;
                 position: absolute;
                 list-style: none;
                 padding-left: 0;
-                width: 171px;
+                width: 180.64px;
                 padding: 0 11px;
                 text-align: left;
                 background-color: #fff;
@@ -187,6 +306,13 @@ body {
         margin-bottom: 50px;
     }
 
+    @media screen and (max-width: 991.98px) {
+        .padding-width-lg-30 {
+            padding-left: 30px !important;
+            padding-right: 30px !important;
+        }
+    }
+
     @media screen and (max-width: 575.98px) {
         .padding-width-xs-10 {
             padding-left: 10px !important;
@@ -201,6 +327,9 @@ body {
 
     @import "postjob-managejobs";
     @import "postjob-managecandidate";
+    @import "search-candidate";
+    @import "candidate-summary";
+    @import "postjob-companyprofile";
 }
 
 #Free-Job-Notification {
@@ -475,6 +604,98 @@ body {
                     background-color: #f7912a;
                     color: #fff;
                     font-size: 18px;
+                }
+            }
+        }
+    }
+
+    #Message-View-Contact-Infomation {
+        @extend %default-notification;
+
+        max-width: 536px;
+
+        .title {
+            margin: 10px 0 0 15px;
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        .contactinfo-table {
+            margin: 15px 15px 0 15px;
+            border-top: 1px solid #d1d0d6;
+            padding: 20px 0;
+
+            table {
+                width: 100%;
+
+                tr {
+                    height: 42px;
+                    background-color: #f2f2f2;
+
+                    th,
+                    td {
+                        text-align: center;
+                    }
+                }
+
+                thead {
+                    tr {
+                        background-color: rgba(30, 189, 207, 0.15);
+
+                    }
+                }
+            }
+        }
+
+        .have-enough {
+            text-align: center;
+            font-size: 13px;
+            margin-bottom: 15px;
+            color: #f22424;
+
+            a {
+                color: #2a75f7;
+            }
+        }
+
+        .message-button {
+            text-align: center;
+            width: 100%;
+
+            .cancel {
+                @extend %defaut-input-form;
+                float: none !important;
+                width: 125px;
+                border: 1px solid #b5b5b5 !important;
+                font-size: 18px;
+                line-height: 35px;
+                color: #b5b5b5;
+                margin: 5px;
+
+                &:hover {
+                    box-shadow: 0 0 5px #b5b5b5;
+                }
+
+            }
+
+            .viewcontact {
+                @extend .cancel;
+                border: none !important;
+                background-color: #f7912a;
+                color: #fff;
+
+                &:hover {
+                    box-shadow: 0 0 5px #f7912a;
+                }
+
+                &.disabled {
+
+                    background-color: #b5b5b5;
+
+                    &:hover {
+                        box-shadow: none;
+                        cursor: not-allowed;
+                    }
                 }
             }
         }

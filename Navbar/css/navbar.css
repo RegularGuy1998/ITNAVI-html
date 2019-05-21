@@ -6,7 +6,7 @@ body {
 #ITNavi-Navbar {
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 5;
   top: 0;
   overflow: auto; }
   #ITNavi-Navbar .set-box-shadow {
