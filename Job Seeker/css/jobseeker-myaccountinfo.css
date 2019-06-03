@@ -6,6 +6,12 @@
     margin-bottom: 16px;
 }
 
+#change-password-scroll {
+    position: absolute;
+    margin-top: -140px;
+
+}
+
 
 /* Form */
 #MyAccountInfo .form {

@@ -1,0 +1,117 @@
+#AccountInformation {
+    padding: 20px 0;
+
+    .info-body-item {
+        margin-top: 15px;
+        margin-bottom: 40px;
+        border-bottom: 1px dashed #d1d0d6;
+
+        &:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+
+        }
+
+        .body-title {
+            padding: 13px 18px 12px 10px;
+            background-color: rgba(30, 189, 207, 0.15);
+            border-left: 4px solid #f7912a;
+            overflow: auto;
+
+            .title-left {
+                float: left;
+                font-weight: 900;
+            }
+
+            .title-right {
+                float: right;
+
+
+            }
+        }
+
+        .body-form {
+            padding-bottom: 20px;
+
+
+            .form-item {
+                padding: 15px 0;
+
+                &.form-item-input {
+
+                    label {
+                        width: 315px;
+                        padding: 0 0 0 70px;
+                        font-weight: 100;
+                    }
+
+                    input {
+                        height: 41px;
+                        width: 442px;
+                        border-radius: 3px;
+                        border: solid 1px #b5b5b5;
+                        padding: 0 10px;
+                        outline: none;
+                        transition: 0.3s;
+
+                        &::-webkit-input-placeholder {
+                            color: #b5b5b5;
+                        }
+
+                        &:focus {
+                            border: solid 1px #24becf;
+                            box-shadow: 0 0 5px #24becf;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+
+                &.form-save {
+                    padding: 20px 5px 20px 320px;
+
+                    button {
+                        width: 227px;
+                        height: 41px;
+                        border-radius: 3px;
+                        background-color: #24becf;
+                        color: #fff;
+                        font-weight: 900;
+                        border: none;
+                        outline: none;
+                        transition: 0.3s;
+
+
+                        &:hover {
+                            box-shadow: 0 0 5px #24becf;
+                            transition: 0.3s;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 991.98px) {
+            .body-form {
+                .form-item {
+                    &.form-item-input {
+                        label {
+                            width: 100%;
+                            padding-left: 0;
+                        }
+
+                        input {
+                            width: 100%;
+                        }
+                    }
+
+                    &.form-save {
+                        padding: 20px 0 20px 0;
+                        text-align: center;
+    
+                    }
+                }
+            }
+        }
+    }
+}

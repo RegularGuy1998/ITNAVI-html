@@ -107,6 +107,10 @@
             margin-top: 18px;
             overflow: scroll;
 
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
             table {
                 width: 100%;
                 min-width: 650px;
@@ -399,6 +403,49 @@
 
                     .super-checkbox-button {
                         margin: 2px 4px 0 0;
+                    }
+                }
+
+                .select2-container {
+                    width: 65% !important;
+
+                    @media screen and (max-width: 575.98px) {
+                        width: 100% !important;
+                    }
+
+                    .selection {
+                        .select2-selection {
+                            border-radius: 5px;
+                            min-height: 41px;
+                            height: auto;
+                            width: 100%;
+                            border: 1px solid #b5b5b5;
+                            transition: 0.3s;
+                            padding: 0 10px;
+                            background-color: #fff;
+
+                            &:focus-within {
+                                box-shadow: 0 0 5px #f7912a;
+                                transition: 0.3s;
+                            }
+
+                            ul {
+                                height: auto;
+                                padding: 0;
+
+                                li {
+                                    input {
+                                        height: 28px;
+                                        border: none;
+                                        padding: 0;
+
+                                        &:focus {
+                                            box-shadow: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }

@@ -1,0 +1,180 @@
+#CV-Template {
+    font-family: roboto;
+
+    %default-background-image {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+
+    %padding-like-bt {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .bolder-text {
+        font-weight: 900;
+    }
+
+    .italic-text {
+        font-style: italic;
+    }
+
+    $bigname: 22px;
+    $jobname: 14px;
+    $title: 12px;
+    $nomal: 10px;
+    $supersm: 8px;
+    $blue: #24becf;
+    $lightblue: rgba(30, 189, 207, 0.15);
+    $lightgray: #d1d0d6;
+
+
+
+    width: 100%;
+    padding: 10px;
+
+    .avatar {
+        width: 100%;
+    }
+
+    .name {
+        font-size: $bigname;
+        font-weight: 900;
+        color: $blue;
+    }
+
+    .job-name {
+        font-size: $jobname;
+        font-weight: 900;
+    }
+
+    .line-blue {
+        border-top: 1px solid $blue;
+        margin: 10px 0;
+
+        .circle {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            border: solid 1px $blue;
+            background-color: #ffffff;
+            margin-top: -4px;
+            float: right;
+        }
+    }
+
+    .item {
+        font-size: $nomal;
+        padding-bottom: 7px;
+
+        .item-image {
+            @extend %default-background-image;
+
+            margin: 1px 5px 0 0;
+
+            float: left;
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    .element {
+
+        .title {
+            font-size: $title;
+            color: $blue;
+            font-weight: 900;
+            padding: 15px 0 6px 0;
+            border-bottom: 1px solid $lightgray;
+
+
+            .title-image {
+                @extend %default-background-image;
+
+                margin: 1px 5px 0 0;
+                float: left;
+                width: 13px;
+                height: 13px;
+            }
+        }
+
+        .body {
+            margin-top: 10px;
+            padding-bottom: 5px;
+
+            &.onlytext {
+                font-size: $nomal;
+            }
+
+            &.onlytext-small {
+                font-size: $supersm;
+            }
+
+            &.timeline {
+                font-size: $nomal;
+
+                .description {
+                    font-size: $supersm;
+                    padding: 2px 0;
+                }
+
+            }
+
+            &.supertable {
+
+
+                .table-title {
+                    font-size: $nomal;
+                    padding-bottom: 4px;
+                }
+
+                .title-body {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    font-size: $supersm;
+                    background-color: $lightblue;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    tr {
+
+                        th,
+                        td {
+                            text-align: center;
+                            padding-top: 3px;
+                            padding-bottom: 3px;
+                        }
+                    }
+
+                    thead {
+                        background-color: $lightblue;
+                    }
+
+                    tbody {
+                        tr {
+                            border-bottom: 1px solid $lightblue;
+
+                            &:last-child {
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .super-logo {
+        text-align: center;
+        padding-top: 30px;
+
+        img {
+            width: 66px;
+            height: 26px;
+        }
+    }
+}

@@ -1,0 +1,235 @@
+    %default-input {
+        transition: 0.3s;
+        height: 40px;
+        border-radius: 4px;
+
+        &:focus {
+            outline: none;
+            transition: 0.3s;
+        }
+
+        &:hover {
+            outline: none;
+            transition: 0.3s;
+        }
+    }
+
+    .close-message {
+        float: right;
+        font-size: 20px;
+        line-height: 20px;
+        color: #d1d0d6;
+        cursor: pointer;
+
+    }
+
+    .swal2-container {
+
+        #Message-Apply-To-Product-Owner {
+            font-size: 16px;
+            text-align: left;
+
+            .mess-title {
+                border-bottom: 1px solid #d1d0d6;
+                font-size: 20px;
+                font-weight: 600;
+                padding: 10px 0 15px 0;
+                margin: 0 10px;
+
+                span {
+                    color: #24becf;
+                }
+            }
+
+            .mess-body {
+                margin-top: 20px;
+                padding: 0 10px;
+
+                .item {
+                    width: 100%;
+                    overflow: auto;
+                    margin-bottom: 10px;
+
+                    .item-name {
+                        width: 20%;
+                        float: left;
+                        margin-right: 2%;
+                        margin-top: 13px;
+                    }
+
+                    .item-body {
+                        width: 78%;
+                        float: left;
+                        padding: 5px;
+
+                        .mess-input {
+                            @extend %default-input;
+                            width: 100%;
+                            padding: 0 10px;
+                            border: solid 1px #b5b5b5;
+
+                            &:focus {
+                                box-shadow: 0 0 5px #24becf;
+                            }
+
+                        }
+
+                        .radio-item {
+                            margin-top: 10px;
+
+                            .mini-item {
+                                overflow: auto;
+                                width: 100%;
+                                margin-top: 8px;
+                                margin-bottom: 10px;
+
+                                .mess-radio {
+                                    float: left;
+                                    width: 15px;
+                                    height: 15px;
+                                    border: 2px solid #b5b5b5;
+                                    margin: 3px 7px 0 0;
+                                    border-radius: 50%;
+                                    transition: 0.15s;
+                                    cursor: pointer;
+
+                                    &:hover {
+                                        border: 5px solid #b5b5b5;
+                                        transition: 0.15s;
+                                    }
+
+                                    &.active {
+                                        border: 5px solid #2ec1d1;
+                                        transition: 0.15s;
+
+                                        &:hover {
+                                            border: 5px solid #2ec1d1;
+                                            transition: 0.15s;
+                                        }
+                                    }
+                                }
+
+                                .lastupdate {
+                                    padding-left: 22px;
+                                    font-size: 14px;
+                                    color: #b5b5b5;
+
+                                    a {
+                                        color: #2a75f7;
+                                        margin-right: 7px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .otheroption {
+
+                            .input-file {
+                                display: none;
+                            }
+
+                            .uploadyourcvlabel {
+                                cursor: pointer;
+                                width: 158.3px;
+                                height: 37px;
+                                border-radius: 3px;
+                                background-color: #24becf;
+                                color: #fff;
+                                font-weight: 900;
+                                text-align: center;
+                                padding-top: 8px;
+                                margin: 6px 0;
+
+                                img {
+                                    width: 16.9px;
+                                    height: 12.3px;
+                                    margin: -2px 3px 0 0;
+                                }
+                            }
+
+                            .other-italic {
+                                font-style: italic;
+                                line-height: 17px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                    &.item-submit {
+                        text-align: right;
+
+                        .cancelbutton {
+                            @extend %default-input;
+                            width: 107.3px;
+                            height: 37px;
+                            border-radius: 3px;
+                            border: solid 1px #b5b5b5;
+                            background-color: #fff;
+                            font-size: 18px;
+                            font-weight: 900;
+                            color: #b5b5b5;
+                            margin: 5px;
+                            text-align: center;
+                            line-height: 36px;
+                            display: inline-block;
+                            cursor: pointer;
+
+                            &:hover {
+                                box-shadow: 0 0 5px #b5b5b5;
+                            }
+                        }
+
+                        .applybutton {
+                            @extend %default-input;
+                            width: 170.3px;
+                            height: 37px;
+                            border-radius: 3px;
+                            border: none;
+                            background-color: #f7912a;
+                            font-size: 18px;
+                            font-weight: 900;
+                            color: #fff;
+                            margin: 5px;
+
+                            &:hover {
+                                box-shadow: 0 0 5px #f7912a;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+        #Message-Successfully-Applied {
+            font-size: 16px;
+
+            .mess-image {
+                width: 100%;
+                padding: 30px 0;
+
+                img {
+                    width: 50%;
+                }
+            }
+
+            .okbutton {
+                @extend %default-input;
+                margin: 30px 0;
+                width: 152px;
+                height: 37px;
+                border: none;
+                display: inline-block;
+                background-color: #f7912a;
+                font-size: 18px;
+                line-height: 36px;
+                cursor: pointer;
+                color: #fff;
+
+                &:hover {
+                    box-shadow: 0 0 5px #f7912a;
+                }
+            }
+        }
+    }

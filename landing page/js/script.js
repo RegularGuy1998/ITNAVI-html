@@ -14,7 +14,7 @@ $('#navbar-seemore').on('click', function () {
   }
 })
 
-$('#Services-Scroll').on('click', function () {
+$('.Services-Scroll').on('click', function () {
   var elmnt = document.getElementById("Our-Services");
     elmnt.scrollIntoView();
     if ($('#navi-navbar-item').hasClass('showfullnavbar')) {
@@ -22,7 +22,7 @@ $('#Services-Scroll').on('click', function () {
     }
 })
 
-$('#ContactUs-Scroll').on('click', function () {
+$('.ContactUs-Scroll').on('click', function () {
   var elmnt = document.getElementById("contact-us-form");
     elmnt.scrollIntoView();
     if ($('#navi-navbar-item').hasClass('showfullnavbar')) {

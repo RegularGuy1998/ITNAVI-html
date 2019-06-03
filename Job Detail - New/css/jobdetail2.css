@@ -1,0 +1,156 @@
+.swal2-container #Message-Apply-To-Product-Owner .mess-body .item .item-body .mess-input, .swal2-container #Message-Apply-To-Product-Owner .mess-body .item.item-submit .cancelbutton, .swal2-container #Message-Apply-To-Product-Owner .mess-body .item.item-submit .applybutton, .swal2-container #Message-Successfully-Applied .okbutton {
+  transition: 0.3s;
+  height: 40px;
+  border-radius: 4px; }
+  .swal2-container #Message-Apply-To-Product-Owner .mess-body .item .item-body .mess-input:focus, .swal2-container #Message-Apply-To-Product-Owner .mess-body .item.item-submit .cancelbutton:focus, .swal2-container #Message-Apply-To-Product-Owner .mess-body .item.item-submit .applybutton:focus, .swal2-container #Message-Successfully-Applied .okbutton:focus {
+    outline: none;
+    transition: 0.3s; }
+  .swal2-container #Message-Apply-To-Product-Owner .mess-body .item .item-body .mess-input:hover, .swal2-container #Message-Apply-To-Product-Owner .mess-body .item.item-submit .cancelbutton:hover, .swal2-container #Message-Apply-To-Product-Owner .mess-body .item.item-submit .applybutton:hover, .swal2-container #Message-Successfully-Applied .okbutton:hover {
+    outline: none;
+    transition: 0.3s; }
+
+.close-message {
+  float: right;
+  font-size: 20px;
+  line-height: 20px;
+  color: #d1d0d6;
+  cursor: pointer; }
+
+.swal2-container #Message-Apply-To-Product-Owner {
+  font-size: 16px;
+  text-align: left; }
+  .swal2-container #Message-Apply-To-Product-Owner .mess-title {
+    border-bottom: 1px solid #d1d0d6;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0 15px 0;
+    margin: 0 10px; }
+    .swal2-container #Message-Apply-To-Product-Owner .mess-title span {
+      color: #24becf; }
+  .swal2-container #Message-Apply-To-Product-Owner .mess-body {
+    margin-top: 20px;
+    padding: 0 10px; }
+    .swal2-container #Message-Apply-To-Product-Owner .mess-body .item {
+      width: 100%;
+      overflow: auto;
+      margin-bottom: 10px; }
+      .swal2-container #Message-Apply-To-Product-Owner .mess-body .item .item-name {
+        width: 20%;
+        float: left;
+        margin-right: 2%;
+        margin-top: 13px; }
+      .swal2-container #Message-Apply-To-Product-Owner .mess-body .item .item-body {
+        width: 78%;
+        float: left;
+        padding: 5px; }
+        .swal2-container #Message-Apply-To-Product-Owner .mess-body .item .item-body .mess-input {
+          width: 100%;
+          padding: 0 10px;
+          border: solid 1px #b5b5b5; }
+          .swal2-container #Message-Apply-To-Product-Owner .mess-body .item .item-body .mess-input:focus {
+            box-shadow: 0 0 5px #24becf; }
+        .swal2-container #Message-Apply-To-Product-Owner .mess-body .item .item-body .radio-item {
+          margin-top: 10px; }
+          .swal2-container #Message-Apply-To-Product-Owner .mess-body .item .item-body .radio-item .mini-item {
+            overflow: auto;
+            width: 100%;
+            margin-top: 8px;
+            margin-bottom: 10px; }
+            .swal2-container #Message-Apply-To-Product-Owner .mess-body .item .item-body .radio-item .mini-item .mess-radio {
+              float: left;
+              width: 15px;
+              height: 15px;
+              border: 2px solid #b5b5b5;
+              margin: 3px 7px 0 0;
+              border-radius: 50%;
+              transition: 0.15s;
+              cursor: pointer; }
+              .swal2-container #Message-Apply-To-Product-Owner .mess-body .item .item-body .radio-item .mini-item .mess-radio:hover {
+                border: 5px solid #b5b5b5;
+                transition: 0.15s; }
+              .swal2-container #Message-Apply-To-Product-Owner .mess-body .item .item-body .radio-item .mini-item .mess-radio.active {
+                border: 5px solid #2ec1d1;
+                transition: 0.15s; }
+                .swal2-container #Message-Apply-To-Product-Owner .mess-body .item .item-body .radio-item .mini-item .mess-radio.active:hover {
+                  border: 5px solid #2ec1d1;
+                  transition: 0.15s; }
+            .swal2-container #Message-Apply-To-Product-Owner .mess-body .item .item-body .radio-item .mini-item .lastupdate {
+              padding-left: 22px;
+              font-size: 14px;
+              color: #b5b5b5; }
+              .swal2-container #Message-Apply-To-Product-Owner .mess-body .item .item-body .radio-item .mini-item .lastupdate a {
+                color: #2a75f7;
+                margin-right: 7px; }
+        .swal2-container #Message-Apply-To-Product-Owner .mess-body .item .item-body .otheroption .input-file {
+          display: none; }
+        .swal2-container #Message-Apply-To-Product-Owner .mess-body .item .item-body .otheroption .uploadyourcvlabel {
+          cursor: pointer;
+          width: 158.3px;
+          height: 37px;
+          border-radius: 3px;
+          background-color: #24becf;
+          color: #fff;
+          font-weight: 900;
+          text-align: center;
+          padding-top: 8px;
+          margin: 6px 0; }
+          .swal2-container #Message-Apply-To-Product-Owner .mess-body .item .item-body .otheroption .uploadyourcvlabel img {
+            width: 16.9px;
+            height: 12.3px;
+            margin: -2px 3px 0 0; }
+        .swal2-container #Message-Apply-To-Product-Owner .mess-body .item .item-body .otheroption .other-italic {
+          font-style: italic;
+          line-height: 17px;
+          font-size: 14px; }
+      .swal2-container #Message-Apply-To-Product-Owner .mess-body .item.item-submit {
+        text-align: right; }
+        .swal2-container #Message-Apply-To-Product-Owner .mess-body .item.item-submit .cancelbutton {
+          width: 107.3px;
+          height: 37px;
+          border-radius: 3px;
+          border: solid 1px #b5b5b5;
+          background-color: #fff;
+          font-size: 18px;
+          font-weight: 900;
+          color: #b5b5b5;
+          margin: 5px;
+          text-align: center;
+          line-height: 36px;
+          display: inline-block;
+          cursor: pointer; }
+          .swal2-container #Message-Apply-To-Product-Owner .mess-body .item.item-submit .cancelbutton:hover {
+            box-shadow: 0 0 5px #b5b5b5; }
+        .swal2-container #Message-Apply-To-Product-Owner .mess-body .item.item-submit .applybutton {
+          width: 170.3px;
+          height: 37px;
+          border-radius: 3px;
+          border: none;
+          background-color: #f7912a;
+          font-size: 18px;
+          font-weight: 900;
+          color: #fff;
+          margin: 5px; }
+          .swal2-container #Message-Apply-To-Product-Owner .mess-body .item.item-submit .applybutton:hover {
+            box-shadow: 0 0 5px #f7912a; }
+.swal2-container #Message-Successfully-Applied {
+  font-size: 16px; }
+  .swal2-container #Message-Successfully-Applied .mess-image {
+    width: 100%;
+    padding: 30px 0; }
+    .swal2-container #Message-Successfully-Applied .mess-image img {
+      width: 50%; }
+  .swal2-container #Message-Successfully-Applied .okbutton {
+    margin: 30px 0;
+    width: 152px;
+    height: 37px;
+    border: none;
+    display: inline-block;
+    background-color: #f7912a;
+    font-size: 18px;
+    line-height: 36px;
+    cursor: pointer;
+    color: #fff; }
+    .swal2-container #Message-Successfully-Applied .okbutton:hover {
+      box-shadow: 0 0 5px #f7912a; }
+
+/*# sourceMappingURL=jobdetail2.css.map */

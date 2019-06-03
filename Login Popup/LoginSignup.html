@@ -20,85 +20,163 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="js/loginsignup.js"></script>
     <title>Login</title>
 </head>
 
 <body>
     <!-- Put Login pop up on top of body -->
-    <div id="Login-Signup-Super-Popup">
-        <div class="login-background hidden">
-            <div class="login-popup">
-                <div id="close-icon" class="close-icon"><i class="fas fa-times"></i></div>
+    <!-- <div id="Login-Signup-Super-Popup">
+        <div id="close-icon" class="close-icon"><i class="fas fa-times"></i></div>
+        <div class="login-tab">
+            <button class="login-tablinks" id="LoginTabButtonn" onclick="openLoginSignup(event, 'Login')">Login</button>
+            <button class="login-tablinks" id="SignupTabButtonn" onclick="openLoginSignup(event, 'Signup')">Sign
+                up</button>
+        </div>
+        <div id="Login" class="login-tabcontent">
+            <div class="btn-loginwith">
+                <button onclick="openall()" class="btn-loginwithfacebook">Login in with Facebook</button>
+                <button class="btn-loginwithgoogle">Login in with Google</button>
+            </div>
+            <div class="orline">
+                <span>Or</span>
+            </div>
+            <form action="#" method="POST">
+                <div class="form-item">
+                    <label for="email">Email Address<span class="starr">*</span></label>
+                    <input type="text" placeholder="Type your email address" required>
+                </div>
+                <div class="form-item">
+                    <label for="password">Password<span class="starr">*</span></label>
+                    <input type="password" placeholder="Type your password" required>
+                </div>
+                <div class="keep-login">
+                    <div id="keeplogin-checkbox" class="checkbox-icon"></div>
+                    <label for="keeplogin">Keep me logged in</label>
+                    <input type="hidden" id="keeplogin" name="keeplogin" value="false">
+                </div>
+                <a class="forgot-password" href="#">Forgot your password?</a>
+                <button class="login-submit" type="submit">Log In</button>
+            </form>
+        </div>
+        <div id="Signup" class="login-tabcontent">
+            <div class="btn-loginwith">
+                <button class="btn-loginwithfacebook">Login in with Facebook</button>
+                <button class="btn-loginwithgoogle">Login in with Google</button>
+            </div>
+            <div class="orline">
+                <span>Or</span>
+            </div>
+            <form action="#" method="POST">
+                <div class="form-item">
+                    <label for="fullname">Full Name<span class="starr">*</span></label>
+                    <input type="text" name="fullname" placeholder="Type your full name" required>
+                </div>
+                <div class="form-item">
+                    <label for="email">Email Address<span class="starr">*</span></label>
+                    <input type="text" name="email" placeholder="Type your email address" required>
+                </div>
+                <div class="form-item">
+                    <label for="password">Password<span class="starr">*</span></label>
+                    <input type="password" name="password" placeholder="Type your password" required>
+                </div>
+                <div class="form-item">
+                    <label for="repassword">Confirm Password<span class="starr">*</span></label>
+                    <input type="password" name="repassword" placeholder="Re-type your password" required>
+                </div>
+                <button class="login-submit" type="submit">Sign up</button>
+            </form>
+        </div>
+    </div> -->
+
+    <button onclick="openLoginSignup('LoginTabButton')" id="LoginButton">Login</button>
+    <button onclick="openLoginSignup('SignupTabButton')" id="SignupButton">Sign Up</button>
+
+    <script>
+        let wrapper = document.createElement('div');
+        wrapper.id = 'Login-Signup-Super-Popup'
+        wrapper.innerHTML = `
+                <div id="close-icon" onclick="Swal.clickCancel()" class="close-icon"><i class="fas fa-times"></i></div>
                 <div class="login-tab">
-                    <button class="login-tablinks" id="LoginTabButton"
-                        onclick="openLoginSignup(event, 'Login')">Login</button>
-                    <button class="login-tablinks" id="SignupTabButton" onclick="openLoginSignup(event, 'Signup')">Sign
-                        up</button>
+                    <div class="login-tablinks" id="LoginTabButton"
+                        onclick="openLoginSignupOption(event, 'Login')">Login</div>
+                    <div class="login-tablinks" id="SignupTabButton" 
+                        onclick="openLoginSignupOption(event, 'Signup')">Sign up</div>
+                </div>
+                <div class="btn-loginwith">
+                    <a href="#"><button class="btn-loginwithfacebook">Login in with Facebook</button></a>
+                    <a href="#"><button class="btn-loginwithgoogle">Login in with Google</button></a>
+                </div>
+                <div class="orline">
+                    <span>Or</span>
                 </div>
                 <div id="Login" class="login-tabcontent">
-                    <div class="btn-loginwith">
-                        <button class="btn-loginwithfacebook">Login in with Facebook</button>
-                        <button class="btn-loginwithgoogle">Login in with Google</button>
-                    </div>
-                    <div class="orline">
-                        <span>Or</span>
-                    </div>
                     <form action="#" method="POST">
                         <div class="form-item">
                             <label for="email">Email Address<span class="starr">*</span></label>
                             <input type="text" placeholder="Type your email address" required>
+                            <span class="something-wrong hidden">Input Email Fail</span>
                         </div>
                         <div class="form-item">
                             <label for="password">Password<span class="starr">*</span></label>
                             <input type="password" placeholder="Type your password" required>
+                            <span class="something-wrong hidden">delete text to remove</span>
                         </div>
                         <div class="keep-login">
-                            <div id="keeplogin-checkbox" class="checkbox-icon"></div>
+                            <div onclick="keeplogin()" id="keeplogin-checkbox" class="checkbox-icon"></div>
                             <label for="keeplogin">Keep me logged in</label>
                             <input type="hidden" id="keeplogin" name="keeplogin" value="false">
                         </div>
                         <a class="forgot-password" href="#">Forgot your password?</a>
-                        <button class="login-submit" type="submit">Log In</button>
+                        <div class="login-submit"><button type="submit">Login</button></div>
                     </form>
                 </div>
                 <div id="Signup" class="login-tabcontent">
-                    <div class="btn-loginwith">
-                        <button class="btn-loginwithfacebook">Login in with Facebook</button>
-                        <button class="btn-loginwithgoogle">Login in with Google</button>
-                    </div>
-                    <div class="orline">
-                        <span>Or</span>
-                    </div>
                     <form action="#" method="POST">
                         <div class="form-item">
                             <label for="fullname">Full Name<span class="starr">*</span></label>
                             <input type="text" name="fullname" placeholder="Type your full name" required>
+                            <span class="something-wrong hidden">delete text to remove</span>
                         </div>
                         <div class="form-item">
                             <label for="email">Email Address<span class="starr">*</span></label>
                             <input type="text" name="email" placeholder="Type your email address" required>
+                            <span class="something-wrong hidden">delete text to remove</span>
                         </div>
                         <div class="form-item">
                             <label for="password">Password<span class="starr">*</span></label>
                             <input type="password" name="password" placeholder="Type your password" required>
+                            <span class="something-wrong hidden">delete text to remove</span>
                         </div>
                         <div class="form-item">
                             <label for="repassword">Confirm Password<span class="starr">*</span></label>
                             <input type="password" name="repassword" placeholder="Re-type your password" required>
+                            <span class="something-wrong hidden">delete text to remove</span>
                         </div>
-                        <button class="login-submit" type="submit">Sign up</button>
+                        <div class="login-submit"><button type="submit">Sign up</button></div>
+                        
                     </form>
-                </div>
-            </div>
-        </div>
-    </div>
+                </div>`;
+        function openLoginSignup(option) {
+            Swal.fire({
+                width: 600,
+                html: wrapper,
+                showConfirmButton: false,
+                customClass: {
+                    popup: 'tada'
+                }
+            });
+            document.getElementById(option).click();
+        }
 
+        function openall() {
+            Swal.fire({
+                title: 'Custom animation with Animate.css'
+            });
+        }
 
-    <button id="LoginButton">Login</button>
-    <button id="SignupButton">Sign Up</button>
-    <script src="js/loginsignup.js"></script>
-    <script>
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 </body>
 
 </html>

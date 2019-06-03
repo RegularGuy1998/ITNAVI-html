@@ -1,0 +1,66 @@
+#Dashboard {
+    padding: 20px 0;
+
+    .tab-body {
+        margin-top: 15px;
+        margin-left: -8px;
+        margin-right: -8px;
+        overflow: auto;
+
+        .table-element {
+            padding: 8px;
+            width: 33.3333%;
+            float: left;
+
+            table {
+                width: 100%;
+                border-radius: 5px;
+                box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.13);
+                background-color: #ffffff;
+                overflow: hidden;
+
+                thead {
+                    background-color: #24becf;
+
+                    tr {
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+
+                        th {
+                            text-align: center;
+                            padding: 9px;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        td{
+                            padding: 9px;
+                            font-size: 14px;
+
+                        }
+
+                        &:nth-child(even) {
+                            background-color: #f2f2f2;
+                        }
+
+                        .count {
+                            width: 15%;
+                            text-align: center;
+                            color: #f7912a;
+                        }
+
+                        .nulltd {
+                            height: 37px;
+                            background-color: #fff ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import 'postjob-accountinfo';

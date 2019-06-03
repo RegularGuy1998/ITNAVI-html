@@ -1,0 +1,1039 @@
+body {
+    background-color: #f2f2f2 !important;
+    font-family: Roboto !important;
+    color: #454545 !important;
+
+    .border-text {
+        font-weight: 900;
+    }
+
+    .big-title {
+        font-size: 32px;
+        font-weight: 900;
+    }
+
+    .div-center {
+        text-align: center;
+    }
+
+    %default-background-image {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+
+    %default-input-form {
+        transition: 0.3s;
+        background-color: #ffffff;
+        border: none;
+
+        &:hover {
+            outline: none;
+            transition: 0.3s;
+        }
+
+        &:focus {
+            outline: none;
+            transition: 0.3s;
+        }
+    }
+
+    #Super-Home-Page {
+        font-size: 16px;
+
+        .findthejob {
+            margin-top: 71px;
+            position: relative;
+            text-align: center;
+            transition: 1s;
+            height: 743px;
+
+            .slide-background {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+
+                .item {
+                    background-size: 1920px auto;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .blue-background {
+                display: inline-block;
+                background-color: rgba($color: #03525b, $alpha: 0.4);
+                padding-top: 125px;
+                width: 100%;
+                height: 100%;
+
+                .super-biger-title {
+                    font-size: 64px;
+                    color: #fffefe;
+                    line-height: 70px;
+                    letter-spacing: 5px;
+
+                }
+
+                .find-form {
+                    margin-top: 60px;
+                    text-align: left;
+
+                    .container {
+                        border-radius: 9px;
+                        background-color: rgba($color: #1ebdcf, $alpha: 0.9);
+                        padding: 35px 70px 5px 70px;
+                        box-shadow: 0 0 3px #1ebdcf;
+                        overflow: auto;
+
+                        .item {
+                            padding: 8px;
+                            float: left;
+
+                            &.item-search {
+                                width: 60%;
+
+                                .search-input {
+                                    height: 48px;
+                                    width: 100%;
+                                    display: inline-block;
+                                    border-radius: 3px;
+                                    background-color: #ffffff;
+                                    background-image: url(../image/magnifying-glass-browser@3x.png);
+                                    background-size: 16.9px 17.4px;
+                                    background-repeat: no-repeat;
+                                    background-position: 15px 16px;
+                                    padding: 0 10px 0 40px;
+                                    transition: 0.3s;
+                                    cursor: pointer;
+
+                                    &:focus-within {
+                                        transition: 0.3s;
+                                        box-shadow: 0 0 10px #fff;
+
+                                    }
+
+                                    input {
+                                        @extend %default-input-form;
+
+                                        height: 40px;
+                                        cursor: pointer;
+                                        margin-top: 4px;
+                                        width: 100%;
+                                    }
+                                }
+                            }
+
+                            &.item-location {
+                                @extend .item-search;
+                                width: 20%;
+                                
+                                select {
+                                    outline: none;
+                                    
+                                    &:focus {
+                                        outline: none;
+                                    }
+                                }
+
+                                .select2-container {
+                                    width: 100% !important;
+
+                                    .select2-selection {
+                                        height: 48px;
+                                        border: none;
+                                        background-image: url(../image/placeholder@3x.png);
+                                        background-size: 13.2px 18.7px;
+                                        background-repeat: no-repeat;
+                                        background-position: 13px 13px;
+
+                                        .select2-selection__rendered {
+                                            padding: 10px 0 0 38px;
+                                        }
+
+                                        .select2-selection__arrow {
+                                            margin-top: 9px;
+                                        }
+                                    }
+                                }
+
+                            }
+
+                            &.item-submit {
+                                @extend .item-search;
+                                width: 20%;
+
+                                button {
+                                    @extend %default-input-form;
+
+                                    height: 48px;
+                                    border-radius: 3px;
+                                    background-color: #f7912a;
+                                    color: #ffffff;
+                                    font-size: 18px;
+                                    border: none;
+                                    width: 100%;
+
+                                    &:hover {
+                                        box-shadow: 0 0 10px #f7912a;
+                                    }
+
+                                }
+                            }
+
+                            &.item-full {
+                                width: 100%;
+                                padding: 2px 8px 0 2px;
+                                text-align: right;
+                                color: #fff;
+
+                                .zoom-icon {
+                                    width: 18.8px;
+                                    height: 19px;
+                                    margin-right: 5px;
+                                    display: inline-block;
+                                    background-image: url(../image/searching-magnifying-glass@3x.png);
+                                    background-size: 18.8px;
+                                    background-repeat: no-repeat;
+
+                                    span {
+                                        font-size: 8px;
+                                        float: left;
+                                        margin: 2px 0 0 4.5px;
+                                    }
+                                }
+
+                                .zoom-text {
+                                    display: inline-block;
+                                    float: right;
+                                    padding-top: 1px;
+                                }
+                            }
+                        }
+                    }
+
+                    @media screen and (max-width: 1199.98px) {
+                        .container {
+                            padding-left: 20px;
+                            padding-right: 20px;
+                        }
+                    }
+
+
+
+                    @media screen and (max-width: 991.98px) {
+                        .container {
+                            .item {
+                                &.item-search {
+                                    width: 100%;
+                                }
+
+                                &.item-location {
+                                    width: 50%;
+                                }
+
+                                &.item-submit {
+                                    width: 50%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .change-background {
+                    position: absolute;
+                    bottom: 38px;
+                    width: 100%;
+                    left: 0;
+                    z-index: 0;
+                    margin-left: 0;
+
+                    .change-findjob-button {
+                        display: inline-block;
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        background-color: rgba($color: #000000, $alpha: 0);
+                        transition: 0.3s;
+
+                        div {
+                            width: 17px;
+                            height: 17px;
+                            margin: 4px 0 0 4px;
+                            border-radius: 50%;
+                            background-color: rgba($color: #fff, $alpha: 0.47);
+                            transition: 0.3s;
+                        }
+
+                        &:hover {
+                            div {
+                                background-color: #fff;
+                                transition: 0.3s;
+
+                            }
+                        }
+
+                        &.active {
+                            border: 1px solid #fff;
+                            transition: 0.3s;
+
+                            div {
+                                width: 13px;
+                                height: 13px;
+                                margin: 5px 0 0 5px;
+                                background-color: #fff;
+                                border-radius: 50%;
+                                transition: 0.3s;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .hot-jobs {
+            margin-top: 60px;
+
+            .container-fluid {
+                max-width: 1530px;
+
+                .row {
+                    display: flex;
+
+                    .hot-job-box {
+                        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+                        background-color: #ffffff;
+                        padding: 20px 50px 0 50px;
+
+                        .body {
+                            .row {
+                                display: block;
+
+                                table {
+                                    display: table;
+                                    border-bottom: 1px solid rgba($color: #707070, $alpha: 0.2);
+                                    width: 100%;
+
+                                    td {
+                                        display: table-cell;
+                                        padding: 20px 0;
+
+                                        &.logo {
+                                            width: 100px;
+
+                                            img {
+                                                width: 85.3px;
+                                                height: 58.6px;
+                                            }
+
+                                        }
+
+                                        &.company-info {
+                                            .company-name {
+                                                font-size: 21px;
+                                                color: #454545;
+
+                                                &:hover {
+                                                    text-decoration: none;
+                                                }
+                                            }
+
+                                            .company-description {
+                                                color: #b5b5b5;
+                                                font-size: 18px;
+
+                                                &:hover {
+                                                    text-decoration: none;
+                                                }
+
+                                            }
+                                        }
+
+                                        &.company-hot {
+                                            text-align: right;
+
+                                            span {
+                                                padding: 4px 12px;
+                                                border-radius: 6px;
+                                                background-color: #ff3c00;
+                                                color: #fff;
+                                                font-size: 17px;
+
+                                            }
+
+                                        }
+                                    }
+
+                                }
+                            }
+
+                            .carousel-indicators {
+                                position: relative;
+                                width: 100%;
+                                height: 10px;
+                                margin-top: 40px;
+                                text-align: right;
+                                display: inline-block;
+                                left: 0;
+                                z-index: 0;
+                                margin-left: 0;
+
+
+                                .hotjob-carousel-indicators-item {
+                                    display: inline-block;
+                                    font-size: 14px;
+                                    width: auto;
+                                    text-align: center;
+                                    transition: 0.7s;
+                                    cursor: pointer;
+
+                                    div {
+                                        width: 0px;
+                                        height: 6px;
+                                        display: inline-block;
+                                        border-top: 1px solid #24becf;
+                                        transition: 0.7s;
+                                    }
+
+                                    &.active {
+                                        font-size: 16px;
+                                        font-weight: 900;
+                                        color: #24becf;
+                                        transition: 0.7s;
+
+                                        div {
+                                            width: 60px;
+                                            margin-left: 10px;
+                                            margin-right: 10px;
+                                            transition: 0.7s;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .left-content {
+                        position: relative;
+
+                        .previous {
+                            position: absolute;
+                            right: 0;
+                            bottom: 47%;
+                            width: 58.4px;
+                            height: 58.4px;
+                            border-radius: 50%;
+                            border: solid 1.5px #24becf;
+                            background-color: #ffffff;
+                            cursor: pointer;
+                            text-align: center;
+                            padding-top: 15px;
+                            transition: 0.3s;
+
+                            img {
+                                width: 14px;
+                                height: 26.2px;
+                            }
+
+                            &:hover {
+                                box-shadow: 0 0 5px #24becf;
+                                transition: 0.3s;
+                            }
+
+
+                        }
+                    }
+
+                    .right-content {
+                        position: relative;
+
+                        .next {
+                            position: absolute;
+                            left: 0;
+                            bottom: 47%;
+                            width: 58.4px;
+                            height: 58.4px;
+                            border-radius: 50%;
+                            border: solid 1.5px #24becf;
+                            background-color: #ffffff;
+                            cursor: pointer;
+                            text-align: center;
+                            padding-top: 15px;
+                            transition: 0.3s;
+
+                            img {
+                                width: 14px;
+                                height: 26.2px;
+                            }
+
+                            &:hover {
+                                box-shadow: 0 0 5px #24becf;
+                                transition: 0.3s;
+                            }
+
+
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 991.98px) {
+                .container-fluid {
+                    .row {
+                        .left-content {
+                            display: none;
+                        }
+
+                        .right-content {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+
+
+            @media screen and (max-width: 575.98px) {
+                .container-fluid {
+                    .row {
+                        .hot-job-box {
+                            padding-left: 10px;
+                            padding-right: 10px;
+
+                            .body {
+                                .row {
+                                    table {
+                                        td {
+
+                                            &.company-hot {
+
+                                                span {
+                                                    padding: 4px 5px;
+
+                                                }
+
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .how-its-work {
+            width: 100%;
+            margin-top: 35px;
+            background-color: #fff;
+            padding: 25px;
+            text-align: center;
+
+            .body {
+                display: inline-block;
+                overflow: auto;
+                margin: 30px 0;
+
+                .item {
+                    float: left;
+
+                    &.step1 {
+                        width: 283px;
+
+                        img {
+
+                            width: 139.3px;
+                        }
+
+                        .description {
+                            margin-top: 25px;
+                            font-size: 24px;
+                        }
+                    }
+
+                    &.step2 {
+                        @extend .step1;
+                    }
+
+
+
+                    &.step3 {
+                        @extend .step1;
+                    }
+
+                    &.line-dashed {
+                        padding-top: 70px;
+                        width: 250px;
+                        overflow: hidden;
+
+                        img {
+                            width: 250px;
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1449.98px) {
+                .body {
+                    .item {
+
+                        &.line-dashed {
+                            width: 150px;
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1199.98px) {
+                .body {
+                    .item {
+
+                        &.line-dashed {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 899.98px) {
+                .body {
+                    .item {
+                        float: none;
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+
+        .iam {
+            width: 100%;
+            text-align: center;
+
+            .div-center {
+                max-width: 1920px;
+                width: 100%;
+                overflow: auto;
+                display: inline-block;
+
+                .iam-item {
+                    width: 50%;
+                    float: left;
+
+                    .recruiter {
+                        width: 100%;
+                        height: auto;
+                        text-align: left;
+                        min-height: 511px;
+                        background-image: url(../image/group-962@3x.png);
+                        background-size: auto 100%;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        padding: 90px 30px 0 25%;
+                        color: #fff;
+
+                        .title {
+                            font-size: 56px;
+                            font-weight: 100;
+                        }
+
+                        .description {
+                            max-width: 556px;
+                            margin-top: 15px;
+                            display: inline-block;
+                        }
+
+                        .postfind {
+                            width: 100%;
+                            max-width: 315px;
+                            height: 81px;
+                            margin: 35px 0;
+                            border: solid 2px #ffffff;
+                            background-color: rgba($color: #000000, $alpha: 0);
+                            font-size: 20px;
+                            color: #ffffff;
+                            transition: 0.3s;
+
+                            &:hover {
+                                box-shadow: 0 0 7px #fff;
+                                transition: 0.3s;
+                                outline: none;
+                            }
+
+                            &:focus {
+                                outline: none;
+                                transition: 0.3s;
+                                box-shadow: inset 0 0 7px #fff;
+                            }
+                        }
+                    }
+
+                    .jobseeker {
+                        @extend .recruiter;
+                        text-align: right;
+                        padding: 90px 25% 0 30px;
+                        background-image: url(../image/group-963@3x.png);
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1366.98px) {
+                .div-center {
+                    .iam-item {
+                        .recruiter {
+
+                            padding: 90px 30px 0 10%;
+                        }
+
+                        .jobseeker {
+                            padding: 90px 10% 0 30px;
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 959.98px) {
+                .div-center {
+                    .iam-item {
+                        width: 100%;
+
+                        .recruiter {
+                            padding: 90px 30px 0 25%;
+                        }
+
+                        .jobseeker {
+                            padding: 90px 25% 0 30px;
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 767.98px) {
+                .div-center {
+                    .iam-item {
+                        .recruiter {
+
+                            padding: 90px 30px 0 10%;
+                        }
+
+                        .jobseeker {
+                            padding: 90px 10% 0 30px;
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 575.98px) {
+                .div-center {
+                    .iam-item {
+                        .recruiter {
+                            padding: 90px 30px 0 15px;
+
+                            .title {
+                                font-size: 40px;
+                            }
+                        }
+
+                        .jobseeker {
+                            padding: 90px 15px 0 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .top-company {
+            background-color: #fff;
+            padding: 70px 0 30px 0;
+
+            .something-blue-ontop {
+                width: 105px;
+                height: 6px;
+                opacity: 0.53;
+                background-color: #24becf;
+                margin-bottom: 3px;
+            }
+
+            #Top-Company-Profile {
+
+                .item {
+                    .row {
+                        margin-bottom: 10px;
+
+                        .company-image {
+                            width: 100%;
+                            max-width: 682px;
+                            margin-top: 35px;
+                        }
+
+                        .company-logo {
+                            width: 155px;
+                            margin-bottom: 20px;
+                            margin-top: 35px;
+                        }
+
+                        .company-description {
+                            font-size: 14px;
+                            margin-top: 10px;
+                        }
+
+                        .company-seemore {
+
+                            @extend %default-input-form;
+                            width: 100%;
+                            max-width: 210px;
+                            height: 47px;
+                            margin-top: 70px;
+                            border-radius: 5px;
+                            border: solid 1px #24becf;
+                            font-size: 16px;
+                            color: #24becf;
+
+                            &:hover {
+                                box-shadow: 0 0 5px #24becf;
+                            }
+
+                            @media screen and (max-width: 991.98px) {
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+
+                .top-company-bottom {
+                    width: 100%;
+                    text-align: center;
+
+                    .carousel-indicators {
+                        position: relative;
+                        width: auto;
+                        height: 10px;
+                        margin-top: 40px;
+                        text-align: left;
+                        float: left;
+                        display: inline-block;
+                        left: 0;
+                        z-index: 0;
+                        margin-left: 0;
+
+
+                        .hotjob-carousel-indicators-item {
+                            display: inline-block;
+                            font-size: 14px;
+                            width: auto;
+                            text-align: center;
+                            transition: 0.7s;
+                            cursor: pointer;
+
+                            div {
+                                width: 0px;
+                                height: 6px;
+                                display: inline-block;
+                                border-top: 1px solid #24becf;
+                                transition: 0.7s;
+                            }
+
+                            &.active {
+                                font-size: 16px;
+                                font-weight: 900;
+                                color: #24becf;
+                                transition: 0.7s;
+
+                                div {
+                                    width: 60px;
+                                    margin-left: 10px;
+                                    margin-right: 10px;
+                                    transition: 0.7s;
+                                }
+                            }
+                        }
+                    }
+
+                    .next-pre {
+                        display: inline-block;
+                        padding: 17px;
+
+                        .previous {
+                            display: inline-block;
+                            width: 31.9px;
+                            height: 31.9px;
+                            border: solid 1.5px #24becf;
+                            padding-top: 3px;
+                            background-color: #ffffff;
+                            border-radius: 50%;
+                            margin-right: 10px;
+                            transition: 0.3s;
+
+                            &:hover {
+                                box-shadow: 0 0 5px #24becf;
+                                transition: 0.3s;
+                            }
+
+                            img {
+                                width: 7.7px;
+                                height: 14.3px;
+                            }
+                        }
+
+                        .next {
+                            @extend .previous;
+                            margin-right: 0;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .top-employers {
+            background-color: #eefefe;
+            text-align: center;
+            padding: 40px 0;
+
+            .item {
+                padding: 34px 20px 0 20px;
+                display: inline-block;
+
+                .item-image {
+                    @extend %default-background-image;
+                    width: 180px;
+                    height: 81.2px;
+
+                }
+            }
+
+            @media screen and (max-width: 499.98px) {
+
+                .item {
+                    padding: 20px 10px 0 10px;
+                    width: 48%;
+
+                    .item-image {
+                        width: 100%;
+                        height: 81.2px;
+
+                    }
+                }
+            }
+        }
+
+        .ads-1 {
+            background-color: #fff;
+            padding: 50px 0;
+            text-align: center;
+
+            .ads-body {
+                width: 100%;
+                max-width: 1450px;
+                display: inline-block;
+                padding: 0 5px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .are-hiring {
+            background-color: #fff;
+            position: relative;
+            text-align: center;
+
+            .background {
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                bottom: 0;
+
+                .background-image {
+                    width: 100%;
+                    display: inline-block;
+                    max-width: 1920px;
+                    height: 238px;
+                    background-image: url(../image/group-961@3x.png);
+                    background-size: auto 238px;
+                }
+            }
+
+            .hiring-body {
+                overflow: auto;
+                display: inline-block;
+                width: 100%;
+                max-width: 1410px;
+                padding: 0 20px;
+                text-align: left;
+
+
+                .item {
+                    float: right;
+
+                    .big-title {
+                        color: #fff;
+                        margin-top: 234px;
+                    }
+
+                    .description {
+                        font-size: 19px;
+                        color: #fff;
+                    }
+
+                    .computer-image {
+                        text-align: right;
+                        width: 100%;
+
+                        img {
+                            width: 100%;
+                            max-width: 500px;
+                            margin-bottom: 30px;
+
+                        }
+
+                    }
+
+                }
+
+                @media screen and (max-width: 1199.98px) {
+                    .item {
+                        .big-title {
+                            margin-top: 41%;
+                        }
+                    }
+                }
+
+                @media screen and (max-width: 991.98px) {
+                    .item {
+                        .big-title {
+                            margin-top: 31%;
+                        }
+                    }
+                }
+
+                @media screen and (max-width: 767.98px) {
+                    .item {
+
+                        &.item-titdes {
+                            float: left;
+                            margin-bottom: 10px;
+                        }
+
+                        .big-title {
+                            margin-top: 20px;
+                        }
+
+                        .computer-image {
+                            img {
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

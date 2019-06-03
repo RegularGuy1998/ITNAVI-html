@@ -14,6 +14,7 @@
         integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -92,10 +93,10 @@
 
             <div style="display: none;" id="Navbar-Mobile-Item" class="have-collapse-item collapse">
                 <div class="nav-link">
-                    <a href="#">
+                    <a class="nav-link-item" href="#">
                         Product and Services
                     </a>
-                    <a href="#">
+                    <a class="nav-link-item" href="#">
                         Search Resume
                     </a>
                 </div>
@@ -106,6 +107,37 @@
                     </div>
                     <div class="item notify-item">
                         <div class="have-notify"></div>
+                    </div>
+                </div>
+                <div class="company-link">
+                    <div id="Company-Downy" class="company-button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <img src="../Navbar/image/register-image.png" alt="">
+                        Cty Cổ Phần...
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                    <div aria-labelledby="Company-Downy" class="company-dropdown set-box-shadow dropdown-menu">
+                        <a href="#" class="item">
+                            <i class="fas fa-caret-right"></i>Dashboard
+                        </a>
+                        <a href="#" class="item">
+                            <i class="fas fa-caret-right"></i>Manage Job
+                        </a>
+                        <a href="#" class="item">
+                            <i class="fas fa-caret-right"></i>Manage Candidate
+                        </a>
+                        <a href="#" class="item">
+                            <i class="fas fa-caret-right"></i>Account Information
+                        </a>
+                        <a href="#" class="item">
+                            <i class="fas fa-caret-right"></i>Company Profile
+                        </a>
+                        <a href="#" class="item">
+                            <i class="fas fa-caret-right"></i>Customer Support: 1800 1800
+                        </a>
+                        <a href="#" class="item">
+                            <img src="../Navbar/image/logout@3x.png" alt="">Log Out
+                        </a>
                     </div>
                 </div>
             </div>
@@ -165,7 +197,103 @@
             </div>
 
             <div id="Dashboard" class="hri-tabcontent set-box-shadow">
-                aaa
+                <div class="padding-width-30 padding-width-xs-10">
+                    <div class="big-title">
+                        Dashboard
+                    </div>
+                    <div class="tab-body">
+                        <div class="table-element">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Job post</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="count">0</td>
+                                        <td>Currently online Job Post</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="count">0</td>
+                                        <td>Expired in last 7 days</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="count">1</td>
+                                        <td>Draft</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="count">0</td>
+                                        <td>Inactive Job</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="count">5</td>
+                                        <td>Expired Jobs in last 6 months</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" class="nulltd"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-element">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Credits</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="count">1</td>
+                                        <td>Job Post credit(s)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="count">99</td>
+                                        <td>Homepage banner advertisement credit(s)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="count">2</td>
+                                        <td>Logo Advertisement credit(s)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="count">5</td>
+                                        <td>Top Company Advertisement</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="count">10</td>
+                                        <td>Resume Search credit(s)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="count">2</td>
+                                        <td>Homepage job 1 credit(s)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" class="nulltd"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-element">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Application (in last 7 days)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="count">1</td>
+                                        <td>New Application in last 7 days</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" class="nulltd"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="ManageJobs" class="hri-tabcontent set-box-shadow">
                 <div id="ManageJobs-JobList" class="collapse in">
@@ -320,8 +448,9 @@
                             </div>
                             <div class="item">
                                 <label for="category">Job Category <span class="super-starr">*</span> </label>
-                                <select name="category" id="category">
-                                    <option value="Select Category" disabled selected>Select Category</option>
+                                <select name="category" id="category" class="form-control-use-select2"
+                                    multiple="multiple">
+                                    <option value="Select Category" disabled>Select Category</option>
                                     <option value="Marketing">Marketing</option>
                                     <option value="Sales">Sales</option>
                                 </select>
@@ -329,12 +458,15 @@
                             </div>
                             <div class="item">
                                 <label for="location">Location <span class="super-starr">*</span> </label>
-                                <select name="location" id="location">
-                                    <option value="Select Category" disabled selected>Select your Location</option>
+                                <select name="location" id="location" class="form-control-use-select2"
+                                    multiple="multiple">
+                                    <option value="Select Category" disabled>Select your Location</option>
+                                    <option value="Marketing">Vietefefef Nam</option>
+                                    <option value="Marketing">Viet Nam</option>
                                     <option value="Marketing">Viet Nam</option>
                                     <option value="Sales">ThaiLand</option>
                                 </select>
-                                <div class="small-tip">(Up to 3 categories)</div>
+                                <div class="small-tip">(Up to 3 locations)</div>
                             </div>
                             <div class="item">
                                 <label for="joblevel">Job Level <span class="super-starr">*</span> </label>
@@ -347,8 +479,9 @@
                             <div class="item">
                                 <label for="preferredlanguage">Preferred Language
                                 </label>
-                                <select name="location" id="location">
-                                    <option value="Select Category" disabled selected>Select Language</option>
+                                <select name="language" id="language" class="form-control-use-select2"
+                                    multiple="multiple">
+                                    <option value="Select Category" disabled>Select Language</option>
                                     <option value="Marketing">Viet Nam</option>
                                     <option value="Sales">ThaiLand</option>
                                 </select>
@@ -507,12 +640,12 @@
                                     <div style="background-image: url(image/eye@3x.png);" class="item-icon"></div>
                                     View Candidate
                                 </a>
-                                <div class="action-item" onclick="OpenMessage(event, 'Message-Change-Status')">
+                                <div class="action-item" onclick="OpenPopup('Message-Change-Status')">
                                     <div style="background-image: url(image/exchange-arrows@3x.png);" class="item-icon">
                                     </div>
                                     Change Status
                                 </div>
-                                <div class="action-item" onclick="OpenMessage(event, 'Message-Add-Note')">
+                                <div class="action-item" onclick="OpenPopup('Message-Add-Note')">
                                     <div style="background-image: url(image/edit@3x.png);" class="item-icon"></div>
                                     Add Note
                                 </div>
@@ -1049,7 +1182,7 @@
                             <input type="text" name="location" placeholder="Location">
                         </div>
                         <div class="item item-jlevel">
-                            <img src="image/old-fashion-briefcase@3x.png" alt="">
+                            <img src="image/group-660@3x.png" alt="">
                             <input type="text" name="joblevel" placeholder="Job Level">
                         </div>
                         <!-- <input class="item item-location" type="text" placeholder="Keyword"> -->
@@ -1077,7 +1210,7 @@
                                 Location: <span>Any</span>
                             </div>
                             <div class="item">
-                                <div style="background-image: url(image/placeholder-gray-point@3x.png);"
+                                <div style="background-image: url(image/group-660@3x.png);"
                                     class="item-icon"></div>
                                 Job level: <span>Any</span>
                             </div>
@@ -1095,8 +1228,8 @@
 
                                 <div class="left-item">
                                     <div class="item">
-                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
-                                            class="item-icon"></div>
+                                        <div style="background-image: url(image/group-660@3x.png);" class="item-icon">
+                                        </div>
                                         Experienced ( non manager )
                                     </div>
                                     <div class="item">
@@ -1105,13 +1238,13 @@
                                         Da Nang, Ho Chi Minh
                                     </div>
                                     <div class="item">
-                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
-                                            class="item-icon"></div>
+                                        <div style="background-image: url(image/group-498@3x.png);" class="item-icon">
+                                        </div>
                                         HarveyNash Vietnam
                                     </div>
                                     <div class="item">
-                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
-                                            class="item-icon"></div>
+                                        <div style="background-image: url(image/path-1129@3x.png);" class="item-icon">
+                                        </div>
                                         Experienced: 4 years
                                     </div>
                                 </div>
@@ -1120,7 +1253,8 @@
                                 <div class="status viewed">Viewed</div>
                                 <div class="activity">
                                     <div class="item">
-                                        <div style="background-image: url(image/eye@3x.png);" class="item-icon"></div>93
+                                        <div style="background-image: url(image/path-984@3x.png);" class="item-icon">
+                                        </div>93
                                     </div>
                                     <div class="item">
                                         <div style="background-image: url(image/download@3x.png);" class="item-icon">
@@ -1137,7 +1271,7 @@
                                     Last modified: 07/02/2017
                                 </div>
                                 <div class="profile-completed">
-                                    <img src="image/battery@3x.png" alt="">
+                                    <img src="image/black-battery@3x.png" alt="">
                                     Profile Completeness: 95%
                                 </div>
                             </div>
@@ -1152,8 +1286,8 @@
 
                                 <div class="left-item">
                                     <div class="item">
-                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
-                                            class="item-icon"></div>
+                                        <div style="background-image: url(image/group-660@3x.png);" class="item-icon">
+                                        </div>
                                         Experienced ( non manager )
                                     </div>
                                     <div class="item">
@@ -1162,13 +1296,13 @@
                                         Da Nang, Ho Chi Minh
                                     </div>
                                     <div class="item">
-                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
-                                            class="item-icon"></div>
+                                        <div style="background-image: url(image/group-498@3x.png);" class="item-icon">
+                                        </div>
                                         HarveyNash Vietnam
                                     </div>
                                     <div class="item">
-                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
-                                            class="item-icon"></div>
+                                        <div style="background-image: url(image/path-1129@3x.png);" class="item-icon">
+                                        </div>
                                         Experienced: 4 years
                                     </div>
                                     <div class="item">
@@ -1183,7 +1317,8 @@
                                 <div class="status viewed">Viewed</div>
                                 <div class="activity">
                                     <div class="item">
-                                        <div style="background-image: url(image/eye@3x.png);" class="item-icon"></div>93
+                                        <div style="background-image: url(image/path-984@3x.png);" class="item-icon">
+                                        </div>93
                                     </div>
                                     <div class="item">
                                         <div style="background-image: url(image/download@3x.png);" class="item-icon">
@@ -1200,7 +1335,7 @@
                                     Last modified: 07/02/2017
                                 </div>
                                 <div class="profile-completed">
-                                    <img src="image/battery@3x.png" alt="">
+                                    <img src="image/black-battery@3x.png" alt="">
                                     Profile Completeness: 95%
                                 </div>
                             </div>
@@ -1215,8 +1350,8 @@
 
                                 <div class="left-item">
                                     <div class="item">
-                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
-                                            class="item-icon"></div>
+                                        <div style="background-image: url(image/group-660@3x.png);" class="item-icon">
+                                        </div>
                                         Experienced ( non manager )
                                     </div>
                                     <div class="item">
@@ -1225,13 +1360,13 @@
                                         Da Nang, Ho Chi Minh
                                     </div>
                                     <div class="item">
-                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
-                                            class="item-icon"></div>
+                                        <div style="background-image: url(image/group-498@3x.png);" class="item-icon">
+                                        </div>
                                         HarveyNash Vietnam
                                     </div>
                                     <div class="item">
-                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
-                                            class="item-icon"></div>
+                                        <div style="background-image: url(image/path-1129@3x.png);" class="item-icon">
+                                        </div>
                                         Experienced: 4 years
                                     </div>
                                     <div class="item">
@@ -1246,7 +1381,8 @@
                                 <div class="status bookmarked">Bookmarked</div>
                                 <div class="activity">
                                     <div class="item">
-                                        <div style="background-image: url(image/eye@3x.png);" class="item-icon"></div>93
+                                        <div style="background-image: url(image/path-984@3x.png);" class="item-icon">
+                                        </div>93
                                     </div>
                                     <div class="item">
                                         <div style="background-image: url(image/download@3x.png);" class="item-icon">
@@ -1263,7 +1399,7 @@
                                     Last modified: 07/02/2017
                                 </div>
                                 <div class="profile-completed">
-                                    <img src="image/battery@3x.png" alt="">
+                                    <img src="image/black-battery@3x.png" alt="">
                                     Profile Completeness: 95%
                                 </div>
                             </div>
@@ -1279,8 +1415,8 @@
 
                                 <div class="left-item">
                                     <div class="item">
-                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
-                                            class="item-icon"></div>
+                                        <div style="background-image: url(image/group-660@3x.png);" class="item-icon">
+                                        </div>
                                         Experienced ( non manager )
                                     </div>
                                     <div class="item">
@@ -1289,13 +1425,13 @@
                                         Da Nang, Ho Chi Minh
                                     </div>
                                     <div class="item">
-                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
-                                            class="item-icon"></div>
+                                        <div style="background-image: url(image/group-498@3x.png);" class="item-icon">
+                                        </div>
                                         HarveyNash Vietnam
                                     </div>
                                     <div class="item">
-                                        <div style="background-image: url(image/placeholder-gray-point@3x.png);"
-                                            class="item-icon"></div>
+                                        <div style="background-image: url(image/path-1129@3x.png);" class="item-icon">
+                                        </div>
                                         Experienced: 4 years
                                     </div>
                                     <div class="item">
@@ -1310,7 +1446,8 @@
                                 <div class="status creditused">Credit Used</div>
                                 <div class="activity">
                                     <div class="item">
-                                        <div style="background-image: url(image/eye@3x.png);" class="item-icon"></div>93
+                                        <div style="background-image: url(image/path-984@3x.png);" class="item-icon">
+                                        </div>93
                                     </div>
                                     <div class="item">
                                         <div style="background-image: url(image/download@3x.png);" class="item-icon">
@@ -1327,7 +1464,7 @@
                                     Last modified: 07/02/2017
                                 </div>
                                 <div class="profile-completed">
-                                    <img src="image/battery@3x.png" alt="">
+                                    <img src="image/black-battery@3x.png" alt="">
                                     Profile Completeness: 95%
                                 </div>
                             </div>
@@ -1369,31 +1506,31 @@
                                     Tan Phu District, Ho Chi Minh
                                 </div>
                                 <div class="list-item">
-                                        <div class="item">
-                                            <div style="background-image: url(image/eye@3x.png)" class="item-icon"></div>
-                                            View: 46
+                                    <div class="item">
+                                        <div style="background-image: url(image/eye@3x.png)" class="item-icon"></div>
+                                        View: 46
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/group-674@3x.png)" class="item-icon">
                                         </div>
-                                        <div class="item">
-                                            <div style="background-image: url(image/group-674@3x.png)" class="item-icon">
-                                            </div>
-                                            Credit: 3
+                                        Credit: 3
+                                    </div>
+                                    <div class="item item-null"></div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/black-battery@3x.png)"
+                                            class="item-icon"></div>
+                                        Progress: 65%
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/group-690@3x.png)" class="item-icon">
                                         </div>
-                                        <div class="item item-null"></div>
-                                        <div class="item">
-                                            <div style="background-image: url(image/black-battery@3x.png)"
-                                                class="item-icon"></div>
-                                            Progress: 65%
-                                        </div>
-                                        <div class="item">
-                                            <div style="background-image: url(image/group-690@3x.png)" class="item-icon">
-                                            </div>
-                                            Download: 12
-                                        </div>
-                                        <div class="item">
-                                            <div style="background-image: url(image/calendar-with-a-clock-time-tools@3x.png)"
-                                                class="item-icon"></div>
-                                            Updated: 09/09/2019
-                                        </div>
+                                        Download: 12
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image: url(image/calendar-with-a-clock-time-tools@3x.png)"
+                                            class="item-icon"></div>
+                                        Updated: 09/09/2019
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1486,7 +1623,7 @@
                             Attached CV
                         </div>
                         <div class="title-right">
-                                <button id="fullscreenbutton2" onclick="TitleRightfull2()">
+                            <button id="fullscreenbutton2" onclick="TitleRightfull2()">
                                 <div style="background-image: url(image/full-size@3x.png)" class="button-icon"></div>
                                 View Fullscreen
                             </button>
@@ -1498,8 +1635,7 @@
                     </div>
 
                     <div class="attached-file">
-                        <embed src="tran-thi-lan-chi.pdf"
-                            type="application/pdf" />
+                        <embed src="tran-thi-lan-chi.pdf" type="application/pdf" />
                     </div>
                 </div>
             </div>
@@ -1707,8 +1843,7 @@
                     </div>
 
                     <div id="Attached-CV" class="info-tabcontent attached-file">
-                        <embed src="tran-thi-lan-chi.pdf"
-                            type="application/pdf" />
+                        <embed src="tran-thi-lan-chi.pdf" type="application/pdf" />
                     </div>
                     <div id="ITNavisOnline-CV" class="info-tabcontent padding-width-30 padding-width-xs-10">
                         <div class="row">
@@ -2105,451 +2240,532 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <div id="CompanyProfile" class="hri-tabcontent set-box-shadow">
-                        <div id="Companyprofile-Header" class="headertab padding-width-30 padding-width-xs-10">
-                            <div class="big-title">Company Profile</div>
-                            <div class="form-list">
-                                <div id="BASICINFOMATIONButton" class="form-item active">Basic Information</div>
-                                <div id="WORKENVIRONMENTButton" class="form-item">Work Enviroment</div>
-                                <div id="HEADERIMAGEPICTURESButton" class="form-item">Header Image & Picture</div>
-                            </div>
-                            <div class="completion">
-                                <div class="progress-text">
-                                    Your Profile Completion<span>82%</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 82%;">
-                                    </div>
-                                </div>
+            <div id="CompanyProfile" class="hri-tabcontent set-box-shadow">
+                <div id="Companyprofile-Header" class="headertab padding-width-30 padding-width-xs-10">
+                    <div class="big-title">Company Profile</div>
+                    <div class="form-list">
+                        <div id="BASICINFOMATIONButton" class="form-item active">Basic Information</div>
+                        <div id="WORKENVIRONMENTButton" class="form-item">Work Enviroment</div>
+                        <div id="HEADERIMAGEPICTURESButton" class="form-item">Header Image & Picture</div>
+                    </div>
+                    <div class="completion">
+                        <div class="progress-text">
+                            Your Profile Completion<span>82%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                                style="width: 82%;">
                             </div>
                         </div>
+                    </div>
+                </div>
 
-                        <div class="body-tab">
+                <div class="body-tab">
 
-                            <div class="profile-form">
-                                <div id="BASICINFOMATION" class="profile-header">
-                                    BASIC INFOMATION
+                    <div class="profile-form">
+                        <div id="BASICINFOMATION" class="profile-header">
+                            BASIC INFOMATION
+                        </div>
+                        <form action="#" method="POST"
+                            class="profile-body padding-width-100 padding-width-lg-30 padding-width-xs-10">
+                            <div class="body-right">
+                                <div class="avatar-background">
+                                    <img src="image/rectangle-580@3x.png" alt="">
+                                    <label class="label-fake-input" for="avatarphoto">
+                                        <img src="image/upload@3x.png" alt="">
+                                        Upload
+                                    </label>
+                                    <input type="file" class="hidden" name="avatarphoto" id="avatarphoto">
                                 </div>
-                                <form action="#" method="POST"
-                                    class="profile-body padding-width-100 padding-width-lg-30 padding-width-xs-10">
-                                    <div class="body-right">
-                                        <div class="avatar-background">
-                                            <img src="image/rectangle-580@3x.png" alt="">
-                                            <label class="label-fake-input" for="avatarphoto">
-                                                <img src="image/upload@3x.png" alt="">
-                                                Upload
-                                            </label>
-                                            <input type="file" class="hidden" name="avatarphoto" id="avatarphoto">
-                                        </div>
-                                    </div>
-                                    <div class="body-left">
-                                        <div class="item">
-                                            <label for="companyname">Company Name<span class="super-starr">*</span>
-                                            </label>
-                                            <input type="text" name="companyname" required>
-                                        </div>
-                                        <div class="item">
-                                            <label for="foundedtime">Founded Time</label>
-                                            <input type="date" name="foundedtime">
-                                        </div>
-                                        <div class="item">
-                                            <label for="website">Website</label>
-                                            <input type="text" name="website">
-                                        </div>
-                                        <div class="item">
-                                            <label for="facebookfanpage">Facebook Fanpage</label>
-                                            <input type="text" name="facebookfanpage">
-                                        </div>
-                                        <div class="item">
-                                            <label for="companysize">Company Size</label>
-                                            <input type="text" name="companysize">
-                                        </div>
-                                        <div class="item">
-                                            <label for="headquarter">Headquarter<span
-                                                    class="super-starr">*</span></label>
-                                            <select name="headquarter" id="">
-                                                <option value="A">A</option>
-                                                <option value="B">B</option>
-                                                <option value="C">C</option>
-                                            </select>
-                                        </div>
-                                        <div class="item">
-                                            <label for="industry">Industry<span class="super-starr">*</span></label>
-                                            <select name="industry" id="">
-                                                <option value="A">A</option>
-                                                <option value="B">B</option>
-                                                <option value="C">C</option>
-                                            </select>
-                                        </div>
-                                        <div class="item">
-                                            <label for="revenue">Revenue</label>
-                                            <input class="half-7" type="number" name="revenue">
-                                            <select class="half-3" name="revenue-select" id="">
-                                                <option value="A">A</option>
-                                                <option value="B">B</option>
-                                                <option value="C">C</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="body-full">
-                                        <div class="item">
-                                            <label for="companyoverview">Company Overview</label>
-                                            <textarea name="companyoverview" id="companyoverview"></textarea>
-                                        </div>
-                                        <div class="item item-submit">
-                                            <button type="submit">Save</button>
-                                        </div>
-                                    </div>
-                                </form>
                             </div>
+                            <div class="body-left">
+                                <div class="item">
+                                    <label for="companyname">Company Name<span class="super-starr">*</span>
+                                    </label>
+                                    <input type="text" name="companyname" required>
+                                </div>
+                                <div class="item">
+                                    <label for="foundedtime">Founded Time</label>
+                                    <input type="date" name="foundedtime">
+                                </div>
+                                <div class="item">
+                                    <label for="website">Website</label>
+                                    <input type="text" name="website">
+                                </div>
+                                <div class="item">
+                                    <label for="facebookfanpage">Facebook Fanpage</label>
+                                    <input type="text" name="facebookfanpage">
+                                </div>
+                                <div class="item">
+                                    <label for="companysize">Company Size</label>
+                                    <input type="text" name="companysize">
+                                </div>
+                                <div class="item">
+                                    <label for="headquarter">Headquarter<span class="super-starr">*</span></label>
+                                    <select name="headquarter" id="">
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                    </select>
+                                </div>
+                                <div class="item">
+                                    <label for="industry">Industry<span class="super-starr">*</span></label>
+                                    <select name="industry" id="">
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                    </select>
+                                </div>
+                                <div class="item">
+                                    <label for="revenue">Revenue</label>
+                                    <input class="half-7" type="number" name="revenue">
+                                    <select class="half-3" name="revenue-select" id="">
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="body-full">
+                                <div class="item">
+                                    <label for="companyoverview">Company Overview</label>
+                                    <textarea name="companyoverview" id="companyoverview"></textarea>
+                                </div>
+                                <div class="item item-submit">
+                                    <button type="submit">Save</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
 
-                            <div class="profile-form">
-                                <div id="WORKENVIRONMENT" class="profile-header">WORK ENVIRONMENT</div>
-                                <form action="#" method="POST"
-                                    class="profile-body padding-width-100 padding-width-lg-30 padding-width-xs-10">
-                                    <div class="body-full">
-                                        <div class="item">
-                                            <label class="have-span" for="">
-                                                Benefits <br>
-                                                <span>(Max 5)</span>
+                    <div class="profile-form">
+                        <div id="WORKENVIRONMENT" class="profile-header">WORK ENVIRONMENT</div>
+                        <form action="#" method="POST"
+                            class="profile-body padding-width-100 padding-width-lg-30 padding-width-xs-10">
+                            <div class="body-full">
+                                <div class="item">
+                                    <label class="have-span" for="">
+                                        Benefits <br>
+                                        <span>(Max 5)</span>
+                                    </label>
+                                    <div class="benefit">
+                                        <div class="benefit-item benefit-checkbox-button" data-name="benefit1">
+                                            <div style="background-position-x: 0px;" class="benefit-item-image">
+                                            </div>
+                                            Ha Noi
+                                            <input type="hidden" name="benefit1" id="benefit1" value="false">
+                                        </div>
+                                        <div class="benefit-item benefit-checkbox-button" data-name="benefit2">
+                                            <div style="background-position-x: -66px;" class="benefit-item-image">
+                                            </div>
+                                            Ha Noi
+                                            <input type="hidden" name="benefit2" id="benefit2" value="false">
+                                        </div>
+                                        <div class="benefit-item benefit-checkbox-button benefit-active"
+                                            data-name="benefit3">
+                                            <div style="background-position-x: -132px;" class="benefit-item-image">
+                                            </div>
+                                            Canteen
+                                            <input type="hidden" name="benefit3" id="benefit3" value="true">
+                                        </div>
+                                        <div class="benefit-item benefit-checkbox-button" data-name="benefit4">
+                                            <div style="background-position-x: -194px;" class="benefit-item-image">
+                                            </div>
+                                            Ha Noi
+                                            <input type="hidden" name="benefit4" id="benefit4" value="false">
+                                        </div>
+                                        <div class="benefit-item benefit-checkbox-button" data-name="benefit5">
+                                            <div style="background-position-x: -153px;" class="benefit-item-image">
+                                            </div>
+                                            Mobile
+                                            <input type="hidden" name="benefit5" id="benefit5" value="false">
+                                        </div>
+                                        <div class="benefit-item benefit-checkbox-button" data-name="benefit6">
+                                            <div style="background-position-x: -21px;" class="benefit-item-image">
+                                            </div>
+                                            Laptop
+                                            <input type="hidden" name="benefit6" id="benefit6" value="false">
+                                        </div>
+                                        <div class="benefit-item benefit-checkbox-button benefit-active"
+                                            data-name="benefit7">
+                                            <div style="background-position-x: -89px;" class="benefit-item-image">
+                                            </div>
+                                            Library
+                                            <input type="hidden" name="benefit7" id="benefit7" value="true">
+                                        </div>
+                                        <div class="benefit-item benefit-checkbox-button benefit-active"
+                                            data-name="benefit8">
+                                            <div style="background-position-x: -267px;" class="benefit-item-image">
+                                            </div>
+                                            Kindergarten
+                                            <input type="hidden" name="benefit8" id="benefit8" value="true">
+                                        </div>
+                                        <div class="benefit-item benefit-checkbox-button" data-name="benefit9">
+                                            <div style="background-position-x: -288px;" class="benefit-item-image">
+                                            </div>
+                                            Paid leave
+                                            <input type="hidden" name="benefit9" id="benefit9" value="false">
+                                        </div>
+                                        <div class="benefit-item benefit-checkbox-button" data-name="benefit10">
+                                            <div style="background-position-x: -217px;" class="benefit-item-image">
+                                            </div>
+                                            Team activities
+                                            <input type="hidden" name="benefit10" id="benefit10" value="false">
+                                        </div>
+                                        <div class="benefit-item benefit-checkbox-button" data-name="benefit11">
+                                            <div style="background-position-x: -42px;" class="benefit-item-image">
+                                            </div>
+                                            Trainning
+                                            <input type="hidden" name="benefit11" id="benefit11" value="false">
+                                        </div>
+                                        <div class="benefit-item benefit-checkbox-button benefit-active"
+                                            data-name="benefit12">
+                                            <div style="background-position-x: -110px;" class="benefit-item-image">
+                                            </div>
+                                            Transportation
+                                            <input type="hidden" name="benefit12" id="benefit12" value="true">
+                                        </div>
+                                        <div class="benefit-item benefit-checkbox-button benefit-active"
+                                            data-name="benefit13">
+                                            <div style="background-position-x: -173px;" class="benefit-item-image">
+                                            </div>
+                                            Travel opportunity
+                                            <input type="hidden" name="benefit13" id="benefit13" value="true">
+                                        </div>
+                                        <div class="benefit-item benefit-checkbox-button" data-name="benefit14">
+                                            <div style="background-position-x: -243px;" class="benefit-item-image">
+                                            </div>
+                                            Vouchers
+                                            <input type="hidden" name="benefit14" id="benefit14" value="false">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <label class="have-span" for="whyjoinus">
+                                        Why join us <br>
+                                        <span>Attach the right candidates</span>
+                                    </label>
+                                    <textarea name="whyjoinus" id="whyjoinus"></textarea>
+                                </div>
+                                <div class="item item-submit">
+                                    <button type="submit">Save</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="profile-form">
+                        <div id="HEADERIMAGEPICTURES" class="profile-header">HEADER IMAGE & PICTURES</div>
+                        <form action="#" method="POST"
+                            class="profile-body padding-width-100 padding-width-lg-30 padding-width-xs-10">
+                            <div class="body-full">
+                                <div class="item">
+                                    <label class="have-span" for="">Header Image</label>
+                                    <div class="list-image">
+                                        <div class="description">
+                                            Make you company profile and every job ad attractive
+                                        </div>
+                                        <div class="put-image-here">
+                                            <label for="headerimage">
+                                                <img src="image/upload@3x.png" alt="">
+                                                Upload Header Image
                                             </label>
-                                            <div class="benefit">
-                                                <div class="benefit-item">
-                                                    <div style="background-position-x: 0px;" class="benefit-item-image">
-                                                    </div>
-                                                    Ha Noi
-                                                </div>
-                                                <div class="benefit-item">
-                                                    <div style="background-position-x: -66px;"
-                                                        class="benefit-item-image">
-                                                    </div>
-                                                    Ha Noi
-                                                </div>
-                                                <div class="benefit-item benefit-active">
-                                                    <div style="background-position-x: -132px;"
-                                                        class="benefit-item-image">
-                                                    </div>
-                                                    Canteen
-                                                </div>
-                                                <div class="benefit-item">
-                                                    <div style="background-position-x: -194px;"
-                                                        class="benefit-item-image">
-                                                    </div>
-                                                    Ha Noi
-                                                </div>
-                                                <div class="benefit-item">
-                                                    <div style="background-position-x: -153px;"
-                                                        class="benefit-item-image">
-                                                    </div>
-                                                    Mobile
-                                                </div>
-                                                <div class="benefit-item">
-                                                    <div style="background-position-x: -21px;"
-                                                        class="benefit-item-image">
-                                                    </div>
-                                                    Laptop
-                                                </div>
-                                                <div class="benefit-item benefit-active">
-                                                    <div style="background-position-x: -89px;"
-                                                        class="benefit-item-image">
-                                                    </div>
-                                                    Library
-                                                </div>
-                                                <div class="benefit-item benefit-active">
-                                                    <div style="background-position-x: -267px;"
-                                                        class="benefit-item-image">
-                                                    </div>
-                                                    Kindergarten
-                                                </div>
-                                                <div class="benefit-item">
-                                                    <div style="background-position-x: -288px;"
-                                                        class="benefit-item-image">
-                                                    </div>
-                                                    Paid leave
-                                                </div>
-                                                <div class="benefit-item">
-                                                    <div style="background-position-x: -217px;"
-                                                        class="benefit-item-image">
-                                                    </div>
-                                                    Team activities
-                                                </div>
-                                                <div class="benefit-item">
-                                                    <div style="background-position-x: -42px;"
-                                                        class="benefit-item-image">
-                                                    </div>
-                                                    Trainning
-                                                </div>
-                                                <div class="benefit-item benefit-active">
-                                                    <div style="background-position-x: -110px;"
-                                                        class="benefit-item-image">
-                                                    </div>
-                                                    Transportation
-                                                </div>
-                                                <div class="benefit-item benefit-active">
-                                                    <div style="background-position-x: -173px;"
-                                                        class="benefit-item-image">
-                                                    </div>
-                                                    Travel opportunity
-                                                </div>
-                                                <div class="benefit-item">
-                                                    <div style="background-position-x: -243px;"
-                                                        class="benefit-item-image">
-                                                    </div>
-                                                    Vouchers
-                                                </div>
+                                            <input type="file" class="hidden" name="headerimage" id="headerimage">
+                                        </div>
+                                        <div class="uploaded">
+                                            <img class="image" src="image/7.png" alt="">
+                                            <div class="garbage">
+                                                <img onclick="" class="garbage-icon" src="image/garbage@3x.png" alt="">
                                             </div>
                                         </div>
-                                        <div class="item">
-                                            <label class="have-span" for="whyjoinus">
-                                                Why join us <br>
-                                                <span>Attach the right candidates</span>
-                                            </label>
-                                            <textarea name="whyjoinus" id="whyjoinus"></textarea>
-                                        </div>
-                                        <div class="item item-submit">
-                                            <button type="submit">Save</button>
-                                        </div>
                                     </div>
-                                </form>
-                            </div>
-                            <div class="profile-form">
-                                <div id="HEADERIMAGEPICTURES" class="profile-header">HEADER IMAGE & PICTURES</div>
-                                <form action="#" method="POST"
-                                    class="profile-body padding-width-100 padding-width-lg-30 padding-width-xs-10">
-                                    <div class="body-full">
-                                        <div class="item">
-                                            <label class="have-span" for="">Header Image</label>
-                                            <div class="list-image">
-                                                <div class="description">
-                                                    Make you company profile and every job ad attractive
+                                </div>
+                                <div class="item">
+                                    <label class="have-span" for="">Header Image</label>
+                                    <div class="list-image-half">
+                                        <div class="description">
+                                            Showcase your products, people, office, etc, to illustrate your
+                                            company
+                                            better
+                                            <br>
+                                            Upload the most eye-catching photo first. (Max 10)
+                                        </div>
+                                        <div class="item-image-half">
+                                            <div class="row">
+                                                <div class="element col-md-6 col-xs-12">
+                                                    <div class="put-image-here">
+                                                        <label for="newpicture">
+                                                            + Upload New Picture
+                                                        </label>
+                                                        <span class="small-text">
+                                                            Minimum 350 x 250 px, high resolution
+                                                        </span>
+                                                        <input type="file" class="hidden" name="newpicture"
+                                                            id="newpicture">
+                                                    </div>
                                                 </div>
-                                                <div class="put-image-here">
-                                                    <label for="headerimage">
-                                                        <img src="image/upload@3x.png" alt="">
-                                                        Upload Header Image
-                                                    </label>
-                                                    <input type="file" class="hidden" name="headerimage"
-                                                        id="headerimage">
+                                                <div class="element col-md-6 col-xs-12">
+                                                    <img class="half-image" src="image/6.png" alt="">
+                                                    <div class="garbage-half" onclick="console.log('deleted');">
+                                                        <img onclick="" class="garbage-icon" src="image/garbage@3x.png"
+                                                            alt="">
+                                                    </div>
                                                 </div>
-                                                <div class="uploaded">
-                                                    <img class="image" src="image/7.png" alt="">
-                                                    <div class="garbage">
+
+                                                <div class="element col-md-6 col-xs-12">
+                                                    <img class="half-image" src="image/6.png" alt="">
+                                                    <div class="garbage-half" onclick="console.log('deleted');">
                                                         <img onclick="" class="garbage-icon" src="image/garbage@3x.png"
                                                             alt="">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="item">
-                                            <label class="have-span" for="">Header Image</label>
-                                            <div class="list-image-half">
-                                                <div class="description">
-                                                    Showcase your products, people, office, etc, to illustrate your
-                                                    company
-                                                    better
-                                                    <br>
-                                                    Upload the most eye-catching photo first. (Max 10)
-                                                </div>
-                                                <div class="item-image-half">
-                                                    <div class="row">
-                                                        <div class="element col-md-6 col-xs-12">
-                                                            <div class="put-image-here">
-                                                                <label for="newpicture">
-                                                                    + Upload New Picture
-                                                                </label>
-                                                                <span class="small-text">
-                                                                    Minimum 350 x 250 px, high resolution
-                                                                </span>
-                                                                <input type="file" class="hidden" name="newpicture"
-                                                                    id="newpicture">
-                                                            </div>
-                                                        </div>
-                                                        <div class="element col-md-6 col-xs-12">
-                                                            <img class="half-image" src="image/6.png" alt="">
-                                                            <div class="garbage-half" onclick="console.log('deleted');">
-                                                                <img onclick="" class="garbage-icon"
-                                                                    src="image/garbage@3x.png" alt="">
-                                                            </div>
-                                                        </div>
+                                    </div>
+                                </div>
 
-                                                        <div class="element col-md-6 col-xs-12">
-                                                            <img class="half-image" src="image/6.png" alt="">
-                                                            <div class="garbage-half" onclick="console.log('deleted');">
-                                                                <img onclick="" class="garbage-icon"
-                                                                    src="image/garbage@3x.png" alt="">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                <div class="item">
+                                    <label class="have-span" for="">Video</label>
+                                    <div class="list-image">
+                                        <div class="description">
+                                            Share your YouTube video to provide a good introduction of your
+                                            company
                                         </div>
-
-                                        <div class="item">
-                                            <label class="have-span" for="">Video</label>
-                                            <div class="list-image">
-                                                <div class="description">
-                                                    Share your YouTube video to provide a good introduction of your
-                                                    company
-                                                </div>
-                                                <div class="item-input">
-                                                    <div>YouTube Video Link</div>
-                                                    <input type="text">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item item-submit">
-                                            <button type="submit">Save</button>
+                                        <div class="item-input">
+                                            <div>YouTube Video Link</div>
+                                            <input type="text">
                                         </div>
                                     </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div id="background-for-notification" class="hidden">
-                    <!-- Use class 'show-notification' in id Message-Out-Of-Free-Post-Job to show this message -->
-                    <div id="Message-Out-Of-Free-Post-Job" class="hidden">
-                        <div class="close-notify">
-                            <i class="fas fa-times"></i>
-                        </div>
-
-                        <div class="description">You have 0 credit for job post. <br>
-                            Please contact ITNavi's customer support to continue your recruitment plan. <br> <br>
-
-                            Thank you!
-                        </div>
-
-                        <div class="ok-button">
-                            <button>OK</button>
-                        </div>
-                    </div>
-
-                    <div id="Message-Change-Status" class="hidden">
-                        <div class="close-notify" onclick="CloseMessage(event, 'Message-Change-Status')">
-                            <i class="fas fa-times"></i>
-                        </div>
-
-                        <div class="title">
-                            Change status
-                        </div>
-
-                        <form action="#" method="POST">
-                            <div class="form-item">
-                                <select name="status">
-                                    <option value="Select status" selected disabled> Select status</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                            </div>
-                            <div class="form-item-haft">
-                                <div onclick="CloseMessage(event, 'Message-Change-Status')" class="cancel-button">
-                                    Cancel
                                 </div>
-                                <button class="change-button">Change</button>
+                                <div class="item item-submit">
+                                    <button type="submit">Save</button>
+                                </div>
                             </div>
                         </form>
                     </div>
+                </div>
+            </div>
 
-                    <div id="Message-Add-Note" class="hidden">
-                        <div class="close-notify" onclick="CloseMessage(event, 'Message-Add-Note')">
-                            <i class="fas fa-times"></i>
-                        </div>
-
-                        <div class="title">
-                            Change status
-                        </div>
-
-                        <form action="#" method="POST">
-                            <div class="form-item">
-                                <textarea name="note" id="" rows="4"></textarea>
+            <div id="AccountInformation" class="hri-tabcontent set-box-shadow">
+                <div class="padding-width-30 padding-width-xs-10">
+                    <div class="big-title">
+                        Account Information
+                    </div>
+                    <div class="info-body-item">
+                        <div class="body-title">
+                            <div class="title-left">
+                                UPDATE ACCOUNT INFORMATION
                             </div>
-                            <div class="form-item-haft">
-                                <div onclick="CloseMessage(event, 'Message-Add-Note')" class="cancel-button">Cancel
+                            <div class="title-right">
+                                (<span class="super-starr">*</span>) is required field
+                            </div>
+                        </div>
+                        <div class="body-form">
+                            <form action="#" method="POST">
+                                <div class="form-item form-item-input">
+                                    <label for="fullname">Full name<span class="super-starr">*</span></label>
+                                    <input type="text" name="fullname" placeholder="Kieu Nguyen Nhung" required>
                                 </div>
-                                <button class="change-button">Change</button>
+                                <div class="form-item form-item-input">
+                                    <label for="email">Email<span class="super-starr">*</span></label>
+                                    <input type="email" name="email" placeholder="kieunhung@gmail.com" required>
+                                </div>
+                                <div class="form-item form-item-input">
+                                    <label for="phoneno">Phone No.<span class="super-starr">*</span></label>
+                                    <input type="number" name="phoneno" placeholder="0123456789" required>
+                                </div>
+                                <div class="form-item form-item-input">
+                                    <label for="department">Department<span class="super-starr">*</span></label>
+                                    <input type="text" name="department" placeholder="Human Resource Department"
+                                        required>
+                                </div>
+                                <div class="form-item form-item-input">
+                                    <label for="position">Position<span class="super-starr">*</span></label>
+                                    <input type="text" name="position" placeholder="HR Officer" required>
+                                </div>
+                                <div class="form-item form-save">
+                                    <button type="button">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="info-body-item">
+                        <div class="body-title">
+                            <div class="title-left">
+                                CHANGE PASSWORD
                             </div>
-                        </form>
-                    </div>
-
-                    <div id="Message-View-Contact-Infomation" class="hidden">
-                        <div class="close-notify" onclick="CloseMessage(event, 'Message-View-Contact-Infomation')">
-                            <i class="fas fa-times"></i>
+                            <div class="title-right">
+                                (<span class="super-starr">*</span>) is required field
+                            </div>
                         </div>
-
-                        <div class="title">
-                            View Contact Information
-                        </div>
-
-                        <div class="contactinfo-table">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Service</th>
-                                        <th>Usage Amount</th>
-                                        <th>Order</th>
-                                        <th>Remaining</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Resume Search</td>
-                                        <td>3</td>
-                                        <td>OR123</td>
-                                        <td>3</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="have-enough hidden">
-                            You donot have enough credit to view contact information of this resume. <br>
-                            Please contact our customer support: <a href="#">1800 1800</a> for more details
-                        </div>
-                        <div class="message-button">
-                            <button class="cancel"
-                                onclick="CloseMessage(event, 'Message-View-Contact-Infomation')">Cancel</button>
-                            <button class="viewcontact disabled" disabled>View Contact</button>
+                        <div class="body-form">
+                            <form action="#" method="POST">
+                                <div class="form-item form-item-input">
+                                    <label for="fullname">Current password<span class="super-starr">*</span></label>
+                                    <input type="password" name="cpass" required>
+                                </div>
+                                <div class="form-item form-item-input">
+                                    <label for="email">New password<span class="super-starr">*</span></label>
+                                    <input type="password" name="npass" required>
+                                </div>
+                                <div class="form-item form-item-input">
+                                    <label for="rpass">Confirm new password<span class="super-starr">*</span></label>
+                                    <input type="password" name="rpass" required>
+                                </div>
+                                <div class="form-item form-save">
+                                    <button type="button">Save</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
 
 
+
+
+        <div class="hidden">
+            <!-- Use class 'show-notification' in id Message-Out-Of-Free-Post-Job to show this message -->
+            <div id="Message-Out-Of-Free-Post-Job">
+                <div onclick="Swal.close()" class="close-notify">
+                    <i class="fas fa-times"></i>
                 </div>
 
+                <div class="description">You have 0 credit for job post. <br>
+                    Please contact ITNavi's customer support to continue your recruitment plan. <br> <br>
 
-                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                    crossorigin="anonymous"></script>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-                    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-                    crossorigin="anonymous"></script>
-                <script src="js/postjob.js"></script>
-                <script src="../Navbar/js/navbar.js"></script>
-                <script src=""></script>
-                <!-- <script
+                    Thank you!
+                </div>
+
+                <div onclick="Swal.close()" class="ok-button">
+                    <div onclick="Swal.close()" class="okbutton">OK</div>
+                </div>
+            </div>
+
+            <div id="Message-Change-Status">
+                <div class="close-notify" onclick="Swal.close()">
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <div class="title">
+                    Change status
+                </div>
+
+                <form action="#" method="POST">
+                    <div class="form-item">
+                        <select name="status">
+                            <option value="Select status" selected disabled> Select status</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="form-item-haft">
+                        <div onclick="CloseMessage(event, 'Message-Change-Status')" class="cancel-button">
+                            Cancel
+                        </div>
+                        <button class="change-button">Change</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="Message-Add-Note">
+                <div class="close-notify" onclick="Swal.close()">
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <div class="title">
+                    Change status
+                </div>
+
+                <form action="#" method="POST">
+                    <div class="form-item">
+                        <textarea name="note" id="" rows="4"></textarea>
+                    </div>
+                    <div class="form-item-haft">
+                        <div onclick="Swal.close()" class="cancel-button">Cancel
+                        </div>
+                        <button class="change-button">Change</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="Message-View-Contact-Infomation">
+                <div class="close-notify" onclick="CloseMessage(event, 'Message-View-Contact-Infomation')">
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <div class="title">
+                    View Contact Information
+                </div>
+
+                <div class="contactinfo-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Service</th>
+                                <th>Usage Amount</th>
+                                <th>Order</th>
+                                <th>Remaining</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Resume Search</td>
+                                <td>3</td>
+                                <td>OR123</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="have-enough hidden">
+                    You donot have enough credit to view contact information of this resume. <br>
+                    Please contact our customer support: <a href="#">1800 1800</a> for more details
+                </div>
+                <div class="message-button">
+                    <button class="cancel"
+                        onclick="CloseMessage(event, 'Message-View-Contact-Infomation')">Cancel</button>
+                    <button class="viewcontact disabled" disabled>View Contact</button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+        <script src="js/postjob.js"></script>
+        <script src="../Navbar/js/navbar.js"></script>
+        <script src=""></script>
+        <!-- <script
             src="https://cloud.tinymce.com/5/tinymce.min.js?apiKey=91qgxs5hmb6bibrhkl8m68rklgf5ko03cq1h2lv2mr0utvcp"></script> -->
 
-                <script>
-                    // document.getElementById('Search-CandidateButton').click();
-                    // document.getElementById('Candidate-SummaryButton').click();
-                    document.getElementById('Candidate-DetailButton').click();
-                    // document.getElementById('CompanyProfileButton').click();
+        <script>
+            // document.getElementById('DashboardButton').click();
+            document.getElementById('Search-CandidateButton').click();
+            // document.getElementById('Candidate-SummaryButton').click();
+            // document.getElementById('ManageJobsButton').click();
+            // document.getElementById('Candidate-DetailButton').click();
+            // document.getElementById('CompanyProfileButton').click();
+            // document.getElementById('AccountInformationButton').click();
 
 
-                    document.getElementById('Attached-CVButton').click();
-                    // document.getElementById('ITNavisOnline-CVButton').click();
+            document.getElementById('Attached-CVButton').click();
+            // document.getElementById('ITNavisOnline-CVButton').click();
 
+            // OpenPopup('Message-Out-Of-Free-Post-Job');
 
-                    var defaultheader = document.getElementById('Companyprofile-Header').offsetTop;
-                    var BASICINFOMATION = document.getElementById('BASICINFOMATION').offsetTop;
-                    var WORKENVIRONMENT = document.getElementById('WORKENVIRONMENT').offsetTop;
-                    var HEADERIMAGEPICTURES = document.getElementById('HEADERIMAGEPICTURES').offsetTop;
 
             // tinymce.init({
             //     selector: '#jobdescription'
@@ -2570,8 +2786,8 @@
             // tinymce.init({
             //     selector: '#whyjoinus'
             // });
-                </script>
-            </div>
+        </script>
+    </div>
 </body>
 
 </html>

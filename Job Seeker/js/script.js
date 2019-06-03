@@ -6,6 +6,7 @@ function startJS() {
 
 function openHri(evt, cityName) {
   var i, tabcontent, tablinks;
+  console.log(evt.currentTarget.id);
   tabcontent = document.getElementsByClassName("hri-tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
@@ -15,7 +16,15 @@ function openHri(evt, cityName) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
   document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
+  if (evt.currentTarget.className.includes('child-of-MyAccountInfoButton')) {
+    document.getElementById('MyAccountInfoButton').className += " active";
+    if (evt.currentTarget.id == 'MyAccountInfo-ChangePassword') {
+      document.getElementById('change-password-scroll').scrollIntoView();
+    }
+  }
+  else {
+    evt.currentTarget.className += " active";
+  }
 }
 
 $('.radio1').on('click', function () {
@@ -93,3 +102,7 @@ $('#search-location-input').on('input', function () {
 });
 
 startJS();
+
+$(document).ready(function() {
+  $('.select-use-select2-dropdown').select2();
+});

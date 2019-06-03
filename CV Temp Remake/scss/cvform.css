@@ -1,0 +1,92 @@
+#CV-Template {
+  font-family: roboto;
+  width: 100%;
+  padding: 10px; }
+  #CV-Template .item .item-image, #CV-Template .element .title .title-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; }
+  #CV-Template .bolder-text {
+    font-weight: 900; }
+  #CV-Template .italic-text {
+    font-style: italic; }
+  #CV-Template .avatar {
+    width: 100%; }
+  #CV-Template .name {
+    font-size: 22px;
+    font-weight: 900;
+    color: #24becf; }
+  #CV-Template .job-name {
+    font-size: 14px;
+    font-weight: 900; }
+  #CV-Template .line-blue {
+    border-top: 1px solid #24becf;
+    margin: 10px 0; }
+    #CV-Template .line-blue .circle {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      border: solid 1px #24becf;
+      background-color: #ffffff;
+      margin-top: -4px;
+      float: right; }
+  #CV-Template .item {
+    font-size: 10px;
+    padding-bottom: 7px; }
+    #CV-Template .item .item-image {
+      margin: 1px 5px 0 0;
+      float: left;
+      width: 10px;
+      height: 10px; }
+  #CV-Template .element .title {
+    font-size: 12px;
+    color: #24becf;
+    font-weight: 900;
+    padding: 15px 0 6px 0;
+    border-bottom: 1px solid #d1d0d6; }
+    #CV-Template .element .title .title-image {
+      margin: 1px 5px 0 0;
+      float: left;
+      width: 13px;
+      height: 13px; }
+  #CV-Template .element .body {
+    margin-top: 10px;
+    padding-bottom: 5px; }
+    #CV-Template .element .body.onlytext {
+      font-size: 10px; }
+    #CV-Template .element .body.onlytext-small {
+      font-size: 8px; }
+    #CV-Template .element .body.timeline {
+      font-size: 10px; }
+      #CV-Template .element .body.timeline .description {
+        font-size: 8px;
+        padding: 2px 0; }
+    #CV-Template .element .body.supertable .table-title {
+      font-size: 10px;
+      padding-bottom: 4px; }
+    #CV-Template .element .body.supertable .title-body {
+      width: 100%;
+      margin-bottom: 10px;
+      font-size: 8px;
+      background-color: rgba(30, 189, 207, 0.15); }
+      #CV-Template .element .body.supertable .title-body:last-child {
+        margin-bottom: 0; }
+      #CV-Template .element .body.supertable .title-body tr th,
+      #CV-Template .element .body.supertable .title-body tr td {
+        text-align: center;
+        padding-top: 3px;
+        padding-bottom: 3px; }
+      #CV-Template .element .body.supertable .title-body thead {
+        background-color: rgba(30, 189, 207, 0.15); }
+      #CV-Template .element .body.supertable .title-body tbody tr {
+        border-bottom: 1px solid rgba(30, 189, 207, 0.15); }
+        #CV-Template .element .body.supertable .title-body tbody tr:last-child {
+          border-bottom: none; }
+  #CV-Template .super-logo {
+    text-align: center;
+    padding-top: 30px; }
+    #CV-Template .super-logo img {
+      width: 66px;
+      height: 26px; }
+
+/*# sourceMappingURL=cvform.css.map */

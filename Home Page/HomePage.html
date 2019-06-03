@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="../Navbar/css/navbar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <nav id="ITNavi-Navbar">
+        <div class="body">
+            <div class="logo-page">
+                <a href="#">
+                    <img src="../Navbar/image/itnavi-logo.png" alt="">
+                </a>
+            </div>
+
+            <!-- Big Monitor -->
+            <div class="option-left non-collapse">
+                <a class="nav-link active" href="#">
+                    Home
+                </a>
+                <a class="nav-link" href="#">
+                    All jobs
+                </a>
+            </div>
+            <div class="register non-collapse">
+                <div class="borderleft"></div>
+                <div class="loginsignup noborder">
+                    <a href="#"><button class="loginbutton">Log In</button></a>
+                    <a href="#"><button class="signupbutton">Sign Up</button></a>
+                </div>
+                <div class="employer-button">
+                    <a href="#">
+                        <div class="button-fixed">
+                            EMPLOYER
+                            <i class="fas fa-caret-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="option-right non-collapse">
+                <div class="item region-item">
+
+                </div>
+                <div class="item notify-item">
+                    <div class="have-notify"></div>
+                </div>
+            </div>
+            <!-- / Big Monitor -->
+
+
+            <!-- Mobile Monitor -->
+            <div class="seemore have-collapse">
+                <div id="Navbar-Mobile-Button" class="seemore-button">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div style="display: none;" id="Navbar-Mobile-Item" class="have-collapse-item collapse">
+                <div class="nav-link">
+                    <a class="nav-link-item active" href="#">
+                        Home
+                    </a>
+                    <a class="nav-link-item" href="#">
+                        All jobs
+                    </a>
+                </div>
+
+                <div class="option-region">
+                    <div class="item region-item">
+
+                    </div>
+                    <div class="item notify-item">
+                        <div class="have-notify"></div>
+                    </div>
+                </div>
+                <div class="employer-button">
+                    <a href="#">
+                        <div class="button-fixed">
+                            EMPLOYER
+                            <i class="fas fa-caret-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Mobile Monitor -->
+
+        </div>
+        <div class="nav-foot">
+            <div class="up">
+                <div class="blue"></div>
+                <div class="triangle"></div>
+            </div>
+            <div class="down">
+                <div class="orange"></div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="Super-Home-Page">
+        <div id="FindJob-Carousel" class="carousel slide findthejob" data-ride="carousel">
+            <div class="carousel-inner slide-background" role="listbox">
+                <div style="background-image: url(image/rectangle-660@3x.png);" class="item active"></div>
+                <div style="background-image: url(image/rectangle-660@3x.png);" class="item"></div>
+                <div style="background-image: url(image/rectangle-660@3x.png);" class="item"></div>
+            </div>
+
+            <div class="blue-background">
+                <div class="super-biger-title">
+                    <span class="border-text">Find the job</span> <br>
+                    that fits your life
+                </div>
+                <div class="find-form">
+                    <div class="container">
+                        <form action="#" method="POST">
+                            <div class="item item-search">
+                                <div id="SearchJob-Input" class="search-input">
+                                    <input placeholder="Job title, Skills, Keywords or company name" type="text">
+                                </div>
+                            </div>
+                            <div class="item item-location">
+                                <div id="Location-Input" class="location-input">
+                                    <select class="select-use-select2-dropdown">
+                                        <option value="Viet Nam">Viet Nam</option>
+                                        <option value="Viet Nam">Viet Nam</option>
+                                        <option value="Viet Nam">Viet Nam</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="item item-submit">
+                                <button type="submit">Search</button>
+                            </div>
+                            <a href="#">
+                                <div class="item item-full">
+                                    <div class="zoom-icon"><span>+</span></div>
+                                    <div class="zoom-text">Advanced Search</div>
+                                </div>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+                <div class="carousel-indicators change-background">
+                    <div data-target="#FindJob-Carousel" data-slide-to="0" class="change-findjob-button active">
+                        <div></div>
+                    </div>
+                    <div data-target="#FindJob-Carousel" data-slide-to="1" class="change-findjob-button">
+                        <div></div>
+                    </div>
+                    <div data-target="#FindJob-Carousel" data-slide-to="2" class="change-findjob-button">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hot-jobs">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-1 left-content">
+                        <div class="previous" href="#Carousel-Hot-Job" role="button" data-slide="prev">
+                            <img src="image/previous.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-xs-12">
+                        <div class="hot-job-box">
+                            <div class="big-title div-center">
+                                Hot Jobs
+                            </div>
+
+                            <div class="body">
+                                <div id="Carousel-Hot-Job" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <table>
+                                                        <td class="logo">
+                                                            <a href="#"><img src="image/logo-viettel-svg@3x.png" alt="">
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-info">
+                                                            <a href="#">
+                                                                <div class="company-name border-text">IOS Developers
+                                                                </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <div class="company-description">ANTS - Programmatic AD
+                                                                    - Ho Chi Minh
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-hot hidden">
+                                                            <span>HOT</span>
+                                                        </td>
+                                                    </table>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <table>
+                                                        <td class="logo">
+                                                            <a href="#"><img src="image/logo-viettel-svg@3x.png" alt="">
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-info">
+                                                            <a href="#">
+                                                                <div class="company-name border-text">IOS Developers
+                                                                </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <div class="company-description">ANTS - Programmatic AD
+                                                                    - Ho Chi Minh
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-hot">
+                                                            <span>HOT</span>
+                                                        </td>
+                                                    </table>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <table>
+                                                        <td class="logo">
+                                                            <a href="#"><img src="image/logo-viettel-svg@3x.png" alt="">
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-info">
+                                                            <a href="#">
+                                                                <div class="company-name border-text">IOS Developers
+                                                                </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <div class="company-description">ANTS - Programmatic AD
+                                                                    - Ho Chi Minh
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-hot">
+                                                            <span>HOT</span>
+                                                        </td>
+                                                    </table>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <table>
+                                                        <td class="logo">
+                                                            <a href="#"><img src="image/logo-viettel-svg@3x.png" alt="">
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-info">
+                                                            <a href="#">
+                                                                <div class="company-name border-text">IOS Developers
+                                                                </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <div class="company-description">ANTS - Programmatic AD
+                                                                    - Ho Chi Minh
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-hot">
+                                                            <span>HOT</span>
+                                                        </td>
+                                                    </table>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <table>
+                                                        <td class="logo">
+                                                            <a href="#"><img src="image/logo-viettel-svg@3x.png" alt="">
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-info">
+                                                            <a href="#">
+                                                                <div class="company-name border-text">IOS Developers
+                                                                </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <div class="company-description">ANTS - Programmatic AD
+                                                                    - Ho Chi Minh
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                    </table>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <table>
+                                                        <td class="logo">
+                                                            <a href="#"><img src="image/logo-viettel-svg@3x.png" alt="">
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-info">
+                                                            <a href="#">
+                                                                <div class="company-name border-text">IOS Developers
+                                                                </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <div class="company-description">ANTS - Programmatic AD
+                                                                    - Ho Chi Minh
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <table>
+                                                        <td class="logo">
+                                                            <a href="#"><img src="image/logo-viettel-svg@3x.png" alt="">
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-info">
+                                                            <a href="#">
+                                                                <div class="company-name border-text">IOS Developers
+                                                                </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <div class="company-description">ANTS - Programmatic AD
+                                                                    - Ho Chi Minh
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-hot hidden">
+                                                            <span>HOT</span>
+                                                        </td>
+                                                    </table>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <table>
+                                                        <td class="logo">
+                                                            <a href="#"><img src="image/logo-viettel-svg@3x.png" alt="">
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-info">
+                                                            <a href="#">
+                                                                <div class="company-name border-text">IOS Developers
+                                                                </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <div class="company-description">ANTS - Programmatic AD
+                                                                    - Ho Chi Minh
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-hot">
+                                                            <span>HOT</span>
+                                                        </td>
+                                                    </table>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <table>
+                                                        <td class="logo">
+                                                            <a href="#"><img src="image/logo-viettel-svg@3x.png" alt="">
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-info">
+                                                            <a href="#">
+                                                                <div class="company-name border-text">IOS Developers
+                                                                </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <div class="company-description">ANTS - Programmatic AD
+                                                                    - Ho Chi Minh
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-hot">
+                                                            <span>HOT</span>
+                                                        </td>
+                                                    </table>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <table>
+                                                        <td class="logo">
+                                                            <a href="#"><img src="image/logo-viettel-svg@3x.png" alt="">
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-info">
+                                                            <a href="#">
+                                                                <div class="company-name border-text">IOS Developers
+                                                                </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <div class="company-description">ANTS - Programmatic AD
+                                                                    - Ho Chi Minh
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-hot">
+                                                            <span>HOT</span>
+                                                        </td>
+                                                    </table>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <table>
+                                                        <td class="logo">
+                                                            <a href="#"><img src="image/logo-viettel-svg@3x.png" alt="">
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-info">
+                                                            <a href="#">
+                                                                <div class="company-name border-text">IOS Developers
+                                                                </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <div class="company-description">ANTS - Programmatic AD
+                                                                    - Ho Chi Minh
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                    </table>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <table>
+                                                        <td class="logo">
+                                                            <a href="#"><img src="image/logo-viettel-svg@3x.png" alt="">
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-info">
+                                                            <a href="#">
+                                                                <div class="company-name border-text">IOS Developers
+                                                                </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <div class="company-description">ANTS - Programmatic AD
+                                                                    - Ho Chi Minh
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <table>
+                                                        <td class="logo">
+                                                            <a href="#"><img src="image/logo-viettel-svg@3x.png" alt="">
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-info">
+                                                            <a href="#">
+                                                                <div class="company-name border-text">IOS Developers
+                                                                </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <div class="company-description">ANTS - Programmatic AD
+                                                                    - Ho Chi Minh
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-hot hidden">
+                                                            <span>HOT</span>
+                                                        </td>
+                                                    </table>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <table>
+                                                        <td class="logo">
+                                                            <a href="#"><img src="image/logo-viettel-svg@3x.png" alt="">
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-info">
+                                                            <a href="#">
+                                                                <div class="company-name border-text">IOS Developers
+                                                                </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <div class="company-description">ANTS - Programmatic AD
+                                                                    - Ho Chi Minh
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-hot">
+                                                            <span>HOT</span>
+                                                        </td>
+                                                    </table>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <table>
+                                                        <td class="logo">
+                                                            <a href="#"><img src="image/logo-viettel-svg@3x.png" alt="">
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-info">
+                                                            <a href="#">
+                                                                <div class="company-name border-text">IOS Developers
+                                                                </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <div class="company-description">ANTS - Programmatic AD
+                                                                    - Ho Chi Minh
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-hot">
+                                                            <span>HOT</span>
+                                                        </td>
+                                                    </table>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <table>
+                                                        <td class="logo">
+                                                            <a href="#"><img src="image/logo-viettel-svg@3x.png" alt="">
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-info">
+                                                            <a href="#">
+                                                                <div class="company-name border-text">IOS Developers
+                                                                </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <div class="company-description">ANTS - Programmatic AD
+                                                                    - Ho Chi Minh
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-hot">
+                                                            <span>HOT</span>
+                                                        </td>
+                                                    </table>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <table>
+                                                        <td class="logo">
+                                                            <a href="#"><img src="image/logo-viettel-svg@3x.png" alt="">
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-info">
+                                                            <a href="#">
+                                                                <div class="company-name border-text">IOS Developers
+                                                                </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <div class="company-description">ANTS - Programmatic AD
+                                                                    - Ho Chi Minh
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                    </table>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <table>
+                                                        <td class="logo">
+                                                            <a href="#"><img src="image/logo-viettel-svg@3x.png" alt="">
+                                                            </a>
+                                                        </td>
+                                                        <td class="company-info">
+                                                            <a href="#">
+                                                                <div class="company-name border-text">IOS Developers
+                                                                </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <div class="company-description">ANTS - Programmatic AD
+                                                                    - Ho Chi Minh
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-indicators">
+                                        <span data-target="#Carousel-Hot-Job" data-slide-to="0"
+                                            class="hotjob-carousel-indicators-item active">
+                                            <div></div> 01
+                                        </span>
+                                        <span data-target="#Carousel-Hot-Job" data-slide-to="1"
+                                            class="hotjob-carousel-indicators-item">
+                                            <div></div> 02
+                                        </span>
+                                        <span data-target="#Carousel-Hot-Job" data-slide-to="2"
+                                            class="hotjob-carousel-indicators-item">
+                                            <div></div> 03
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 right-content">
+                        <div class="next" href="#Carousel-Hot-Job" role="button" data-slide="next">
+                            <img src="image/right-arrow@3x.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="how-its-work">
+            <div class="big-title">
+                How Its Works
+            </div>
+            <div class="body">
+                <div class="item step1">
+                    <img src="image/group-915@3x.png" alt="">
+                    <div class="description">Register an account</div>
+                </div>
+                <div class="item line-dashed">
+                    <img src="image/line-66@3x.png" alt="">
+                </div>
+
+                <div class="item step2">
+                    <img src="image/group-960@3x.png" alt="">
+                    <div class="description">Specify & Search your jobs</div>
+                </div>
+                <div class="item line-dashed">
+                    <img src="image/line-66@3x.png" alt="">
+                </div>
+                <div class="item step3">
+                    <img src="image/group-959@3x.png" alt="">
+                    <div class="description">Apply your job</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="iam">
+            <div class="div-center">
+                <div class="iam-item">
+                    <div class="recruiter">
+                        <div class="title">
+                            I AM RECRUITER!
+                        </div>
+                        <div class="description">
+                            Thank you very much for your letter which arrived a few days ago. It was lovely to hear from
+                            you. I am sorry, I haven’t written for you such along time because I studied hard to pass
+                            the
+                            final exam. However, I had agreat weekend more than every when I went to live concerts last
+                            night with my friends. Now, I am writing to tell you how the wonderful concert is.
+                        </div>
+                        <a href="#"><button class="postfind">Post New Job</button></a>
+                    </div>
+                </div>
+                <div class="iam-item">
+                    <div class="jobseeker">
+                        <div class="title">
+                            I AM JOBSEEKER!
+                        </div>
+                        <div class="description">
+                            Thank you very much for your letter which arrived a few days ago. It was lovely to hear from
+                            you. I am sorry, I haven’t written for you such along time because I studied hard to pass
+                            the
+                            final exam. However, I had agreat weekend more than every when I went to live concerts last
+                            night with my friends. Now, I am writing to tell you how the wonderful concert is.
+                        </div>
+                        <a href="#"><button class="postfind">Find Jobs</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-company">
+            <div class="container">
+                <div class="something-blue-ontop"></div>
+                <div class="big-title">Top Company Profile</div>
+                <div id="Top-Company-Profile" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-md-7 col-xs-12">
+                                    <img class="company-image" src="image/rectangle-667@3x.png" alt="">
+                                </div>
+                                <div class="col-md-5 col-xs-12">
+                                    <img class="company-logo" src="image/hri-final@3x.png" alt="">
+                                    <div class="big-title">HRI Company</div>
+                                    <div class="company-description">
+                                        IT industry is in the trend of requiring a lot of resources, hence, HRI
+                                        established with the destiny is to reach the ranked No. 1 company in providing
+                                        resources solutions for the domestic and international IT market. Especially we
+                                        always pay attention to the export of software engineers in Vietnam to Japan.
+                                    </div>
+                                    <a href="#"><button class="company-seemore">See More</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-md-7 col-xs-12">
+                                    <img class="company-image" src="image/rectangle-667@3x.png" alt="">
+                                </div>
+                                <div class="col-md-5 col-xs-12">
+                                    <img class="company-logo" src="image/hri-final@3x.png" alt="">
+                                    <div class="big-title">HRI Company</div>
+                                    <div class="company-description">
+                                        IT industry is in the trend of requiring a lot of resources, hence, HRI
+                                        established with the destiny is to reach the ranked No. 1 company in providing
+                                        resources solutions for the domestic and international IT market. Especially we
+                                        always pay attention to the export of software engineers in Vietnam to Japan.
+                                    </div>
+                                    <a href="#"><button class="company-seemore">See More</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="top-company-bottom">
+                            <div class="carousel-indicators">
+                                <span data-target="#Top-Company-Profile" data-slide-to="0"
+                                    class="hotjob-carousel-indicators-item active">
+                                    <div></div> 01
+                                </span>
+                                <span data-target="#Top-Company-Profile" data-slide-to="1"
+                                    class="hotjob-carousel-indicators-item">
+                                    <div></div> 02
+                                </span>
+                            </div>
+                            <div class="next-pre">
+                                <div class="previous" href="#Top-Company-Profile" role="button" data-slide="prev">
+                                    <img src="image/previous.png" alt="">
+                                </div>
+                                <div class="next" href="#Top-Company-Profile" role="button" data-slide="next">
+                                    <img src="image/right-arrow@3x.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-employers">
+            <div class="big-title">Top Employers</div>
+            <div class="body">
+                <div class="container">
+                    <div class="item">
+                        <div style="background-image: url(image/logo-viettel-svg@3x.png)" class="item-image"></div>
+                    </div>
+                    <div class="item">
+                        <div style="background-image: url(image/1521197514-brasol-vn-logo-mobifone-mobifone-logo-svg@3x.png)"
+                            class="item-image"></div>
+                    </div>
+                    <div class="item">
+                        <div style="background-image: url(image/techcombank-logo@3x.png)" class="item-image"></div>
+                    </div>
+                    <div class="item">
+                        <div style="background-image: url(image/logo-tiki@3x.png)" class="item-image"></div>
+                    </div>
+                    <div class="item">
+                        <div style="background-image: url(image/1200-px-vietnam-television-logo-from-2013-svg@3x.png)"
+                            class="item-image"></div>
+                    </div>
+                    <div class="item">
+                        <div style="background-image: url(image/techcombank-logo@3x.png)" class="item-image"></div>
+                    </div>
+                    <div class="item">
+                        <div style="background-image: url(image/techcombank-logo@3x.png)" class="item-image"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ads-1">
+            <div class="ads-body">
+                <a href="#"><img src="image/image-46@3x.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="are-hiring">
+            <div class="background">
+                <div class="background-image"></div>
+            </div>
+            <div class="hiring-body">
+                <div class="item col-sm-6 col-sx-12">
+                    <div class="computer-image">
+                        <img src="image/macbook-mockup-freebie@3x.png" alt="">
+                    </div>
+                </div>
+                <div class="item item-titdes col-sm-6 col-sx-12">
+                    <div class="big-title">Are You Hiring?</div>
+                    <div class="description">
+                        Come with us and find all but the job you are interested in <br>
+                        We will become the bridge connecting you and the top employers
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+    <script src="js/homapage.js"></script>
+    <script src="../Navbar/js/navbar.js"></script>
+
+</body>
+
+</html>

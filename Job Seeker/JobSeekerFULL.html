@@ -1,0 +1,2397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/jobseeker.css">
+    <link rel="stylesheet" href="css/jobseeker-myjob.css">
+    <link rel="stylesheet" href="css/jobseeker-dashboard.css">
+    <link rel="stylesheet" href="css/jobseeker-myresume.css">
+    <link rel="stylesheet" href="css/jobseeker-myaccountinfo.css">
+    <link rel="stylesheet" href="css/bootstrap-tagsinput.css">
+    <link rel="stylesheet" href="css/bootstrap-tagsinput-typeahead.css">
+    <link rel="stylesheet" href="../Navbar/css/navbar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
+    <title>Job Seeker - No Resume</title>
+</head>
+
+<body>
+    <nav id="ITNavi-Navbar">
+        <div class="body">
+            <div class="logo-page">
+                <a href="#">
+                    <img src="../Navbar/image/itnavi-logo.png" alt="">
+                </a>
+            </div>
+
+            <!-- Big Monitor -->
+            <div class="option-left non-collapse">
+                <a class="nav-link" href="#">
+                    Home
+                </a>
+                <a class="nav-link" href="#">
+                    All Jobs
+                </a>
+            </div>
+            <div class="register non-collapse">
+                <div class="borderleft"></div>
+                <div class="company-link">
+                    <div id="Company-Downy" class="company-button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <img src="../Navbar/image/register-image.png" alt="">
+                        Minh Tu
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                    <div aria-labelledby="Company-Downy" class="company-dropdown set-box-shadow dropdown-menu">
+                        <a href="#" class="item">
+                            <i class="fas fa-caret-right"></i>Dashboard
+                        </a>
+                        <a href="#" class="item">
+                            <i class="fas fa-caret-right"></i>My Resume
+                        </a>
+                        <a href="#" class="item">
+                            <i class="fas fa-caret-right"></i>Saved Jobs
+                        </a>
+                        <a href="#" class="item">
+                            <i class="fas fa-caret-right"></i>Applied Job
+                        </a>
+                        <a href="#" class="item">
+                            <i class="fas fa-caret-right"></i>Account Information
+                        </a>
+                        <a href="#" class="item">
+                            <img src="../Navbar/image/logout@3x.png" alt="">Log Out
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="option-right non-collapse">
+                <div class="item region-item">
+
+                </div>
+                <div class="item notify-item">
+                    <div class="have-notify"></div>
+                </div>
+            </div>
+            <!-- / Big Monitor -->
+
+
+            <!-- Mobile Monitor -->
+            <div class="seemore have-collapse">
+                <div id="Navbar-Mobile-Button" class="seemore-button">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div style="display: none;" id="Navbar-Mobile-Item" class="have-collapse-item collapse">
+                <div class="nav-link">
+                    <a class="nav-link-item" href="#">
+                        Home
+                    </a>
+                    <a class="nav-link-item" href="#">
+                        All Jobs
+                    </a>
+                </div>
+
+                <div class="option-region">
+                    <div class="item region-item">
+
+                    </div>
+                    <div class="item notify-item">
+                        <div class="have-notify"></div>
+                    </div>
+                </div>
+                <div class="company-link">
+                    <div id="Company-Downy" class="company-button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <img src="../Navbar/image/register-image.png" alt="">
+                        Minh Tu
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                    <div aria-labelledby="Company-Downy" class="company-dropdown set-box-shadow dropdown-menu">
+                        <a href="#" class="item">
+                            <i class="fas fa-caret-right"></i>Dashboard
+                        </a>
+                        <a href="#" class="item">
+                            <i class="fas fa-caret-right"></i>My Resume
+                        </a>
+                        <a href="#" class="item">
+                            <i class="fas fa-caret-right"></i>Saved Jobs
+                        </a>
+                        <a href="#" class="item">
+                            <i class="fas fa-caret-right"></i>Applied Job
+                        </a>
+                        <a href="#" class="item">
+                            <i class="fas fa-caret-right"></i>Account Information
+                        </a>
+                        <a href="#" class="item">
+                            <img src="../Navbar/image/logout@3x.png" alt="">Log Out
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Monitor -->
+
+        </div>
+        <div class="nav-foot">
+            <div class="up">
+                <div class="blue"></div>
+                <div class="triangle"></div>
+            </div>
+            <div class="down">
+                <div class="orange"></div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="Job-Seeker">
+        <div class="container">
+
+            <form class="find" method="POST" action="#">
+                <div class="search">
+                    <input type="text" id="search-job-input" name="searchjob"
+                        placeholder="Job title, Skills, Keywords or company name" required>
+                    <div class="search-icon">
+                        <img id="search-icon" src="image/magnifying-glass-browser@3x.png" alt="icon">
+                    </div>
+                </div>
+                <div class="dropdown search-location">
+                    <select class="select-use-select2-dropdown" name="state">
+                        <option value="AL">Alabama</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AL">Alabama</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+                </div>
+                <button type="submit" class="search-button">Search</button>
+                <a class="advancedsearch" href="#">
+                    <div class="advancedicon">+</div>
+                    <div class="advancedtext">Advanced Search</div>
+                </a>
+            </form>
+
+            <div class="hri-tab">
+                <button id="DashboardButton" class="hri-tablinks"
+                    onclick="openHri(event, 'Dashboard')">Dashboard</button>
+                <button id="MyResumeButton" class="hri-tablinks" onclick="openHri(event, 'MyResume')">My Resume</button>
+                <button id="MyJobsButton" class="hri-tablinks" onclick="openHri(event, 'MyJobs')">My Jobs</button>
+                <div id="MyAccountInfoButton" class="hri-tablinks tab-dropdown">
+                    <div class="tab-dropdown-name">My Account Info</div>
+
+                    <ul class="tablinks-dropdown ">
+                        <li id="MyAccountInfo-UpdateAccount" class="child-of-MyAccountInfoButton"
+                            onclick="openHri(event, 'MyAccountInfo')">Update Account Info</li>
+                        <li id="MyAccountInfo-ChangePassword" class="child-of-MyAccountInfoButton"
+                            onclick="openHri(event, 'MyAccountInfo')">
+                            Change Password</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="Dashboard" class="hri-tabcontent row">
+                <div class="col-md-8 col-xs-12">
+                    <div class="set-box-shadow padding-width-30 padding-width-xs-10">
+                        <div class="profile">
+                            <div class="profile-image">
+                                <img src="image/5.jpg" alt="">
+                            </div>
+                            <div class="profile-link">
+                                <div class="emaill">huong12ly@gmail.com</div>
+                                <a href="#"><button>Create Your Profile</button></a>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="title">
+                                Complete these steps:
+                            </div>
+                            <ul class="list-step">
+                                <li>
+                                    Upload your resumes
+                                    <a href="#">Get started</a>
+                                </li>
+                                <li>
+                                    Complete your profile
+                                    <a href="#">Get started</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="set-box-shadow padding-width-20 padding-width-xs-10">
+                        <div class="jobactivities">
+                            <div class="title">
+                                Job Activities
+                            </div>
+                            <div class="fake-table">
+                                <div class="table-item">
+                                    <div class="item-title">
+                                        Save Jobs
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="count">
+                                            10
+                                        </div>
+                                        <a href="#">
+                                            <button>
+                                                View
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="table-item">
+                                    <div class="item-title">
+                                        Applied Jobs
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="count">
+                                            10
+                                        </div>
+                                        <a href="#">
+                                            <button>
+                                                View
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="MyResume" class="hri-tabcontent hri-tabcontent-myresume row">
+                <div class="col-md-3 col-xs-12 myresume-right">
+                    <div class="myresume-element set-box-shadow">
+                        <div class="myresume-element-title boldertext">
+                            Your Profile Completion
+                        </div>
+                        <div class="progress-text">
+                            Progress: <span>82%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                                style="width: 82%;">
+                                <span class="sr-only">60% Complete</span>
+                            </div>
+                        </div>
+                        <div class="downloadprofile">
+                            <a href="#"><button class="boldertext">Download Profile</button></a>
+                        </div>
+                    </div>
+
+                    <div class="myresume-element set-box-shadow">
+                        <div class="myresume-element-title boldertext">
+                            Upload your resume
+                        </div>
+                        <div class="uploadresume">
+                            <a href="#"><button class="boldertext">
+                                    <img src="image/cloud-computing@3x.png" alt="">
+                                    Upload
+                                </button>
+                            </a>
+                        </div>
+                        <ul class="upload-history">
+                            <li>
+                                <div class="filename">kieunguyennhung.pdf</div>
+                                <div class="fileuploadtime">uploaded on 20/04/2019</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="myresume-element set-box-shadow">
+                        <div class="myresume-element-title boldertext">
+                            Profile Settings
+                        </div>
+                        <p>Make your resume searchable</p>
+                        <div class="apple-fake-button">
+                            <div class="apple-button" data-name="resumesearch" value="false">
+                                <input type="hidden" id="resumesearch" name="resumesearch" value="false">
+                                <div class="little-circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-9 col-xs-12 myresume-left">
+                    <div class="myresume-element set-box-shadow">
+                        <div class="person-avatar ">
+                            <img class="person-avatar-img" src="image/5.jpg" alt="">
+                            <div id="JS-MR-PERSONAVATAR-show-edit" class="person-avatar-edit">
+                                <form action="#" method="POST">
+                                    <label for="personphoto" id="JS-MR-PERSONAVATAR-view" style="display: block;"
+                                        class="person-avatar-edit-view myresume-use-collapse-event collapse in">
+                                        <img src="image/photo-camera@3x.png" alt="">
+                                        <div>Edit Photo</div>
+                                    </label>
+                                    <div id="JS-MR-PERSONAVATAR-edit-form" style="display: none;"
+                                        class="person-avatar-edit-edit myresume-use-collapse-event">
+                                        <input type="file" name="personphoto" id="personphoto" style="display: none;">
+                                        <label id="JS-MR-PERSONAVATAR-Cancel-Button" for="personphoto">
+                                            <div class="div-center">
+                                                <img src="image/upload@3x.png" alt="">Add photo
+                                            </div>
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="edit-tool-tips myresume-use-collapse-event" style="display: none;"
+                                id="JS-MR-PERSONAVATAR-TOOLTIP-view">
+                                (<span class="super-star">*</span>) is required field
+                            </div>
+                        </div>
+                        <div class="person-info">
+                            <div id="JS-MR-PERSONALSIMPLEINFO-view" class="myresume-use-collapse-event collapse in">
+                                <div class="person-name">
+                                    <div class="titletext name">Pham Minh Tu</div>
+                                    <div id="JS-MR-PERSONALSIMPLEINFO-show-edit" class="edit-icon"></div>
+                                </div>
+
+                                <div class="product-owner">Product Owner</div>
+                                <div class="simple-experience">
+                                    <span class="boldertext">Year of Experience: </span> 6 years <br>
+                                    <span class="boldertext">Latest Company: </span> ITNavi JSC <br>
+                                    <span class="boldertext">Highest Education: </span> Bachelor <br>
+                                    <span class="boldertext">Top Skills: </span> UX Designer, Problem Solving <br>
+                                </div>
+                            </div>
+                            <div id="JS-MR-PERSONALSIMPLEINFO-edit-form" class="text-edit myresume-use-collapse-event"
+                                style="display: none;">
+                                <form class="text-edit-labeltop" method="POST" action="#">
+                                    <div class="item item-2 item-mr-2 item-xs-1 item-xs-mr-1">
+                                        <label for="firstname">First Name <span class="super-star">*</span></label>
+                                        <input type="text" name="firstname" required placeholder="Nhung">
+                                    </div>
+                                    <div class="item item-2 item-xs-1">
+                                        <label for="lastname">Last Name <span class="super-star">*</span></label>
+                                        <input type="text" name="lastname" required placeholder="Nguyen Kieu">
+                                    </div>
+                                    <div class="item">
+                                        <label for="profestionaltitle">Professional Title <span
+                                                class="super-star">*</span></label>
+                                        <input type="text" name="profestionaltitle" required
+                                            placeholder="Product Owner">
+                                    </div>
+                                    <div class="item">
+                                        <label for="yearofexperience">Year of Experience <span
+                                                class="super-star">*</span></label>
+                                        <input type="number" name="yearofexperience" required placeholder="2">
+                                    </div>
+                                    <div class="form-option form-option-fill">
+                                        <div id="JS-MR-PERSONALSIMPLEINFO-Cancel-Button"
+                                            class="cancel-button boldertext">
+                                            Cancel
+                                        </div>
+                                        <button type="submit" class="save-button boldertext">
+                                            Save
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="myresume-element set-box-shadow">
+                        <div class="left-title">
+                            <div style="background-image: url(image/business-card-of-a-man-with-contact-info@3x.png);"
+                                class="left-title-image"></div>
+                            <div class="left-title-name titletext">PERSONAL INFORMATION</div>
+                            <div id="JS-MR-PERSONALINFORMATION-show-edit" class="edit-icon"></div>
+                        </div>
+                        <div class="left-body">
+                            <div id="JS-MR-PERSONALINFORMATION-view"
+                                class="left-body-list myresume-use-collapse-event collapse in">
+                                <div class="list-item">
+                                    <div class="list-item-1 boldertext">Email<span class="super-star"> *</span></div>
+                                    <div class="list-item-2">nhungkieu@gmail.com</div>
+                                </div>
+                                <div class="list-item">
+                                    <div class="list-item-1 boldertext">Nationality<span class="super-star"> *</span>
+                                    </div>
+                                    <div class="list-item-2">Vietnamese</div>
+                                </div>
+                                <div class="list-item">
+                                    <div class="list-item-1 boldertext">Phone No.<span class="super-star"> *</span>
+                                    </div>
+                                    <div class="list-item-2">0912345678</div>
+                                </div>
+                                <div class="list-item">
+                                    <div class="list-item-1 boldertext">Country<span class="super-star"> *</span></div>
+                                    <div class="list-item-2">Vietnam</div>
+                                </div>
+                                <div class="list-item">
+                                    <div class="list-item-1 boldertext">Date of Birth<span class="super-star"> *</span>
+                                    </div>
+                                    <div class="list-item-2">05/11/1988</div>
+                                </div>
+                                <div class="list-item">
+                                    <div class="list-item-1 boldertext">Province/City<span class="super-star"> *</span>
+                                    </div>
+                                    <div class="list-item-2">Hanoi</div>
+                                </div>
+                                <div class="list-item">
+                                    <div class="list-item-1 boldertext">Gender<span class="super-star"> *</span></div>
+                                    <div class="list-item-2">Female</div>
+                                </div>
+                                <div class="list-item">
+                                    <div class="list-item-1 boldertext">District<span class="super-star"> *</span></div>
+                                    <div class="list-item-2">Ba Đình</div>
+                                </div>
+                                <div class="list-item">
+                                    <div class="list-item-1 boldertext">Marital Status<span class="super-star"> *</span>
+                                    </div>
+                                    <div class="list-item-2">Married</div>
+                                </div>
+                                <div class="list-item">
+                                    <div class="list-item-1 boldertext">Address<span class="super-star"> *</span></div>
+                                    <div class="list-item-2">Số 12 Phố Nguyễn Văn Trỗi</div>
+                                </div>
+                            </div>
+
+                            <div id="JS-MR-PERSONALINFORMATION-edit-form" class="text-edit myresume-use-collapse-event"
+                                style="display: none;">
+                                <form class="" method="POST" action="#">
+                                    <div class="item">
+                                        <label for="email">Email <span class="super-star">*</span></label>
+                                        <input type="text" name="email" required>
+                                    </div>
+                                    <div class="item">
+                                        <label for="phoneNo">Phone No. <span class="super-star">*</span></label>
+                                        <input type="number" name="phoneNo" required>
+                                    </div>
+                                    <div class="item">
+                                        <label for="birthday">Date of Birth <span class="super-star">*</span></label>
+                                        <input type="date" name="birthday" required>
+                                    </div>
+                                    <div class="item">
+                                        <label for="gender">Gender <span class="super-star">*</span></label>
+                                        <div class="radio">
+                                            <div class="radio-item">
+                                                <div class="radio1 radioactive" data-name="gender" data-value="male">
+                                                </div>
+                                                <span>Male</span>
+                                            </div>
+                                            <div class="radio-item">
+                                                <div class="radio1" data-name="gender" data-value="female"></div>
+                                                <span>Female</span>
+                                            </div>
+                                            <input type="hidden" id="gender" name="gender" value="male">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <label for="gender">Marital Status <span class="super-star">*</span></label>
+                                        <div class="radio">
+                                            <div class="radio-item">
+                                                <div class="radio1 radioactive" data-name="maritalstatus"
+                                                    data-value="Single">
+                                                </div>
+                                                <span>Single</span>
+                                            </div>
+                                            <div class="radio-item">
+                                                <div class="radio1" data-name="maritalstatus" data-value="Married">
+                                                </div>
+                                                <span>Married</span>
+                                            </div>
+                                            <input type="hidden" id="maritalstatus" name="maritalstatus" value="Single">
+                                        </div>
+                                    </div>
+                                    <div class="item" id="locationItem">
+                                        <label for="nationality">Nationality <span class="super-star">*</span></label>
+                                        <select name="nationality">
+                                            <option value="">Vietnamese</option>
+                                            <option value="">Laos</option>
+                                            <option value="">Campuchia</option>
+                                        </select>
+                                    </div>
+                                    <div class="item" id="country">
+                                        <label for="country">Country <span class="super-star">*</span></label>
+                                        <select name="country">
+                                            <option value="">Viet Nam</option>
+                                            <option value="">Laos</option>
+                                            <option value="">Campuchia</option>
+                                        </select>
+                                    </div>
+                                    <div class="item" id="locationItem">
+                                        <label for="provincecity">Province/City <span
+                                                class="super-star">*</span></label>
+                                        <select name="provincecity">
+                                            <option value="">Ha Noi</option>
+                                            <option value="">TP.HCM</option>
+                                            <option value="">Da Nang</option>
+                                        </select>
+                                    </div>
+                                    <div class="item" id="locationItem">
+                                        <label for="district">District <span class="super-star">*</span></label>
+                                        <select name="district">
+                                            <option value="">Ha Dong</option>
+                                            <option value="">Ha Tay</option>
+                                        </select>
+                                    </div>
+                                    <div class="item">
+                                        <label for="address">Address <span class="super-star">*</span></label>
+                                        <input type="text" name="email" required>
+                                    </div>
+                                    <div class="form-option form-option-fill">
+                                        <div id="JS-MR-PERSONALINFORMATION-Cancel-Button"
+                                            class="cancel-button boldertext">
+                                            Cancel
+                                        </div>
+                                        <button type="submit" class="save-button boldertext">
+                                            Save
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="myresume-element set-box-shadow">
+                        <div class="left-title">
+                            <div style="background-image: url(image/success-1@3x.png);" class="left-title-image"></div>
+                            <div class="left-title-name titletext">CAREER OBJECTIVE</div>
+                            <div id="JS-MR-CAREEROBJECTIVE-show-edit" class="edit-icon"></div>
+                        </div>
+                        <div class="left-body">
+                            <div id="JS-MR-CAREEROBJECTIVE-view"
+                                class="left-body-text myresume-use-collapse-event collapse in">
+                                IT Professional with over 10 years of experience specializing in IT department
+                                management for international logistics companies. I can implement effective IT strategic
+                                at local and global levels. My greatest strength is business awareness, which enables me
+                                to permanently streamline infrastructure and applications.
+                            </div>
+
+                            <div id="JS-MR-CAREEROBJECTIVE-edit-form" class="text-edit myresume-use-collapse-event"
+                                style="display: none;">
+                                <form method="POST" action="#">
+                                    <textarea name="careerObjective" id="" rows="5"
+                                        placeholder="A short introduction highlighting your career progress, achievements and skill set."></textarea>
+
+                                    <div class="form-option">
+                                        <div id="JS-MR-CAREEROBJECTIVE-Cancel-Button" class="cancel-button boldertext">
+                                            Cancel
+                                        </div>
+                                        <button type="submit" class="save-button boldertext">
+                                            Save
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="myresume-element set-box-shadow">
+                        <div class="left-title">
+                            <div style="background-image: url(image/skills@3x.png);" class="left-title-image"></div>
+                            <div class="left-title-name titletext">SKILLS</div>
+                        </div>
+                        <div class="left-body">
+
+                            <div class="left-body-table">
+                                <div class="table-name">
+                                    <div class="name boldertext">Professional Skills</div>
+                                    <div id="JS-MR-SKILLS-ProfesionalSkill-Show-Edit" class="addnew-button-orange">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                </div>
+                                <div class="table-here">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="skills">Skills</th>
+                                                <th class="proficiency">Proficiency</th>
+                                                <th class="yeoe">Year of Experience</th>
+                                                <th class="option"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="skills">Project Management</td>
+                                                <td class="proficiency">Basic</td>
+                                                <td class="yeoe">2 years</td>
+                                                <td class="option">
+                                                    <div class="garbage"></div>
+                                                    <div class="edit-icon"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="skills">Business Analyst</td>
+                                                <td class="proficiency">Basic</td>
+                                                <td class="yeoe">5 years</td>
+                                                <td class="option">
+                                                    <div class="garbage"></div>
+                                                    <div class="edit-icon"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="skills">Problem Solving</td>
+                                                <td class="proficiency">Basic</td>
+                                                <td class="yeoe">4 years</td>
+                                                <td class="option">
+                                                    <div class="garbage"></div>
+                                                    <div class="edit-icon"></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <div id="JS-MR-SKILLS-ProfesionalSkill-edit-form"
+                                        class="table-edit myresume-use-collapse-event" style="display: none;">
+                                        <form method="POST" action="#">
+                                            <div class="form-input">
+                                                <div class="form-input-item">
+                                                    <input name="skill" class="form-input-text" type="text"
+                                                        placeholder="Professional skill" required>
+                                                </div>
+                                                <div class="form-input-item">
+                                                    <select class="form-input-select" name="proficiency">
+                                                        <option value="Basic">Basic</option>
+                                                        <option value="Intermediate">Intermediate</option>
+                                                        <option value="Advanced">Advanced</option>
+                                                        <option value="Expert">Expert</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-input-item">
+                                                    <input name="yearofexperience" class="form-input-text" type="number"
+                                                        placeholder="No. of year" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-option">
+                                                <button type="submit" class="add-button boldertext">
+                                                    <div class="addnew-button-orange"><i class="fas fa-plus"></i></div>
+                                                    Add
+                                                </button>
+                                                <!-- <button type="submit" class="addButton">
+                                                            <div class="addnew-button-orange"><i class="fas fa-plus"></i></div>Save
+                                                        </button> -->
+                                                <div id="JS-MR-SKILLS-ProfesionalSkill-Cancel-Button" type="none"
+                                                    class="cancel-button">Cancel
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="left-body-table">
+                                <div class="table-name">
+                                    <div class="name boldertext">Technology Skills</div>
+                                    <div id="JS-MR-SKILLS-TechnologySkill-Show-Edit" class="addnew-button-orange"><i
+                                            class="fas fa-plus"></i></div>
+                                </div>
+                                <div class="table-here">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="skills">Skills</th>
+                                                <th class="proficiency">Proficiency</th>
+                                                <th class="yeoe">Year of Experience</th>
+                                                <th class="option"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="skills">Business Intelligence</td>
+                                                <td class="proficiency">Basic</td>
+                                                <td class="yeoe">2 years</td>
+                                                <td class="option">
+                                                    <div class="garbage"></div>
+                                                    <div class="edit-icon"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="skills">Web Architecture and
+                                                    Development Framework</td>
+                                                <td class="proficiency">Basic</td>
+                                                <td class="yeoe">5 years</td>
+                                                <td class="option">
+                                                    <div class="garbage"></div>
+                                                    <div class="edit-icon"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="skills">SEO/SEM Marketing</td>
+                                                <td class="proficiency">Basic</td>
+                                                <td class="yeoe">4 years</td>
+                                                <td class="option">
+                                                    <div class="garbage"></div>
+                                                    <div class="edit-icon"></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <div id="JS-MR-SKILLS-TechnologySkill-edit-form"
+                                        class="table-edit myresume-use-collapse-event" style="display: none;">
+                                        <form method="POST" action="#">
+                                            <div class="form-input">
+                                                <div class="form-input-item">
+                                                    <input name="skill" class="form-input-text" type="text"
+                                                        placeholder="Technology skill" required>
+                                                </div>
+                                                <div class="form-input-item">
+                                                    <select class="form-input-select" name="proficiency">
+                                                        <option value="Basic">Basic</option>
+                                                        <option value="Intermediate">Intermediate</option>
+                                                        <option value="Advanced">Advanced</option>
+                                                        <option value="Expert">Expert</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-input-item">
+                                                    <input name="yearofexperience" class="form-input-text" type="number"
+                                                        placeholder="No. of year" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-option">
+                                                <button type="submit" class="add-button boldertext">
+                                                    <div class="addnew-button-orange"><i class="fas fa-plus"></i></div>
+                                                    Add
+                                                </button>
+                                                <!-- <button type="submit" class="addButton">
+                                                            <div class="addnew-button-orange"><i class="fas fa-plus"></i></div>Save
+                                                        </button> -->
+                                                <div id="JS-MR-SKILLS-TechnologySkill-Cancel-Button" type="none"
+                                                    class="cancel-button">Cancel
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="left-body-table">
+                                <div class="table-name">
+                                    <div class="name boldertext">Domain Skills</div>
+                                    <div id="JS-MR-SKILLS-DomainSkill-Show-Edit" class="addnew-button-orange"><i
+                                            class="fas fa-plus"></i></div>
+                                </div>
+                                <div class="table-here">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="skills">Skills</th>
+                                                <th class="proficiency">Proficiency</th>
+                                                <th class="yeoe">Year of Experience</th>
+                                                <th class="option"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="skills">Recruitment</td>
+                                                <td class="proficiency">Intermediate</td>
+                                                <td class="yeoe">2 years</td>
+                                                <td class="option">
+                                                    <div class="garbage"></div>
+                                                    <div class="edit-icon"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="skills">E-commerce</td>
+                                                <td class="proficiency">Basic</td>
+                                                <td class="yeoe">5 years</td>
+                                                <td class="option">
+                                                    <div class="garbage"></div>
+                                                    <div class="edit-icon"></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <div id="JS-MR-SKILLS-DomainSkill-edit-form"
+                                        class="table-edit myresume-use-collapse-event" style="display: none;">
+                                        <form method="POST" action="#">
+                                            <div class="form-input">
+                                                <div class="form-input-item">
+                                                    <input name="skill" class="form-input-text" type="text"
+                                                        placeholder="Domain skill" required>
+                                                </div>
+                                                <div class="form-input-item">
+                                                    <select class="form-input-select" name="proficiency">
+                                                        <option value="Basic">Basic</option>
+                                                        <option value="Intermediate">Intermediate</option>
+                                                        <option value="Advanced">Advanced</option>
+                                                        <option value="Expert">Expert</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-input-item">
+                                                    <input name="yearofexperience" class="form-input-text" type="number"
+                                                        placeholder="No. of year" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-option">
+                                                <button type="submit" class="add-button boldertext">
+                                                    <div class="addnew-button-orange"><i class="fas fa-plus"></i></div>
+                                                    Add
+                                                </button>
+                                                <!-- <button type="submit" class="addButton">
+                                                                <div class="addnew-button-orange"><i class="fas fa-plus"></i></div>Save
+                                                            </button> -->
+                                                <div id="JS-MR-SKILLS-DomainSkill-Cancel-Button" type="none"
+                                                    class="cancel-button">Cancel
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="left-body-table">
+                                <div class="table-name">
+                                    <div class="name boldertext">Language Skills</div>
+                                    <div id="JS-MR-SKILLS-LanguageSkill-Show-Edit" class="addnew-button-orange"><i
+                                            class="fas fa-plus"></i></div>
+                                </div>
+                                <div class="table-here but-3-element">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="skills">Skills</th>
+                                                <th class="proficiency">Proficiency</th>
+                                                <th class="option"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="skills">Recruitment</td>
+                                                <td class="proficiency">Intermediate</td>
+                                                <td class="option">
+                                                    <div class="garbage"></div>
+                                                    <div class="edit-icon"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="skills">E-commerce</td>
+                                                <td class="proficiency">Basic</td>
+                                                <td class="option">
+                                                    <div class="garbage"></div>
+                                                    <div class="edit-icon"></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <div id="JS-MR-SKILLS-LanguageSkill-edit-form"
+                                        class="table-edit myresume-use-collapse-event" style="display: none;">
+                                        <form method="POST" action="#">
+                                            <div class="form-input">
+                                                <div class="form-input-item">
+                                                    <input name="skill" class="form-input-text" type="text"
+                                                        placeholder="Language skill" required>
+                                                </div>
+                                                <div class="form-input-item">
+                                                    <select class="form-input-select" name="proficiency">
+                                                        <option value="Basic">Basic</option>
+                                                        <option value="Intermediate">Intermediate</option>
+                                                        <option value="Advanced">Advanced</option>
+                                                        <option value="Expert">Expert</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-option">
+                                                <button type="submit" class="add-button boldertext">
+                                                    <div class="addnew-button-orange"><i class="fas fa-plus"></i></div>
+                                                    Add
+                                                </button>
+                                                <!-- <button type="submit" class="addButton">
+                                                                <div class="addnew-button-orange"><i class="fas fa-plus"></i></div>Save
+                                                            </button> -->
+                                                <div id="JS-MR-SKILLS-LanguageSkill-Cancel-Button" type="none"
+                                                    class="cancel-button">Cancel
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="myresume-element set-box-shadow">
+                        <div class="left-title">
+                            <div style="background-image: url(image/business-presentation@3x.png);"
+                                class="left-title-image"></div>
+                            <div class="left-title-name titletext">PROJECT EXPERIENCE</div>
+                            <div id="JS-MR-PROJECTEXPERIENCE-show-edit" class="addnew-button-blue">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="left-body">
+
+                            <div class="left-body-timeline">
+                                <table>
+                                    <tr>
+                                        <td class="timeline-title boldertext">03/2018 - 01/2019</td>
+                                        <td class="timeline-content">
+                                            <div class="timeline-content-item timeline-content-item-name boldertext">
+                                                Developing Video Mail
+                                            </div>
+                                            <div class="timeline-content-item italictext">ITNavi JSC.</div>
+                                            <div class="timeline-content-item description">
+                                                Developing application by C/C++ to attach video to mail and to extract
+                                                and play video from email
+                                            </div>
+                                            <div class="timeline-content-item description">
+                                                • Team size: 5
+                                            </div>
+                                            <div class="timeline-content-item description">
+                                                • Technical Skills: Laravel Framework, PHP, MySQL
+                                            </div>
+                                            <div class="timeline-content-item description">
+                                                • Role: Product Owner
+                                            </div>
+                                        </td>
+                                        <td class="timeline-option">
+                                            <div class="garbage"></div>
+                                            <div class="edit-icon"></div>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                            <div id="JS-MR-PROJECTEXPERIENCE-edit-form"
+                                class="text-edit myresume-use-collapse-event border-top-gray" style="display: none;">
+                                <form class="text-edit-labeltop" method="POST" action="#">
+                                    <div class="item item-2 item-mr-2 item-xs-1 item-xs-mr-1">
+                                        <label for="projectname">Project Name <span class="super-star">*</span></label>
+                                        <input type="text" name="projectname" required>
+                                    </div>
+                                    <div class="item item-2 item-xs-1">
+                                        <label for="company">Company <span class="super-star">*</span></label>
+                                        <input type="text" name="company" required>
+                                    </div>
+                                    <div class="item item-4 item-mr-4 item-lg-2 item-mr-lg-2 item-xs-1 item-xs-mr-1">
+                                        <label for="from">From <span class="super-star">*</span></label>
+                                        <input type="date" name="from" required>
+                                    </div>
+                                    <div class="item item-4 item-mr-2 item-lg-2 item-mr-lg-1 item-xs-1 item-xs-mr-1">
+                                        <label for="to">To <span class="super-star">*</span></label>
+                                        <input type="date" name="to" required>
+                                    </div>
+                                    <div class="item item-2 item-lg-1">
+                                        <label for="projectteamsize">Project Team Size </label>
+                                        <input type="text" name="projectteamsize">
+                                    </div>
+                                    <div class="item item-2 item-mr-2 item-xs-1 item-xs-mr-1">
+                                        <label for="role">Role</label>
+                                        <select name="role">
+                                            <option value="">A</option>
+                                            <option value="">B</option>
+                                            <option value="">C</option>
+                                        </select>
+                                    </div>
+                                    <div class="item item-2 item-xs-1">
+                                        <label for="technicalskill">Technical Skills</label>
+                                        <input type="text" name="technicalskill"
+                                            placeholder="Technical skills used in project">
+                                    </div>
+                                    <div class="item">
+                                        <label for="description">Description</label>
+                                        <textarea name="description" rows="3"
+                                            placeholder="Overview about your project"></textarea>
+                                    </div>
+                                    <div class="form-option form-option-fill">
+                                        <div id="JS-MR-PROJECTEXPERIENCE-Cancel-Button"
+                                            class="cancel-button boldertext">
+                                            Cancel
+                                        </div>
+                                        <button type="submit" class="save-button boldertext">
+                                            Save
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="myresume-element set-box-shadow">
+                        <div class="left-title">
+                            <div style="background-image: url(image/passage-of-time@3x.png);" class="left-title-image">
+                            </div>
+                            <div class="left-title-name titletext">EMPLOYMENT HISTORY</div>
+                            <div id="JS-MR-EMPLOYMENTHISTORY-show-edit" class="addnew-button-blue">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="left-body">
+
+                            <div class="left-body-timeline">
+                                <table>
+                                    <tr>
+                                        <td class="timeline-title boldertext">07/2016 - 02/2018</td>
+                                        <td class="timeline-content">
+                                            <div class="timeline-content-item timeline-content-item-name boldertext">
+                                                Product Lead</div>
+                                            <div class="timeline-content-item italictext">Haravan JSC.</div>
+                                            <div class="timeline-content-item description">
+                                                HARAVAN has been established in March, 2014 as a software solution
+                                                company,
+                                                provide cloud-based multichannel commerce platform for SMEs, e-commerce
+                                                merchants, retailers, shop to run their business online and offline.
+                                            </div>
+                                        </td>
+                                        <td class="timeline-option">
+                                            <div class="garbage"></div>
+                                            <div class="edit-icon"></div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div id="JS-MR-EMPLOYMENTHISTORY-edit-form"
+                                class="text-edit myresume-use-collapse-event border-top-gray" style="display: none;">
+                                <form class="text-edit-labeltop" method="POST" action="#">
+                                    <div class="item item-2 item-mr-2 item-xs-1 item-xs-mr-1">
+                                        <label for="position">Position <span class="super-star">*</span></label>
+                                        <input type="text" name="position" required>
+                                    </div>
+                                    <div class="item item-2 item-xs-1">
+                                        <label for="company">Company <span class="super-star">*</span></label>
+                                        <input type="text" name="company" required>
+                                    </div>
+                                    <div class="item item-4 item-mr-4 item-lg-3 item-mr-lg-3 item-xs-1 item-xs-mr-1">
+                                        <label for="from">From <span class="super-star">*</span></label>
+                                        <input type="date" name="from" required>
+                                    </div>
+                                    <div id="EMPLOYMENTHISTORY-to"
+                                        class="item item-4 item-mr-2 item-lg-3 item-mr-lg-3 item-xs-1 item-xs-mr-1">
+                                        <label for="to">To <span class="super-star">*</span></label>
+                                        <input type="date" name="to" required>
+                                    </div>
+                                    <div class="item item-2 item-lg-3 item-xs-1">
+                                        <label for="technicalskill"> </label>
+                                        <div class="item-checkbox">
+                                            <div class="checkbox1" data-name="sendme"></div>
+                                            <span>Current Job</span>
+                                            <input type="hidden" id="sendme" name="sendme" value="false">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <label for="responsibilities">Responsibilities</label>
+                                        <textarea name="responsibilities" rows="3"
+                                            placeholder="Describe your responsibilities and achievements"></textarea>
+                                    </div>
+                                    <div class="form-option form-option-fill">
+                                        <div id="JS-MR-EMPLOYMENTHISTORY-Cancel-Button"
+                                            class="cancel-button boldertext">
+                                            Cancel
+                                        </div>
+                                        <button type="submit" class="save-button boldertext">
+                                            Save
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="myresume-element set-box-shadow">
+                        <div class="left-title">
+                            <div style="background-image: url(image/college-graduation-1@3x.png);"
+                                class="left-title-image">
+                            </div>
+                            <div class="left-title-name titletext">EDUCATIONAL BACKGROUND</div>
+                            <div id="JS-MR-EDUCATIONALBACKGROUND-show-edit" class="addnew-button-blue">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="left-body">
+
+                            <div class="left-body-timeline">
+                                <table>
+                                    <tr>
+                                        <td class="timeline-title boldertext">09/2006 - 01/2011</td>
+                                        <td class="timeline-content">
+                                            <div class="timeline-content-item timeline-content-item-name boldertext">
+                                                Bachelor of Information Technology
+                                            </div>
+                                            <div class="timeline-content-item description">Hanoi University - Vietnam
+                                            </div>
+                                            <div class="timeline-content-item description">Grade: 3.5</div>
+                                        </td>
+                                        <td class="timeline-option">
+                                            <div class="garbage"></div>
+                                            <div class="edit-icon"></div>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                            <div id="JS-MR-EDUCATIONALBACKGROUND-edit-form"
+                                class="text-edit myresume-use-collapse-event border-top-gray" style="display: none;">
+                                <form class="text-edit-labeltop" method="POST" action="#">
+                                    <div class="item item-2 item-mr-2 item-xs-1 item-xs-mr-1">
+                                        <label for="school">School <span class="super-star">*</span></label>
+                                        <input type="text" name="school" required>
+                                    </div>
+                                    <div class="item item-2 item-xs-1">
+                                        <label for="country">Country <span class="super-star">*</span></label>
+                                        <input type="text" name="country" required>
+                                    </div>
+                                    <div class="item item-2 item-mr-2 item-lg-1 item-mr-lg-1">
+                                        <label for="degree">Degree </label>
+                                        <select name="degree">
+                                            <option value="">A</option>
+                                            <option value="">B</option>
+                                            <option value="">C</option>
+                                        </select>
+                                    </div>
+                                    <div class="item item-4 item-mr-4 item-lg-2 item-mr-lg-2 item-xs-1 item-xs-mr-1">
+                                        <label for="from">From <span class="super-star">*</span></label>
+                                        <input type="date" name="from" required>
+                                    </div>
+                                    <div class="item item-4 item-lg-2 item-xs-1">
+                                        <label for="to">To <span class="super-star">*</span></label>
+                                        <input type="date" name="to" required>
+                                    </div>
+                                    <div class="item item-2 item-mr-2 item-xs-1 item-xs-mr-1">
+                                        <label for="fieldofstudy">Field of Study</label>
+                                        <select name="fieldofstudy">
+                                            <option value="">A</option>
+                                            <option value="">B</option>
+                                            <option value="">C</option>
+                                        </select>
+                                    </div>
+                                    <div class="item item-2 item-xs-1">
+                                        <label for="grade">Grade</label>
+                                        <input type="text" name="grade" placeholder="Technical skills used in project">
+                                    </div>
+                                    <div class="form-option form-option-fill">
+                                        <div id="JS-MR-EDUCATIONALBACKGROUND-Cancel-Button"
+                                            class="cancel-button boldertext">
+                                            Cancel
+                                        </div>
+                                        <button type="submit" class="save-button boldertext">
+                                            Save
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="myresume-element set-box-shadow">
+                        <div class="left-title">
+                            <div style="background-image: url(image/certification-file@3x.png);"
+                                class="left-title-image">
+                            </div>
+                            <div class="left-title-name titletext">CERTIFICATION</div>
+                            <div id="JS-MR-CERTIFICATION-show-edit" class="addnew-button-blue">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="left-body">
+
+                            <div class="left-body-timeline">
+                                <table>
+                                    <tr>
+                                        <td class="timeline-title boldertext">05/2018</td>
+                                        <td class="timeline-content">
+                                            <div class="timeline-content-item timeline-content-item-name">
+                                                PMP (Score:5)
+                                            </div>
+                                        </td>
+                                        <td class="timeline-option">
+                                            <div class="garbage"></div>
+                                            <div class="edit-icon"></div>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                            <div id="JS-MR-CERTIFICATION-edit-form"
+                                class="text-edit myresume-use-collapse-event border-top-gray" style="display: none;">
+                                <form class="text-edit-labeltop" method="POST" action="#">
+                                    <div class="item item-2 item-mr-2 item-lg-1 item-lg-mr-1">
+                                        <label for="name">Certification Name </label>
+                                        <input type="text" name="name">
+                                    </div>
+                                    <div class="item item-4 item-mr-4 item-lg-2 item-mr-lg-2 item-xs-1 item-xs-mr-1">
+                                        <label for="achievedtime">Achieved Time </label>
+                                        <input type="date" name="achievedtime">
+                                    </div>
+                                    <div class="item item-4 item-lg-2 item-xs-1">
+                                        <label for="score">Score </label>
+                                        <input type="text" name="score">
+                                    </div>
+                                    <div class="form-option form-option-fill">
+                                        <div id="JS-MR-CERTIFICATION-Cancel-Button" class="cancel-button boldertext">
+                                            Cancel
+                                        </div>
+                                        <button type="submit" class="save-button boldertext">
+                                            Save
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="myresume-element set-box-shadow">
+                        <div class="left-title">
+                            <div style="background-image: url(image/business-people-meeting@3x.png);"
+                                class="left-title-image">
+                            </div>
+                            <div class="left-title-name titletext">TRAINING & SEMINAR ATTENDED</div>
+                            <div id="JS-MR-TRAININGSEMINARATTENDED-show-edit" class="addnew-button-blue">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="left-body">
+
+                            <div class="left-body-timeline">
+                                <table>
+                                    <tr>
+                                        <td class="timeline-title boldertext">01/2017- 03/2017</td>
+                                        <td class="timeline-content">
+                                            <div class="timeline-content-item timeline-content-item-name">
+                                                Project Management Essentials</div>
+                                        </td>
+                                        <td class="timeline-option">
+                                            <div class="garbage"></div>
+                                            <div class="edit-icon"></div>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                            <div id="JS-MR-TRAININGSEMINARATTENDED-edit-form"
+                                class="text-edit myresume-use-collapse-event border-top-gray" style="display: none;">
+                                <form class="text-edit-labeltop" method="POST" action="#">
+                                    <div class="item item-2 item-mr-2 item-xs-1 item-xs-mr-1">
+                                        <label for="topic">Training & Seminar Topic </label>
+                                        <input type="text" name="topic">
+                                    </div>
+                                    <div class="item item-4 item-mr-4 item-lg-2 item-mr-lg-2 item-xs-1 item-xs-mr-1">
+                                        <label for="starttime">Start Time </label>
+                                        <input type="date" name="starttime">
+                                    </div>
+                                    <div class="item item-4 item-lg-2 item-xs-1 item-xs-mr-1">
+                                        <label for="endtime">End Time </label>
+                                        <input type="date" name="endtime">
+                                    </div>
+                                    <div class="form-option form-option-fill">
+                                        <div id="JS-MR-TRAININGSEMINARATTENDED-Cancel-Button"
+                                            class="cancel-button boldertext">
+                                            Cancel
+                                        </div>
+                                        <button type="submit" class="save-button boldertext">
+                                            Save
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="myresume-element set-box-shadow">
+                        <div class="left-title">
+                            <div style="background-image: url(image/quality@3x.png);" class="left-title-image"></div>
+                            <div class="left-title-name titletext">QUALIFICATIONS</div>
+                            <div id="JS-MR-QUALIFICATIONS-show-edit" class="edit-icon"></div>
+                        </div>
+                        <div class="left-body">
+                            <div id="JS-MR-QUALIFICATIONS-view"
+                                class="left-body-text small-text myresume-use-collapse-event collapse in">
+                                Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            </div>
+
+                            <div id="JS-MR-QUALIFICATIONS-edit-form" class="text-edit myresume-use-collapse-event"
+                                style="display: none;">
+                                <form method="POST" action="#">
+                                    <textarea name="careerObjective" id="" rows="5"></textarea>
+
+                                    <div class="form-option">
+                                        <div id="JS-MR-QUALIFICATIONS-Cancel-Button" class="cancel-button boldertext">
+                                            Cancel
+                                        </div>
+                                        <button type="submit" class="save-button boldertext">
+                                            Save
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="myresume-element set-box-shadow">
+                        <div class="left-title">
+                            <div style="background-image: url(image/award@3x.png);" class="left-title-image"></div>
+                            <div class="left-title-name titletext">ACHIEVEMENT/ RESPONSIBILITY</div>
+                            <div id="JS-MR-ACHIEVEMENTRESPONSIBILITY-show-edit" class="edit-icon"></div>
+                        </div>
+                        <div class="left-body">
+                            <div id="JS-MR-ACHIEVEMENTRESPONSIBILITY-view"
+                                class="left-body-text small-text myresume-use-collapse-event collapse in">
+                                Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            </div>
+
+                            <div id="JS-MR-ACHIEVEMENTRESPONSIBILITY-edit-form"
+                                class="text-edit myresume-use-collapse-event" style="display: none;">
+                                <form method="POST" action="#">
+                                    <textarea name="careerObjective" id="" rows="5"></textarea>
+
+                                    <div class="form-option">
+                                        <div id="JS-MR-ACHIEVEMENTRESPONSIBILITY-Cancel-Button"
+                                            class="cancel-button boldertext">
+                                            Cancel
+                                        </div>
+                                        <button type="submit" class="save-button boldertext">
+                                            Save
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="myresume-element set-box-shadow">
+                        <div class="left-title">
+                            <div style="background-image: url(image/file-in-folder@3x.png);" class="left-title-image">
+                            </div>
+                            <div class="left-title-name titletext">REFERENCES</div>
+                            <div id="JS-MR-REFERENCES-show-edit" class="addnew-button-blue">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="left-body">
+
+                            <div class="left-body-timeline">
+                                <table>
+                                    <tr>
+                                        <td class="timeline-title boldertext">Trần Thị Hồng</td>
+                                        <td class="timeline-content">
+                                            <div class="timeline-content-item timeline-content-item-name">
+                                                CEO - HRI Vietnam</div>
+                                            <div class="timeline-content-item timeline-content-item-name">
+                                                Email: hong.tran@hri.com.vn - Phone: 0912345678</div>
+                                        </td>
+                                        <td class="timeline-option">
+                                            <div class="garbage"></div>
+                                            <div class="edit-icon"></div>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                            <div id="JS-MR-REFERENCES-edit-form"
+                                class="text-edit border-top-gray myresume-use-collapse-event" style="display: none;">
+                                <form class="text-edit-labeltop" method="POST" action="#">
+                                    <div class="item item-2 item-mr-2 item-xs-1 item-xs-mr-1">
+                                        <label for="fullname">Full Name <span class="super-star">*</span></label>
+                                        <input type="text" name="fullname" required>
+                                    </div>
+                                    <div class="item item-2 item-xs-1">
+                                        <label for="position">Position <span class="super-star">*</span></label>
+                                        <input type="text" name="position" required>
+                                    </div>
+                                    <div class="item">
+                                        <label for="company">Company <span class="super-star">*</span></label>
+                                        <input type="text" name="company" required>
+                                    </div>
+                                    <div class="item item-2 item-mr-2 item-xs-1 item-xs-mr-1">
+                                        <label for="email">Email <span class="super-star">*</span></label>
+                                        <input type="text" name="email" required>
+                                    </div>
+                                    <div class="item item-2 item-xs-1">
+                                        <label for="phonenumber">Phone Number <span class="super-star">*</span></label>
+                                        <input type="number" name="phonenumber" required>
+                                    </div>
+                                    <div class="form-option form-option-fill">
+                                        <div id="JS-MR-REFERENCES-Cancel-Button" class="cancel-button boldertext">
+                                            Cancel
+                                        </div>
+                                        <button type="submit" class="save-button boldertext">
+                                            Save
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="myresume-element set-box-shadow">
+                        <div class="left-title">
+                            <div style="background-image: url(image/megaphone@3x.png);" class="left-title-image">
+                            </div>
+                            <div class="left-title-name titletext">WORKING PREFERENCES</div>
+                            <div id="JS-MR-WORKINGPREFERENCES-show-edit" class="edit-icon"></div>
+                        </div>
+                        <div class="left-body">
+                            <div id="JS-MR-WORKINGPREFERENCES-view"
+                                class="left-body-biglist myresume-use-collapse-event collapse in">
+                                <div class="biglist-item">
+                                    <span class="boldertext">Preferred Working Location: </span>
+                                    Hanoi, Da nang, Ho Chi Minh
+                                </div>
+                                <div class="biglist-item">
+                                    <span class="boldertext">Expected Job Category: </span>
+                                    Blockchain, Machine Learning
+                                </div>
+                                <div class="biglist-item">
+                                    <span class="boldertext">Expected Job Level: </span>
+                                    Senior
+                                </div>
+                                <div class="biglist-item">
+                                    <span class="boldertext">Minimum Expected Salary (USD per month): </span>
+                                    2.000
+                                </div>
+                                <div class="biglist-item">
+                                    <span class="boldertext">My Top 5 Desired Benefits</span>
+                                    <div class="biglist-benefit">
+                                        <div class="biglist-benefit-item hidden">
+                                            <div style="background-position-x: 0px;" class="biglist-benefit-item-image">
+                                            </div>
+                                            Ha Noi
+                                        </div>
+                                        <div class="biglist-benefit-item hidden">
+                                            <div style="background-position-x: -66px;"
+                                                class="biglist-benefit-item-image"></div>
+                                            Ha Noi
+                                        </div>
+                                        <div class="biglist-benefit-item">
+                                            <div style="background-position-x: -132px;"
+                                                class="biglist-benefit-item-image"></div>
+                                            Canteen
+                                        </div>
+                                        <div class="biglist-benefit-item hidden">
+                                            <div style="background-position-x: -194px;"
+                                                class="biglist-benefit-item-image"></div>
+                                            Ha Noi
+                                        </div>
+                                        <div class="biglist-benefit-item hidden">
+                                            <div style="background-position-x: -153px;"
+                                                class="biglist-benefit-item-image"></div>
+                                            Mobile
+                                        </div>
+                                        <div class="biglist-benefit-item hidden">
+                                            <div style="background-position-x: -21px;"
+                                                class="biglist-benefit-item-image"></div>
+                                            Laptop
+                                        </div>
+                                        <div class="biglist-benefit-item">
+                                            <div style="background-position-x: -89px;"
+                                                class="biglist-benefit-item-image"></div>
+                                            Library
+                                        </div>
+                                        <div class="biglist-benefit-item">
+                                            <div style="background-position-x: -267px;"
+                                                class="biglist-benefit-item-image"></div>
+                                            Kindergarten
+                                        </div>
+                                        <div class="biglist-benefit-item hidden">
+                                            <div style="background-position-x: -288px;"
+                                                class="biglist-benefit-item-image"></div>
+                                            Paid leave
+                                        </div>
+                                        <div class="biglist-benefit-item hidden">
+                                            <div style="background-position-x: -217px;"
+                                                class="biglist-benefit-item-image"></div>
+                                            Team activities
+                                        </div>
+                                        <div class="biglist-benefit-item hidden">
+                                            <div style="background-position-x: -42px;"
+                                                class="biglist-benefit-item-image"></div>
+                                            Trainning
+                                        </div>
+                                        <div class="biglist-benefit-item">
+                                            <div style="background-position-x: -110px;"
+                                                class="biglist-benefit-item-image"></div>
+                                            Transportation
+                                        </div>
+                                        <div class="biglist-benefit-item">
+                                            <div style="background-position-x: -173px;"
+                                                class="biglist-benefit-item-image"></div>
+                                            Travel opportunity
+                                        </div>
+                                        <div class="biglist-benefit-item hidden">
+                                            <div style="background-position-x: -243px;"
+                                                class="biglist-benefit-item-image"></div>
+                                            Vouchers
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div id="JS-MR-WORKINGPREFERENCES-edit-form" class="text-edit myresume-use-collapse-event"
+                                style="display: none;">
+                                <form class="text-edit-labeltop" method="POST" action="#">
+                                    <div class="item item-2 item-mr-2 item-sm-1 item-sm-mr-1">
+                                        <label for="preferredworkinglocation">Preferred Working Location</label>
+                                        <input type="text" id="WORKINGPREFERENCES-preferredworkinglocation"
+                                            value="New York,Los Angeles" name="preferredworkinglocation">
+                                    </div>
+                                    <div class="item item-2 item-sm-1">
+                                        <label for="expectedjoblevel">Expected Job Level</label>
+                                        <input type="text" id="WORKINGPREFERENCES-expectedjoblevel"
+                                            name="expectedjoblevel">
+                                    </div>
+                                    <div class="item item-2 item-mr-2 item-sm-1 item-sm-mr-1">
+                                        <label for="expectedjobcategory">Expected Job Category</label>
+                                        <input type="text" id="WORKINGPREFERENCES-expectedjobcategory"
+                                            name="expectedjobcategory">
+                                    </div>
+                                    <div class="item item-2 item-sm-1">
+                                        <label for="phonenumber">Minimum Expected Salary (USD per month)</label>
+                                        <input type="number" name="phonenumber">
+                                    </div>
+                                    <div class="biglist-item">
+                                        <span class="boldertext">My Top 5 Desired Benefits</span>
+                                        <div class="biglist-benefit">
+                                            <div class="biglist-benefit-item-edit">
+                                                <div style="background-position-x: 0px;"
+                                                    class="biglist-benefit-item-image">
+                                                </div>
+                                                Ha Noi
+                                            </div>
+                                            <div class="biglist-benefit-item-edit">
+                                                <div style="background-position-x: -66px;"
+                                                    class="biglist-benefit-item-image"></div>
+                                                Ha Noi
+                                            </div>
+                                            <div class="biglist-benefit-item-edit benefit-active">
+                                                <div style="background-position-x: -132px;"
+                                                    class="biglist-benefit-item-image"></div>
+                                                Canteen
+                                            </div>
+                                            <div class="biglist-benefit-item-edit">
+                                                <div style="background-position-x: -194px;"
+                                                    class="biglist-benefit-item-image"></div>
+                                                Ha Noi
+                                            </div>
+                                            <div class="biglist-benefit-item-edit">
+                                                <div style="background-position-x: -153px;"
+                                                    class="biglist-benefit-item-image"></div>
+                                                Mobile
+                                            </div>
+                                            <div class="biglist-benefit-item-edit">
+                                                <div style="background-position-x: -21px;"
+                                                    class="biglist-benefit-item-image"></div>
+                                                Laptop
+                                            </div>
+                                            <div class="biglist-benefit-item-edit benefit-active">
+                                                <div style="background-position-x: -89px;"
+                                                    class="biglist-benefit-item-image"></div>
+                                                Library
+                                            </div>
+                                            <div class="biglist-benefit-item-edit benefit-active">
+                                                <div style="background-position-x: -267px;"
+                                                    class="biglist-benefit-item-image"></div>
+                                                Kindergarten
+                                            </div>
+                                            <div class="biglist-benefit-item-edit">
+                                                <div style="background-position-x: -288px;"
+                                                    class="biglist-benefit-item-image"></div>
+                                                Paid leave
+                                            </div>
+                                            <div class="biglist-benefit-item-edit">
+                                                <div style="background-position-x: -217px;"
+                                                    class="biglist-benefit-item-image"></div>
+                                                Team activities
+                                            </div>
+                                            <div class="biglist-benefit-item-edit">
+                                                <div style="background-position-x: -42px;"
+                                                    class="biglist-benefit-item-image"></div>
+                                                Trainning
+                                            </div>
+                                            <div class="biglist-benefit-item-edit benefit-active">
+                                                <div style="background-position-x: -110px;"
+                                                    class="biglist-benefit-item-image"></div>
+                                                Transportation
+                                            </div>
+                                            <div class="biglist-benefit-item-edit benefit-active">
+                                                <div style="background-position-x: -173px;"
+                                                    class="biglist-benefit-item-image"></div>
+                                                Travel opportunity
+                                            </div>
+                                            <div class="biglist-benefit-item-edit">
+                                                <div style="background-position-x: -243px;"
+                                                    class="biglist-benefit-item-image"></div>
+                                                Vouchers
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-option form-option-fill">
+                                        <div id="JS-MR-WORKINGPREFERENCES-Cancel-Button"
+                                            class="cancel-button boldertext">
+                                            Cancel
+                                        </div>
+                                        <button type="submit" class="save-button boldertext">
+                                            Save
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="MyJobs" class="hri-tabcontent set-box-shadow">
+                <div class="myjob-tab">
+                    <button id="MySavedJobsButton" class="myjob-tablinks" onclick="openMyjob(event, 'MySavedJobs')">My
+                        Saved
+                        Jobs</button>
+                    <button id="MyAppliedJobsButton" class="myjob-tablinks"
+                        onclick="openMyjob(event, 'MyAppliedJobs')">My
+                        Applied Jobs</button>
+                </div>
+                <div id="MySavedJobs" class="myjob-tabcontent">
+
+                    <!-- Desktop -->
+                    <table class="myjob-table">
+                        <thead>
+                            <tr>
+                                <th class="jobtitle">Job Title</th>
+                                <th class="location">Location</th>
+                                <th class="saveddate">Saved Date</th>
+                                <th class="expireddate">Expired Date</th>
+
+                                <!-- Tablet -->
+                                <th class="locationdate"></th>
+                                <!-- Tablet -->
+
+                                <th class="action">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td class="jobtitle">
+                                    <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                    <div class="info">
+                                        <div class="jobname">Java Lead</div>
+                                        <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                        <div class="salary">$5.000 - $10.000</div>
+                                    </div>
+                                </td>
+
+                                <td class="location">Ha noi, Cau Giay</td>
+                                <td class="saveddate">15/03/2019</td>
+                                <td class="expireddate">20/03/2019</td>
+
+                                <!-- Tablet -->
+                                <td class="locationdate">
+                                    <div><span>Location:</span>Ha noi, Cau Giay</div>
+                                    <div><span>Saved Date:</span>15/03/2019</div>
+                                    <div><span>Expired Date:</span>20/03/2019</div>
+                                </td>
+                                <!-- Tablet -->
+
+                                <td class="action">
+                                    <button>Apply</button>
+                                    <a href="#"><img class="save-jobs-hearticon mr-2"
+                                            src="image/favorite-heart-button@3x.png" alt="">Saved</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="jobtitle">
+                                    <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                    <div class="info">
+                                        <div class="jobname">Java Lead</div>
+                                        <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                        <div class="salary">$5.000 - $10.000</div>
+                                    </div>
+                                </td>
+
+                                <td class="location">Ha noi, Cau Giay</td>
+                                <td class="saveddate">15/03/2019</td>
+                                <td class="expireddate">20/03/2019</td>
+
+                                <!-- Tablet -->
+                                <td class="locationdate">
+                                    <div><span>Location:</span>Ha noi, Cau Giay</div>
+                                    <div><span>Saved Date:</span>15/03/2019</div>
+                                    <div><span>Expired Date:</span>20/03/2019</div>
+                                </td>
+                                <!-- Tablet -->
+
+                                <td class="action">
+                                    <button>Apply</button>
+                                    <a href="#"><img class="save-jobs-hearticon mr-2"
+                                            src="image/favorite-heart-button@3x.png" alt="">Saved</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="jobtitle">
+                                    <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                    <div class="info">
+                                        <div class="jobname">Java Lead</div>
+                                        <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                        <div class="salary">$5.000 - $10.000</div>
+                                    </div>
+                                </td>
+
+                                <td class="location">Ha noi, Cau Giay</td>
+                                <td class="saveddate">15/03/2019</td>
+                                <td class="expireddate">20/03/2019</td>
+
+                                <!-- Tablet -->
+                                <td class="locationdate">
+                                    <div><span>Location:</span>Ha noi, Cau Giay</div>
+                                    <div><span>Saved Date:</span>15/03/2019</div>
+                                    <div><span>Expired Date:</span>20/03/2019</div>
+                                </td>
+                                <!-- Tablet -->
+
+                                <td class="action">
+                                    <button>Apply</button>
+                                    <a href="#"><img class="save-jobs-hearticon mr-2"
+                                            src="image/favorite-heart-button@3x.png" alt="">Saved</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="jobtitle">
+                                    <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                    <div class="info">
+                                        <div class="jobname">Java Lead</div>
+                                        <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                        <div class="salary">$5.000 - $10.000</div>
+                                    </div>
+                                </td>
+
+                                <td class="location">Ha noi, Cau Giay</td>
+                                <td class="saveddate">15/03/2019</td>
+                                <td class="expireddate">20/03/2019</td>
+
+                                <!-- Tablet -->
+                                <td class="locationdate">
+                                    <div><span>Location:</span>Ha noi, Cau Giay</div>
+                                    <div><span>Saved Date:</span>15/03/2019</div>
+                                    <div><span>Expired Date:</span>20/03/2019</div>
+                                </td>
+                                <!-- Tablet -->
+
+                                <td class="action">
+                                    <button>Apply</button>
+                                    <a href="#"><img class="save-jobs-hearticon mr-2"
+                                            src="image/favorite-heart-button@3x.png" alt="">Saved</a>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+                    <!-- Mobile -->
+                    <!-- Loop -->
+                    <div class="myjob-table-mobile">
+                        <div class="myjob-item">
+                            <div class="jobtitle">
+                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                <div class="info">
+                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                    <div class="salary">$5.000 - $10.000</div>
+                                </div>
+                            </div>
+                            <div class="job-desctiption">
+                                <div class="locationdate">
+                                    <div class="jobname">Java Lead</div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Location:</div>
+                                        <div class="value">Ha noi, Cau Giay</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Saved Date:</div>
+                                        <div class="value">15/03/2019</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Expired Date:</div>
+                                        <div class="value">20/03/2019</div>
+                                    </div>
+                                </div>
+                                <div class="action">
+                                    <button>Apply</button>
+                                    <a href="#"><img class="save-jobs-hearticon mr-2"
+                                            src="image/favorite-heart-button@3x.png" alt="">Saved</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Loop -->
+
+                    <div class="myjob-table-mobile">
+                        <div class="myjob-item">
+                            <div class="jobtitle">
+                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                <div class="info">
+                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                    <div class="salary">$5.000 - $10.000</div>
+                                </div>
+                            </div>
+                            <div class="job-desctiption">
+                                <div class="locationdate">
+                                    <div class="jobname">Java Lead</div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Location:</div>
+                                        <div class="value">Ha noi, Cau Giay</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Saved Date:</div>
+                                        <div class="value">15/03/2019</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Expired Date:</div>
+                                        <div class="value">20/03/2019</div>
+                                    </div>
+                                </div>
+                                <div class="action">
+                                    <button>Apply</button>
+                                    <a href="#"><img class="save-jobs-hearticon mr-2"
+                                            src="image/favorite-heart-button@3x.png" alt="">Saved</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="myjob-table-mobile">
+                        <div class="myjob-item">
+                            <div class="jobtitle">
+                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                <div class="info">
+                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                    <div class="salary">$5.000 - $10.000</div>
+                                </div>
+                            </div>
+                            <div class="job-desctiption">
+                                <div class="locationdate">
+                                    <div class="jobname">Java Lead</div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Location:</div>
+                                        <div class="value">Ha noi, Cau Giay</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Saved Date:</div>
+                                        <div class="value">15/03/2019</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Expired Date:</div>
+                                        <div class="value">20/03/2019</div>
+                                    </div>
+                                </div>
+                                <div class="action">
+                                    <button>Apply</button>
+                                    <a href="#"><img class="save-jobs-hearticon mr-2"
+                                            src="image/favorite-heart-button@3x.png" alt="">Saved</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="myjob-table-mobile">
+                        <div class="myjob-item">
+                            <div class="jobtitle">
+                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                <div class="info">
+                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                    <div class="salary">$5.000 - $10.000</div>
+                                </div>
+                            </div>
+                            <div class="job-desctiption">
+                                <div class="locationdate">
+                                    <div class="jobname">Java Lead</div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Location:</div>
+                                        <div class="value">Ha noi, Cau Giay</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Saved Date:</div>
+                                        <div class="value">15/03/2019</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Expired Date:</div>
+                                        <div class="value">20/03/2019</div>
+                                    </div>
+                                </div>
+                                <div class="action">
+                                    <button>Apply</button>
+                                    <a href="#"><img class="save-jobs-hearticon mr-2"
+                                            src="image/favorite-heart-button@3x.png" alt="">Saved</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile -->
+
+                </div>
+
+                <!-- My Applied Job Tab -->
+                <div id="MyAppliedJobs" class="myjob-tabcontent">
+                    <table class="myjob-table">
+                        <thead>
+                            <tr>
+                                <th class="jobtitle">Job Title</th>
+                                <th class="location">Location</th>
+                                <th class="saveddate">Applied Date</th>
+                                <th class="expireddate">Expired Date</th>
+
+                                <!-- Tablet -->
+                                <th class="locationdate"></th>
+                                <!-- Tablet -->
+
+                                <th class="action">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td class="jobtitle">
+                                    <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                    <div class="info">
+                                        <div class="jobname">Java Lead</div>
+                                        <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                        <div class="salary">$5.000 - $10.000</div>
+                                    </div>
+                                </td>
+
+                                <td class="location">Ha noi, Cau Giay</td>
+                                <td class="saveddate">15/03/2019</td>
+                                <td class="expireddate">20/03/2019</td>
+
+                                <!-- Tablet -->
+                                <td class="locationdate">
+                                    <div><span>Location:</span>Ha noi, Cau Giay</div>
+                                    <div><span>Applied Date:</span>15/03/2019</div>
+                                    <div><span>Expired Date:</span>20/03/2019</div>
+                                </td>
+                                <!-- Tablet -->
+
+                                <td class="action">
+                                    <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
+                                    Applied
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="jobtitle">
+                                    <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                    <div class="info">
+                                        <div class="jobname">Java Lead</div>
+                                        <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                        <div class="salary">$5.000 - $10.000</div>
+                                    </div>
+                                </td>
+
+                                <td class="location">Ha noi, Cau Giay</td>
+                                <td class="saveddate">15/03/2019</td>
+                                <td class="expireddate">20/03/2019</td>
+
+                                <!-- Tablet -->
+                                <td class="locationdate">
+                                    <div><span>Location:</span>Ha noi, Cau Giay</div>
+                                    <div><span>Applied Date:</span>15/03/2019</div>
+                                    <div><span>Expired Date:</span>20/03/2019</div>
+                                </td>
+                                <!-- Tablet -->
+
+                                <td class="action">
+                                    <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
+                                    Applied
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="jobtitle">
+                                    <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                    <div class="info">
+                                        <div class="jobname">Java Lead</div>
+                                        <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                        <div class="salary">$5.000 - $10.000</div>
+                                    </div>
+                                </td>
+
+                                <td class="location">Ha noi, Cau Giay</td>
+                                <td class="saveddate">15/03/2019</td>
+                                <td class="expireddate">20/03/2019</td>
+
+                                <!-- Tablet -->
+                                <td class="locationdate">
+                                    <div><span>Location:</span>Ha noi, Cau Giay</div>
+                                    <div><span>Applied Date:</span>15/03/2019</div>
+                                    <div><span>Expired Date:</span>20/03/2019</div>
+                                </td>
+                                <!-- Tablet -->
+
+                                <td class="action">
+                                    <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
+                                    Applied
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="jobtitle">
+                                    <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                    <div class="info">
+                                        <div class="jobname">Java Lead</div>
+                                        <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                        <div class="salary">$5.000 - $10.000</div>
+                                    </div>
+                                </td>
+
+                                <td class="location">Ha noi, Cau Giay</td>
+                                <td class="saveddate">15/03/2019</td>
+                                <td class="expireddate">20/03/2019</td>
+
+                                <!-- Tablet -->
+                                <td class="locationdate">
+                                    <div><span>Location:</span>Ha noi, Cau Giay</div>
+                                    <div><span>Applied Date:</span>15/03/2019</div>
+                                    <div><span>Expired Date:</span>20/03/2019</div>
+                                </td>
+                                <!-- Tablet -->
+
+                                <td class="action">
+                                    <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
+                                    Applied
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+                    <!-- Mobile -->
+                    <!-- Loop -->
+                    <div class="myjob-table-mobile">
+                        <div class="myjob-item">
+                            <div class="jobtitle">
+                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                <div class="info">
+                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                    <div class="salary">$5.000 - $10.000</div>
+                                </div>
+                            </div>
+                            <div class="job-desctiption">
+                                <div class="locationdate">
+                                    <div class="jobname">Java Lead</div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Location:</div>
+                                        <div class="value">Ha noi, Cau Giay</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Saved Date:</div>
+                                        <div class="value">15/03/2019</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Expired Date:</div>
+                                        <div class="value">20/03/2019</div>
+                                    </div>
+                                </div>
+                                <div class="action">
+                                    <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
+                                    <div class="applied-text">Applied</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Loop -->
+
+                    <div class="myjob-table-mobile">
+                        <div class="myjob-item">
+                            <div class="jobtitle">
+                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                <div class="info">
+                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                    <div class="salary">$5.000 - $10.000</div>
+                                </div>
+                            </div>
+                            <div class="job-desctiption">
+                                <div class="locationdate">
+                                    <div class="jobname">Java Lead</div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Location:</div>
+                                        <div class="value">Ha noi, Cau Giay</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Saved Date:</div>
+                                        <div class="value">15/03/2019</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Expired Date:</div>
+                                        <div class="value">20/03/2019</div>
+                                    </div>
+                                </div>
+                                <div class="action">
+                                    <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
+                                    <div class="applied-text">Applied</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="myjob-table-mobile">
+                        <div class="myjob-item">
+                            <div class="jobtitle">
+                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                <div class="info">
+                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                    <div class="salary">$5.000 - $10.000</div>
+                                </div>
+                            </div>
+                            <div class="job-desctiption">
+                                <div class="locationdate">
+                                    <div class="jobname">Java Lead</div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Location:</div>
+                                        <div class="value">Ha noi, Cau Giay</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Saved Date:</div>
+                                        <div class="value">15/03/2019</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Expired Date:</div>
+                                        <div class="value">20/03/2019</div>
+                                    </div>
+                                </div>
+                                <div class="action">
+                                    <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
+                                    <div class="applied-text">Applied</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="myjob-table-mobile">
+                        <div class="myjob-item">
+                            <div class="jobtitle">
+                                <img class="jobtitle-image" src="image/1.png" alt="jobImage">
+                                <div class="info">
+                                    <div class="companyname">Công ty cổ phần WorldFusion...</div>
+                                    <div class="salary">$5.000 - $10.000</div>
+                                </div>
+                            </div>
+                            <div class="job-desctiption">
+                                <div class="locationdate">
+                                    <div class="jobname">Java Lead</div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Location:</div>
+                                        <div class="value">Ha noi, Cau Giay</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Saved Date:</div>
+                                        <div class="value">15/03/2019</div>
+                                    </div>
+                                    <div class="locationdate-item">
+                                        <div class="name">Expired Date:</div>
+                                        <div class="value">20/03/2019</div>
+                                    </div>
+                                </div>
+                                <div class="action">
+                                    <div class="applied-icon"><img src="image/group-172@3x.png" alt=""></div>
+                                    <div class="applied-text">Applied</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile -->
+
+                </div>
+                <script src="js/jobseeker-myjob.js"></script>
+            </div>
+            <div id="MyAccountInfo" class="hri-tabcontent set-box-shadow">
+                <div class="tab-title">My Account Information</div>
+                <div class="form">
+                    <div class="name-form">
+                        <div class="left">UPDATE ACCOUNT INFORMATION</div>
+                        <div class="right">(<span class="starr">*</span>) is required field</div>
+                    </div>
+                    <form class="form-body" action="#" method="POST">
+                        <div class="item">
+                            <label for="fullname">Full Name <span class="starr">*</span></label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="item">
+                            <label for="email">Email <span class="starr">*</span></label>
+                            <input type="text" name="email" required>
+                        </div>
+                        <div class="item">
+                            <label for="birthday">Birthday <span class="starr">*</span></label>
+                            <input type="date" name="birthday" required>
+                        </div>
+                        <div class="item">
+                            <label for="gender">Gender <span class="starr">*</span></label>
+                            <div class="radio">
+                                <div class="radio-item">
+                                    <div class="radio1 radioactive" data-name="gender" data-value="male"></div>
+                                    <span>Male</span>
+                                </div>
+                                <div class="radio-item">
+                                    <div class="radio1" data-name="gender" data-value="female"></div>
+                                    <span>Female</span>
+                                </div>
+                                <input type="hidden" id="gender" name="gender" value="male">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label for="gender">Nationality <span class="starr">*</span></label>
+                            <div class="radio">
+                                <div class="radio-item">
+                                    <div class="radio1 radioactive" data-name="nationality" data-value="Vietnamese">
+                                    </div>
+                                    <span>Local Vietnamese</span>
+                                </div>
+                                <div class="radio-item">
+                                    <div class="radio1" data-name="nationality" data-value="Other"></div>
+                                    <span>Other Countries</span>
+                                </div>
+                                <input type="hidden" id="nationality" name="nationality" value="Vietnamese">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <label for="address">Address <span class="starr">*</span></label>
+                            <input type="text" name="address" required>
+                        </div>
+                        <div class="item" id="locationItem">
+                            <label for="location">Location <span class="starr">*</span></label>
+                            <select name="location">
+                                <option value="">Select your location</option>
+                                <option value="">Ha Noi</option>
+                                <option value="">TP.HCM</option>
+                                <option value="">Da Nang</option>
+                            </select>
+                        </div>
+                        <div class="item small-item">
+                            <div class="checkbox1" data-name="sendme"></div>
+                            <span>Send me latest jobs and useful career advices</span>
+                            <input type="hidden" id="sendme" name="sendme" value="false">
+                        </div>
+                        <div class="item">
+                            <button type="submit">Save</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="form">
+                    <div id="change-password-scroll">
+
+                    </div>
+                    <div class="name-form">
+                        <div class="left">CHANGE PASSWORD</div>
+                        <div class="right">(<span class="starr">*</span>) is required field</div>
+                    </div>
+                    <form class="form-body" action="#" method="POST">
+                        <div class="item">
+                            <label for="fullname">Current password <span class="starr">*</span></label>
+                            <input type="text" name="currentpass" required>
+                        </div>
+                        <div class="item">
+                            <label for="email">New password <span class="starr">*</span></label>
+                            <input type="text" name="newpass" required>
+                            <div class="smalltip">Password must be at least 8 characters.</div>
+                        </div>
+                        <div class="item">
+                            <label for="email">Confirm new password <span class="starr">*</span></label>
+                            <input type="text" name="confirmnewpass" required>
+                        </div>
+                        <div class="item">
+                            <button type="submit">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+        <script type="text/javascript"
+            src="https://rawgithub.com/bootstrap-tagsinput/bootstrap-tagsinput/master/dist/bootstrap-tagsinput.js"></script>
+        <script type="text/javascript"
+            src="https://rawgithub.com/davidkonrad/Bootstrap-3-Typeahead/master/bootstrap3-typeahead.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="js/jobseeker-myresume.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+            crossorigin="anonymous"></script>
+        <script src="js/jobseeker-myjob.js"></script>
+        <script src="../Navbar/js/navbar.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+            document.getElementById("DashboardButton").click();
+            // document.getElementById("MyAppliedJobsButton").click();
+
+            var places = [
+                'New York',
+                'Los Angeles',
+                'Copenhagen',
+                'Albertslund',
+                'Skjern'
+            ];
+
+            $('#WORKINGPREFERENCES-preferredworkinglocation').tagsinput({
+                typeahead: {
+                    source: places.map(function (item) {
+                        return item;
+                    }),
+                    afterSelect: function () {
+                        this.$element[0].value = '';
+                    }
+                }
+            })
+
+            $('#WORKINGPREFERENCES-expectedjoblevel').tagsinput({
+                maxTags: 1,
+                typeahead: {
+                    source: places.map(function (item) {
+                        return item;
+                    }),
+                    afterSelect: function () {
+                        this.$element[0].value = '';
+                    }
+                }
+            })
+
+            $('#WORKINGPREFERENCES-expectedjobcategory').tagsinput({
+                typeahead: {
+                    source: places.map(function (item) {
+                        return item;
+                    }),
+                    afterSelect: function () {
+                        this.$element[0].value = '';
+                    }
+                }
+            })
+
+
+        </script>
+    </div>
+
+</body>
+
+</html>

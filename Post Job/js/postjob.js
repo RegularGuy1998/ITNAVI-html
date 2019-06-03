@@ -40,7 +40,7 @@ function openInfoTab(evt, postJobName) {
     }
 }
 
-function TitleRightfull () {
+function TitleRightfull() {
     if ($('#itnavi-attached').hasClass('fullscreen')) {
         $('#itnavi-attached').removeClass('fullscreen');
         document.getElementById('fullscreenbutton').innerHTML = ' <div style="background-image: url(image/full-size@3x.png)" class="button-icon"></div> View Fullscreen';
@@ -51,7 +51,7 @@ function TitleRightfull () {
     // document.getElementById('itnavi-attached').className += ' fullscreen';
 }
 
-function TitleRightfull2 () {
+function TitleRightfull2() {
     if ($('#itnavi-attached2').hasClass('fullscreen')) {
         $('#itnavi-attached2').removeClass('fullscreen');
         document.getElementById('fullscreenbutton2').innerHTML = ' <div style="background-image: url(image/full-size@3x.png)" class="button-icon"></div> View Fullscreen';
@@ -75,21 +75,18 @@ $('.super-checkbox-button').on('click', function () {
     }
 })
 
-function CloseMessage(evt, param) {
-    $('#' + param).removeClass('show-notification');
-    $('#' + param).addClass('hide-notification');
-    setTimeout(() => {
-        $('#' + param).addClass('hidden');
-        $('#background-for-notification').addClass('hidden');
-    }, 500);
-}
 
-function OpenMessage(evt, param) {
-    $('#' + param).removeClass('hidden');
-    $('#background-for-notification').removeClass('hidden');
-    $('#' + param).removeClass('hide-notification');
-    $('#' + param).addClass('show-notification');
-}
+$('.benefit-checkbox-button').on('click', function () {
+    let name = $(this).data('name');
+    if ($('.benefit-checkbox-button[data-name="' + name + '"]').hasClass('benefit-active')) {
+        $('#' + name).prop('value', false);
+        $('.benefit-checkbox-button[data-name="' + name + '"]').removeClass('benefit-active');
+    } else {
+        $('.benefit-checkbox-button[data-name="' + name + '"]').addClass('benefit-active');
+        $('#' + name).prop('value', true);
+    }
+})
+
 
 
 // Show and Hide for WORKINGPREFERENCES Edit form
@@ -131,7 +128,8 @@ $('#HEADERIMAGEPICTURESButton').on('click', function () {
 
 
 window.onscroll = function () {
-    if (window.pageYOffset + 59 > defaultheader) {
+    console.log(222);
+    if (window.pageYOffset + 59 > 222) {
         document.getElementById('Companyprofile-Header').classList.add('headerfixtop');
     } else {
         document.getElementById('Companyprofile-Header').classList.remove('headerfixtop');
@@ -174,3 +172,54 @@ function CallSomethingHide(tabId) {
 $('.myresume-use-collapse-event').on('hidden.bs.collapse', function () {
     $('#' + $(this)[0].id).css('display', 'none');
 })
+
+
+
+
+
+//Popup
+
+let ChangeStatusTab = document.getElementById('Message-Change-Status');
+let ChangeOutOfFree = document.getElementById('Message-Out-Of-Free-Post-Job');
+let ChangeAddNote = document.getElementById('Message-Add-Note');
+
+function OpenPopup(input) {
+    switch (input) {
+        case 'Message-Change-Status':
+            Swal.fire({
+                showConfirmButton: false,
+                html: ChangeStatusTab,
+                width: 390,
+            })
+            break;
+        case 'Message-Out-Of-Free-Post-Job':
+            Swal.fire({
+                showConfirmButton: false,
+                html: ChangeOutOfFree,
+                width: 390,
+            })
+            break;
+        case 'Message-Add-Note':
+            Swal.fire({
+                showConfirmButton: false,
+                html: ChangeAddNote,
+                width: 390,
+            })
+            break;
+
+        default:
+            break;
+    }
+}
+
+var BASICINFOMATION;
+var WORKENVIRONMENT;
+var HEADERIMAGEPICTURES;
+
+$('#CompanyProfileButton').on('click', function () {
+    BASICINFOMATION = document.getElementById('BASICINFOMATION').offsetTop;
+    WORKENVIRONMENT = document.getElementById('WORKENVIRONMENT').offsetTop;
+    HEADERIMAGEPICTURES = document.getElementById('HEADERIMAGEPICTURES').offsetTop;
+})
+
+$('.form-control-use-select2').select2();

@@ -1,0 +1,602 @@
+body {
+  background-color: #f2f2f2 !important;
+  font-family: Roboto !important;
+  color: #454545 !important; }
+  body .border-text {
+    font-weight: 900; }
+  body .big-title {
+    font-size: 32px;
+    font-weight: 900; }
+  body .div-center {
+    text-align: center; }
+  body #Super-Home-Page .top-employers .item .item-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; }
+  body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-search .search-input input, body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-location .search-input input, body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-submit .search-input input, body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-submit button, body #Super-Home-Page .top-company #Top-Company-Profile .item .row .company-seemore {
+    transition: 0.3s;
+    background-color: #ffffff;
+    border: none; }
+    body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-search .search-input input:hover, body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-location .search-input input:hover, body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-submit .search-input input:hover, body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-submit button:hover, body #Super-Home-Page .top-company #Top-Company-Profile .item .row .company-seemore:hover {
+      outline: none;
+      transition: 0.3s; }
+    body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-search .search-input input:focus, body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-location .search-input input:focus, body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-submit .search-input input:focus, body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-submit button:focus, body #Super-Home-Page .top-company #Top-Company-Profile .item .row .company-seemore:focus {
+      outline: none;
+      transition: 0.3s; }
+  body #Super-Home-Page {
+    font-size: 16px; }
+    body #Super-Home-Page .findthejob {
+      margin-top: 71px;
+      position: relative;
+      text-align: center;
+      transition: 1s;
+      height: 743px; }
+      body #Super-Home-Page .findthejob .slide-background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1; }
+        body #Super-Home-Page .findthejob .slide-background .item {
+          background-size: 1920px auto;
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 100%; }
+      body #Super-Home-Page .findthejob .blue-background {
+        display: inline-block;
+        background-color: rgba(3, 82, 91, 0.4);
+        padding-top: 125px;
+        width: 100%;
+        height: 100%; }
+        body #Super-Home-Page .findthejob .blue-background .super-biger-title {
+          font-size: 64px;
+          color: #fffefe;
+          line-height: 70px;
+          letter-spacing: 5px; }
+        body #Super-Home-Page .findthejob .blue-background .find-form {
+          margin-top: 60px;
+          text-align: left; }
+          body #Super-Home-Page .findthejob .blue-background .find-form .container {
+            border-radius: 9px;
+            background-color: rgba(30, 189, 207, 0.9);
+            padding: 35px 70px 5px 70px;
+            box-shadow: 0 0 3px #1ebdcf;
+            overflow: auto; }
+            body #Super-Home-Page .findthejob .blue-background .find-form .container .item {
+              padding: 8px;
+              float: left; }
+              body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-search, body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-location, body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-submit {
+                width: 60%; }
+                body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-search .search-input, body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-location .search-input, body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-submit .search-input {
+                  height: 48px;
+                  width: 100%;
+                  display: inline-block;
+                  border-radius: 3px;
+                  background-color: #ffffff;
+                  background-image: url(../image/magnifying-glass-browser@3x.png);
+                  background-size: 16.9px 17.4px;
+                  background-repeat: no-repeat;
+                  background-position: 15px 16px;
+                  padding: 0 10px 0 40px;
+                  transition: 0.3s;
+                  cursor: pointer; }
+                  body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-search .search-input:focus-within, body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-location .search-input:focus-within, body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-submit .search-input:focus-within {
+                    transition: 0.3s;
+                    box-shadow: 0 0 10px #fff; }
+                  body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-search .search-input input, body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-location .search-input input, body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-submit .search-input input {
+                    height: 40px;
+                    cursor: pointer;
+                    margin-top: 4px;
+                    width: 100%; }
+              body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-location {
+                width: 20%; }
+                body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-location select {
+                  outline: none; }
+                  body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-location select:focus {
+                    outline: none; }
+                body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-location .select2-container {
+                  width: 100% !important; }
+                  body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-location .select2-container .select2-selection {
+                    height: 48px;
+                    border: none;
+                    background-image: url(../image/placeholder@3x.png);
+                    background-size: 13.2px 18.7px;
+                    background-repeat: no-repeat;
+                    background-position: 13px 13px; }
+                    body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-location .select2-container .select2-selection .select2-selection__rendered {
+                      padding: 10px 0 0 38px; }
+                    body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-location .select2-container .select2-selection .select2-selection__arrow {
+                      margin-top: 9px; }
+              body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-submit {
+                width: 20%; }
+                body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-submit button {
+                  height: 48px;
+                  border-radius: 3px;
+                  background-color: #f7912a;
+                  color: #ffffff;
+                  font-size: 18px;
+                  border: none;
+                  width: 100%; }
+                  body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-submit button:hover {
+                    box-shadow: 0 0 10px #f7912a; }
+              body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-full {
+                width: 100%;
+                padding: 2px 8px 0 2px;
+                text-align: right;
+                color: #fff; }
+                body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-full .zoom-icon {
+                  width: 18.8px;
+                  height: 19px;
+                  margin-right: 5px;
+                  display: inline-block;
+                  background-image: url(../image/searching-magnifying-glass@3x.png);
+                  background-size: 18.8px;
+                  background-repeat: no-repeat; }
+                  body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-full .zoom-icon span {
+                    font-size: 8px;
+                    float: left;
+                    margin: 2px 0 0 4.5px; }
+                body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-full .zoom-text {
+                  display: inline-block;
+                  float: right;
+                  padding-top: 1px; }
+          @media screen and (max-width: 1199.98px) {
+            body #Super-Home-Page .findthejob .blue-background .find-form .container {
+              padding-left: 20px;
+              padding-right: 20px; } }
+          @media screen and (max-width: 991.98px) {
+            body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-search, body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-location, body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-submit {
+              width: 100%; }
+            body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-location {
+              width: 50%; }
+            body #Super-Home-Page .findthejob .blue-background .find-form .container .item.item-submit {
+              width: 50%; } }
+        body #Super-Home-Page .findthejob .blue-background .change-background {
+          position: absolute;
+          bottom: 38px;
+          width: 100%;
+          left: 0;
+          z-index: 0;
+          margin-left: 0; }
+          body #Super-Home-Page .findthejob .blue-background .change-background .change-findjob-button {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0);
+            transition: 0.3s; }
+            body #Super-Home-Page .findthejob .blue-background .change-background .change-findjob-button div {
+              width: 17px;
+              height: 17px;
+              margin: 4px 0 0 4px;
+              border-radius: 50%;
+              background-color: rgba(255, 255, 255, 0.47);
+              transition: 0.3s; }
+            body #Super-Home-Page .findthejob .blue-background .change-background .change-findjob-button:hover div {
+              background-color: #fff;
+              transition: 0.3s; }
+            body #Super-Home-Page .findthejob .blue-background .change-background .change-findjob-button.active {
+              border: 1px solid #fff;
+              transition: 0.3s; }
+              body #Super-Home-Page .findthejob .blue-background .change-background .change-findjob-button.active div {
+                width: 13px;
+                height: 13px;
+                margin: 5px 0 0 5px;
+                background-color: #fff;
+                border-radius: 50%;
+                transition: 0.3s; }
+    body #Super-Home-Page .hot-jobs {
+      margin-top: 60px; }
+      body #Super-Home-Page .hot-jobs .container-fluid {
+        max-width: 1530px; }
+        body #Super-Home-Page .hot-jobs .container-fluid .row {
+          display: flex; }
+          body #Super-Home-Page .hot-jobs .container-fluid .row .hot-job-box {
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            background-color: #ffffff;
+            padding: 20px 50px 0 50px; }
+            body #Super-Home-Page .hot-jobs .container-fluid .row .hot-job-box .body .row {
+              display: block; }
+              body #Super-Home-Page .hot-jobs .container-fluid .row .hot-job-box .body .row table {
+                display: table;
+                border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+                width: 100%; }
+                body #Super-Home-Page .hot-jobs .container-fluid .row .hot-job-box .body .row table td {
+                  display: table-cell;
+                  padding: 20px 0; }
+                  body #Super-Home-Page .hot-jobs .container-fluid .row .hot-job-box .body .row table td.logo {
+                    width: 100px; }
+                    body #Super-Home-Page .hot-jobs .container-fluid .row .hot-job-box .body .row table td.logo img {
+                      width: 85.3px;
+                      height: 58.6px; }
+                  body #Super-Home-Page .hot-jobs .container-fluid .row .hot-job-box .body .row table td.company-info .company-name {
+                    font-size: 21px;
+                    color: #454545; }
+                    body #Super-Home-Page .hot-jobs .container-fluid .row .hot-job-box .body .row table td.company-info .company-name:hover {
+                      text-decoration: none; }
+                  body #Super-Home-Page .hot-jobs .container-fluid .row .hot-job-box .body .row table td.company-info .company-description {
+                    color: #b5b5b5;
+                    font-size: 18px; }
+                    body #Super-Home-Page .hot-jobs .container-fluid .row .hot-job-box .body .row table td.company-info .company-description:hover {
+                      text-decoration: none; }
+                  body #Super-Home-Page .hot-jobs .container-fluid .row .hot-job-box .body .row table td.company-hot {
+                    text-align: right; }
+                    body #Super-Home-Page .hot-jobs .container-fluid .row .hot-job-box .body .row table td.company-hot span {
+                      padding: 4px 12px;
+                      border-radius: 6px;
+                      background-color: #ff3c00;
+                      color: #fff;
+                      font-size: 17px; }
+            body #Super-Home-Page .hot-jobs .container-fluid .row .hot-job-box .body .carousel-indicators {
+              position: relative;
+              width: 100%;
+              height: 10px;
+              margin-top: 40px;
+              text-align: right;
+              display: inline-block;
+              left: 0;
+              z-index: 0;
+              margin-left: 0; }
+              body #Super-Home-Page .hot-jobs .container-fluid .row .hot-job-box .body .carousel-indicators .hotjob-carousel-indicators-item {
+                display: inline-block;
+                font-size: 14px;
+                width: auto;
+                text-align: center;
+                transition: 0.7s;
+                cursor: pointer; }
+                body #Super-Home-Page .hot-jobs .container-fluid .row .hot-job-box .body .carousel-indicators .hotjob-carousel-indicators-item div {
+                  width: 0px;
+                  height: 6px;
+                  display: inline-block;
+                  border-top: 1px solid #24becf;
+                  transition: 0.7s; }
+                body #Super-Home-Page .hot-jobs .container-fluid .row .hot-job-box .body .carousel-indicators .hotjob-carousel-indicators-item.active {
+                  font-size: 16px;
+                  font-weight: 900;
+                  color: #24becf;
+                  transition: 0.7s; }
+                  body #Super-Home-Page .hot-jobs .container-fluid .row .hot-job-box .body .carousel-indicators .hotjob-carousel-indicators-item.active div {
+                    width: 60px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    transition: 0.7s; }
+          body #Super-Home-Page .hot-jobs .container-fluid .row .left-content {
+            position: relative; }
+            body #Super-Home-Page .hot-jobs .container-fluid .row .left-content .previous, body #Super-Home-Page .hot-jobs .container-fluid .row .left-content .top-company #Top-Company-Profile .top-company-bottom .next-pre .next, body #Super-Home-Page .top-company #Top-Company-Profile .top-company-bottom .next-pre .hot-jobs .container-fluid .row .left-content .next {
+              position: absolute;
+              right: 0;
+              bottom: 47%;
+              width: 58.4px;
+              height: 58.4px;
+              border-radius: 50%;
+              border: solid 1.5px #24becf;
+              background-color: #ffffff;
+              cursor: pointer;
+              text-align: center;
+              padding-top: 15px;
+              transition: 0.3s; }
+              body #Super-Home-Page .hot-jobs .container-fluid .row .left-content .previous img, body #Super-Home-Page .hot-jobs .container-fluid .row .left-content .top-company #Top-Company-Profile .top-company-bottom .next-pre .next img, body #Super-Home-Page .top-company #Top-Company-Profile .top-company-bottom .next-pre .hot-jobs .container-fluid .row .left-content .next img {
+                width: 14px;
+                height: 26.2px; }
+              body #Super-Home-Page .hot-jobs .container-fluid .row .left-content .previous:hover, body #Super-Home-Page .hot-jobs .container-fluid .row .left-content .top-company #Top-Company-Profile .top-company-bottom .next-pre .next:hover, body #Super-Home-Page .top-company #Top-Company-Profile .top-company-bottom .next-pre .hot-jobs .container-fluid .row .left-content .next:hover {
+                box-shadow: 0 0 5px #24becf;
+                transition: 0.3s; }
+          body #Super-Home-Page .hot-jobs .container-fluid .row .right-content {
+            position: relative; }
+            body #Super-Home-Page .hot-jobs .container-fluid .row .right-content .next {
+              position: absolute;
+              left: 0;
+              bottom: 47%;
+              width: 58.4px;
+              height: 58.4px;
+              border-radius: 50%;
+              border: solid 1.5px #24becf;
+              background-color: #ffffff;
+              cursor: pointer;
+              text-align: center;
+              padding-top: 15px;
+              transition: 0.3s; }
+              body #Super-Home-Page .hot-jobs .container-fluid .row .right-content .next img {
+                width: 14px;
+                height: 26.2px; }
+              body #Super-Home-Page .hot-jobs .container-fluid .row .right-content .next:hover {
+                box-shadow: 0 0 5px #24becf;
+                transition: 0.3s; }
+      @media screen and (max-width: 991.98px) {
+        body #Super-Home-Page .hot-jobs .container-fluid .row .left-content {
+          display: none; }
+        body #Super-Home-Page .hot-jobs .container-fluid .row .right-content {
+          display: none; } }
+      @media screen and (max-width: 575.98px) {
+        body #Super-Home-Page .hot-jobs .container-fluid .row .hot-job-box {
+          padding-left: 10px;
+          padding-right: 10px; }
+          body #Super-Home-Page .hot-jobs .container-fluid .row .hot-job-box .body .row table td.company-hot span {
+            padding: 4px 5px; } }
+    body #Super-Home-Page .how-its-work {
+      width: 100%;
+      margin-top: 35px;
+      background-color: #fff;
+      padding: 25px;
+      text-align: center; }
+      body #Super-Home-Page .how-its-work .body {
+        display: inline-block;
+        overflow: auto;
+        margin: 30px 0; }
+        body #Super-Home-Page .how-its-work .body .item {
+          float: left; }
+          body #Super-Home-Page .how-its-work .body .item.step1, body #Super-Home-Page .how-its-work .body .item.step2, body #Super-Home-Page .how-its-work .body .item.step3 {
+            width: 283px; }
+            body #Super-Home-Page .how-its-work .body .item.step1 img, body #Super-Home-Page .how-its-work .body .item.step2 img, body #Super-Home-Page .how-its-work .body .item.step3 img {
+              width: 139.3px; }
+            body #Super-Home-Page .how-its-work .body .item.step1 .description, body #Super-Home-Page .how-its-work .body .item.step2 .description, body #Super-Home-Page .how-its-work .body .item.step3 .description {
+              margin-top: 25px;
+              font-size: 24px; }
+          body #Super-Home-Page .how-its-work .body .item.line-dashed {
+            padding-top: 70px;
+            width: 250px;
+            overflow: hidden; }
+            body #Super-Home-Page .how-its-work .body .item.line-dashed img {
+              width: 250px; }
+      @media screen and (max-width: 1449.98px) {
+        body #Super-Home-Page .how-its-work .body .item.line-dashed {
+          width: 150px; } }
+      @media screen and (max-width: 1199.98px) {
+        body #Super-Home-Page .how-its-work .body .item.line-dashed {
+          display: none; } }
+      @media screen and (max-width: 899.98px) {
+        body #Super-Home-Page .how-its-work .body .item {
+          float: none;
+          margin-top: 40px; } }
+    body #Super-Home-Page .iam {
+      width: 100%;
+      text-align: center; }
+      body #Super-Home-Page .iam .div-center {
+        max-width: 1920px;
+        width: 100%;
+        overflow: auto;
+        display: inline-block; }
+        body #Super-Home-Page .iam .div-center .iam-item {
+          width: 50%;
+          float: left; }
+          body #Super-Home-Page .iam .div-center .iam-item .recruiter, body #Super-Home-Page .iam .div-center .iam-item .jobseeker {
+            width: 100%;
+            height: auto;
+            text-align: left;
+            min-height: 511px;
+            background-image: url(../image/group-962@3x.png);
+            background-size: auto 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 90px 30px 0 25%;
+            color: #fff; }
+            body #Super-Home-Page .iam .div-center .iam-item .recruiter .title, body #Super-Home-Page .iam .div-center .iam-item .jobseeker .title {
+              font-size: 56px;
+              font-weight: 100; }
+            body #Super-Home-Page .iam .div-center .iam-item .recruiter .description, body #Super-Home-Page .iam .div-center .iam-item .jobseeker .description {
+              max-width: 556px;
+              margin-top: 15px;
+              display: inline-block; }
+            body #Super-Home-Page .iam .div-center .iam-item .recruiter .postfind, body #Super-Home-Page .iam .div-center .iam-item .jobseeker .postfind {
+              width: 100%;
+              max-width: 315px;
+              height: 81px;
+              margin: 35px 0;
+              border: solid 2px #ffffff;
+              background-color: rgba(0, 0, 0, 0);
+              font-size: 20px;
+              color: #ffffff;
+              transition: 0.3s; }
+              body #Super-Home-Page .iam .div-center .iam-item .recruiter .postfind:hover, body #Super-Home-Page .iam .div-center .iam-item .jobseeker .postfind:hover {
+                box-shadow: 0 0 7px #fff;
+                transition: 0.3s;
+                outline: none; }
+              body #Super-Home-Page .iam .div-center .iam-item .recruiter .postfind:focus, body #Super-Home-Page .iam .div-center .iam-item .jobseeker .postfind:focus {
+                outline: none;
+                transition: 0.3s;
+                box-shadow: inset 0 0 7px #fff; }
+          body #Super-Home-Page .iam .div-center .iam-item .jobseeker {
+            text-align: right;
+            padding: 90px 25% 0 30px;
+            background-image: url(../image/group-963@3x.png); }
+      @media screen and (max-width: 1366.98px) {
+        body #Super-Home-Page .iam .div-center .iam-item .recruiter, body #Super-Home-Page .iam .div-center .iam-item .jobseeker {
+          padding: 90px 30px 0 10%; }
+        body #Super-Home-Page .iam .div-center .iam-item .jobseeker {
+          padding: 90px 10% 0 30px; } }
+      @media screen and (max-width: 959.98px) {
+        body #Super-Home-Page .iam .div-center .iam-item {
+          width: 100%; }
+          body #Super-Home-Page .iam .div-center .iam-item .recruiter, body #Super-Home-Page .iam .div-center .iam-item .jobseeker {
+            padding: 90px 30px 0 25%; }
+          body #Super-Home-Page .iam .div-center .iam-item .jobseeker {
+            padding: 90px 25% 0 30px; } }
+      @media screen and (max-width: 767.98px) {
+        body #Super-Home-Page .iam .div-center .iam-item .recruiter, body #Super-Home-Page .iam .div-center .iam-item .jobseeker {
+          padding: 90px 30px 0 10%; }
+        body #Super-Home-Page .iam .div-center .iam-item .jobseeker {
+          padding: 90px 10% 0 30px; } }
+      @media screen and (max-width: 575.98px) {
+        body #Super-Home-Page .iam .div-center .iam-item .recruiter, body #Super-Home-Page .iam .div-center .iam-item .jobseeker {
+          padding: 90px 30px 0 15px; }
+          body #Super-Home-Page .iam .div-center .iam-item .recruiter .title, body #Super-Home-Page .iam .div-center .iam-item .jobseeker .title {
+            font-size: 40px; }
+        body #Super-Home-Page .iam .div-center .iam-item .jobseeker {
+          padding: 90px 15px 0 30px; } }
+    body #Super-Home-Page .top-company {
+      background-color: #fff;
+      padding: 70px 0 30px 0; }
+      body #Super-Home-Page .top-company .something-blue-ontop {
+        width: 105px;
+        height: 6px;
+        opacity: 0.53;
+        background-color: #24becf;
+        margin-bottom: 3px; }
+      body #Super-Home-Page .top-company #Top-Company-Profile .item .row {
+        margin-bottom: 10px; }
+        body #Super-Home-Page .top-company #Top-Company-Profile .item .row .company-image {
+          width: 100%;
+          max-width: 682px;
+          margin-top: 35px; }
+        body #Super-Home-Page .top-company #Top-Company-Profile .item .row .company-logo {
+          width: 155px;
+          margin-bottom: 20px;
+          margin-top: 35px; }
+        body #Super-Home-Page .top-company #Top-Company-Profile .item .row .company-description {
+          font-size: 14px;
+          margin-top: 10px; }
+        body #Super-Home-Page .top-company #Top-Company-Profile .item .row .company-seemore {
+          width: 100%;
+          max-width: 210px;
+          height: 47px;
+          margin-top: 70px;
+          border-radius: 5px;
+          border: solid 1px #24becf;
+          font-size: 16px;
+          color: #24becf; }
+          body #Super-Home-Page .top-company #Top-Company-Profile .item .row .company-seemore:hover {
+            box-shadow: 0 0 5px #24becf; }
+          @media screen and (max-width: 991.98px) {
+            body #Super-Home-Page .top-company #Top-Company-Profile .item .row .company-seemore {
+              margin-top: 20px; } }
+      body #Super-Home-Page .top-company #Top-Company-Profile .top-company-bottom {
+        width: 100%;
+        text-align: center; }
+        body #Super-Home-Page .top-company #Top-Company-Profile .top-company-bottom .carousel-indicators {
+          position: relative;
+          width: auto;
+          height: 10px;
+          margin-top: 40px;
+          text-align: left;
+          float: left;
+          display: inline-block;
+          left: 0;
+          z-index: 0;
+          margin-left: 0; }
+          body #Super-Home-Page .top-company #Top-Company-Profile .top-company-bottom .carousel-indicators .hotjob-carousel-indicators-item {
+            display: inline-block;
+            font-size: 14px;
+            width: auto;
+            text-align: center;
+            transition: 0.7s;
+            cursor: pointer; }
+            body #Super-Home-Page .top-company #Top-Company-Profile .top-company-bottom .carousel-indicators .hotjob-carousel-indicators-item div {
+              width: 0px;
+              height: 6px;
+              display: inline-block;
+              border-top: 1px solid #24becf;
+              transition: 0.7s; }
+            body #Super-Home-Page .top-company #Top-Company-Profile .top-company-bottom .carousel-indicators .hotjob-carousel-indicators-item.active {
+              font-size: 16px;
+              font-weight: 900;
+              color: #24becf;
+              transition: 0.7s; }
+              body #Super-Home-Page .top-company #Top-Company-Profile .top-company-bottom .carousel-indicators .hotjob-carousel-indicators-item.active div {
+                width: 60px;
+                margin-left: 10px;
+                margin-right: 10px;
+                transition: 0.7s; }
+        body #Super-Home-Page .top-company #Top-Company-Profile .top-company-bottom .next-pre {
+          display: inline-block;
+          padding: 17px; }
+          body #Super-Home-Page .top-company #Top-Company-Profile .top-company-bottom .next-pre .previous, body #Super-Home-Page .top-company #Top-Company-Profile .top-company-bottom .next-pre .next {
+            display: inline-block;
+            width: 31.9px;
+            height: 31.9px;
+            border: solid 1.5px #24becf;
+            padding-top: 3px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            margin-right: 10px;
+            transition: 0.3s; }
+            body #Super-Home-Page .top-company #Top-Company-Profile .top-company-bottom .next-pre .previous:hover, body #Super-Home-Page .top-company #Top-Company-Profile .top-company-bottom .next-pre .next:hover {
+              box-shadow: 0 0 5px #24becf;
+              transition: 0.3s; }
+            body #Super-Home-Page .top-company #Top-Company-Profile .top-company-bottom .next-pre .previous img, body #Super-Home-Page .top-company #Top-Company-Profile .top-company-bottom .next-pre .next img {
+              width: 7.7px;
+              height: 14.3px; }
+          body #Super-Home-Page .top-company #Top-Company-Profile .top-company-bottom .next-pre .next {
+            margin-right: 0; }
+    body #Super-Home-Page .top-employers {
+      background-color: #eefefe;
+      text-align: center;
+      padding: 40px 0; }
+      body #Super-Home-Page .top-employers .item {
+        padding: 34px 20px 0 20px;
+        display: inline-block; }
+        body #Super-Home-Page .top-employers .item .item-image {
+          width: 180px;
+          height: 81.2px; }
+      @media screen and (max-width: 499.98px) {
+        body #Super-Home-Page .top-employers .item {
+          padding: 20px 10px 0 10px;
+          width: 48%; }
+          body #Super-Home-Page .top-employers .item .item-image {
+            width: 100%;
+            height: 81.2px; } }
+    body #Super-Home-Page .ads-1 {
+      background-color: #fff;
+      padding: 50px 0;
+      text-align: center; }
+      body #Super-Home-Page .ads-1 .ads-body {
+        width: 100%;
+        max-width: 1450px;
+        display: inline-block;
+        padding: 0 5px; }
+        body #Super-Home-Page .ads-1 .ads-body img {
+          width: 100%; }
+    body #Super-Home-Page .are-hiring {
+      background-color: #fff;
+      position: relative;
+      text-align: center; }
+      body #Super-Home-Page .are-hiring .background {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 0; }
+        body #Super-Home-Page .are-hiring .background .background-image {
+          width: 100%;
+          display: inline-block;
+          max-width: 1920px;
+          height: 238px;
+          background-image: url(../image/group-961@3x.png);
+          background-size: auto 238px; }
+      body #Super-Home-Page .are-hiring .hiring-body {
+        overflow: auto;
+        display: inline-block;
+        width: 100%;
+        max-width: 1410px;
+        padding: 0 20px;
+        text-align: left; }
+        body #Super-Home-Page .are-hiring .hiring-body .item {
+          float: right; }
+          body #Super-Home-Page .are-hiring .hiring-body .item .big-title {
+            color: #fff;
+            margin-top: 234px; }
+          body #Super-Home-Page .are-hiring .hiring-body .item .description {
+            font-size: 19px;
+            color: #fff; }
+          body #Super-Home-Page .are-hiring .hiring-body .item .computer-image {
+            text-align: right;
+            width: 100%; }
+            body #Super-Home-Page .are-hiring .hiring-body .item .computer-image img {
+              width: 100%;
+              max-width: 500px;
+              margin-bottom: 30px; }
+        @media screen and (max-width: 1199.98px) {
+          body #Super-Home-Page .are-hiring .hiring-body .item .big-title {
+            margin-top: 41%; } }
+        @media screen and (max-width: 991.98px) {
+          body #Super-Home-Page .are-hiring .hiring-body .item .big-title {
+            margin-top: 31%; } }
+        @media screen and (max-width: 767.98px) {
+          body #Super-Home-Page .are-hiring .hiring-body .item.item-titdes {
+            float: left;
+            margin-bottom: 10px; }
+          body #Super-Home-Page .are-hiring .hiring-body .item .big-title {
+            margin-top: 20px; }
+          body #Super-Home-Page .are-hiring .hiring-body .item .computer-image img {
+            margin-bottom: 10px; } }
+
+/*# sourceMappingURL=homepage.css.map */

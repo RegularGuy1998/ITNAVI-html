@@ -1,5 +1,6 @@
-function openLoginSignup(evt, value) {
+function openLoginSignupOption(evt, value) {
   var i, tabcontent, tablinks;
+  console.log('aaa');
   tabcontent = document.getElementsByClassName("login-tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
@@ -12,7 +13,7 @@ function openLoginSignup(evt, value) {
   evt.currentTarget.className += " active";
 }
 
-$('#keeplogin-checkbox').on('click', function () {
+function keeplogin () {
   console.log($('#keeplogin-checkbox'));
   if ($('#keeplogin-checkbox').hasClass('checkbox-icon-active')) {
     $('#keeplogin-checkbox').removeClass('checkbox-icon-active');
@@ -21,27 +22,4 @@ $('#keeplogin-checkbox').on('click', function () {
     $('#keeplogin-checkbox').addClass('checkbox-icon-active');
     $('#keeplogin').prop('value', true);
   }
-})
-
-$('#close-icon').on('click', function () {
-  $('.login-popup').removeClass('showing');
-  $('.login-popup').addClass('hiding');
-  setTimeout(() => {
-    $('.login-background').addClass('hidden');
-  }, 300);
-})
-
-$('#LoginButton').on('click', function () {
-  console.log('dddddd');
-  $('.login-popup').removeClass('hiding');
-  $('.login-background').removeClass('hidden');
-  $('.login-popup').addClass('showing');
-  document.getElementById("LoginTabButton").click();
-})
-
-$('#SignupButton').on('click', function () {
-  $('.login-popup').removeClass('hiding');
-  $('.login-background').removeClass('hidden');
-  $('.login-popup').addClass('showing');
-  document.getElementById("SignupTabButton").click();
-})
+}
