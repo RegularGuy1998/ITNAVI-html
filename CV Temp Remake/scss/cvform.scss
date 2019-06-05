@@ -20,11 +20,11 @@
         font-style: italic;
     }
 
-    $bigname: 22px;
-    $jobname: 14px;
-    $title: 12px;
-    $nomal: 10px;
-    $supersm: 8px;
+    $bigname: 44px;
+    $jobname: 28px;
+    $title: 24px;
+    $nomal: 20px;
+    $supersm: 16px;
     $blue: #24becf;
     $lightblue: rgba(30, 189, 207, 0.15);
     $lightgray: #d1d0d6;
@@ -71,11 +71,10 @@
         .item-image {
             @extend %default-background-image;
 
-            margin: 1px 5px 0 0;
-
-            float: left;
-            width: 10px;
-            height: 10px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 

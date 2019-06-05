@@ -13,11 +13,11 @@
   #CV-Template .avatar {
     width: 100%; }
   #CV-Template .name {
-    font-size: 22px;
+    font-size: 44px;
     font-weight: 900;
     color: #24becf; }
   #CV-Template .job-name {
-    font-size: 14px;
+    font-size: 28px;
     font-weight: 900; }
   #CV-Template .line-blue {
     border-top: 1px solid #24becf;
@@ -31,15 +31,13 @@
       margin-top: -4px;
       float: right; }
   #CV-Template .item {
-    font-size: 10px;
+    font-size: 20px;
     padding-bottom: 7px; }
-    #CV-Template .item .item-image {
-      margin: 1px 5px 0 0;
-      float: left;
-      width: 10px;
-      height: 10px; }
+    #CV-Template .item .item-image img {
+      width: 100%;
+      height: 100%; }
   #CV-Template .element .title {
-    font-size: 12px;
+    font-size: 24px;
     color: #24becf;
     font-weight: 900;
     padding: 15px 0 6px 0;
@@ -53,21 +51,21 @@
     margin-top: 10px;
     padding-bottom: 5px; }
     #CV-Template .element .body.onlytext {
-      font-size: 10px; }
+      font-size: 20px; }
     #CV-Template .element .body.onlytext-small {
-      font-size: 8px; }
+      font-size: 16px; }
     #CV-Template .element .body.timeline {
-      font-size: 10px; }
+      font-size: 20px; }
       #CV-Template .element .body.timeline .description {
-        font-size: 8px;
+        font-size: 16px;
         padding: 2px 0; }
     #CV-Template .element .body.supertable .table-title {
-      font-size: 10px;
+      font-size: 20px;
       padding-bottom: 4px; }
     #CV-Template .element .body.supertable .title-body {
       width: 100%;
       margin-bottom: 10px;
-      font-size: 8px;
+      font-size: 16px;
       background-color: rgba(30, 189, 207, 0.15); }
       #CV-Template .element .body.supertable .title-body:last-child {
         margin-bottom: 0; }

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/loginpage.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Login with Job Seeker</title>
+</head>
+
+<body style="background-color: #f2f2f2;">
+    <div id="Super-Login-Page">
+        <div class="container animated fadeIn">
+            <div class="element-right">
+                <div class="right-login">
+                    <div class="login-logo">
+                        <img src="image/320-x-132@3x.png" alt="">
+                    </div>
+                    <form action="#">
+                        <div class="login-form">
+                            <div class="form-item">
+                                <button type="button" class="fbbutton">Log in with Facebook</button>
+                            </div>
+                            <div class="form-item">
+                                <button type="button" class="ggbutton">Log in with Google</button>
+                            </div>
+                            <div class="form-item form-item-or">
+                                <span class="or-text">Or</span>
+                            </div>
+                            <div class="form-item">
+                                <label for="email">Email Address<span class="super-starr">*</span></label>
+                                <input class="normal-input" type="email" name="email"
+                                    placeholder="Type your email address" required>
+                                    <!-- <div class="normal-red-tip">alert</div> -->
+                            </div>
+                            <div class="form-item">
+                                <label for="password">Password<span class="super-starr">*</span></label>
+                                <input class="normal-input" type="password" name="password"
+                                    placeholder="Type your password" required>
+                            </div>
+                            <div class="form-item form-item-keepforgot">
+                                <div class="keep-login">
+                                    <div class="itnavi-checkbox-icon"
+                                        onclick="CheckboxClicker(event,'Employer-Login-Remember');"></div>
+                                    Keep me logged in
+                                    <input type="hidden" name="" id="Employer-Login-Remember" value="1">
+                                </div>
+                                <div class="forgot-password">
+                                    <a class="forgot-link" href="#">Forgot your password?</a>
+                                </div>
+                            </div>
+                            <div class="form-item form-item-submit">
+                                <button type="button" class="submitbutton">Log In</button>
+                            </div>
+                            <div class="form-item form-item-haveanother">
+                                <div class="haveanother-line"></div>
+                                <div class="haveanother-text">
+                                    Don't have an account?
+                                    <a class="haveanother-link" href="#">Sign up</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="element-left">
+                <div class="left-body">
+                    <div class="body-title">
+                        <div class="title-big-title">Job Seeker</div>
+                        <div class="title-description">Finding work is simple!</div>
+                        <div class="title-line"></div>
+                    </div>
+                    <div class="body-list-item">
+                        <div class="item">
+                            <div style="background-image: url(image/clipboard@3x.png);" class="item-image"></div>
+                            <div class="item-title">Create Account</div>
+                            <div class="item-description">Sign up is easy. ITNavi is always free for job seekers</div>
+                        </div>
+                        <div class="item">
+                            <div style="background-image: url(image/curriculum@3x.png);" class="item-image"></div>
+                            <div class="item-title">Create a profile and upload your Resume</div>
+                            <div class="item-description">Showcase your skills and let employers and recruiters find you
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div style="background-image: url(image/job@3x.png);" class="item-image"></div>
+                            <div class="item-title">Search and apply to thousands of tech jobs</div>
+                            <div class="item-description">Apply with just the touch of a button!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+    <script src="js/loginpage.js"></script>
+</body>
+
+</html>

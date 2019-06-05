@@ -1,0 +1,334 @@
+#Super-Login-Page {
+  font-size: 16px;
+  font-family: Roboto;
+  margin-top: 120px; }
+  #Super-Login-Page .container .element-right .right-login .login-form .form-item .fbbutton, #Super-Login-Page .container .element-right .right-login .login-form .form-item .ggbutton, #Super-Login-Page .container .element-right .right-login .login-form .form-item .normal-input, #Super-Login-Page .container .element-right .right-login .login-form .form-item.form-item-submit .submitbutton, #Super-Login-Page .container .element-right .right-signup .signup-form .form-item .fbbutton, #Super-Login-Page .container .element-right .right-signup .signup-form .form-item .ggbutton, #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-input-normal .normal-input, #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-item-submit .submitbutton {
+    height: 43px;
+    outline: none;
+    transition: all 0.3s;
+    border: none;
+    width: 100%;
+    border-radius: 4px; }
+    #Super-Login-Page .container .element-right .right-login .login-form .form-item .fbbutton::-webkit-input-placeholder, #Super-Login-Page .container .element-right .right-login .login-form .form-item .ggbutton::-webkit-input-placeholder, #Super-Login-Page .container .element-right .right-login .login-form .form-item .normal-input::-webkit-input-placeholder, #Super-Login-Page .container .element-right .right-login .login-form .form-item.form-item-submit .submitbutton::-webkit-input-placeholder, #Super-Login-Page .container .element-right .right-signup .signup-form .form-item .fbbutton::-webkit-input-placeholder, #Super-Login-Page .container .element-right .right-signup .signup-form .form-item .ggbutton::-webkit-input-placeholder, #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-input-normal .normal-input::-webkit-input-placeholder, #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-item-submit .submitbutton::-webkit-input-placeholder {
+      font-size: 14px;
+      font-style: italic;
+      color: #b5b5b5; }
+  #Super-Login-Page .container .element-left .left-body .body-list-item .item .item-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
+  #Super-Login-Page .itnavi-checkbox-icon {
+    float: left;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    margin: 2px 5px 0 0;
+    border: solid 1px #b5b5b5;
+    cursor: pointer;
+    transition: 0.15s; }
+    #Super-Login-Page .itnavi-checkbox-icon:hover {
+      border: solid 5px #b5b5b5;
+      transition: 0.15s; }
+    #Super-Login-Page .itnavi-checkbox-icon.active {
+      border: solid 5px #24becf;
+      transition: 0.15s; }
+      #Super-Login-Page .itnavi-checkbox-icon.active:hover {
+        border: solid 5px #24becf;
+        transition: 0.15s; }
+  #Super-Login-Page .super-starr {
+    color: #f22424;
+    font-size: 14px; }
+  #Super-Login-Page .container {
+    height: 773px;
+    overflow: auto; }
+    @media screen and (max-width: 991.98px) {
+      #Super-Login-Page .container {
+        height: auto; } }
+    #Super-Login-Page .container .element-left {
+      float: right;
+      height: 100%;
+      width: 50%;
+      text-align: center;
+      background-size: cover;
+      background-position: center;
+      background-image: url(../image/group-1004@3x.png); }
+      #Super-Login-Page .container .element-left .left-body {
+        padding: 150px 25px 0 25px;
+        display: inline-block;
+        width: 100%;
+        max-width: 550px;
+        text-align: left;
+        color: #fff; }
+        #Super-Login-Page .container .element-left .left-body .body-title .title-big-title {
+          font-size: 40px;
+          font-weight: 900; }
+        #Super-Login-Page .container .element-left .left-body .body-title .title-description {
+          font-size: 20px; }
+        #Super-Login-Page .container .element-left .left-body .body-title .title-line {
+          width: 125px;
+          height: 2px;
+          margin: 45px 0 30px 0;
+          background-color: #ffffff; }
+        #Super-Login-Page .container .element-left .left-body .body-list-item .item {
+          overflow: auto;
+          margin-bottom: 45px; }
+          #Super-Login-Page .container .element-left .left-body .body-list-item .item .item-image {
+            float: left;
+            width: 40px;
+            height: 40px;
+            margin: 6px 15px 4px 0; }
+          #Super-Login-Page .container .element-left .left-body .body-list-item .item .item-title {
+            font-size: 20px; }
+      #Super-Login-Page .container .element-left.for-employer {
+        background-image: url(../image/group-1005@3x.png); }
+        #Super-Login-Page .container .element-left.for-employer .left-body {
+          max-width: 465px; }
+          #Super-Login-Page .container .element-left.for-employer .left-body .body-list-item {
+            padding-top: 15px; }
+            #Super-Login-Page .container .element-left.for-employer .left-body .body-list-item .item {
+              margin-bottom: 35px; }
+              #Super-Login-Page .container .element-left.for-employer .left-body .body-list-item .item .item-image {
+                width: 35px;
+                height: 35px;
+                margin-top: 0; }
+              #Super-Login-Page .container .element-left.for-employer .left-body .body-list-item .item .item-description {
+                font-size: 18px; }
+        #Super-Login-Page .container .element-left.for-employer .body-list-item {
+          padding-top: 15px; }
+          #Super-Login-Page .container .element-left.for-employer .body-list-item .item {
+            margin-bottom: 35px; }
+            #Super-Login-Page .container .element-left.for-employer .body-list-item .item .item-image {
+              width: 35px;
+              height: 35px;
+              margin-top: 0; }
+            #Super-Login-Page .container .element-left.for-employer .body-list-item .item .item-description {
+              font-size: 18px; }
+      @media screen and (max-width: 399.98px) {
+        #Super-Login-Page .container .element-left {
+          width: 100%; }
+          #Super-Login-Page .container .element-left .left-body {
+            padding-left: 10px;
+            padding-right: 10px; } }
+      @media screen and (max-width: 991.98px) {
+        #Super-Login-Page .container .element-left {
+          width: 100%;
+          margin-top: 20px; }
+          #Super-Login-Page .container .element-left .left-body {
+            padding-top: 40px; } }
+    #Super-Login-Page .container .element-right {
+      float: right;
+      width: 50%;
+      height: 100%;
+      overflow: auto;
+      background-color: #fff;
+      padding-bottom: 25px; }
+      #Super-Login-Page .container .element-right .right-login .login-logo {
+        padding: 60px 0 30px 0;
+        width: 100%;
+        text-align: center; }
+        #Super-Login-Page .container .element-right .right-login .login-logo img {
+          width: 228px;
+          height: 94px; }
+      #Super-Login-Page .container .element-right .right-login .login-form {
+        text-align: center; }
+        #Super-Login-Page .container .element-right .right-login .login-form .form-item {
+          max-width: 410px;
+          width: 100%;
+          padding: 5px 10px;
+          display: inline-block;
+          text-align: left; }
+          #Super-Login-Page .container .element-right .right-login .login-form .form-item .fbbutton, #Super-Login-Page .container .element-right .right-login .login-form .form-item .ggbutton {
+            background-color: #475993;
+            color: #fff;
+            background-image: url(../image/facebook@3x.png);
+            background-repeat: no-repeat;
+            background-size: 21.9px;
+            background-position: 35px 11px; }
+            #Super-Login-Page .container .element-right .right-login .login-form .form-item .fbbutton:hover, #Super-Login-Page .container .element-right .right-login .login-form .form-item .ggbutton:hover {
+              box-shadow: 0 0 5px #475993; }
+          #Super-Login-Page .container .element-right .right-login .login-form .form-item .ggbutton {
+            background-image: url(../image/search-1@3x.png);
+            background-color: #cc3333; }
+            #Super-Login-Page .container .element-right .right-login .login-form .form-item .ggbutton:hover {
+              box-shadow: 0 0 5px #cc3333; }
+          #Super-Login-Page .container .element-right .right-login .login-form .form-item .normal-input {
+            border: solid 1px #b5b5b5;
+            background-color: #ffffff;
+            margin-bottom: 5px;
+            padding: 0 10px; }
+            #Super-Login-Page .container .element-right .right-login .login-form .form-item .normal-input:hover {
+              border: solid 1px #b5b5b5;
+              box-shadow: 0 0 5px #b5b5b5; }
+            #Super-Login-Page .container .element-right .right-login .login-form .form-item .normal-input:focus {
+              border: solid 1px #24becf;
+              box-shadow: 0 0 5px #24becf; }
+          #Super-Login-Page .container .element-right .right-login .login-form .form-item .normal-red-tip {
+            font-size: 12px;
+            color: #f22424; }
+          #Super-Login-Page .container .element-right .right-login .login-form .form-item.form-item-or {
+            max-width: 390px;
+            margin: 30px auto 0 auto;
+            text-align: center;
+            border-top: solid 1px #d1d0d6;
+            display: flex; }
+            #Super-Login-Page .container .element-right .right-login .login-form .form-item.form-item-or .or-text {
+              width: 30px;
+              color: #464545;
+              font-size: 14px;
+              margin: -16px auto 0 auto;
+              background-color: #fff; }
+          #Super-Login-Page .container .element-right .right-login .login-form .form-item.form-item-keepforgot {
+            overflow: auto;
+            padding-bottom: 0;
+            padding-top: 0;
+            font-size: 14px; }
+            #Super-Login-Page .container .element-right .right-login .login-form .form-item.form-item-keepforgot .keep-login {
+              float: left;
+              overflow: auto; }
+            #Super-Login-Page .container .element-right .right-login .login-form .form-item.form-item-keepforgot .forgot-password {
+              float: right; }
+              #Super-Login-Page .container .element-right .right-login .login-form .form-item.form-item-keepforgot .forgot-password .forgot-link {
+                color: #2a75f7;
+                text-decoration-color: #2a75f7; }
+          #Super-Login-Page .container .element-right .right-login .login-form .form-item.form-item-submit {
+            margin: 25px 0 15px 0; }
+            #Super-Login-Page .container .element-right .right-login .login-form .form-item.form-item-submit .submitbutton {
+              height: 50px;
+              color: #fff;
+              font-weight: 900;
+              background-color: #24becf; }
+              #Super-Login-Page .container .element-right .right-login .login-form .form-item.form-item-submit .submitbutton:hover {
+                box-shadow: 0 0 5px #24becf; }
+          #Super-Login-Page .container .element-right .right-login .login-form .form-item.form-item-haveanother {
+            height: 2px;
+            font-size: 14px; }
+            #Super-Login-Page .container .element-right .right-login .login-form .form-item.form-item-haveanother .haveanother-line {
+              height: 1px;
+              border-bottom: 1px solid #d1d0d6; }
+            #Super-Login-Page .container .element-right .right-login .login-form .form-item.form-item-haveanother .haveanother-text {
+              margin-top: 15px;
+              text-align: center; }
+              #Super-Login-Page .container .element-right .right-login .login-form .form-item.form-item-haveanother .haveanother-text .haveanother-link {
+                color: #f7912a;
+                text-decoration-color: #f7912a; }
+      #Super-Login-Page .container .element-right .right-signup .signup-title {
+        text-align: center;
+        font-size: 34px;
+        font-weight: 900;
+        padding: 25px 0 15px 0; }
+      #Super-Login-Page .container .element-right .right-signup .signup-form {
+        text-align: center; }
+        #Super-Login-Page .container .element-right .right-signup .signup-form .form-item {
+          max-width: 460px;
+          width: 100%;
+          padding: 5px 10px;
+          display: inline-block;
+          text-align: left; }
+          #Super-Login-Page .container .element-right .right-signup .signup-form .form-item .fbbutton, #Super-Login-Page .container .element-right .right-signup .signup-form .form-item .ggbutton {
+            background-color: #475993;
+            color: #fff;
+            background-image: url(../image/facebook@3x.png);
+            background-repeat: no-repeat;
+            background-size: 21.9px;
+            background-position: 35px 11px; }
+            #Super-Login-Page .container .element-right .right-signup .signup-form .form-item .fbbutton:hover, #Super-Login-Page .container .element-right .right-signup .signup-form .form-item .ggbutton:hover {
+              box-shadow: 0 0 5px #475993; }
+          #Super-Login-Page .container .element-right .right-signup .signup-form .form-item .ggbutton {
+            background-image: url(../image/search-1@3x.png);
+            background-color: #cc3333; }
+            #Super-Login-Page .container .element-right .right-signup .signup-form .form-item .ggbutton:hover {
+              box-shadow: 0 0 5px #cc3333; }
+          #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-input-normal {
+            overflow: auto; }
+            #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-input-normal .normal-label {
+              padding-top: 10px;
+              float: left;
+              width: 35%; }
+            #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-input-normal .normal-input {
+              border: solid 1px #b5b5b5;
+              background-color: #ffffff;
+              margin-bottom: 5px;
+              padding: 0 10px;
+              float: left;
+              width: 65%; }
+              #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-input-normal .normal-input:hover {
+                border: solid 1px #b5b5b5;
+                box-shadow: 0 0 5px #b5b5b5; }
+              #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-input-normal .normal-input:focus {
+                border: solid 1px #24becf;
+                box-shadow: 0 0 5px #24becf; }
+            #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-input-normal .normal-red-tip {
+              margin-left: 35%;
+              font-size: 12px;
+              color: #f22424; }
+            #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-input-normal .normal-small-tip {
+              margin-left: 35%;
+              font-size: 12px;
+              font-style: italic; }
+          #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-item-or {
+            max-width: 440px;
+            margin: 30px auto 15px auto;
+            text-align: center;
+            border-top: solid 1px #d1d0d6;
+            display: flex; }
+            #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-item-or .or-text {
+              width: 30px;
+              color: #464545;
+              font-size: 14px;
+              margin: -16px auto 0 auto;
+              background-color: #fff; }
+          #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-item-privacy {
+            font-size: 12px; }
+            #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-item-privacy .privacy-link {
+              color: #2a75f7;
+              text-decoration-color: #2a75f7; }
+          #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-item-submit {
+            margin: 10px 0 15px 0; }
+            #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-item-submit .submitbutton {
+              height: 50px;
+              color: #fff;
+              font-weight: 900;
+              background-color: #24becf; }
+              #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-item-submit .submitbutton:hover {
+                box-shadow: 0 0 5px #24becf; }
+          #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-item-haveanother {
+            height: 2px;
+            font-size: 14px; }
+            #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-item-haveanother .haveanother-line {
+              height: 1px;
+              border-bottom: 1px solid #d1d0d6; }
+            #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-item-haveanother .haveanother-text {
+              margin-top: 15px;
+              text-align: center; }
+              #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-item-haveanother .haveanother-text .haveanother-link {
+                color: #f7912a;
+                text-decoration-color: #f7912a; }
+      #Super-Login-Page .container .element-right.for-employer .right-login .login-form .form-item {
+        margin-top: 20px; }
+        #Super-Login-Page .container .element-right.for-employer .right-login .login-form .form-item.form-item-keepforgot {
+          margin-top: 0; }
+        #Super-Login-Page .container .element-right.for-employer .right-login .login-form .form-item.form-item-submit {
+          margin-top: 50px; }
+        #Super-Login-Page .container .element-right.for-employer .right-login .login-form .form-item.form-item-haveanother {
+          margin-top: 10px; }
+      #Super-Login-Page .container .element-right.for-employer .right-signup .signup-form .form-item.form-input-normal .normal-input {
+        margin-bottom: 2px; }
+      @media screen and (max-width: 991.98px) {
+        #Super-Login-Page .container .element-right {
+          width: 100%;
+          padding-bottom: 50px;
+          box-shadow: 0 5px 10px #b5b5b5; } }
+      @media screen and (max-width: 499.98px) {
+        #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-input-normal .normal-label {
+          width: 100%;
+          margin-top: 0; }
+        #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-input-normal .normal-input {
+          width: 100%; }
+        #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-input-normal .normal-small-tip,
+        #Super-Login-Page .container .element-right .right-signup .signup-form .form-item.form-input-normal .normal-red-tip {
+          margin-left: 0; } }
+      @media screen and (max-width: 399.98px) {
+        #Super-Login-Page .container .element-right .right-login .login-logo {
+          padding: 30px 0 20px 0; } }
+
+/*# sourceMappingURL=loginpage.css.map */

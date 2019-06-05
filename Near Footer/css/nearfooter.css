@@ -71,10 +71,12 @@
     padding: 25px 1% 0 1%; }
     #Super-Footer .container .connectt .connect-item .connect-title {
       margin-left: 4px; }
-    #Super-Footer .container .connectt .connect-item .connect-with {
-      width: 266px;
-      height: 63px;
-      margin: 7px 0 14px 0; }
+    #Super-Footer .container .connectt .connect-item .connect-with .with-image {
+      width: 50px;
+      height: 55px;
+      margin: 10px 10px 15px 0; }
+      #Super-Footer .container .connectt .connect-item .connect-with .with-image:last-child {
+        margin-right: 0; }
     #Super-Footer .container .connectt .connect-item .dangkybct {
       width: 180px;
       height: 69px;
