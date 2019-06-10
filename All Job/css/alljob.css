@@ -85,22 +85,25 @@
           padding: 2px 8px 0 2px;
           text-align: right;
           color: #fff; }
-          #Job-By-Title-Company .find-form .form-body .item.item-full .zoom-icon {
-            width: 18.8px;
-            height: 19px;
-            margin-right: 5px;
+          #Job-By-Title-Company .find-form .form-body .item.item-full .advanced-button {
             display: inline-block;
-            background-image: url(../image/searching-magnifying-glass@3x.png);
-            background-size: 18.8px;
-            background-repeat: no-repeat; }
-            #Job-By-Title-Company .find-form .form-body .item.item-full .zoom-icon span {
-              font-size: 8px;
-              float: left;
-              margin: 2px 0 0 4.5px; }
-          #Job-By-Title-Company .find-form .form-body .item.item-full .zoom-text {
-            display: inline-block;
-            float: right;
-            padding-top: 1px; }
+            cursor: pointer; }
+            #Job-By-Title-Company .find-form .form-body .item.item-full .advanced-button .zoom-icon {
+              width: 18.8px;
+              height: 19px;
+              margin-right: 5px;
+              display: inline-block;
+              background-image: url(../image/searching-magnifying-glass@3x.png);
+              background-size: 18.8px;
+              background-repeat: no-repeat; }
+              #Job-By-Title-Company .find-form .form-body .item.item-full .advanced-button .zoom-icon span {
+                font-size: 8px;
+                float: left;
+                margin: 2px 0 0 4.5px; }
+            #Job-By-Title-Company .find-form .form-body .item.item-full .advanced-button .zoom-text {
+              display: inline-block;
+              float: right;
+              padding-top: 1px; }
     @media screen and (max-width: 991.98px) {
       #Job-By-Title-Company .find-form .form-body .item.item-search, #Job-By-Title-Company .find-form .form-body .item.item-location, #Job-By-Title-Company .find-form .form-body .item.item-submit {
         width: 100%; }

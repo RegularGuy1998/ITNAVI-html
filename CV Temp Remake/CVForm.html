@@ -5,356 +5,560 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/cvform.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
-        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>CV Template</title>
+    <style>
+        #CV-Template {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 90%;
+            padding: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: auto;
+        }
+
+        #CV-Template .bolder-text {
+            font-weight: bold;
+        }
+
+        #CV-Template .italic-text {
+            font-style: italic;
+        }
+
+        #CV-Template .col-3,
+        #CV-Template .col-85,
+        #CV-Template .col-9,
+        #CV-Template .col-12 {
+            width: 25%;
+            float: left;
+        }
+
+        #CV-Template .col-85 {
+            width: 70%;
+        }
+
+        #CV-Template .col-9 {
+            width: 75%;
+        }
+
+        #CV-Template .col-12 {
+            width: 100%;
+        }
+
+        #CV-Template .supertable table {
+            font-size: 20px;
+        }
+
+        #CV-Template .local-avatar .padding-10px {
+            padding-right: 8%;
+        }
+
+        #CV-Template .local-avatar .avatar {
+            width: 100%;
+        }
+
+        #CV-Template .name {
+            font-size: 44px;
+            font-weight: bold;
+            color: #24becf;
+        }
+
+        #CV-Template .job-name {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        #CV-Template .line-blue {
+            border-top: 2px solid #24becf;
+            margin: 10px 0;
+        }
+
+        #CV-Template .line-blue .circle {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: solid 2px #24becf;
+            background-color: #ffffff;
+            margin-top: -7px;
+            float: right;
+        }
+
+        #CV-Template .item {
+            font-size: 18px;
+            padding-bottom: 14px;
+        }
+
+        #CV-Template .item .item-image img {
+            margin-bottom: -2px;
+        }
+
+        #CV-Template .element .title {
+            font-size: 24px;
+            color: #24becf;
+            font-weight: bold;
+            padding: 30px 0 12px 0;
+            border-bottom: 2px solid #d1d0d6;
+        }
+
+        #CV-Template .element .title .title-image {
+            width: 26px;
+            height: 26px;
+        }
+
+        #CV-Template .element .body {
+            margin-top: 20px;
+            padding-bottom: 10px;
+            width: 100%;
+        }
+
+        #CV-Template .element .timeline {
+            font-size: 18px;
+        }
+
+        #CV-Template .element .timeline .bolder-text {
+            margin-bottom: 12px;
+        }
+
+        #CV-Template .element .timeline .description {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+        #CV-Template .element .onlytext-small {
+            font-size: 16px;
+        }
+
+        #CV-Template .element .onlytext {
+            font-size: 18px;
+        }
+
+        #CV-Template .element .supertable {
+            width: 100%;
+        }
+
+        #CV-Template .element .supertable .table-title {
+            font-size: 18px;
+            padding: 20px 0 8px 0;
+        }
+
+        #CV-Template .element .supertable table {
+            width: 100%;
+            font-size: 16px;
+            background-color: rgba(30, 189, 207, 0.15);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #CV-Template .element .supertable table:last-child {
+            margin-bottom: 0;
+        }
+
+        #CV-Template .element .supertable table tr th,
+        #CV-Template .element .supertable table tr td {
+            text-align: center;
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+
+        #CV-Template .element .supertable table thead {
+            background-color: rgba(30, 189, 207, 0.15);
+        }
+
+        #CV-Template .element .supertable table thead tr {
+            background-color: rgba(30, 189, 207, 0.15);
+        }
+
+        #CV-Template .element .supertable table tbody tr {
+            border-bottom: 1px solid rgba(30, 189, 207, 0.15);
+        }
+
+        #CV-Template .element .supertable table tbody tr td {
+            border-bottom: 1px solid rgba(30, 189, 207, 0.15);
+        }
+
+        #CV-Template .element .supertable table tbody tr:last-child {
+            border-bottom: none;
+        }
+
+        #CV-Template .element .supertable table tbody tr:last-child td {
+            border-bottom: 1px solid rgba(30, 189, 207, 0.15);
+        }
+
+        #CV-Template .super-logo {
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        #CV-Template .super-logo img {
+            width: 132px;
+            height: 52px;
+        }
+
+        /*# sourceMappingURL=cvform.css.map */
+    </style>
 </head>
 
 <body>
     <div id="CV-Template">
-        <div class="row">
-            <div class="col-xs-3">
+        <div class="col-3 local-avatar">
+            <div class="padding-10px">
                 <img class="avatar" src="image/rectangle-535@3x.png" alt="">
             </div>
-            <div class="col-xs-9">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="name">
-                            Nguyen Van A
-                        </div>
-                        <div class="job-name">
-                            Product Owner
-                        </div>
-                        <div class="line-blue">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-9">
-                                <div class="item">
-                                    <span style="width: 18px; height: 18px;" class="item-image">
-                                        <img src="image/telephone@3x.png" alt="">
-                                    </span>
-                                    <span>0123456789</span>
-                                </div>
-                                <div class="item">
-                                    <div class="item-image" style="background-image: url(image/close-envelope@3x.png)">
-                                    </div>
-                                    <span>abc@gmail.com</span>
-                                </div>
-                                <div class="item">
-                                    <div class="item-image"
-                                        style="background-image: url(image/placeholder-filled-point@3x.png)"></div>
-                                    <span>No, 12 Nguyen Van Troi Str., Ha Dong Ward, Hanoi</span>
-                                </div>
-                            </div>
-                            <div class="col-xs-3">
-                                <div class="item">
-                                    <div class="item-image"
-                                        style="background-image: url(image/calendar-with-spring-binder-and-date-blocks@3x.png)">
-                                    </div>
-                                    <span>01/01/0001</span>
-                                </div>
-                                <div class="item">
-                                    <div class="item-image" style="background-image: url(image/genders@3x.png)"></div>
-                                    <span>Male</span>
-                                </div>
-                                <div class="item">
-                                    <div class="item-image"
-                                        style="background-image: url(image/favorite-heart-button@3x.png)"></div>
-                                    <span>Married</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 element">
-                <div class="title">
-                    <div class="title-image" style="background-image: url(image/success-1@3x.png)"></div>
-                    <span>CAREER OBJECTIVE</span>
-                </div>
-                <div class="body onlytext">
-                    IT Professional with over 10 years of experience specializing in IT department management for
-                    international logistics companies. I can implement effective IT strategic at local and global
-                    levels. My greatest strength is business awareness, which enables me to permanently streamline
-                    infrastructure and applications
-                </div>
-            </div>
-
-            <div class="col-xs-12 element">
-                <div class="title">
-                    <div class="title-image" style="background-image: url(image/business-presentation@3x.png)"></div>
-                    <span>PROJECT EXPERIENCE</span>
-                </div>
-                <div class="body timeline">
-                    <div class="row">
-                        <div class="col-xs-3 bolder-text">
-                            03/2018 - 01/2019
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="bolder-text">
-                                Developing Video Mail
-                            </div>
-                            <div class="description italic-text">
-                                ITNavi JSC.
-                            </div>
-                            <div class="description">
-                                Developing application by C/C++ to attach video to mail and to extract and play video
-                                from email <br>
-                                • Team size: 5 <br>
-                                • Technical Skills: Laravel Framework, PHP, MySQL <br>
-                                • Role: Product Owner <br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 element">
-                <div class="title">
-                    <div class="title-image" style="background-image: url(image/passage-of-time@3x.png)"></div>
-                    <span>EMPLOYMENT HISTORY</span>
-                </div>
-                <div class="body timeline">
-                    <div class="row">
-                        <div class="col-xs-3 bolder-text">
-                            07/2016 - 02/2018
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="bolder-text">
-                                Product Lead
-                            </div>
-                            <div class="description italic-text">
-                                Haravan JSC.
-                            </div>
-                            <div class="description">
-                                HARAVAN has been established in March, 2014 as a software solution company, provide
-                                cloud-based multichannel commerce platform for SMEs, e-commerce merchants, retailers,
-                                shop to run their business online and offline.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 element">
-                <div class="title">
-                    <div class="title-image" style="background-image: url(image/skills@3x.png)"></div>
-                    <span>SKILLS</span>
-                </div>
-                <div class="body supertable">
-                    <div class="table-title bolder-text">
-                        Professional Skills
-                    </div>
-                    <table class="title-body">
-                        <thead>
-                            <tr class="row">
-                                <th class="col-xs-5 skills">Skills</th>
-                                <th class="col-xs-3 proficiency">Proficiency</th>
-                                <th class="col-xs-4 yeoe">Year of Experience</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="row">
-                                <td class="col-xs-5 skills">Project Management</td>
-                                <td class="col-xs-3 proficiency">Basic</td>
-                                <td class="col-xs-4 yeoe">2 years</td>
-                            </tr>
-                            <tr class="row">
-                                <td class="col-xs-5 skills">Business Analyst</td>
-                                <td class="col-xs-3 proficiency">Basic</td>
-                                <td class="col-xs-4 yeoe">4 years</td>
-                            </tr>
-                            <tr class="row">
-                                <td class="col-xs-5 skills">Problem Solving</td>
-                                <td class="col-xs-3 proficiency">Basic</td>
-                                <td class="col-xs-4 yeoe">5 years</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="table-title bolder-text">
-                        Technology Skills
-                    </div>
-                    <table class="title-body">
-                        <thead>
-                            <tr class="row">
-                                <th class="col-xs-5 skills">Skills</th>
-                                <th class="col-xs-3 proficiency">Proficiency</th>
-                                <th class="col-xs-4 yeoe">Year of Experience</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="row">
-                                <td class="col-xs-5 skills">Project Management</td>
-                                <td class="col-xs-3 proficiency">Basic</td>
-                                <td class="col-xs-4 yeoe">2 years</td>
-                            </tr>
-                            <tr class="row">
-                                <td class="col-xs-5 skills">Business Analyst</td>
-                                <td class="col-xs-3 proficiency">Basic</td>
-                                <td class="col-xs-4 yeoe">4 years</td>
-                            </tr>
-                            <tr class="row">
-                                <td class="col-xs-5 skills">Problem Solving</td>
-                                <td class="col-xs-3 proficiency">Basic</td>
-                                <td class="col-xs-4 yeoe">5 years</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="table-title bolder-text">
-                        Domain Skills
-                    </div>
-                    <table class="title-body">
-                        <thead>
-                            <tr class="row">
-                                <th class="col-xs-5 skills">Skills</th>
-                                <th class="col-xs-3 proficiency">Proficiency</th>
-                                <th class="col-xs-4 yeoe">Year of Experience</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="row">
-                                <td class="col-xs-5 skills">Project Management</td>
-                                <td class="col-xs-3 proficiency">Basic</td>
-                                <td class="col-xs-4 yeoe">2 years</td>
-                            </tr>
-                            <tr class="row">
-                                <td class="col-xs-5 skills">Business Analyst</td>
-                                <td class="col-xs-3 proficiency">Basic</td>
-                                <td class="col-xs-4 yeoe">4 years</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="col-xs-12 element">
-                <div class="title">
-                    <div class="title-image" style="background-image: url(image/college-graduation-1@3x.png)"></div>
-                    <span>EDUCATIONAL BACKGROUND</span>
-                </div>
-                <div class="body timeline">
-                    <div class="row">
-                        <div class="col-xs-3 bolder-text">
-                            09/2006 - 01/2011
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="bolder-text">
-                                Bachelor of Information Technology
-                            </div>
-                            <div class="description">
-                                Hanoi University - Vietnam
-                            </div>
-                            <div class="description">
-                                Grade: 3.5
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 element">
-                <div class="title">
-                    <div class="title-image" style="background-image: url(image/certification-file@3x.png)"></div>
-                    <span>CERTIFICATION</span>
-                </div>
-                <div class="body timeline">
-                    <div class="row">
-                        <div class="col-xs-3 bolder-text">
-                            05/2018
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="description">
-                                PMP (Score:5)
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 element">
-                <div class="title">
-                    <div class="title-image" style="background-image: url(image/business-people-meeting@3x.png)"></div>
-                    <span>TRAINING & SEMINAR ATTENDED</span>
-                </div>
-                <div class="body timeline">
-                    <div class="row">
-                        <div class="col-xs-3 bolder-text">
-                            01/2017- 03/2017
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="description">
-                                Project Management Essentials
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 element">
-                <div class="title">
-                    <div class="title-image" style="background-image: url(image/quality@3x.png)"></div>
-                    <span>QUALIFICATIONS</span>
-                </div>
-                <div class="body onlytext-small">
-                    Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum <br>
-                    Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum <br>
-                    Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum <br>
-                </div>
-            </div>
-
-            <div class="col-xs-12 element">
-                <div class="title">
-                    <div class="title-image" style="background-image: url(image/award@3x.png)"></div>
-                    <span>ACHIEVEMENT/ RESPONSIBILITY</span>
-                </div>
-                <div class="body onlytext-small">
-                    Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum <br>
-                    Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum <br>
-                    Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum <br>
-                </div>
-            </div>
-
-            <div class="col-xs-12 element">
-                <div class="title">
-                    <div class="title-image" style="background-image: url(image/file-in-folder@3x.png)"></div>
-                    <span>REFERENCES</span>
-                </div>
-                <div class="body timeline">
-                    <div class="row">
-                        <div class="col-xs-3 bolder-text">
-                            Trần Thị Hồng
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="description">
-                                CEO - HRI Vietnam
-                            </div>
-                            <div class="description">
-                                Email: hong.tran@hri.com.vn - Phone: 0912345678
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 super-logo">
-                <img src="image/320-x-132@3x.png" alt="">
-            </div>
-
         </div>
+        <div class="col-9">
+            <div class="row">
+                <div class="col-12">
+                    <div class="name">
+                        Nguyen Van A
+                    </div>
+                    <div class="job-name">
+                        Product Owner
+                    </div>
+                    <div class="line-blue">
+                    </div>
+                    <div class="row">
+                        <div class="col-85">
+                            <div class="item row">
+                                <span class="item-image col-xs-1 text-center">
+                                    <img style="width: 19.6px; height: 19.6px;" src="image/telephone@3x.png" alt="">
+                                </span>
+                                <span class="col-xs-11">0123456789</span>
+                            </div>
+                            <div class="item row">
+                                <span class="item-image col-xs-1 text-center">
+                                    <img style="width: 18.8px; height: 13.4px;" src="image/close-envelope@3x.png"
+                                        alt="">
+                                </span>
+                                <span class="col-xs-11">abc@gmail.com</span>
+                            </div>
+                            <div class="item row">
+                                <span class="item-image col-xs-1 text-center">
+                                    <img style="width: 14.2px; height: 19.4px;"
+                                        src="image/placeholder-filled-point@3x.png" alt="">
+                                </span>
+                                <span class="col-xs-11">No, 12 Nguyen Van Troi Str., Ha Dong Ward, Hanoi</span>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="item row">
+                                <span class="item-image col-xs-3 text-center">
+                                    <img style="width: 15.8px; height: 17px;"
+                                        src="image/calendar-with-spring-binder-and-date-blocks@3x.png" alt="">
+                                </span>
+                                <span class="col-xs-9">01/01/0001</span>
+                            </div>
+                            <div class="item row">
+                                <span class="item-image col-xs-3 text-center">
+                                    <img style="width: 20px; height: 19.4px;" src="image/genders@3x.png" alt="">
+                                </span>
+                                <span class="col-xs-9">Male</span>
+                            </div>
+                            <div class="item row">
+                                <span class="item-image col-xs-3 text-center">
+                                    <img style="width: 16.4px; height: 15.2px;" src="image/favorite-heart-button@3x.png"
+                                        alt="">
+                                </span>
+                                <span class="col-xs-9">Married</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 element">
+            <div class="title">
+                <span class="title-image">
+                    <img style="width: 22px; height: px;" src="image/success-1@3x.png" alt="">
+                </span>
+                <span>CAREER OBJECTIVE</span>
+            </div>
+            <div class="body onlytext">
+                IT Professional with over 10 years of experience specializing in IT department management for
+                international logistics companies. I can implement effective IT strategic at local and global
+                levels. My greatest strength is business awareness, which enables me to permanently streamline
+                infrastructure and applications
+            </div>
+        </div>
+
+        <div class="col-12 element">
+            <div class="title">
+                <span class="title-image">
+                    <img style="width: 25.2px; height: 25.2px;" src="image/business-presentation@3x.png" alt="">
+                </span>
+                <span>PROJECT EXPERIENCE</span>
+            </div>
+            <div class="body timeline">
+                <div class="row">
+                    <div class="col-3 bolder-text">
+                        03/2018 - 01/2019
+                    </div>
+                    <div class="col-9">
+                        <div class="bolder-text">
+                            Developing Video Mail
+                        </div>
+                        <div class="description italic-text">
+                            ITNavi JSC.
+                        </div>
+                        <div class="description">
+                            Developing application by C/C++ to attach video to mail and to extract and play video
+                            from email <br>
+                            • Team size: 5 <br>
+                            • Technical Skills: Laravel Framework, PHP, MySQL <br>
+                            • Role: Product Owner <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 element">
+            <div class="title">
+                <span class="title-image">
+                    <img style="width: 26.4px; height: 24.4px;" src="image/passage-of-time@3x.png" alt="">
+                </span>
+                <span>EMPLOYMENT HISTORY</span>
+            </div>
+            <div class="body timeline">
+                <div class="row">
+                    <div class="col-3 bolder-text">
+                        07/2016 - 02/2018
+                    </div>
+                    <div class="col-9">
+                        <div class="bolder-text">
+                            Product Lead
+                        </div>
+                        <div class="description italic-text">
+                            Haravan JSC.
+                        </div>
+                        <div class="description">
+                            HARAVAN has been established in March, 2014 as a software solution company, provide
+                            cloud-based multichannel commerce platform for SMEs, e-commerce merchants, retailers,
+                            shop to run their business online and offline.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 element">
+            <div class="title">
+                <span class="title-image">
+                    <img style="width: 28.2px; height: 23.4px;" src="image/skills@3x.png" alt="">
+                </span>
+                <span>SKILLS</span>
+            </div>
+            <div class="body supertable" style="">
+                <div class="table-title bolder-text">
+                    Professional Skills
+                </div>
+                <table class="title-body"
+                    style="width: 100%; font-family: Arial, Helvetica, sans-serif; background-color: rgba(30, 189, 207, 0.15); text-align: center;">
+                    <thead>
+                        <tr>
+                            <th class="skills">Skills</th>
+                            <th class="col-xs-3 proficiency">Proficiency</th>
+                            <th class="col-xs-4 yeoe">Year of Experience</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="row">
+                            <td class="col-xs-5 skills">Project Management</td>
+                            <td class="col-xs-3 proficiency">Basic</td>
+                            <td class="col-xs-4 yeoe">2 years</td>
+                        </tr>
+                        <tr class="row">
+                            <td class="col-xs-5 skills">Business Analyst</td>
+                            <td class="col-xs-3 proficiency">Basic</td>
+                            <td class="col-xs-4 yeoe">4 years</td>
+                        </tr>
+                        <tr class="row">
+                            <td class="col-xs-5 skills">Problem Solving</td>
+                            <td class="col-xs-3 proficiency">Basic</td>
+                            <td class="col-xs-4 yeoe">5 years</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table-title bolder-text">
+                    Technology Skills
+                </div>
+                <table class="title-body">
+                    <thead>
+                        <tr class="row">
+                            <th class="col-xs-5 skills">Skills</th>
+                            <th class="col-xs-3 proficiency">Proficiency</th>
+                            <th class="col-xs-4 yeoe">Year of Experience</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="row">
+                            <td class="col-xs-5 skills">Project Management</td>
+                            <td class="col-xs-3 proficiency">Basic</td>
+                            <td class="col-xs-4 yeoe">2 years</td>
+                        </tr>
+                        <tr class="row">
+                            <td class="col-xs-5 skills">Business Analyst</td>
+                            <td class="col-xs-3 proficiency">Basic</td>
+                            <td class="col-xs-4 yeoe">4 years</td>
+                        </tr>
+                        <tr class="row">
+                            <td class="col-xs-5 skills">Problem Solving</td>
+                            <td class="col-xs-3 proficiency">Basic</td>
+                            <td class="col-xs-4 yeoe">5 years</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table-title bolder-text">
+                    Domain Skills
+                </div>
+                <table class="title-body">
+                    <thead>
+                        <tr class="row">
+                            <th class="col-xs-5 skills">Skills</th>
+                            <th class="col-xs-3 proficiency">Proficiency</th>
+                            <th class="col-xs-4 yeoe">Year of Experience</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="row">
+                            <td class="col-xs-5 skills">Project Management</td>
+                            <td class="col-xs-3 proficiency">Basic</td>
+                            <td class="col-xs-4 yeoe">2 years</td>
+                        </tr>
+                        <tr class="row">
+                            <td class="col-xs-5 skills">Business Analyst</td>
+                            <td class="col-xs-3 proficiency">Basic</td>
+                            <td class="col-xs-4 yeoe">4 years</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col-12 element">
+            <div class="title">
+                <span class="title-image">
+                    <img style="width: 28px; height: 23px;" src="image/college-graduation-1@3x.png" alt="">
+                </span>
+                <span>EDUCATIONAL BACKGROUND</span>
+            </div>
+            <div class="body timeline">
+                <div class="row">
+                    <div class="col-3 bolder-text">
+                        09/2006 - 01/2011
+                    </div>
+                    <div class="col-9">
+                        <div class="bolder-text">
+                            Bachelor of Information Technology
+                        </div>
+                        <div class="description">
+                            Hanoi University - Vietnam
+                        </div>
+                        <div class="description">
+                            Grade: 3.5
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 element">
+            <div class="title">
+                <span class="title-image">
+                    <img style="width: 31.2px; height: 29.8px;" src="image/certification-file@3x.png" alt="">
+                </span>
+                <span>CERTIFICATION</span>
+            </div>
+            <div class="body timeline">
+                <div class="row">
+                    <div class="col-3 bolder-text">
+                        05/2018
+                    </div>
+                    <div class="col-9">
+                        <div class="description">
+                            PMP (Score:5)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 element">
+            <div class="title">
+                <span class="title-image">
+                    <img style="width: 25.2px; height: 27.6px;" src="image/business-people-meeting@3x.png" alt="">
+                </span>
+                <span>TRAINING & SEMINAR ATTENDED</span>
+            </div>
+            <div class="body timeline">
+                <div class="row">
+                    <div class="col-3 bolder-text">
+                        01/2017- 03/2017
+                    </div>
+                    <div class="col-9">
+                        <div class="description">
+                            Project Management Essentials
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 element">
+            <div class="title">
+                <span class="title-image">
+                    <img style="width: 25.2px; height: 32.2px;" src="image/quality@3x.png" alt="">
+                </span>
+                <span>QUALIFICATIONS</span>
+            </div>
+            <div class="body onlytext-small">
+                Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum <br>
+                Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum <br>
+                Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum <br>
+            </div>
+        </div>
+
+        <div class="col-12 element">
+            <div class="title">
+                <span class="title-image">
+                    <img style="width: 24.4px; height: 24.4px;" src="image/award@3x.png" alt="">
+                </span>
+                <span>ACHIEVEMENT/ RESPONSIBILITY</span>
+            </div>
+            <div class="body onlytext-small">
+                Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum <br>
+                Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum <br>
+                Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum <br>
+            </div>
+        </div>
+
+        <div class="col-12 element">
+            <div class="title">
+                <span class="title-image">
+                    <img style="width: 24.2px; height: 22.2px;" src="image/file-in-folder@3x.png" alt="">
+                </span>
+                <span>REFERENCES</span>
+            </div>
+            <div class="body timeline">
+                <div class="row">
+                    <div class="col-3 bolder-text">
+                        Trần Thị Hồng
+                    </div>
+                    <div class="col-9">
+                        <div class="description">
+                            CEO - HRI Vietnam
+                        </div>
+                        <div class="description">
+                            Email: hong.tran@hri.com.vn - Phone: 0912345678
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 super-logo">
+            <img src="image/320-x-132@3x.png" alt="">
+        </div>
+
     </div>
 </body>
 

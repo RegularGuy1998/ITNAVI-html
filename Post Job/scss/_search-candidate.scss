@@ -5,6 +5,7 @@
     .form-search {
         overflow: auto;
 
+
         .big-title {
             margin: 21px 0 9px;
         }
@@ -36,17 +37,14 @@
                     height: 17.8px;
                 }
 
-                input {
-                    border: 0;
-                    width: 100%;
+                .select2-container {
+                    width: 100% !important;
+                    margin-top: 2px;
 
-                    &::-webkit-input-placeholder {
-                        font-size: 14px;
+                    .select2-selection {
+                        border: none;
                     }
 
-                    &:focus {
-                        outline: none;
-                    }
                 }
 
                 &:focus-within {
@@ -268,6 +266,108 @@
                     float: left;
                     margin-right: 10px;
                     background-image: url(../image/searching-magnifying-glass@3x.png)
+                }
+            }
+        }
+
+        .advanced-more {
+            padding-bottom: 10px;
+
+            .more-blue {
+                background-color: #24becf;
+                padding-top: 20px;
+                padding-bottom: 5px;
+                overflow: hidden;
+
+                .row {
+
+                    .col-fix-left {
+                        padding-left: 5px;
+                    }
+
+                    .col-fix-right {
+                        padding-right: 5px;
+                    }
+
+                    .blue-item {
+                        @extend %defaut-input-form;
+
+                        background-color: #fff;
+                        width: 100%;
+                        display: inline-flex;
+                        margin-bottom: 15px;
+
+                        &:focus-within {
+                            box-shadow: 0 0 5px #fff;
+                        }
+
+                        .blue-item-image {
+                            @extend %default-background-color;
+
+                            width: 20px;
+                            margin: 11px 5px 11px 10px;
+                            max-height: 20px;
+                        }
+
+                        select {
+                            border: none;
+                            width: 100%;
+                            background-color: #fff;
+                            cursor: pointer;
+                            outline: none;
+                        }
+
+                        input {
+                            border: none;
+                            width: 100%;
+                            background-color: #fff;
+                            cursor: text;
+                            margin-right: 10px;
+                            margin-left: 6px;
+                            outline: none;
+                        }
+
+                    }
+
+                    .search-advanced {
+                        overflow: auto;
+                        color: #fff;
+                        display: inline-block;
+                        cursor: pointer;
+                        text-align: left;
+
+                        .advanced-icon {
+                            @extend %default-background-color;
+
+                            font-size: 10px;
+                            padding: 0 0 0 4px;
+                            color: #fff;
+                            float: left;
+                            width: 19px;
+                            height: 19px;
+                            margin-right: 10px;
+                            background-image: url(../image/searching-magnifying-glass-white@3x.png)
+                        }
+                    }
+                }
+
+            }
+
+            .more-white {
+                padding-top: 15px;
+                padding-bottom: 5px;
+
+                .white-orange {
+                    @extend %defaut-input-form;
+
+                    float: none;
+                    background-color: #f7912a;
+                    width: 139.9px;
+                    color: #fff;
+
+                    &:hover {
+                        box-shadow: 0 0 5px #f7912a;
+                    }
                 }
             }
         }

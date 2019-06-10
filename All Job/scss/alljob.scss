@@ -141,26 +141,32 @@
                     text-align: right;
                     color: #fff;
 
-                    .zoom-icon {
-                        width: 18.8px;
-                        height: 19px;
-                        margin-right: 5px;
+                    .advanced-button {
                         display: inline-block;
-                        background-image: url(../image/searching-magnifying-glass@3x.png);
-                        background-size: 18.8px;
-                        background-repeat: no-repeat;
+                        cursor: pointer;
 
-                        span {
-                            font-size: 8px;
-                            float: left;
-                            margin: 2px 0 0 4.5px;
+                        .zoom-icon {
+                            width: 18.8px;
+                            height: 19px;
+                            margin-right: 5px;
+                            display: inline-block;
+                            background-image: url(../image/searching-magnifying-glass@3x.png);
+                            background-size: 18.8px;
+                            background-repeat: no-repeat;
+
+                            span {
+                                font-size: 8px;
+                                float: left;
+                                margin: 2px 0 0 4.5px;
+                            }
                         }
-                    }
 
-                    .zoom-text {
-                        display: inline-block;
-                        float: right;
-                        padding-top: 1px;
+                        .zoom-text {
+                            display: inline-block;
+                            float: right;
+                            padding-top: 1px;
+                        }
+
                     }
                 }
             }
@@ -269,7 +275,7 @@
                 .row {
 
                     a {
-                        
+
                         &:hover {
                             text-decoration-color: #464545;
                         }

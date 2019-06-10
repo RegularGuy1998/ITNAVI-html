@@ -1,5 +1,11 @@
 #CV-Template {
-    font-family: roboto;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+
 
     %default-background-image {
         background-repeat: no-repeat;
@@ -13,7 +19,7 @@
     }
 
     .bolder-text {
-        font-weight: 900;
+        font-weight: bold;
     }
 
     .italic-text {
@@ -23,57 +29,84 @@
     $bigname: 44px;
     $jobname: 28px;
     $title: 24px;
-    $nomal: 20px;
+    $nomal: 18px;
     $supersm: 16px;
     $blue: #24becf;
     $lightblue: rgba(30, 189, 207, 0.15);
     $lightgray: #d1d0d6;
 
 
+    .col-3 {
+        width: 25%;
+        float: left;
+    }
 
-    width: 100%;
-    padding: 10px;
+    .col-85 {
+        @extend .col-3;
 
-    .avatar {
+        width: 70%;
+    }
+
+    .col-9 {
+        @extend .col-3;
+
+        width: 75%;
+    }
+
+    .col-12 {
+        @extend .col-3;
+
         width: 100%;
+    }
+
+    .supertable table {
+        font-size: 20px;
+    }
+
+    .local-avatar {
+        .padding-10px {
+            padding-right: 8%;
+        }
+
+        .avatar {
+            width: 100%;
+        }
     }
 
     .name {
         font-size: $bigname;
-        font-weight: 900;
+        font-weight: bold;
         color: $blue;
     }
 
     .job-name {
         font-size: $jobname;
-        font-weight: 900;
+        font-weight: bold;
     }
 
     .line-blue {
-        border-top: 1px solid $blue;
+        border-top: 2px solid $blue;
         margin: 10px 0;
 
         .circle {
-            width: 6px;
-            height: 6px;
+            width: 12px;
+            height: 12px;
             border-radius: 50%;
-            border: solid 1px $blue;
+            border: solid 2px $blue;
             background-color: #ffffff;
-            margin-top: -4px;
+            margin-top: -7px;
             float: right;
         }
     }
 
     .item {
         font-size: $nomal;
-        padding-bottom: 7px;
+        padding-bottom: 14px;
 
         .item-image {
-            @extend %default-background-image;
 
             img {
-                width: 100%;
-                height: 100%;
+                margin-bottom: -2px;
             }
         }
     }
@@ -83,97 +116,112 @@
         .title {
             font-size: $title;
             color: $blue;
-            font-weight: 900;
-            padding: 15px 0 6px 0;
-            border-bottom: 1px solid $lightgray;
+            font-weight: bold;
+            padding: 30px 0 12px 0;
+            border-bottom: 2px solid $lightgray;
 
 
             .title-image {
-                @extend %default-background-image;
-
-                margin: 1px 5px 0 0;
-                float: left;
-                width: 13px;
-                height: 13px;
+                width: 26px;
+                height: 26px;
             }
         }
 
         .body {
-            margin-top: 10px;
-            padding-bottom: 5px;
+            margin-top: 20px;
+            padding-bottom: 10px;
+            width: 100%;
 
-            &.onlytext {
-                font-size: $nomal;
+        }
+
+        .timeline {
+            font-size: $nomal;
+
+            .bolder-text {
+                margin-bottom: 12px;
             }
 
-            &.onlytext-small {
+            .description {
                 font-size: $supersm;
+                margin-bottom: 12px;
             }
 
-            &.timeline {
+        }
+
+        .onlytext-small {
+            font-size: $supersm;
+        }
+
+        .onlytext {
+            font-size: $nomal;
+        }
+
+        .supertable {
+            width: 100%;
+
+
+
+            .table-title {
                 font-size: $nomal;
-
-                .description {
-                    font-size: $supersm;
-                    padding: 2px 0;
-                }
-
+                padding: 20px 0 8px 0;
             }
 
-            &.supertable {
+            table {
+                width: 100%;
+                font-size: $supersm;
+                background-color: $lightblue;
+                font-family: Arial, Helvetica, sans-serif;
 
-
-                .table-title {
-                    font-size: $nomal;
-                    padding-bottom: 4px;
+                &:last-child {
+                    margin-bottom: 0;
                 }
 
-                .title-body {
-                    width: 100%;
-                    margin-bottom: 10px;
-                    font-size: $supersm;
+                tr {
+
+                    th,
+                    td {
+                        text-align: center;
+                        padding-top: 6px;
+                        padding-bottom: 6px;
+                    }
+                }
+
+                thead {
                     background-color: $lightblue;
 
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
-
                     tr {
-
-                        th,
-                        td {
-                            text-align: center;
-                            padding-top: 3px;
-                            padding-bottom: 3px;
-                        }
-                    }
-
-                    thead {
                         background-color: $lightblue;
                     }
+                }
 
-                    tbody {
-                        tr {
+                tbody {
+                    tr {
+                        border-bottom: 1px solid $lightblue;
+
+                        td {
                             border-bottom: 1px solid $lightblue;
+                        }
 
-                            &:last-child {
-                                border-bottom: none;
+                        &:last-child {
+                            border-bottom: none;
+
+                            td {
+                                border-bottom: 1px solid $lightblue;
                             }
                         }
                     }
                 }
             }
-
         }
     }
 
     .super-logo {
         text-align: center;
-        padding-top: 30px;
+        padding-top: 60px;
 
         img {
-            width: 66px;
-            height: 26px;
+            width: 132px;
+            height: 52px;
         }
     }
 }

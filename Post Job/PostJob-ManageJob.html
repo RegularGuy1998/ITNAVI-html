@@ -437,103 +437,118 @@
                         <div class="big-title">
                             Post Job
                         </div>
-                        <div class="list-form-item">
-                            <div class="item">
-                                <label for="jobtitle">Job Title <span class="super-starr">*</span> </label>
-                                <input type="text" name="jobtitle" placeholder="e.g. Java Developer" required>
-                            </div>
-                            <div class="item">
+                        <div class="padding-width-30 padding-width-xs-10">
+                            <div class="list-form-item row">
+                                <div class="item-100 col-xs-12">
+                                    <label for="jobtitle">Job Title <span class="super-starr">*</span> </label>
+                                    <input type="text" name="jobtitle" placeholder="e.g. Java Developer" required>
+                                </div>
+                                <!-- <div class="item">
                                 <label for="vacancies">No. of vacancies <span class="super-starr">*</span> </label>
                                 <input type="text" name="vacancies" required>
-                            </div>
-                            <div class="item">
-                                <label for="category">Job Category <span class="super-starr">*</span> </label>
-                                <select name="category" id="category" class="form-control-use-select2"
-                                    multiple="multiple">
-                                    <option value="Select Category" disabled>Select Category</option>
-                                    <option value="Marketing">Marketing</option>
-                                    <option value="Sales">Sales</option>
-                                </select>
-                                <div class="small-tip">(Up to 3 categories)</div>
-                            </div>
-                            <div class="item">
-                                <label for="location">Location <span class="super-starr">*</span> </label>
-                                <select name="location" id="location" class="form-control-use-select2"
-                                    multiple="multiple">
-                                    <option value="Select Category" disabled>Select your Location</option>
-                                    <option value="Marketing">Vietefefef Nam</option>
-                                    <option value="Marketing">Viet Nam</option>
-                                    <option value="Marketing">Viet Nam</option>
-                                    <option value="Sales">ThaiLand</option>
-                                </select>
-                                <div class="small-tip">(Up to 3 locations)</div>
-                            </div>
-                            <div class="item">
-                                <label for="joblevel">Job Level <span class="super-starr">*</span> </label>
-                                <select name="joblevel" id="joblevel">
-                                    <option value="Select Lrvrl" disabled selected>Select Job Level</option>
-                                    <option value="Marketing">Viet Nam</option>
-                                    <option value="Sales">ThaiLand</option>
-                                </select>
-                            </div>
-                            <div class="item">
-                                <label for="preferredlanguage">Preferred Language
-                                </label>
-                                <select name="language" id="language" class="form-control-use-select2"
-                                    multiple="multiple">
-                                    <option value="Select Category" disabled>Select Language</option>
-                                    <option value="Marketing">Viet Nam</option>
-                                    <option value="Sales">ThaiLand</option>
-                                </select>
-                            </div>
-                            <div class="item">
-                                <label for="jobtype">Job Type <span class="super-starr">*</span> </label>
-                                <select name="jobtype" id="jobtype">
-                                    <option value="Select Category" disabled selected>Select Job Type</option>
-                                    <option value="Marketing">Viet Nam</option>
-                                    <option value="Sales">ThaiLand</option>
-                                </select>
-                            </div>
-                            <div class="item">
-                                <label for="vacancies">Contact Person </label>
-                                <input type="text" name="vacancies" placeholder="Kieu Nguyen Nhung">
-                            </div>
-                            <div class="item">
-                                <label for="salaryrangetype">Salary range <span class="super-starr">*</span></label>
-                                <input class="many-input" type="number" name="salaryrangefrom" placeholder="From"
-                                    required>
-                                <input class="many-input" type="number" name="salaryrangeto" placeholder="To" required>
-                                <select class="many-input-select" name="salaryrangetype" id="salaryrangetype">
-                                    <option value="Select Category" disabled selected>VND</option>
-                                    <option value="Marketing">USD</option>
-                                </select>
-                                <div class="item-checkbox">
-                                    <div class="super-checkbox-button" data-name="showsalaryinfo"></div>
-                                    Show the salary info
-                                    <input type="hidden" id="showsalaryinfo" value="false">
+                            </div> -->
+                                <div class="item col-md-6 col-xs-12">
+                                    <label for="category">Job Category <span class="super-starr">*</span> </label>
+                                    <select name="category" id="category" class="form-control-use-select2"
+                                        multiple="multiple">
+                                        <option value="Select Category" disabled>Select Category</option>
+                                        <option value="Marketing">Marketing</option>
+                                        <option value="Marketing">Marketing</option>
+                                        <option value="Marketing">Marketing</option>
+                                        <option value="Marketing">Marketing</option>
+                                        <option value="Sales">Sales</option>
+                                    </select>
+                                    <div class="small-tip">(Up to 3 categories)</div>
+                                </div>
+                                <div class="item col-md-6 col-xs-12">
+                                    <label for="location">Location <span class="super-starr">*</span> </label>
+                                    <select name="location" id="location" class="form-control-use-select2"
+                                        multiple="multiple">
+                                        <option value="Select Category" disabled>Select your Location</option>
+                                        <option value="Marketing">Vietefefef Nam</option>
+                                        <option value="Marketing">Viet Nam</option>
+                                        <option value="Marketing">Viet Nam</option>
+                                        <option value="Sales">ThaiLand</option>
+                                    </select>
+                                    <div class="small-tip">(Up to 3 locations)</div>
+                                </div>
+                                <div class="item col-md-6 col-xs-12">
+                                    <label for="joblevel">Job Level <span class="super-starr">*</span> </label>
+                                    <select name="joblevel" id="joblevel">
+                                        <option value="Select Lrvrl" disabled selected>Select Job Level</option>
+                                        <option value="Marketing">Viet Nam</option>
+                                        <option value="Sales">ThaiLand</option>
+                                    </select>
+                                </div>
+                                <div class="item col-md-6 col-xs-12">
+                                    <label for="preferredlanguage">Preferred Language
+                                    </label>
+                                    <select name="language" id="language" class="form-control-use-select2"
+                                        multiple="multiple">
+                                        <option value="Select Category" disabled>Select Language</option>
+                                        <option value="Marketing">Viet Nam</option>
+                                        <option value="Sales">ThaiLand</option>
+                                    </select>
+                                </div>
+                                <div class="item col-md-6 col-xs-12">
+                                    <label for="jobtype">Job Type <span class="super-starr">*</span> </label>
+                                    <select name="jobtype" id="jobtype">
+                                        <option value="Select Category" disabled selected>Select Job Type</option>
+                                        <option value="Marketing">Viet Nam</option>
+                                        <option value="Sales">ThaiLand</option>
+                                    </select>
+                                </div>
+                                <div class="item col-md-6 col-xs-12">
+                                    <label for="vacancies">Contact Person </label>
+                                    <input type="text" name="vacancies" placeholder="Kieu Nguyen Nhung">
+                                </div>
+                                <div class="item col-md-6 col-xs-12">
+                                    <label for="salaryrangetype">Salary range <span class="super-starr">*</span></label>
+                                    <input class="many-input" type="number" name="salaryrangefrom" placeholder="From"
+                                        required>
+                                    <input class="many-input" type="number" name="salaryrangeto" placeholder="To"
+                                        required>
+                                    <select class="many-input-select" name="salaryrangetype" id="salaryrangetype">
+                                        <option value="Select Category" disabled selected>VND</option>
+                                        <option value="Marketing">USD</option>
+                                    </select>
+                                    <div class="item-checkbox">
+                                        <div class="super-checkbox-button" data-name="showsalaryinfo"></div>
+                                        Show the salary info
+                                        <input type="hidden" id="showsalaryinfo" value="false">
+                                    </div>
+                                </div>
+                                <div class="item  col-md-6 col-xs-12">
+                                    <label for="vacancies">Email for Applications</label>
+                                    <input type="text" name="vacancies" placeholder="nhung.kieu@hri.com.vn">
+                                    <div class="small-tip">(Various emails should be separated by , or ;)</div>
+                                </div>
+                                <div class="item-100 col-xs-12">
+                                    <label for="vacancies">Skill Tag <span class="super-starr">*</span></label>
+                                    <select name="vacancies" id="vacancies" class="form-control-use-select2"
+                                        multiple="multiple">
+                                        <option value="Select Category" disabled>Select your Location</option>
+                                        <option value="Marketing">Vietefefef Nam</option>
+                                        <option value="Marketing">Viet Nam</option>
+                                        <option value="Marketing">Viet Nam</option>
+                                        <option value="Sales">ThaiLand</option>
+                                    </select>
+                                </div>
+                                <div class="item-100 col-xs-12">
+                                    <label for="jobdescription">Job Description <span
+                                            class="super-starr">*</span></label>
+                                    <textarea name="jobdescription" id="jobdescription" required></textarea>
+                                </div>
+                                <div class="item-100 col-xs-12">
+                                    <label for="requirement">Requirement <span class="super-starr">*</span></label>
+                                    <textarea name="requirement" id="requirement" required></textarea>
+                                </div>
+                                <div class="item-100 col-xs-12">
+                                    <label for="benefit">Benefit <span class="super-starr">*</span></label>
+                                    <textarea name="benefit" id="benefit" required></textarea>
                                 </div>
                             </div>
-                            <div class="item ">
-                                <label for="vacancies">Email for Applications</label>
-                                <input type="text" name="vacancies" placeholder="nhung.kieu@hri.com.vn">
-                                <div class="small-tip">(Various emails should be separated by , or ;)</div>
-                            </div>
-                            <div class="item-100">
-                                <label for="vacancies">Skill Tag <span class="super-starr">*</span></label>
-                                <input type="text" name="vacancies" placeholder="e.g. Java Developer" required>
-                            </div>
-                            <div class="item-100">
-                                <label for="jobdescription">Job Description <span class="super-starr">*</span></label>
-                                <textarea name="jobdescription" id="jobdescription" required></textarea>
-                            </div>
-                            <div class="item-100">
-                                <label for="requirement">Requirement <span class="super-starr">*</span></label>
-                                <textarea name="requirement" id="requirement" required></textarea>
-                            </div>
-                            <div class="item-100">
-                                <label for="benefit">Benefit <span class="super-starr">*</span></label>
-                                <textarea name="benefit" id="benefit" required></textarea>
-                            </div>
+
                         </div>
                     </div>
                     <div class="advertisingvalueoptions">
@@ -1073,126 +1088,235 @@
 
             <div id="Search-Candidate" class="hri-tabcontent">
                 <div class="set-box-shadow">
-                    <form class="form-search padding-width-30 padding-width-xs-10" action="#">
-                        <div class="big-title"> Search Candidate</div>
-                        <input class="item item-full" type="text" placeholder="Keyword">
-                        <div class="show-search">
-                            <div class="item-checkbox">
-                                <div class="super-checkbox-button" data-name="search-by-job"></div>
-                                Show the salary info
-                                <input type="hidden" id="search-by-job" value="false">
-                            </div>
-                            <div class="search-tips">
-                                <div id="search-tips-button" onclick="openSearchTips(event);">
-                                    <img src="image/apple@3x.png" alt="">
-                                    Search tips
+                    <form class="form-search" action="#">
+                        <div style="overflow: auto" class="padding-width-30 padding-width-xs-10">
+                            <div class="big-title"> Search Candidate</div>
+                            <input class="item item-full" type="text" placeholder="Keyword">
+                            <div class="show-search">
+                                <div class="item-checkbox">
+                                    <div class="super-checkbox-button" data-name="search-by-job"></div>
+                                    Show the salary info
+                                    <input type="hidden" id="search-by-job" value="false">
                                 </div>
-
-                                <div id="search-tip-show" class="search-tip-show hidden">
-                                    <div class="tip-title">
-                                        Feel Awesome Using Search Tips
+                                <div class="search-tips">
+                                    <div id="search-tips-button" onclick="openSearchTips(event);">
+                                        <img src="image/apple@3x.png" alt="">
+                                        Search tips
                                     </div>
-                                    <div class="div-scroll">
-                                        <div class="tip-list">
-                                            <table>
-                                                <thead>
-                                                    <tr>
-                                                        <th class="operators">Operators</th>
-                                                        <th class="samplekeywords">Sample Keywords</th>
-                                                        <th class="searchresults">Search Results</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="operators"></td>
-                                                        <td class="samplekeywords">IT Director</td>
-                                                        <td class="searchresults">Return resumes that contain both "IT"
-                                                            AND
-                                                            "director"</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="operators">
-                                                            <div class="example hyphen">
-                                                                " "
-                                                            </div>
-                                                        </td>
-                                                        <td class="samplekeywords"><span>"</span>IT
-                                                            Director<span>"</span>
-                                                        </td>
-                                                        <td class="searchresults">Return resumes that contain exact "IT
-                                                            Director"</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="operators">
-                                                            <div class="example">+</div>
-                                                        </td>
-                                                        <td class="samplekeywords"><span>+</span>IT
-                                                            <span>+</span>Director
-                                                        </td>
-                                                        <td class="searchresults">Return resumes that contain both "IT"
-                                                            AND
-                                                            "Director"</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="operators">
-                                                            <div class="example">+</div>
-                                                        </td>
-                                                        <td class="samplekeywords"><span>+</span>IT Director
-                                                        </td>
-                                                        <td class="searchresults">Return resumes that contain "IT" but
-                                                            rank
-                                                            rows higher if they</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="operators">
-                                                            <div class="example">-</div>
-                                                        </td>
-                                                        <td class="samplekeywords"><span>"</span>IT
-                                                            <span>+</span>Director
-                                                            <span>-</span>ITnavi
-                                                        </td>
-                                                        <td class="searchresults">Return resumes that contain both "IT"
-                                                            AND
-                                                            "Director" but not "ITnavi" <br>
 
-                                                            <span>You could use this operator to exclude employees from
-                                                                your
-                                                                company</span></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="operators">
-                                                            <div class="example">*</div>
-                                                        </td>
-                                                        <td class="samplekeywords">IT Director<span>*</span>
-                                                        </td>
-                                                        <td class="searchresults">Return resumes that contain words such
-                                                            as
-                                                            "elastic", "elasticse copy"
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                    <div id="search-tip-show" class="search-tip-show hidden">
+                                        <div class="tip-title">
+                                            Feel Awesome Using Search Tips
+                                        </div>
+                                        <div class="div-scroll">
+                                            <div class="tip-list">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="operators">Operators</th>
+                                                            <th class="samplekeywords">Sample Keywords</th>
+                                                            <th class="searchresults">Search Results</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="operators"></td>
+                                                            <td class="samplekeywords">IT Director</td>
+                                                            <td class="searchresults">Return resumes that contain both
+                                                                "IT"
+                                                                AND
+                                                                "director"</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="operators">
+                                                                <div class="example hyphen">
+                                                                    " "
+                                                                </div>
+                                                            </td>
+                                                            <td class="samplekeywords"><span>"</span>IT
+                                                                Director<span>"</span>
+                                                            </td>
+                                                            <td class="searchresults">Return resumes that contain exact
+                                                                "IT
+                                                                Director"</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="operators">
+                                                                <div class="example">+</div>
+                                                            </td>
+                                                            <td class="samplekeywords"><span>+</span>IT
+                                                                <span>+</span>Director
+                                                            </td>
+                                                            <td class="searchresults">Return resumes that contain both
+                                                                "IT"
+                                                                AND
+                                                                "Director"</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="operators">
+                                                                <div class="example">+</div>
+                                                            </td>
+                                                            <td class="samplekeywords"><span>+</span>IT Director
+                                                            </td>
+                                                            <td class="searchresults">Return resumes that contain "IT"
+                                                                but
+                                                                rank
+                                                                rows higher if they</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="operators">
+                                                                <div class="example">-</div>
+                                                            </td>
+                                                            <td class="samplekeywords"><span>"</span>IT
+                                                                <span>+</span>Director
+                                                                <span>-</span>ITnavi
+                                                            </td>
+                                                            <td class="searchresults">Return resumes that contain both
+                                                                "IT"
+                                                                AND
+                                                                "Director" but not "ITnavi" <br>
+
+                                                                <span>You could use this operator to exclude employees
+                                                                    from
+                                                                    your
+                                                                    company</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="operators">
+                                                                <div class="example">*</div>
+                                                            </td>
+                                                            <td class="samplekeywords">IT Director<span>*</span>
+                                                            </td>
+                                                            <td class="searchresults">Return resumes that contain words
+                                                                such
+                                                                as
+                                                                "elastic", "elasticse copy"
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item item-location">
-                            <img src="image/placeholder-gray-point@3x.png" alt="">
-                            <input type="text" name="location" placeholder="Location">
-                        </div>
-                        <div class="item item-jlevel">
-                            <img src="image/group-660@3x.png" alt="">
-                            <input type="text" name="joblevel" placeholder="Job Level">
-                        </div>
-                        <!-- <input class="item item-location" type="text" placeholder="Keyword"> -->
-                        <!-- <input class="item item-jlevel" type="text" placeholder="Keyword"> -->
+                            <div class="item item-location">
+                                <img src="image/placeholder-gray-point@3x.png" alt="">
+                                <select class="form-control-use-select2-tags-true form-control" name="" id="" multiple="multiple">
+                                    <option value="a">advsfvsfv</option>
+                                    <option value="b">asdfsdsd</option>
+                                    <option value="b">asdfsdsd</option>
+                                    <option value="b">asdfsdsd</option>
+                                    <option value="b">asdfsdsd</option>
+                                    <option value="b">asdfsdsd</option>
+                                    <option value="b">asdfsdsd</option>
+                                </select>
+                            </div>
+                            <div class="item item-jlevel">
+                                <img src="image/group-660@3x.png" alt="">
+                                <input type="text" name="joblevel" placeholder="Job Level">
+                            </div>
 
-                        <div class="submit-advanced">
-                            <button type="submit" class="button-submit">Search</button>
-                            <div class="search-advanced">
-                                <div class="advanced-icon">+</div>
-                                Advanced Search
+                            <div class="submit-advanced">
+                                <button type="submit" class="button-submit">Search</button>
+                                <div onclick="openAdvanced('show', 'hide');" class="search-advanced">
+                                    <div class="advanced-icon">+</div>
+                                    Advanced Search
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="advanced-more">
+                            <div class="more-blue padding-width-30 padding-width-xs-10">
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="blue-item">
+                                            <div style="background-image: url(image/file-in-folder@3x.png)"
+                                                class="blue-item-image"></div>
+                                            <select name="" id="">
+                                                <option value="Job category" disabled selected>Job category</option>
+                                                <option value="a">s</option>
+                                                <option value="a">s</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="blue-item">
+                                            <div style="background-image: url(image/path-1129@3x.png)"
+                                                class="blue-item-image"></div>
+                                            <input type="text" name="" id="" placeholder="Experience">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-xs-6 col-fix-right">
+                                        <div class="blue-item">
+                                            <div style="background-image: url(image/language-gray@3x.png)"
+                                                class="blue-item-image"></div>
+                                            <select name="" id="">
+                                                <option value="Language" disabled selected>Language</option>
+                                                <option value="a">s</option>
+                                                <option value="a">s</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-xs-6 col-fix-left">
+                                        <div class="blue-item">
+                                            <select name="" id="">
+                                                <option value="Experience" disabled selected>Experience</option>
+                                                <option value="a">s</option>
+                                                <option value="a">s</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-xs-6 col-fix-right">
+                                        <div class="blue-item">
+                                            <div style="background-image: url(image/cake@3x.png)"
+                                                class="blue-item-image"></div>
+                                            <input type="number" name="" id="" placeholder="Age From">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-xs-6 col-fix-left">
+                                        <div class="blue-item">
+                                            <div style="background-image: url(image/cake@3x.png)"
+                                                class="blue-item-image"></div>
+                                            <input type="number" name="" id="" placeholder="Age To">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-xs-6 col-fix-right">
+                                        <div class="blue-item">
+                                            <div style="background-image: url(image/dollar-symbol@3x.png)"
+                                                class="blue-item-image"></div>
+                                            <input type="number" name="" id="" placeholder="Salary From">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-xs-6 col-fix-left">
+                                        <div class="blue-item">
+                                            <div style="background-image: url(image/dollar-symbol@3x.png)"
+                                                class="blue-item-image"></div>
+                                            <input type="number" name="" id="" placeholder="Salary To">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="blue-item">
+                                            <div style="background-image: url(image/group-999@3x.png)"
+                                                class="blue-item-image"></div>
+                                            <select name="" id="">
+                                                <option value="Gender" disabled selected>Gender</option>
+                                                <option value="a">s</option>
+                                                <option value="a">s</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 text-right">
+                                        <div onclick="openAdvanced('hide', 'show');" class="search-advanced">
+                                            <div class="advanced-icon">+</div>
+                                            Advanced Search <i class="fas fa-angle-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="more-white padding-width-30 padding-width-xs-10">
+                                <button class="white-orange" type="button">Search</button>
                             </div>
                         </div>
                     </form>
@@ -1210,8 +1334,7 @@
                                 Location: <span>Any</span>
                             </div>
                             <div class="item">
-                                <div style="background-image: url(image/group-660@3x.png);"
-                                    class="item-icon"></div>
+                                <div style="background-image: url(image/group-660@3x.png);" class="item-icon"></div>
                                 Job level: <span>Any</span>
                             </div>
                         </div>

@@ -1,0 +1,108 @@
+#Privacy-Term {
+  padding-top: 110px;
+  font-family: Roboto;
+  font-size: 16px;
+  color: #464545;
+  background-image: url(../image/group-1007@3x.png);
+  background-size: 1920px auto;
+  background-position: center 0;
+  background-repeat: no-repeat; }
+  #Privacy-Term.for-use {
+    background-image: none; }
+  #Privacy-Term .container .privacyy .pri-body .body .body-item .item-title .item-showbutton {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+  #Privacy-Term .container .privacyy {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.11);
+    border-radius: 4px;
+    background-color: #fff; }
+    #Privacy-Term .container .privacyy .pri-title {
+      text-align: center; }
+      #Privacy-Term .container .privacyy .pri-title img {
+        max-width: 632.3px;
+        width: 90%;
+        height: auto;
+        margin: 50px 0 20px 0; }
+        #Privacy-Term .container .privacyy .pri-title img.for-use {
+          width: 100%;
+          max-width: 100%;
+          margin: 0; }
+    #Privacy-Term .container .privacyy .pri-body {
+      padding: 0 150px 90px 150px; }
+      #Privacy-Term .container .privacyy .pri-body .title {
+        text-align: center;
+        padding-top: 30px;
+        font-weight: 900;
+        font-size: 48px;
+        color: #24becf; }
+      #Privacy-Term .container .privacyy .pri-body .intro {
+        padding-top: 30px; }
+      #Privacy-Term .container .privacyy .pri-body .body {
+        margin-top: 30px;
+        box-shadow: 0 0 20px 0 rgba(162, 162, 162, 0.1);
+        background-color: #ffffff; }
+        #Privacy-Term .container .privacyy .pri-body .body .body-item {
+          padding: 20px;
+          border-bottom: 1px solid rgba(112, 112, 112, 0.16);
+          transition: all 0.5s;
+          border-left: 3px solid #fff; }
+          #Privacy-Term .container .privacyy .pri-body .body .body-item .item-title {
+            padding: 5px;
+            overflow: auto; }
+            #Privacy-Term .container .privacyy .pri-body .body .body-item .item-title .item-showbutton {
+              border-radius: 50%;
+              float: right;
+              width: 34px;
+              height: 34px;
+              cursor: pointer;
+              transition: all 0.5s;
+              background-image: url(../image/group-1024@3x.png); }
+              #Privacy-Term .container .privacyy .pri-body .body .body-item .item-title .item-showbutton:hover {
+                box-shadow: 0 0 5px #1ebdcf; }
+            #Privacy-Term .container .privacyy .pri-body .body .body-item .item-title .item-title-text {
+              font-size: 18px;
+              font-weight: 900;
+              padding-top: 2px;
+              color: #414141;
+              transition: all 0.5s; }
+          #Privacy-Term .container .privacyy .pri-body .body .body-item .item-description {
+            padding: 20px 5px 5px 5px; }
+            #Privacy-Term .container .privacyy .pri-body .body .body-item .item-description span {
+              font-weight: 900;
+              font-size: 17px; }
+          #Privacy-Term .container .privacyy .pri-body .body .body-item:last-child {
+            border-bottom: none; }
+          #Privacy-Term .container .privacyy .pri-body .body .body-item.active {
+            background-color: #e5f8ff;
+            border-left: 3px solid #1ebdcf; }
+            #Privacy-Term .container .privacyy .pri-body .body .body-item.active .item-title .item-showbutton {
+              background-image: url(../image/group-1033@3x.png); }
+            #Privacy-Term .container .privacyy .pri-body .body .body-item.active .item-title .item-title-text {
+              color: #24becf; }
+  #Privacy-Term .container .pri-title {
+    text-align: center; }
+    #Privacy-Term .container .pri-title img {
+      max-width: 632.3px;
+      width: 90%;
+      height: auto; }
+      #Privacy-Term .container .pri-title img.for-use {
+        width: 100%;
+        max-width: 100%; }
+  @media screen and (min-width: 1400px) {
+    #Privacy-Term .container {
+      width: 1355px; } }
+  @media screen and (max-width: 1399.98px) {
+    #Privacy-Term .container .privacyy .pri-body {
+      padding: 0 70px 50px 70px; } }
+  @media screen and (max-width: 991.98px) {
+    #Privacy-Term .container .privacyy .pri-body {
+      padding: 0 30px 50px 30px; } }
+  @media screen and (max-width: 575.98px) {
+    #Privacy-Term .container .privacyy .pri-body {
+      padding: 0 15px 50px 15px; }
+      #Privacy-Term .container .privacyy .pri-body .body .body-item {
+        padding-left: 5px;
+        padding-right: 5px; } }
+
+/*# sourceMappingURL=privacy-term.css.map */

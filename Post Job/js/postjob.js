@@ -109,9 +109,11 @@ $('.PJ-ManageJob-PostJob-button').on('click', function () {
 function openSearchTips(evt) {
     if ($('#search-tip-show').hasClass('hidden')) {
         $('#search-tip-show').removeClass('hidden');
+        $('#search-tip-show').addClass('animated flash');
         document.getElementById('search-tips-button').innerHTML = '<img src="image/apple@3x.png" alt=""> Hide tips';
     } else {
         $('#search-tip-show').addClass('hidden');
+        $('#search-tip-show').removeClass('animated flash');
         document.getElementById('search-tips-button').innerHTML = '<img src="image/apple@3x.png" alt=""> Search tips';
     }
 }
@@ -223,3 +225,17 @@ $('#CompanyProfileButton').on('click', function () {
 })
 
 $('.form-control-use-select2').select2();
+$('.form-control-use-select2-tags-true').select2({
+    tags: true
+});
+
+
+//Advanced Search
+$('.advanced-more').collapse();
+$('.advanced-more').collapse('hide');
+$('.submit-advanced').collapse();
+
+function openAdvanced(input1, input2) { 
+    $('.advanced-more').collapse(input1); 
+    $('.submit-advanced').collapse(input2);
+}
